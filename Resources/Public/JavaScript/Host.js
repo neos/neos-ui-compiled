@@ -52149,7 +52149,8 @@ webpackJsonp([1],[
 	                setCurrentlyEditedPropertyName = _props3.setCurrentlyEditedPropertyName,
 	                unFocusNode = _props3.unFocusNode,
 	                persistChange = _props3.persistChange,
-	                formattingRulesRegistry = _props3.formattingRulesRegistry;
+	                formattingRulesRegistry = _props3.formattingRulesRegistry,
+	                nodeTypesRegistry = _props3.nodeTypesRegistry;
 	
 	            //
 	            // First of all, set the new version of the guest frame window object to the store.
@@ -52243,13 +52244,15 @@ webpackJsonp([1],[
 	                }
 	
 	                var nodeFormattingRules = _this2.calculateEnabledFormattingRulesForNodeType(node.nodeType);
-	
+	                var placeholder = (0, _plowJs.$get)(['properties', propertyName, 'ui', 'aloha', 'placeholder'], nodeTypesRegistry.get(node.nodeType));
 	                var enabledFormattingRuleIds = nodeFormattingRules[propertyName] || [];
 	
 	                // Build up editor config for each enabled formatting
 	                var editorOptions = Object.assign({
+	                    extraPlugins: 'confighelper',
 	                    removePlugins: 'floatingspace,maximize,resize,toolbar,contextmenu,liststyle,tabletools'
-	                });
+	                }, placeholder ? { placeholder: placeholder } : {});
+	
 	                enabledFormattingRuleIds.forEach(function (formattingRuleId) {
 	                    var formattingDefinition = formattingRulesRegistry.get(formattingRuleId);
 	
