@@ -46952,7 +46952,6 @@ webpackJsonp([1],[
 	        key: 'renderIsMediaSelectionScreenVisibleButtons',
 	        value: function renderIsMediaSelectionScreenVisibleButtons() {
 	            var _props = this.props,
-	                chooseFromLocalFilesystemLabel = _props.chooseFromLocalFilesystemLabel,
 	                onChooseFromMedia = _props.onChooseFromMedia,
 	                onChooseFromLocalFileSystem = _props.onChooseFromLocalFileSystem,
 	                onRemove = _props.onRemove;
@@ -46977,7 +46976,7 @@ webpackJsonp([1],[
 	                        style: 'lighter',
 	                        onClick: onChooseFromLocalFileSystem
 	                    },
-	                    _react2.default.createElement(_neosUiI18n2.default, { id: chooseFromLocalFilesystemLabel, fallback: 'Choose file' })
+	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Modules:media.chooseFile', fallback: 'Choose file' })
 	                ),
 	                _react2.default.createElement(
 	                    _Button2.default,
@@ -47015,7 +47014,6 @@ webpackJsonp([1],[
 	
 	    return Controls;
 	}(_react.PureComponent), _class.propTypes = {
-	    chooseFromLocalFilesystemLabel: _react.PropTypes.string,
 	    onChooseFromMedia: _react.PropTypes.func.isRequired,
 	    onChooseFromLocalFileSystem: _react.PropTypes.func.isRequired,
 	    onRemove: _react.PropTypes.func.isRequired,
@@ -51279,8 +51277,7 @@ webpackJsonp([1],[
 	                _react2.default.createElement(_IconButton2.default, {
 	                    className: this.props.className,
 	                    icon: 'plus',
-	                    onClick: this.handleOpenModalBtnClick,
-	                    onItemSelect: this.handleInsertModeChanged
+	                    onClick: this.handleOpenModalBtnClick
 	                })
 	            );
 	        }
@@ -52369,6 +52366,7 @@ webpackJsonp([1],[
 	        key: 'render',
 	        value: function render() {
 	            var _props2 = this.props,
+	                skipI18n = _props2.skipI18n,
 	                label = _props2.label,
 	                icon = _props2.icon;
 	
@@ -52381,7 +52379,7 @@ webpackJsonp([1],[
 	                    style: 'transparent'
 	                },
 	                icon && _react2.default.createElement(_Icon2.default, { icon: icon, padded: 'right' }),
-	                _react2.default.createElement(_neosUiI18n2.default, { id: label, fallback: label })
+	                skipI18n ? label : _react2.default.createElement(_neosUiI18n2.default, { id: label, fallback: label })
 	            );
 	        }
 	    }]);
@@ -52393,6 +52391,7 @@ webpackJsonp([1],[
 	    uri: _react.PropTypes.string.isRequired,
 	    target: _react.PropTypes.string,
 	    isActive: _react.PropTypes.bool.isRequired,
+	    skipI18n: _react.PropTypes.bool,
 	
 	    onClick: _react.PropTypes.func.isRequired
 	}, _temp);
@@ -52516,7 +52515,8 @@ webpackJsonp([1],[
 	        label: _react.PropTypes.string.isRequired,
 	        uri: _react.PropTypes.string.isRequired,
 	        target: _react.PropTypes.string,
-	        isActive: _react.PropTypes.bool.isReqired
+	        isActive: _react.PropTypes.bool.isReqired,
+	        skipI18n: _react.PropTypes.bool
 	    })),
 	
 	    onClick: _react.PropTypes.func.isRequired,
@@ -52703,7 +52703,8 @@ webpackJsonp([1],[
 	            label: _react.PropTypes.string.isRequired,
 	            uri: _react.PropTypes.string.isRequired,
 	            target: _react.PropTypes.string,
-	            isActive: _react.PropTypes.bool.isReqired
+	            isActive: _react.PropTypes.bool.isReqired,
+	            skipI18n: _react.PropTypes.bool.isReqired
 	        }))
 	    })).isRequired
 	}, _temp)) || _class);
@@ -53085,8 +53086,7 @@ webpackJsonp([1],[
 	                _react2.default.createElement(_IconButton2.default, {
 	                    className: this.props.className,
 	                    icon: 'plus',
-	                    onClick: this.handleOpenModalBtnClick,
-	                    onItemSelect: this.handleInsertModeChanged
+	                    onClick: this.handleOpenModalBtnClick
 	                })
 	            );
 	        }
@@ -54588,7 +54588,7 @@ webpackJsonp([1],[
 	                    onClick: this.handleBack,
 	                    isFocused: true
 	                },
-	                _react2.default.createElement(_neosUiI18n2.default, { fallback: 'Back' })
+	                _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:cancel', fallback: 'Back' })
 	            );
 	        }
 	    }, {
@@ -54603,7 +54603,7 @@ webpackJsonp([1],[
 	                    onClick: this.props.handleClose,
 	                    isFocused: true
 	                },
-	                _react2.default.createElement(_neosUiI18n2.default, { fallback: 'Cancel' })
+	                _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:cancel', fallback: 'Cancel' })
 	            );
 	        }
 	    }, {
@@ -54618,7 +54618,7 @@ webpackJsonp([1],[
 	                    onClick: this.handleSave,
 	                    isFocused: true
 	                },
-	                _react2.default.createElement(_neosUiI18n2.default, { fallback: 'Create' })
+	                _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:createNew', fallback: 'Create' })
 	            );
 	        }
 	    }, {
@@ -56755,7 +56755,6 @@ webpackJsonp([1],[
 	        presetLabel = props.presetLabel,
 	        dimensionName = props.dimensionName;
 	
-	
 	    return _react2.default.createElement(
 	        'span',
 	        { key: dimensionName },
@@ -56841,10 +56840,11 @@ webpackJsonp([1],[
 	                    { className: _style2.default.dropDown__btn },
 	                    contentDimensionsObjectKeys.map(function (dimensionName) {
 	                        var dimensionConfiguration = contentDimensionsObject[dimensionName];
+	                        var icon = (0, _plowJs.$get)('icon', dimensionConfiguration) && (0, _plowJs.$get)('icon', dimensionConfiguration).replace('icon-', '');
 	                        return _react2.default.createElement(SelectedPreset, {
 	                            key: dimensionName,
 	                            dimensionName: dimensionName,
-	                            icon: (0, _plowJs.$get)('icon', dimensionConfiguration),
+	                            icon: icon,
 	                            dimensionLabel: (0, _plowJs.$get)('label', dimensionConfiguration),
 	                            presetLabel: (0, _plowJs.$get)([dimensionName, 'label'], activePresets)
 	                        });
@@ -56855,10 +56855,11 @@ webpackJsonp([1],[
 	                    { className: _style2.default.dropDown__contents },
 	                    contentDimensionsObjectKeys.map(function (dimensionName) {
 	                        var dimensionConfiguration = contentDimensionsObject[dimensionName];
+	                        var icon = (0, _plowJs.$get)('icon', dimensionConfiguration) && (0, _plowJs.$get)('icon', dimensionConfiguration).replace('icon-', '');
 	                        return _react2.default.createElement(DimensionSelector, {
 	                            key: dimensionName,
 	                            dimensionName: dimensionName,
-	                            icon: (0, _plowJs.$get)('icon', dimensionConfiguration),
+	                            icon: icon,
 	                            dimensionLabel: (0, _plowJs.$get)('label', dimensionConfiguration),
 	                            presets: _this2.presetsForDimension(dimensionName),
 	                            activePreset: (0, _plowJs.$get)([dimensionName, 'name'], activePresets),
