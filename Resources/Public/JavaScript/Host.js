@@ -54649,7 +54649,7 @@ webpackJsonp([1],[
 	    }, {
 	        key: 'createNode',
 	        value: function createNode(nodeType) {
-	            var initialProperties = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	            var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 	            var _props2 = this.props,
 	                referenceNode = _props2.referenceNode,
 	                persistChange = _props2.persistChange,
@@ -54675,7 +54675,7 @@ webpackJsonp([1],[
 	                subject: referenceNode.contextPath,
 	                payload: {
 	                    nodeType: nodeType.name,
-	                    initialProperties: initialProperties
+	                    data: data
 	                }
 	            };
 	            persistChange(change);
