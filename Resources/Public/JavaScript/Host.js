@@ -46849,7 +46849,7 @@ webpackJsonp([1],[
 	BooleanEditor.propTypes = {
 	    identifier: _react.PropTypes.string.isRequired,
 	    label: _react.PropTypes.string.isRequired,
-	    value: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.string]).isRequired,
+	    value: _react.PropTypes.oneOfType([_react.PropTypes.bool, _react.PropTypes.string]),
 	    commit: _react.PropTypes.func.isRequired
 	};
 	
@@ -46884,7 +46884,7 @@ webpackJsonp([1],[
 	    return _react2.default.createElement(_DateInput2.default, { value: mappedVal, onChange: commit });
 	};
 	DateTime.propTypes = {
-	    value: _react.PropTypes.string.isRequired,
+	    value: _react.PropTypes.string,
 	    commit: _react.PropTypes.func.isRequired
 	};
 	
@@ -48064,7 +48064,7 @@ webpackJsonp([1],[
 	};
 	SelectBoxEditor.propTypes = {
 	    commit: _react.PropTypes.func.isRequired,
-	    value: _react.PropTypes.any.isRequired,
+	    value: _react.PropTypes.any,
 	    options: _react.PropTypes.any.isRequired
 	};
 	
@@ -48098,7 +48098,7 @@ webpackJsonp([1],[
 	    return _react2.default.createElement(_TextInput2.default, { value: value, onChange: commit });
 	};
 	TextField.propTypes = {
-	    value: _react.PropTypes.string.isRequired,
+	    value: _react.PropTypes.string,
 	    commit: _react.PropTypes.func.isRequired
 	};
 	
@@ -54508,7 +54508,6 @@ webpackJsonp([1],[
 	                        label: (0, _plowJs.$get)('ui.label', element),
 	                        editor: (0, _plowJs.$get)('ui.editor', element),
 	                        options: (0, _plowJs.$get)('ui.editorOptions', element),
-	                        value: _this3.state.elementValues[elementName] ? _this3.state.elementValues[elementName] : '',
 	                        commit: onCommit
 	                    });
 	                })
@@ -87258,7 +87257,7 @@ webpackJsonp([1],[
 	    options: _react2.default.PropTypes.oneOfType([_react.PropTypes.arrayOf(_react.PropTypes.shape({
 	        icon: _react.PropTypes.string,
 	        value: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
-	        label: _react.PropTypes.string.isRequired
+	        label: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired
 	    })), _react.PropTypes.func]),
 	
 	    /**
