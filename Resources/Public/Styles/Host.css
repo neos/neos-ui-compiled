@@ -2834,7 +2834,7 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .node__header___2rTs3 {
     position: relative;
     height: 11px;
-    line-height: 13px;
+    line-height: 20px;
     padding-left: 15px;
 }
 .node__header__chevron___2ePWw {
@@ -2842,7 +2842,7 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    margin-top: -1px;
+    margin-top: 1px;
     cursor: pointer;
     color: #adadad;
 }

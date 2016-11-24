@@ -53991,7 +53991,6 @@ webpackJsonp([1],[
 	                item = _props2.item,
 	                onNodeToggle = _props2.onNodeToggle;
 	
-	
 	            onNodeToggle(item.contextPath);
 	        }
 	    }, {
@@ -54001,7 +54000,7 @@ webpackJsonp([1],[
 	                item = _props3.item,
 	                onNodeFocus = _props3.onNodeFocus;
 	
-	            onNodeFocus(item.uri);
+	            onNodeFocus(item.contextPath);
 	        }
 	    }, {
 	        key: 'handleNodeLabelClick',
@@ -54011,21 +54010,8 @@ webpackJsonp([1],[
 	                onNodeFocus = _props4.onNodeFocus,
 	                onNodeClick = _props4.onNodeClick;
 	
-	
 	            onNodeFocus(item.contextPath);
 	            onNodeClick(item.uri, item.contextPath);
-	
-	            if (this.props.item.isFocused) {
-	                console.info('isFocused');
-	            } else {
-	                console.info('isFocused NOT');
-	            }
-	
-	            if (this.props.item.isActive) {
-	                console.info('isActive');
-	            } else {
-	                console.info('isActive NOT');
-	            }
 	        }
 	    }]);
 	
@@ -54041,11 +54027,7 @@ webpackJsonp([1],[
 	        label: _react.PropTypes.string.isRequired,
 	        icon: _react.PropTypes.string,
 	        uri: _react.PropTypes.string.isRequired,
-	        children: _react.PropTypes.arrayOf(_react.PropTypes.string),
-	        isDblClick: _react.PropTypes.bool
-	
-	        // @todo treeBind
-	        // @todo inputActive
+	        children: _react.PropTypes.arrayOf(_react.PropTypes.string)
 	    }),
 	    getTreeNode: _react.PropTypes.func,
 	    onNodeToggle: _react.PropTypes.func,
@@ -88268,7 +88250,7 @@ webpackJsonp([1],[
 	
 	            var dataClassNames = (0, _classnames2.default)((_mergeClassNames = {}, _defineProperty(_mergeClassNames, theme.header__data, true), _defineProperty(_mergeClassNames, theme['header__data--isActive'], isActive), _defineProperty(_mergeClassNames, theme['header__data--isFocused'], isFocused), _mergeClassNames));
 	
-	            return _react2.default.createElement('ul', { className: theme.header }, hasChildren ? this.renderCollapseControl() : null, _react2.default.createElement('li', { className: dataClassNames }, _react2.default.createElement(IconComponent, { icon: icon || 'question', padded: 'right', role: 'button', onClick: onClick }), _react2.default.createElement('span', _extends({}, rest, { className: theme.header__label, role: 'button', onClick: onLabelClick, 'data-neos-integrational-test': 'tree__item__nodeHeader__itemLabel' }), label)));
+	            return _react2.default.createElement('ul', { className: theme.header }, hasChildren ? this.renderCollapseControl() : null, _react2.default.createElement('li', { className: dataClassNames, onClick: onClick }, _react2.default.createElement(IconComponent, { icon: icon || 'question', padded: 'right', role: 'button' }), _react2.default.createElement('span', _extends({}, rest, { className: theme.header__label, role: 'button', onClick: onLabelClick, 'data-neos-integrational-test': 'tree__item__nodeHeader__itemLabel' }), label)));
 	        }
 	    }, {
 	        key: 'renderCollapseControl',
