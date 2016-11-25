@@ -2177,6 +2177,9 @@
     padding: 0 38px 0 16px;
     border: 0;
     background: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .style__dropDown__btn___2E4O2:focus {
     outline: 1px dotted #FFF;
@@ -2227,6 +2230,22 @@
 .style__dropDown__btnIcon___gPnZd {
     margin-right: .5em;
 }
+.style__dropDown__btnDelete___3AB5v {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #323232;
+    border-left: 1px solid #222;
+}
+.style__dropDown__btnDelete___3AB5v:hover {
+    background: #00ADEE;
+    color: #FFF;
+}
 .style__dropDown__contents___2BzGW {
     min-width: 160px;
     box-shadow: 0 5px 10px rgba(0,0,0, .2);
@@ -2246,6 +2265,9 @@
     background: #323232;
     border-top: 1px solid #222;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .style__dropDown__item___2ODVB:hover {
     background: #00ADEE;

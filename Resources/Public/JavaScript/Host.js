@@ -47978,6 +47978,10 @@ webpackJsonp([1],[
 	    value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _class, _temp;
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -47988,21 +47992,50 @@ webpackJsonp([1],[
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var SelectBoxEditor = function SelectBoxEditor(props) {
-	    var commit = props.commit;
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	    var options = Object.keys(props.options.values).map(function (k) {
-	        return Object.assign({ value: k }, props.options.values[k]);
-	    });
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
-	    return _react2.default.createElement(_SelectBox2.default, { options: options, value: props.value, onSelect: commit });
-	};
-	SelectBoxEditor.propTypes = {
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var SelectBoxEditor = (_temp = _class = function (_PureComponent) {
+	    _inherits(SelectBoxEditor, _PureComponent);
+	
+	    function SelectBoxEditor(props) {
+	        _classCallCheck(this, SelectBoxEditor);
+	
+	        var _this = _possibleConstructorReturn(this, (SelectBoxEditor.__proto__ || Object.getPrototypeOf(SelectBoxEditor)).call(this, props));
+	
+	        _this.handleDelete = function () {
+	            return _this.props.commit('');
+	        };
+	        return _this;
+	    }
+	
+	    _createClass(SelectBoxEditor, [{
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
+	
+	            var _props = this.props,
+	                commit = _props.commit,
+	                value = _props.value;
+	
+	            var options = Object.keys(this.props.options.values).map(function (k) {
+	                return Object.assign({ value: k }, _this2.props.options.values[k]);
+	            });
+	            var onDelete = value ? this.handleDelete : null;
+	
+	            return _react2.default.createElement(_SelectBox2.default, { options: options, value: value, onSelect: commit, onDelete: onDelete });
+	        }
+	    }]);
+	
+	    return SelectBoxEditor;
+	}(_react.PureComponent), _class.propTypes = {
 	    commit: _react.PropTypes.func.isRequired,
 	    value: _react.PropTypes.any,
 	    options: _react.PropTypes.any.isRequired
-	};
-	
+	}, _temp);
 	exports.default = SelectBoxEditor;
 
 /***/ },
@@ -58048,7 +58081,7 @@ webpackJsonp([1],[
 	                    _iteratorError = undefined;
 	                    _context4.prev = 9;
 	                    _loop3 = regeneratorRuntime.mark(function _loop3() {
-	                        var propertyName, transientValue, value, change;
+	                        var propertyName, transientValue, initialValue, value, change;
 	                        return regeneratorRuntime.wrap(function _loop3$(_context3) {
 	                            while (1) {
 	                                switch (_context3.prev = _context3.next) {
@@ -58058,9 +58091,9 @@ webpackJsonp([1],[
 	
 	                                        //
 	                                        // Try to run all hooks on the transient value
-	                                        //
 	
-	                                        _context3.next = 4;
+	                                        initialValue = Promise.resolve(transientValue.value);
+	                                        _context3.next = 5;
 	                                        return transientValue.hooks ? Object.keys(transientValue.hooks).reduce(function (valueAsPromise, hookIdentifier) {
 	                                            var hookFn = inspectorRegistry.get('saveHooks').get(hookIdentifier);
 	
@@ -58072,9 +58105,9 @@ webpackJsonp([1],[
 	                                                    throw e;
 	                                                }
 	                                            });
-	                                        }, Promise.resolve(transientValue.value)) : transientValue.value;
+	                                        }, initialValue) : initialValue;
 	
-	                                    case 4:
+	                                    case 5:
 	                                        value = _context3.sent;
 	
 	
@@ -58091,10 +58124,10 @@ webpackJsonp([1],[
 	                                        // Then persist the final value
 	                                        //
 	
-	                                        _context3.next = 8;
+	                                        _context3.next = 9;
 	                                        return (0, _effects.put)(_neosUiReduxStore.actions.Changes.persistChange(change));
 	
-	                                    case 8:
+	                                    case 9:
 	                                    case 'end':
 	                                        return _context3.stop();
 	                                }
@@ -59811,7 +59844,7 @@ webpackJsonp([1],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"wrapper":"style__wrapper___VACWv reset__reset___3moMU","dropDown":"style__dropDown___C3NA_ reset__reset___3moMU","dropDown__btn":"style__dropDown__btn___3AQcO reset__reset___3moMU","dropDown__btnIcon":"style__dropDown__btnIcon___gPnZd reset__reset___3moMU","dropDown__contents":"style__dropDown__contents___2BzGW reset__reset___3moMU","dropDown__item":"style__dropDown__item___2ODVB reset__reset___3moMU","dropDown__itemIcon":"style__dropDown__itemIcon___3TKvU reset__reset___3moMU"};
+	module.exports = {"wrapper":"style__wrapper___VACWv reset__reset___3moMU","dropDown":"style__dropDown___C3NA_ reset__reset___3moMU","dropDown__btn":"style__dropDown__btn___3AQcO reset__reset___3moMU","dropDown__btnIcon":"style__dropDown__btnIcon___gPnZd reset__reset___3moMU","dropDown__btnDelete":"style__dropDown__btnDelete___3AB5v reset__reset___3moMU","dropDown__contents":"style__dropDown__contents___2BzGW reset__reset___3moMU","dropDown__item":"style__dropDown__item___2ODVB reset__reset___3moMU","dropDown__itemIcon":"style__dropDown__itemIcon___3TKvU reset__reset___3moMU"};
 
 /***/ },
 /* 640 */
@@ -86870,6 +86903,12 @@ webpackJsonp([1],[
 	        _this.filterOption = _this.filterOption.bind(_this);
 	        _this.renderOption = _this.renderOption.bind(_this);
 	        _this.handleOnInputClick = _this.handleOnInputClick.bind(_this);
+	        _this.handleDeleteClick = function (e) {
+	            e.preventDefault();
+	            e.stopPropagation();
+	
+	            _this.props.onDelete();
+	        };
 	        _this.handleOnInputChange = _this.handleOnInputChange.bind(_this);
 	        _this.handleOptionsLoad = _this.handleOptionsLoad.bind(_this);
 	        return _this;
@@ -86904,14 +86943,15 @@ webpackJsonp([1],[
 	                InputComponent = _props.InputComponent,
 	                placeholder = _props.placeholder,
 	                placeholderIcon = _props.placeholderIcon,
-	                theme = _props.theme;
+	                theme = _props.theme,
+	                onDelete = _props.onDelete;
 	            var _state = this.state,
 	                icon = _state.icon,
 	                label = _state.label,
 	                _state$searchValue = _state.searchValue,
 	                searchValue = _state$searchValue === undefined ? '' : _state$searchValue;
 	
-	            return _react2.default.createElement('div', { className: theme.wrapper }, _react2.default.createElement(DropDownComponent, { className: theme.dropDown }, _react2.default.createElement(DropDownComponent.Header, { className: theme.dropDown__btn, shouldKeepFocusState: false }, icon || placeholderIcon ? _react2.default.createElement(IconComponent, { className: theme.dropDown__btnIcon, icon: icon || placeholderIcon }) : null, _react2.default.createElement('span', null, label || placeholder)), _react2.default.createElement(DropDownComponent.Contents, { className: theme.dropDown__contents }, this.isSearchEnabled() ? _react2.default.createElement('li', { className: theme.dropDown__item }, _react2.default.createElement(InputComponent, {
+	            return _react2.default.createElement('div', { className: theme.wrapper }, _react2.default.createElement(DropDownComponent, { className: theme.dropDown }, _react2.default.createElement(DropDownComponent.Header, { className: theme.dropDown__btn, shouldKeepFocusState: false }, icon || placeholderIcon ? _react2.default.createElement(IconComponent, { className: theme.dropDown__btnIcon, icon: icon || placeholderIcon }) : null, _react2.default.createElement('span', null, label || placeholder), onDelete ? _react2.default.createElement('a', { href: '', onClick: this.handleDeleteClick, className: theme.dropDown__btnDelete }, _react2.default.createElement(IconComponent, { icon: 'close' })) : null), _react2.default.createElement(DropDownComponent.Contents, { className: theme.dropDown__contents }, this.isSearchEnabled() ? _react2.default.createElement('li', { className: theme.dropDown__item }, _react2.default.createElement(InputComponent, {
 	                value: searchValue,
 	                onClick: this.handleOnInputClick,
 	                onChange: this.handleOnInputChange
@@ -87110,6 +87150,12 @@ webpackJsonp([1],[
 	     * This prop gets called when an option was selected. It returns the new value.
 	     */
 	    onSelect: _react.PropTypes.func.isRequired,
+	
+	    /**
+	     * If passed, a `delete` icon will be rendered instead of a chevron,
+	     * this prop will be called when clicking on the icon.
+	     */
+	    onDelete: _react.PropTypes.func,
 	
 	    /**
 	     * An optional css theme to be injected.
