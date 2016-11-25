@@ -56286,7 +56286,11 @@ webpackJsonp([1],[
 	                { className: _style2.default.inspector },
 	                _react2.default.createElement(
 	                    _Tabs2.default,
-	                    null,
+	                    {
+	                        theme: {
+	                            tabs__content: _style2.default.tabs // eslint-disable-line camelcase
+	                        }
+	                    },
 	                    viewConfiguration.tabs
 	                    //
 	                    // Only display tabs, that have groups
@@ -59667,7 +59671,7 @@ webpackJsonp([1],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"inspector":"style__inspector___1yy6N","discardBtn":"style__discardBtn___3eipq","publishBtn":"style__publishBtn___1V7bx"};
+	module.exports = {"inspector":"style__inspector___1yy6N","discardBtn":"style__discardBtn___3eipq","publishBtn":"style__publishBtn___1V7bx","tabs":"style__tabs___1OALF"};
 
 /***/ },
 /* 620 */

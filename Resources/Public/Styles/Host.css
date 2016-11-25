@@ -3119,6 +3119,7 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 }
 .style__inspectorTabPanel___2z7Yl {
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
 }
 .style__inspector___1yy6N {
@@ -3136,6 +3137,9 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 }
 .style__publishBtn___1V7bx:hover {
     background: #00a338 !important;
+}
+.style__tabs___1OALF > div {
+    height: 100%;
 }
 .style__dialog___3StDd {
     position: fixed;
