@@ -47804,18 +47804,23 @@ webpackJsonp([1],[
 	            this.props.renderSecondaryInspector(undefined, undefined);
 	        }
 	    }, {
+	        key: 'getValue',
+	        value: function getValue() {
+	            return this.props.value ? this.props.value : {};
+	        }
+	    }, {
 	        key: 'onRemoveFile',
 	        value: function onRemoveFile() {
-	            var _props3 = this.props,
-	                commit = _props3.commit,
-	                value = _props3.value;
+	            var commit = this.props.commit;
 	
+	            var value = this.getValue();
+	            var newAsset = (0, _plowJs.$set)('__identity', '', value);
 	
 	            this.handleCloseSecondaryScreen();
 	            this.setState({
 	                image: null
 	            }, function () {
-	                commit((0, _plowJs.$set)('__identity', '', value));
+	                commit(newAsset);
 	            });
 	        }
 	    }, {
@@ -47823,10 +47828,9 @@ webpackJsonp([1],[
 	        value: function onMediaSelected(assetIdentifier) {
 	            var _this4 = this;
 	
-	            var _props4 = this.props,
-	                commit = _props4.commit,
-	                value = _props4.value;
+	            var commit = this.props.commit;
 	
+	            var value = this.getValue();
 	            var newAsset = (0, _plowJs.$set)('__identity', assetIdentifier, value);
 	
 	            this.setState({
@@ -47867,9 +47871,9 @@ webpackJsonp([1],[
 	
 	            var uploadAsset = _neosUiBackendConnector2.default.get().endpoints.uploadAsset;
 	
-	            var _props5 = this.props,
-	                commit = _props5.commit,
-	                siteNodePath = _props5.siteNodePath;
+	            var _props3 = this.props,
+	                commit = _props3.commit,
+	                siteNodePath = _props3.siteNodePath;
 	
 	
 	            var siteNodeName = siteNodePath.match(/\/sites\/([^/@]*)/)[1];
