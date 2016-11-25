@@ -32,6 +32,10 @@
     width: 100%;
     height: 100%;
 }
+.style__markHoveredNodeAsHovered___2CuH3 {
+    outline-offset: .5em;
+    outline: 2px solid rgba(0,0,0, .2);
+}
 .reset__reset___3moMU {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
@@ -2146,9 +2150,6 @@
 .style__markActiveNodeAsFocused--focusedNode___1D7w3 {
     outline-offset: .5em;
     outline: 2px solid #00ADEE;
-}.style__markHoveredNodeAsHovered___1f9lj {
-    outline-offset: .5em;
-    outline: 2px solid rgba(0,0,0, .2);
 }.style__addEmptyContentCollectionOverlay___EkXSa {
     height: 20px;
     outline: 2px solid #adadad;
