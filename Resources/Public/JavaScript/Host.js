@@ -19055,6 +19055,8 @@ webpackJsonp([1],[
 	
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
 	var ADD = '@neos/neos-ui/Transient/Nodes/ADD';
 	var FOCUS = '@neos/neos-ui/Transient/Nodes/FOCUS';
 	var UNFOCUS = '@neos/neos-ui/Transient/Nodes/UNFOCUS';
@@ -19071,14 +19073,10 @@ webpackJsonp([1],[
 	/**
 	 * Adds a node to the application state
 	 *
-	 * @param {String} contextPath The context path of the ndoe
-	 * @param {Object} data        The node's data
+	 * @param {Object} nodeMap A map of nodes, with contextPaths as key
 	 */
-	var add = (0, _reduxActions.createAction)(ADD, function (contextPath, data) {
-	    return {
-	        contextPath: contextPath,
-	        data: data
-	    };
+	var add = (0, _reduxActions.createAction)(ADD, function (nodeMap) {
+	    return { nodeMap: nodeMap };
 	});
 	
 	/**
@@ -19118,15 +19116,16 @@ webpackJsonp([1],[
 	        })
 	    }));
 	}), _defineProperty(_handleActions, ADD, function (_ref) {
-	    var contextPath = _ref.contextPath,
-	        data = _ref.data;
-	    return function (state) {
+	    var nodeMap = _ref.nodeMap;
+	    return _plowJs.$all.apply(undefined, _toConsumableArray(Object.keys(nodeMap).map(function (contextPath) {
+	        return (0, _plowJs.$set)(['cr', 'nodes', 'byContextPath', contextPath], _immutable2.default.fromJS(
+	        //
 	        // the data is passed from *the guest iFrame*. Because of this, at least in Chrome, Immutable.fromJS() does not do anything;
 	        // as the object has a different prototype than the default "Object". For this reason, we need to JSON-encode-and-decode
 	        // the data, to scope it relative to *this* frame.
-	        data = JSON.parse(JSON.stringify(data));
-	        return (0, _plowJs.$set)(['cr', 'nodes', 'byContextPath', contextPath], _immutable2.default.fromJS(data), state);
-	    };
+	        //
+	        JSON.parse(JSON.stringify(nodeMap[contextPath]))));
+	    })));
 	}), _defineProperty(_handleActions, FOCUS, function (_ref2) {
 	    var contextPath = _ref2.contextPath,
 	        typoscriptPath = _ref2.typoscriptPath;
@@ -51946,7 +51945,7 @@ webpackJsonp([1],[
 	    setActiveDimensions: _neosUiReduxStore.actions.CR.ContentDimensions.setActive,
 	    formattingUnderCursor: _neosUiReduxStore.actions.UI.ContentCanvas.formattingUnderCursor,
 	    setCurrentlyEditedPropertyName: _neosUiReduxStore.actions.UI.ContentCanvas.setCurrentlyEditedPropertyName,
-	    addNode: _neosUiReduxStore.actions.CR.Nodes.add,
+	    addNodes: _neosUiReduxStore.actions.CR.Nodes.add,
 	    focusNode: _neosUiReduxStore.actions.CR.Nodes.focus,
 	    unFocusNode: _neosUiReduxStore.actions.CR.Nodes.unFocus,
 	    persistChange: _neosUiReduxStore.actions.Changes.persistChange
@@ -52033,7 +52032,7 @@ webpackJsonp([1],[
 	                setContextPath = _props3.setContextPath,
 	                setPreviewUrl = _props3.setPreviewUrl,
 	                setActiveDimensions = _props3.setActiveDimensions,
-	                addNode = _props3.addNode,
+	                addNodes = _props3.addNodes,
 	                formattingUnderCursor = _props3.formattingUnderCursor,
 	                setCurrentlyEditedPropertyName = _props3.setCurrentlyEditedPropertyName,
 	                unFocusNode = _props3.unFocusNode,
@@ -52052,10 +52051,7 @@ webpackJsonp([1],[
 	            // TODO: convert to single action: "guestFrameChange"
 	
 	            // Add nodes before setting the new context path to prevent action ordering issues
-	            Object.keys(documentInformation.nodes).forEach(function (contextPath) {
-	                var node = documentInformation.nodes[contextPath];
-	                addNode(contextPath, node);
-	            });
+	            addNodes(documentInformation.nodes);
 	
 	            setContextPath(documentInformation.metaData.contextPath);
 	            setPreviewUrl(documentInformation.metaData.previewUrl);
@@ -52174,7 +52170,7 @@ webpackJsonp([1],[
 	    setContextPath: _react.PropTypes.func.isRequired,
 	    setPreviewUrl: _react.PropTypes.func.isRequired,
 	    setActiveDimensions: _react.PropTypes.func.isRequired,
-	    addNode: _react.PropTypes.func.isRequired,
+	    addNodes: _react.PropTypes.func.isRequired,
 	    formattingUnderCursor: _react.PropTypes.func.isRequired,
 	    setCurrentlyEditedPropertyName: _react.PropTypes.func.isRequired,
 	    focusNode: _react.PropTypes.func.isRequired,
@@ -58327,11 +58323,12 @@ webpackJsonp([1],[
 	                        break;
 	                    }
 	
-	                    nodes = parentNodes.concat(childNodes);
+	                    nodes = parentNodes.concat(childNodes).reduce(function (nodeMap, node) {
+	                        nodeMap[node.contextPath] = node;
+	                        return nodeMap;
+	                    }, {});
 	                    _context3.next = 29;
-	                    return nodes.map(function (node) {
-	                        return (0, _effects.put)(_neosUiReduxStore.actions.CR.Nodes.add(node.contextPath, node));
-	                    });
+	                    return (0, _effects.put)(_neosUiReduxStore.actions.CR.Nodes.add(nodes));
 	
 	                case 29:
 	                    if (!unCollapse) {
