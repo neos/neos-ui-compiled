@@ -53008,11 +53008,17 @@ webpackJsonp([1],[
 	    _createClass(AddNode, [{
 	        key: 'render',
 	        value: function render() {
+	            var _props = this.props,
+	                focusedNode = _props.focusedNode,
+	                className = _props.className;
+	
+	
 	            return _react2.default.createElement(
 	                'span',
 	                null,
 	                _react2.default.createElement(_IconButton2.default, {
-	                    className: this.props.className,
+	                    isDisabled: Boolean(focusedNode) === false,
+	                    className: className,
 	                    icon: 'plus',
 	                    onClick: this.handleOpenModalBtnClick
 	                })
@@ -53021,9 +53027,9 @@ webpackJsonp([1],[
 	    }, {
 	        key: 'handleOpenModalBtnClick',
 	        value: function handleOpenModalBtnClick() {
-	            var _props = this.props,
-	                openAddNodeModal = _props.openAddNodeModal,
-	                focusedNode = _props.focusedNode;
+	            var _props2 = this.props,
+	                openAddNodeModal = _props2.openAddNodeModal,
+	                focusedNode = _props2.focusedNode;
 	
 	
 	            openAddNodeModal(focusedNode, 'insert');
