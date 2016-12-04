@@ -17,6 +17,9 @@
 .style__contentCanvas--isFringeRight___1s4o5 {
     padding-right: 0;
 }
+.style__contentCanvas--isMovedDown___Psbhw {
+    padding: 192px 320px 0; /* height of EditModePanel added */
+}
 .style__contentCanvas--isFullScreen___2UVnV {
     padding: 0;
 }
@@ -2161,6 +2164,46 @@
 .style__inlineUi___uWnAM a {
     color: #fff;
 }
+.style__editModePanel___s4KDK {
+    position: absolute;
+    top: 41px; /*-70px;*/
+    left: 0;
+    padding: 0 320px;
+    width: 100%;
+    height: 110px;
+    background: #141414;
+    transition: .2s ease padding;
+    will-change: padding;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+}
+.style__editModePanel___s4KDK:before,
+    .style__editModePanel___s4KDK:after {
+    content: '';
+    display: table;
+}
+.style__editModePanel___s4KDK:after {
+    clear: both;
+}
+.style__editModePanel--isFringeLeft___2ePEI {
+    padding-left: 0;
+}
+.style__editModePanel--isFringeRight___yMwjg {
+    padding-right: 40px;
+}
+.style__editModePanel--isHidden___2GCN5 {
+    display: none;
+}
+.style__editModePanel__editingModes___1mO9a,
+.style__editModePanel__previewCentral___2UAFw {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    padding: 0 1rem;
+}
 .style__dropDown___29Yzq {
     position: relative;
     display: inline-block;
@@ -2373,6 +2416,9 @@
 }
 .style__secondaryToolbar___1MGlE:after {
     clear: both;
+}
+.style__secondaryToolbar--isMovedDown___32EFe {
+    top: 151px; /* height of EditModePanel added */
 }
 .style__secondaryToolbar--isFringeLeft___37_ab {
     padding-left: 0;
@@ -2783,6 +2829,11 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     color: #00ADEE;
 }
 .style__btn--isActive___3bVXS {
+    transform: translateY(1px);
+    padding-bottom: 2px;
+    color: #00ADEE;
+}
+.style__btn--isActive___3kb2- {
     transform: translateY(1px);
     padding-bottom: 2px;
     color: #00ADEE;
