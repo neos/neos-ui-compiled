@@ -48579,36 +48579,36 @@ webpackJsonp([1],[
 	
 	    var createImageVariant = _neosUiBackendConnector2.default.get().endpoints.createImageVariant;
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/TextFieldEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/TextFieldEditor', {
 	        component: _index2.default
 	    });
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/TextAreaEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/TextAreaEditor', {
 	        component: _index2.default
 	    });
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/BooleanEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/BooleanEditor', {
 	        component: _index4.default,
 	        hasOwnLabel: true
 	    });
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/DateTimeEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/DateTimeEditor', {
 	        component: _index6.default
 	    });
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/ImageEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/ImageEditor', {
 	        component: _index8.default
 	    });
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/SelectBoxEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/SelectBoxEditor', {
 	        component: _index10.default
 	    });
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/LinkEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/LinkEditor', {
 	        component: _index12.default
 	    });
 	
-	    editorsRegistry.add('TYPO3.Neos/Inspector/Editors/NodeTypeEditor', {
+	    editorsRegistry.add('Neos.Neos/Inspector/Editors/NodeTypeEditor', {
 	        component: _index14.default
 	    });
 	
@@ -51654,8 +51654,8 @@ webpackJsonp([1],[
 	(0, _neosUiExtensibility2.default)('validators', {}, function (globalRegistry) {
 	    var validatorRegistry = globalRegistry.get('validators');
 	
-	    validatorRegistry.add('TYPO3.Neos/Validation/NotEmptyValidator', _index2.default);
-	    validatorRegistry.add('TYPO3.Neos/Validation/StringLengthValidator', _index4.default);
+	    validatorRegistry.add('Neos.Neos/Validation/NotEmptyValidator', _index2.default);
+	    validatorRegistry.add('Neos.Neos/Validation/StringLengthValidator', _index4.default);
 	});
 
 /***/ },
