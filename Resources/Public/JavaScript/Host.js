@@ -52517,12 +52517,12 @@ webpackJsonp([1],[
 	        var domBounds = nodeElement.getBoundingClientRect();
 	
 	        return {
-	            x: domBounds.left - bodyBounds.left,
-	            y: domBounds.top - bodyBounds.top
+	            top: domBounds.top - bodyBounds.top,
+	            right: bodyBounds.right - domBounds.right
 	        };
 	    }
 	
-	    return { x: 0, y: 0 };
+	    return { top: 0, right: 0 };
 	};
 	
 	var NodeToolbar = (_temp = _class = function (_PureComponent) {
@@ -52564,14 +52564,14 @@ webpackJsonp([1],[
 	            };
 	
 	            var _position = position(contextPath, fusionPath),
-	                x = _position.x,
-	                y = _position.y;
+	                top = _position.top,
+	                right = _position.right;
 	
 	            var classNames = (0, _classnames2.default)(_defineProperty({}, _style2.default.toolBar, true));
 	
 	            return _react2.default.createElement(
 	                'div',
-	                { className: classNames, style: { top: y - 50, left: x } },
+	                { className: classNames, style: { top: top - 50, right: right } },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: _style2.default.toolBar__btnGroup },
