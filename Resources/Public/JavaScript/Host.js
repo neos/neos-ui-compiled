@@ -51097,6 +51097,7 @@ webpackJsonp([1],[
 	                contextPath: _contextPath,
 	                label: label,
 	                uri: uri,
+	                nodeType: node.nodeType,
 	                isActive: _contextPath === activeNodeContextPath,
 	                isFocused: _contextPath === focusedNodeContextPath,
 	                isCollapsed: !uncollapsedNodeContextPaths.contains(_contextPath),
@@ -57582,7 +57583,7 @@ webpackJsonp([1],[
 	                    // Only display tabs, that have groups
 	                    //
 	                    .filter(function (t) {
-	                        return t.groups;
+	                        return t.groups && t.groups.length;
 	                    })
 	
 	                    //
