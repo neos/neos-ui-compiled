@@ -157,14 +157,15 @@ webpackJsonp([1],[
 	                    nodeTypesRegistry.setConstraints(nodeTypes.constraints);
 	                    nodeTypesRegistry.setInheritanceMap(nodeTypes.inheritanceMap);
 	                    nodeTypesRegistry.setGroups(nodeTypes.groups);
+	                    nodeTypesRegistry.setRoles(nodeTypes.roles);
 	
 	                    //
 	                    // Load frontend configuration (edit/preview modes)
 	                    //
-	                    _context.next = 19;
+	                    _context.next = 20;
 	                    return system.getFrontendConfiguration;
 	
-	                case 19:
+	                case 20:
 	                    frontendConfiguration = _context.sent;
 	                    editPreviewModesRegistry = globalRegistry.get('editPreviewModes');
 	
@@ -176,37 +177,37 @@ webpackJsonp([1],[
 	                    //
 	                    // Hydrate server state
 	                    //
-	                    _context.next = 24;
+	                    _context.next = 25;
 	                    return system.getServerState;
 	
-	                case 24:
+	                case 25:
 	                    serverState = _context.sent;
-	                    _context.next = 27;
+	                    _context.next = 28;
 	                    return (0, _effects.put)(_neosUiReduxStore.actions.System.init(serverState));
 	
-	                case 27:
-	                    _context.next = 29;
+	                case 28:
+	                    _context.next = 30;
 	                    return (0, _utilsHelpers.delay)(0);
 	
-	                case 29:
-	                    _context.next = 31;
+	                case 30:
+	                    _context.next = 32;
 	                    return (0, _effects.put)(_neosUiReduxStore.actions.System.ready());
 	
-	                case 31:
-	                    _context.next = 33;
+	                case 32:
+	                    _context.next = 34;
 	                    return system.getMenu;
 	
-	                case 33:
+	                case 34:
 	                    menu = _context.sent;
-	                    _context.next = 36;
+	                    _context.next = 37;
 	                    return system.getConfiguration;
 	
-	                case 36:
+	                case 37:
 	                    configuration = _context.sent;
-	                    _context.next = 39;
+	                    _context.next = 40;
 	                    return system.getTranslations;
 	
-	                case 39:
+	                case 40:
 	                    translations = _context.sent;
 	
 	
@@ -221,7 +222,7 @@ webpackJsonp([1],[
 	                        store: store
 	                    }), appContainer);
 	
-	                case 41:
+	                case 42:
 	                case 'end':
 	                    return _context.stop();
 	            }
@@ -5471,7 +5472,7 @@ webpackJsonp([1],[
 	
 	    translations: _react.PropTypes.object.isRequired
 	}, _class2.defaultProps = {
-	    packageKey: 'TYPO3.Neos',
+	    packageKey: 'Neos.Neos',
 	    sourceName: 'Main',
 	    params: {}
 	}, _temp)) || _class);
@@ -46785,7 +46786,7 @@ webpackJsonp([1],[
 	            args[_key] = arguments[_key];
 	        }
 	
-	        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = NodeTypesRegistry.__proto__ || Object.getPrototypeOf(NodeTypesRegistry)).call.apply(_ref, [this].concat(args))), _this), _this._constraints = [], _this._inheritanceMap = [], _this._groups = [], _this._inspectorViewConfigurationCache = {}, _temp), _possibleConstructorReturn(_this, _ret);
+	        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = NodeTypesRegistry.__proto__ || Object.getPrototypeOf(NodeTypesRegistry)).call.apply(_ref, [this].concat(args))), _this), _this._constraints = [], _this._inheritanceMap = [], _this._groups = [], _this._roles = [], _this._inspectorViewConfigurationCache = {}, _temp), _possibleConstructorReturn(_this, _ret);
 	    }
 	
 	    _createClass(NodeTypesRegistry, [{
@@ -46802,6 +46803,21 @@ webpackJsonp([1],[
 	        key: 'setGroups',
 	        value: function setGroups(groups) {
 	            this._groups = groups;
+	        }
+	    }, {
+	        key: 'setRoles',
+	        value: function setRoles(roles) {
+	            this._roles = roles;
+	        }
+	    }, {
+	        key: 'getRole',
+	        value: function getRole(roleName) {
+	            return this._roles[roleName];
+	        }
+	    }, {
+	        key: 'hasRole',
+	        value: function hasRole(nodeTypeName, roleName) {
+	            return this.isOfType(nodeTypeName, this.getRole(roleName));
 	        }
 	    }, {
 	        key: 'getAllowedChildNodeTypes',
@@ -46851,7 +46867,7 @@ webpackJsonp([1],[
 	            return Object.keys(groups).map(function (i) {
 	                if (groups[i].nodeTypes) {
 	                    groups[i].nodeTypes.sort(function (a, b) {
-	                        return a.ui.position > b.ui.position ? 1 : -1;
+	                        return (0, _plowJs.$get)('ui.position', a) > (0, _plowJs.$get)('ui.position', b) ? 1 : -1;
 	                    });
 	                }
 	                groups[i].name = i;
@@ -46859,7 +46875,7 @@ webpackJsonp([1],[
 	            }).filter(function (i) {
 	                return i.nodeTypes;
 	            }).sort(function (a, b) {
-	                return a.position > b.position ? 1 : -1;
+	                return (0, _plowJs.$get)('position', a) > (0, _plowJs.$get)('position', b) ? 1 : -1;
 	            });
 	        }
 	    }, {
@@ -47222,7 +47238,7 @@ webpackJsonp([1],[
 	                        style: 'lighter',
 	                        onClick: onChooseFromMedia
 	                    },
-	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:media', fallback: 'Media' })
+	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'Neos.Neos:Main:media', fallback: 'Media' })
 	                ),
 	                _react2.default.createElement(
 	                    _Button2.default,
@@ -47231,7 +47247,7 @@ webpackJsonp([1],[
 	                        style: 'lighter',
 	                        onClick: onChooseFromLocalFileSystem
 	                    },
-	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Modules:media.chooseFile', fallback: 'Choose file' })
+	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'Neos.Neos:Modules:media.chooseFile', fallback: 'Choose file' })
 	                ),
 	                _react2.default.createElement(
 	                    _Button2.default,
@@ -47240,7 +47256,7 @@ webpackJsonp([1],[
 	                        style: 'lighter',
 	                        onClick: onRemove
 	                    },
-	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:remove', fallback: 'Remove' })
+	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'Neos.Neos:Main:remove', fallback: 'Remove' })
 	                )
 	            );
 	        }
@@ -47259,7 +47275,7 @@ webpackJsonp([1],[
 	                        className: _style2.default.cropButton,
 	                        onClick: onCrop
 	                    },
-	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:crop', fallback: 'Crop' })
+	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'Neos.Neos:Main:crop', fallback: 'Crop' })
 	                );
 	            }
 	
@@ -47375,7 +47391,7 @@ webpackJsonp([1],[
 	                        { className: _style2.default.cropArea, style: thumbnail ? thumbnail.styles.cropArea : {} },
 	                        _react2.default.createElement('img', {
 	                            className: _style2.default.cropArea__image,
-	                            src: thumbnail ? thumbnail.uri : '/_Resources/Static/Packages/TYPO3.Neos/Images/dummy-image.svg',
+	                            src: thumbnail ? thumbnail.uri : '/_Resources/Static/Packages/Neos.Neos/Images/dummy-image.svg',
 	                            style: thumbnail ? thumbnail.styles.thumbnail : {},
 	                            role: 'presentation'
 	                        })
@@ -47755,7 +47771,7 @@ webpackJsonp([1],[
 	                sourceImage = _props3.sourceImage,
 	                onComplete = _props3.onComplete;
 	
-	            var src = sourceImage.previewUri || '/_Resources/Static/Packages/TYPO3.Neos/Images/dummy-image.svg';
+	            var src = sourceImage.previewUri || '/_Resources/Static/Packages/Neos.Neos/Images/dummy-image.svg';
 	
 	            return _react2.default.createElement(
 	                'div',
@@ -47838,7 +47854,7 @@ webpackJsonp([1],[
 	        }
 	    };
 	
-	    var uri = '/neos/content/images/edit.html?asset[__identity]=' + props.imageIdentity;
+	    var uri = '/neos/module/media/browser/image/edit.html?asset[__identity]=' + props.imageIdentity;
 	
 	    return _react2.default.createElement('iframe', { src: uri, className: _style2.default.iframe });
 	};
@@ -47878,7 +47894,7 @@ webpackJsonp([1],[
 	    };
 	
 	    // TODO: hard-coded url
-	    return _react2.default.createElement('iframe', { src: '/neos/content/images.html', className: _style2.default.iframe });
+	    return _react2.default.createElement('iframe', { src: '/neos/module/media/browser/image.html', className: _style2.default.iframe });
 	};
 	MediaSelectionScreen.propTypes = {
 	    onComplete: _react.PropTypes.func.isRequired
@@ -49282,7 +49298,7 @@ webpackJsonp([1],[
 	
 	var makeGetDocumentNodes = exports.makeGetDocumentNodes = function makeGetDocumentNodes(nodeTypesRegistry) {
 	    return (0, _reselect.createSelector)([nodes], function (nodesMap) {
-	        var documentSubNodeTypes = nodeTypesRegistry.getSubTypesOf('TYPO3.Neos:Document');
+	        var documentSubNodeTypes = nodeTypesRegistry.getSubTypesOf(nodeTypesRegistry.getRole('document'));
 	
 	        return nodesMap.filter(function (node) {
 	            return documentSubNodeTypes.includes(node.get('nodeType'));
@@ -54802,7 +54818,7 @@ webpackJsonp([1],[
 	                    _Tree2.default.Node.Contents,
 	                    null,
 	                    item.children.map(function (contextPath) {
-	                        var node = getTreeNode(contextPath, nodeTypesRegistry.getSubTypesOf('TYPO3.Neos:Document'));
+	                        var node = getTreeNode(contextPath, nodeTypesRegistry.getSubTypesOf(nodeTypesRegistry.getRole('document')));
 	
 	                        if (!node) {
 	                            return null;
@@ -54972,7 +54988,7 @@ webpackJsonp([1],[
 	                );
 	            }
 	
-	            var siteNode = getTreeNode(siteNodeContextPath);
+	            var siteNode = getTreeNode(siteNodeContextPath, nodeTypesRegistry.getSubTypesOf(nodeTypesRegistry.getRole('document')));
 	            var siteNodeIcon = (0, _plowJs.$get)('ui.icon', nodeTypesRegistry.get(siteNode.nodeType));
 	
 	            if (siteNode) {
@@ -55640,8 +55656,8 @@ webpackJsonp([1],[
 	                        className: _style2.default.nodeType,
 	                        onClick: this.handleNodeTypeClick
 	                    },
-	                    _react2.default.createElement(_Icon2.default, { icon: ui.icon, className: _style2.default.nodeType__icon, padded: 'right' }),
-	                    _react2.default.createElement(_neosUiI18n2.default, { id: ui.label, fallback: ui.label })
+	                    _react2.default.createElement(_Icon2.default, { icon: (0, _plowJs.$get)('icon', ui), className: _style2.default.nodeType__icon, padded: 'right' }),
+	                    _react2.default.createElement(_neosUiI18n2.default, { id: (0, _plowJs.$get)('label', ui), fallback: (0, _plowJs.$get)('label', ui) })
 	                )
 	            );
 	        }
@@ -55789,7 +55805,7 @@ webpackJsonp([1],[
 	                    hoverStyle: 'brand',
 	                    onClick: this.props.onHandleClose
 	                },
-	                _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:cancel', fallback: 'Cancel' })
+	                _react2.default.createElement(_neosUiI18n2.default, { id: 'Neos.Neos:Main:cancel', fallback: 'Cancel' })
 	            );
 	        }
 	    }, {
@@ -55907,7 +55923,7 @@ webpackJsonp([1],[
 	                    hoverStyle: 'brand',
 	                    onClick: this.props.onHandleBack
 	                },
-	                _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:back', fallback: 'Back' })
+	                _react2.default.createElement(_neosUiI18n2.default, { id: 'Neos.Neos:Main:back', fallback: 'Back' })
 	            );
 	        }
 	    }, {
@@ -55922,7 +55938,7 @@ webpackJsonp([1],[
 	                    hoverStyle: 'brand',
 	                    onClick: this.props.onHandleSave
 	                },
-	                _react2.default.createElement(_neosUiI18n2.default, { id: 'TYPO3.Neos:Main:createNew', fallback: 'Create' })
+	                _react2.default.createElement(_neosUiI18n2.default, { id: 'Neos.Neos:Main:createNew', fallback: 'Create' })
 	            );
 	        }
 	    }, {
@@ -59480,7 +59496,7 @@ webpackJsonp([1],[
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var _marked = [watchToggle, requestChildrenForContextPath, watchRequestChildrenForContextPath, watchNodeCreated, watchCommenceUncollapse, watchReloadTree].map(regeneratorRuntime.mark);
+	var _marked = [watchToggle, watchRequestChildrenForContextPath, watchNodeCreated, watchCommenceUncollapse, watchReloadTree].map(regeneratorRuntime.mark);
 	
 	function watchToggle() {
 	    return regeneratorRuntime.wrap(function watchToggle$(_context2) {
@@ -59533,104 +59549,105 @@ webpackJsonp([1],[
 	    }, _marked[0], this);
 	}
 	
-	function requestChildrenForContextPath(action) {
-	    var _action$payload, contextPath, opts, unCollapse, activate, _backend$get, q, parentNodes, childNodes, query, nodes;
-	
-	    return regeneratorRuntime.wrap(function requestChildrenForContextPath$(_context3) {
-	        while (1) {
-	            switch (_context3.prev = _context3.next) {
-	                case 0:
-	                    // ToDo Call yield put(actions.UI.PageTree.requestChildren(contextPath));
-	                    _action$payload = action.payload, contextPath = _action$payload.contextPath, opts = _action$payload.opts;
-	                    unCollapse = opts.unCollapse, activate = opts.activate;
-	                    _backend$get = _neosUiBackendConnector2.default.get(), q = _backend$get.q;
-	                    parentNodes = void 0;
-	                    childNodes = void 0;
-	                    _context3.next = 7;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.setAsLoading(contextPath));
-	
-	                case 7:
-	                    _context3.prev = 7;
-	                    query = q(contextPath);
-	                    _context3.next = 11;
-	                    return query.get();
-	
-	                case 11:
-	                    parentNodes = _context3.sent;
-	                    _context3.next = 14;
-	                    return query.children('[instanceof TYPO3.Neos:Document]').get();
-	
-	                case 14:
-	                    childNodes = _context3.sent;
-	                    _context3.next = 23;
-	                    break;
-	
-	                case 17:
-	                    _context3.prev = 17;
-	                    _context3.t0 = _context3['catch'](7);
-	                    _context3.next = 21;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.invalidate(contextPath));
-	
-	                case 21:
-	                    _context3.next = 23;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.FlashMessages.add('loadChildNodesError', _context3.t0.message, 'error'));
-	
-	                case 23:
-	                    _context3.next = 25;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.setAsLoaded(contextPath));
-	
-	                case 25:
-	                    if (!(childNodes && parentNodes)) {
-	                        _context3.next = 35;
-	                        break;
-	                    }
-	
-	                    nodes = parentNodes.concat(childNodes).reduce(function (nodeMap, node) {
-	                        nodeMap[node.contextPath] = node;
-	                        return nodeMap;
-	                    }, {});
-	                    _context3.next = 29;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.CR.Nodes.add(nodes));
-	
-	                case 29:
-	                    if (!unCollapse) {
-	                        _context3.next = 32;
-	                        break;
-	                    }
-	
-	                    _context3.next = 32;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.uncollapse(contextPath));
-	
-	                case 32:
-	                    if (!activate) {
-	                        _context3.next = 35;
-	                        break;
-	                    }
-	
-	                    _context3.next = 35;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.focus(contextPath));
-	
-	                case 35:
-	                case 'end':
-	                    return _context3.stop();
-	            }
-	        }
-	    }, _marked[1], this, [[7, 17]]);
-	}
-	
-	function watchRequestChildrenForContextPath() {
+	function watchRequestChildrenForContextPath(_ref) {
+	    var globalRegistry = _ref.globalRegistry;
+	    var nodeTypesRegistry;
 	    return regeneratorRuntime.wrap(function watchRequestChildrenForContextPath$(_context4) {
 	        while (1) {
 	            switch (_context4.prev = _context4.next) {
 	                case 0:
-	                    return _context4.delegateYield((0, _reduxSaga.takeEvery)(_neosUiReduxStore.actionTypes.UI.PageTree.REQUEST_CHILDREN, requestChildrenForContextPath), 't0', 1);
+	                    nodeTypesRegistry = globalRegistry.get('@neos-project/neos-ui-contentrepository');
+	                    return _context4.delegateYield((0, _reduxSaga.takeEvery)(_neosUiReduxStore.actionTypes.UI.PageTree.REQUEST_CHILDREN, regeneratorRuntime.mark(function requestChildrenForContextPath(action) {
+	                        var _action$payload, contextPath, opts, unCollapse, activate, _backend$get, q, parentNodes, childNodes, query, nodes;
 	
-	                case 1:
+	                        return regeneratorRuntime.wrap(function requestChildrenForContextPath$(_context3) {
+	                            while (1) {
+	                                switch (_context3.prev = _context3.next) {
+	                                    case 0:
+	                                        // ToDo Call yield put(actions.UI.PageTree.requestChildren(contextPath));
+	                                        _action$payload = action.payload, contextPath = _action$payload.contextPath, opts = _action$payload.opts;
+	                                        unCollapse = opts.unCollapse, activate = opts.activate;
+	                                        _backend$get = _neosUiBackendConnector2.default.get(), q = _backend$get.q;
+	                                        parentNodes = void 0;
+	                                        childNodes = void 0;
+	                                        _context3.next = 7;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.setAsLoading(contextPath));
+	
+	                                    case 7:
+	                                        _context3.prev = 7;
+	                                        query = q(contextPath);
+	                                        _context3.next = 11;
+	                                        return query.get();
+	
+	                                    case 11:
+	                                        parentNodes = _context3.sent;
+	                                        _context3.next = 14;
+	                                        return query.children('[instanceof ' + nodeTypesRegistry.getRole('document') + ']').get();
+	
+	                                    case 14:
+	                                        childNodes = _context3.sent;
+	                                        _context3.next = 23;
+	                                        break;
+	
+	                                    case 17:
+	                                        _context3.prev = 17;
+	                                        _context3.t0 = _context3['catch'](7);
+	                                        _context3.next = 21;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.invalidate(contextPath));
+	
+	                                    case 21:
+	                                        _context3.next = 23;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.UI.FlashMessages.add('loadChildNodesError', _context3.t0.message, 'error'));
+	
+	                                    case 23:
+	                                        _context3.next = 25;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.setAsLoaded(contextPath));
+	
+	                                    case 25:
+	                                        if (!(childNodes && parentNodes)) {
+	                                            _context3.next = 35;
+	                                            break;
+	                                        }
+	
+	                                        nodes = parentNodes.concat(childNodes).reduce(function (nodeMap, node) {
+	                                            nodeMap[node.contextPath] = node;
+	                                            return nodeMap;
+	                                        }, {});
+	                                        _context3.next = 29;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.CR.Nodes.add(nodes));
+	
+	                                    case 29:
+	                                        if (!unCollapse) {
+	                                            _context3.next = 32;
+	                                            break;
+	                                        }
+	
+	                                        _context3.next = 32;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.uncollapse(contextPath));
+	
+	                                    case 32:
+	                                        if (!activate) {
+	                                            _context3.next = 35;
+	                                            break;
+	                                        }
+	
+	                                        _context3.next = 35;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.UI.PageTree.focus(contextPath));
+	
+	                                    case 35:
+	                                    case 'end':
+	                                        return _context3.stop();
+	                                }
+	                            }
+	                        }, requestChildrenForContextPath, this, [[7, 17]]);
+	                    })), 't0', 2);
+	
+	                case 2:
 	                case 'end':
 	                    return _context4.stop();
 	            }
 	        }
-	    }, _marked[2], this);
+	    }, _marked[1], this);
 	}
 	
 	function watchNodeCreated() {
@@ -59661,11 +59678,11 @@ webpackJsonp([1],[
 	                    return _context6.stop();
 	            }
 	        }
-	    }, _marked[3], this);
+	    }, _marked[2], this);
 	}
 	
-	function watchCommenceUncollapse(_ref) {
-	    var globalRegistry = _ref.globalRegistry;
+	function watchCommenceUncollapse(_ref2) {
+	    var globalRegistry = _ref2.globalRegistry;
 	    var nodeTypesRegistry;
 	    return regeneratorRuntime.wrap(function watchCommenceUncollapse$(_context8) {
 	        while (1) {
@@ -59685,7 +59702,7 @@ webpackJsonp([1],[
 	                                        state = _context7.sent;
 	                                        contextPath = action.payload.contextPath;
 	                                        childrenAreFullyLoaded = (0, _plowJs.$get)(['cr', 'nodes', 'byContextPath', contextPath, 'children'], state).toJS().filter(function (childEnvelope) {
-	                                            return nodeTypesRegistry.isOfType(childEnvelope.nodeType, 'TYPO3.Neos:Document');
+	                                            return nodeTypesRegistry.hasRole(childEnvelope.nodeType, 'document');
 	                                        }).every(function (childEnvelope) {
 	                                            return Boolean((0, _plowJs.$get)(['cr', 'nodes', 'byContextPath', childEnvelope.contextPath], state));
 	                                        });
@@ -59719,7 +59736,7 @@ webpackJsonp([1],[
 	                    return _context8.stop();
 	            }
 	        }
-	    }, _marked[4], this);
+	    }, _marked[3], this);
 	}
 	
 	function watchReloadTree() {
@@ -59782,7 +59799,7 @@ webpackJsonp([1],[
 	                    return _context10.stop();
 	            }
 	        }
-	    }, _marked[5], this);
+	    }, _marked[4], this);
 	}
 	
 	var sagas = exports.sagas = [watchToggle, watchCommenceUncollapse, watchRequestChildrenForContextPath, watchNodeCreated, watchReloadTree];
@@ -60113,7 +60130,7 @@ webpackJsonp([1],[
 	    //
 	    var inspector = globalRegistry.add('inspector', new _registry.SynchronousMetaRegistry('\n        # Inspector specific registries\n\n        - \'editors\' for inspector editors\n        - \'saveHooks\' for configured side-effects after apply\n    '));
 	
-	    inspector.add('editors', new _registry.SynchronousRegistry('\n        Contains all inspector editors.\n\n        The key is an editor name (such as TYPO3.Neos/Inspector/Editors/SelectBoxEditor), and the values\n        are objects of the following form:\n            {\n                component: TextInput // the React editor component to use.\n\n                hasOwnLabel: true|false // does the component render the label internally, or not?\n            }\n\n        ## Component Wiring\n\n        Every component gets the following properties (see EditorEnvelope/index.js)\n\n        - identifier: an identifier which can be used for HTML ID generation\n        - label: the label\n        - node: the current node\n        - value: The value to display\n        - propertyName: Name of the property to edit (of the node)\n        - options: additional editor options\n        - commit: a callback function when the content changes.\n          - 1st argument: the new value\n          - 2nd argument (optional): an object whose keys are to-be-triggered *saveHooks*, and the values\n            are hook-specific options.\n            Example: {\'Neos.UI:Hook.BeforeSave.CreateImageVariant\': nextImage}\n        - renderSecondaryInspector(inspectorIdentifier, secondaryInspectorComponentFactory):\n          - 1st argument: a string identifier of the inspector; used to implement toggling of the inspector when calling this method twice.\n          - 2nd argument: a callback function which can be used to render the secondary inspector. The callback function should return the secondary inspector content itself; or "undefined/null" to close the secondary inspector.\n\n          Example usage: props.renderSecondaryInspector(\'IMAGE_CROPPING\', () => <MySecondaryInspectorContent />)\n\n    '));
+	    inspector.add('editors', new _registry.SynchronousRegistry('\n        Contains all inspector editors.\n\n        The key is an editor name (such as Neos.Neos/Inspector/Editors/SelectBoxEditor), and the values\n        are objects of the following form:\n            {\n                component: TextInput // the React editor component to use.\n\n                hasOwnLabel: true|false // does the component render the label internally, or not?\n            }\n\n        ## Component Wiring\n\n        Every component gets the following properties (see EditorEnvelope/index.js)\n\n        - identifier: an identifier which can be used for HTML ID generation\n        - label: the label\n        - node: the current node\n        - value: The value to display\n        - propertyName: Name of the property to edit (of the node)\n        - options: additional editor options\n        - commit: a callback function when the content changes.\n          - 1st argument: the new value\n          - 2nd argument (optional): an object whose keys are to-be-triggered *saveHooks*, and the values\n            are hook-specific options.\n            Example: {\'Neos.UI:Hook.BeforeSave.CreateImageVariant\': nextImage}\n        - renderSecondaryInspector(inspectorIdentifier, secondaryInspectorComponentFactory):\n          - 1st argument: a string identifier of the inspector; used to implement toggling of the inspector when calling this method twice.\n          - 2nd argument: a callback function which can be used to render the secondary inspector. The callback function should return the secondary inspector content itself; or "undefined/null" to close the secondary inspector.\n\n          Example usage: props.renderSecondaryInspector(\'IMAGE_CROPPING\', () => <MySecondaryInspectorContent />)\n\n    '));
 	
 	    inspector.add('saveHooks', new _registry.SynchronousRegistry('\n        Sometimes, it is needed to run code when the user presses "Apply" inside the Inspector.\n\n        Example: When the user cropped a new image, on Apply, a new imageVariant must be created on the server,\n        and then the identity of the new imageVariant must be stored inside the Value of the image.\n\n        The process is as follows:\n        - When an editor wants its value to be post-processed, it calls `props.commit(newValue, {hookName: hookOptions})`\n        - Then, when pressing Apply in the UI, the hookNames are resolved inside this `saveHooks` registry.\n\n        ## Hook Definitions\n\n        Every entry inside this registry is a function of the following signature:\n\n        (valueSoFar, hookOptions) => {\n            return new value,\n            can also return a new Promise.\n        }\n    '));
 	
@@ -60121,7 +60138,7 @@ webpackJsonp([1],[
 	    // Create validators registry
 	    //
 	
-	    globalRegistry.add('validators', new _registry.SynchronousRegistry('\n        Contains all validators.\n\n        The key is a validator name (such as TYPO3.Neos/Validation/NotEmptyValidator) and the values\n        are validator options.\n    '));
+	    globalRegistry.add('validators', new _registry.SynchronousRegistry('\n        Contains all validators.\n\n        The key is a validator name (such as Neos.Neos/Validation/NotEmptyValidator) and the values\n        are validator options.\n    '));
 	
 	    //
 	    // Create richtext editing toolbar registry
