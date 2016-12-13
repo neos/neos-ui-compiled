@@ -51893,6 +51893,12 @@ webpackJsonp([1],[
 	    _createClass(MarkActiveNodeAsFocused, [{
 	        key: 'render',
 	        value: function render() {
+	            var oldNode = _index.dom.find('.' + _style2.default['markActiveNodeAsFocused--focusedNode']);
+	
+	            if (oldNode) {
+	                oldNode.classList.remove(_style2.default['markActiveNodeAsFocused--focusedNode']);
+	            }
+	
 	            var _props = this.props,
 	                contextPath = _props.contextPath,
 	                fusionPath = _props.fusionPath;
@@ -51903,11 +51909,6 @@ webpackJsonp([1],[
 	            }
 	
 	            var nodeElement = _index.dom.findNode(contextPath, fusionPath);
-	            var oldNode = _index.dom.find('.' + _style2.default['markActiveNodeAsFocused--focusedNode']);
-	
-	            if (oldNode) {
-	                oldNode.classList.remove(_style2.default['markActiveNodeAsFocused--focusedNode']);
-	            }
 	
 	            if (nodeElement) {
 	                nodeElement.classList.add(_style2.default['markActiveNodeAsFocused--focusedNode']);
@@ -52656,10 +52657,6 @@ webpackJsonp([1],[
 	        value: function render() {
 	            var focused = this.props.focused;
 	
-	
-	            if (!(0, _plowJs.$get)('contextPath', focused)) {
-	                return null;
-	            }
 	
 	            return _react2.default.createElement(
 	                'div',
