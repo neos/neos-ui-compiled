@@ -2082,60 +2082,6 @@
 .style__btn--warnHover___3nRa2:hover {
     background-color: #ff8700;
 }
-.style__wrapper___21kws {
-    position: relative;
-    display: inline-block;
-}
-.style__wrapper__btn___1w0XQ {
-    position: relative;
-    width: 40px;
-}
-.style__wrapper__btnModeIcon___3ZtdZ {
-    position: absolute;
-    right: 4px;
-    bottom: 4px;
-    color: #00ADEE;
-}
-[disabled] > .style__wrapper__btnModeIcon___3ZtdZ {
-    opacity: 0;
-}
-.style__wrapper___21kws:hover .style__wrapper__btnIcon___2GSGP {
-    color: #00ADEE;
-}
-.style__wrapper__dropDown___q9BuP {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    display: none;
-    background: #222;
-    border: 1px solid #3f3f3f;
-    border-top: 0;
-}
-.style__wrapper__dropDown--isOpen___3p8m8 {
-    display: block;
-}
-.style__wrapper__dropDownItem___1TIy9 {
-    position: relative;
-    display: block;
-    width: calc(40px - 2px);
-    height: calc(40px - 2px);
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-}
-.style__wrapper__dropDownItem___1TIy9:hover {
-    color: #00ADEE;
-}
-.style__wrapper__dropDownItem___1TIy9:hover > * {
-    color: #00ADEE;
-}
-.style__wrapper__dropDownItem___1TIy9 > * {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
 .style__toolBar___1vKpl {
     position: absolute;
     border-bottom: 1px solid #3f3f3f;
@@ -3329,6 +3275,15 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 }
 .style__modalContents___1zQy0 {
     padding: 16px;
+}
+.style__modalTitle___M4cdz {
+    margin-left: 16px;
+}
+.style__modalContents___2yH5W {
+    padding: 16px;
+}
+.style__applyBtn___sAeF5 {
+    background: #00a338 !important;
 }
 .style__calendarInputWrapper___3EKou {
     display: table;
