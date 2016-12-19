@@ -30,7 +30,7 @@ webpackJsonp([1],[
 	
 	var _immutable = __webpack_require__(19);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiExtensibility = __webpack_require__(89);
 	
@@ -4592,8 +4592,7 @@ webpackJsonp([1],[
 /***/ },
 /* 4 */,
 /* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4668,6 +4667,7 @@ webpackJsonp([1],[
 	}, all);
 
 /***/ },
+/* 7 */,
 /* 8 */,
 /* 9 */,
 /* 10 */
@@ -19166,6 +19166,7 @@ webpackJsonp([1],[
 	var REMOVAL_CONFIRMED = '@neos/neos-ui/Transient/Nodes/REMOVAL_CONFIRMED';
 	var REMOVE = '@neos/neos-ui/Transient/Nodes/REMOVE';
 	var COPY = '@neos/neos-ui/Transient/Nodes/COPY';
+	var CUT = '@neos/neos-ui/Transient/Nodes/CUT';
 	var PASTE = '@neos/neos-ui/Transient/Nodes/PASTE';
 	
 	//
@@ -19180,6 +19181,7 @@ webpackJsonp([1],[
 	    REMOVAL_CONFIRMED: REMOVAL_CONFIRMED,
 	    REMOVE: REMOVE,
 	    COPY: COPY,
+	    CUT: CUT,
 	    PASTE: PASTE
 	};
 	
@@ -19246,6 +19248,15 @@ webpackJsonp([1],[
 	});
 	
 	/**
+	 * Mark a node for cut on paste
+	 *
+	 * @param {String} contextPath The context path of the node to be cut
+	 */
+	var cut = (0, _reduxActions.createAction)(CUT, function (contextPath) {
+	    return contextPath;
+	});
+	
+	/**
 	 * Paste the contents of the node clipboard
 	 *
 	 * @param {String} contextPath The context path of the target node
@@ -19267,6 +19278,7 @@ webpackJsonp([1],[
 	    confirmRemoval: confirmRemoval,
 	    remove: remove,
 	    copy: copy,
+	    cut: cut,
 	    paste: paste
 	};
 	
@@ -19313,6 +19325,8 @@ webpackJsonp([1],[
 	}), _defineProperty(_handleActions, REMOVE, function (contextPath) {
 	    return (0, _plowJs.$drop)(['cr', 'nodes', 'byContextPath', contextPath]);
 	}), _defineProperty(_handleActions, COPY, function (contextPath) {
+	    return (0, _plowJs.$set)('cr.nodes.clipboard', contextPath);
+	}), _defineProperty(_handleActions, CUT, function (contextPath) {
 	    return (0, _plowJs.$set)('cr.nodes.clipboard', contextPath);
 	}), _defineProperty(_handleActions, PASTE, function () {
 	    return (0, _plowJs.$set)('cr.nodes.clipboard', '');
@@ -48250,7 +48264,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _neosUiBackendConnector = __webpack_require__(72);
 	
@@ -48626,7 +48640,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -48636,7 +48650,7 @@ webpackJsonp([1],[
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _style = __webpack_require__(656);
 	
@@ -49097,7 +49111,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _reactPortal = __webpack_require__(431);
 	
@@ -52370,9 +52384,9 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -52456,13 +52470,13 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _IconButton = __webpack_require__(24);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -52540,15 +52554,19 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _class, _temp;
+	var _dec, _class, _class2, _temp;
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRedux = __webpack_require__(7);
+	
 	var _IconButton = __webpack_require__(24);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
+	
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -52558,7 +52576,13 @@ webpackJsonp([1],[
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var CutSelectedNode = (_temp = _class = function (_PureComponent) {
+	var CutSelectedNode = (_dec = (0, _reactRedux.connect)(function (state) {
+	    return {
+	        focusedNodeContextPath: _neosUiReduxStore.selectors.CR.Nodes.focusedNodePathSelector(state)
+	    };
+	}, {
+	    cutNode: _neosUiReduxStore.actions.CR.Nodes.cut
+	}), _dec(_class = (_temp = _class2 = function (_PureComponent) {
 	    _inherits(CutSelectedNode, _PureComponent);
 	
 	    function CutSelectedNode(props) {
@@ -52574,13 +52598,13 @@ webpackJsonp([1],[
 	        key: 'render',
 	        value: function render() {
 	            var _props = this.props,
-	                isDisabled = _props.isDisabled,
+	                focusedNodeContextPath = _props.focusedNodeContextPath,
 	                className = _props.className;
 	
 	
 	            return _react2.default.createElement(_IconButton2.default, {
 	                className: className,
-	                isDisabled: isDisabled,
+	                isDisabled: !focusedNodeContextPath,
 	                onClick: this.handleCutSelectedNodeClick,
 	                icon: 'cut',
 	                hoverStyle: 'clean'
@@ -52589,17 +52613,22 @@ webpackJsonp([1],[
 	    }, {
 	        key: 'cutSelectedNode',
 	        value: function cutSelectedNode() {
-	            console.log('cut selected node');
+	            var _props2 = this.props,
+	                focusedNodeContextPath = _props2.focusedNodeContextPath,
+	                cutNode = _props2.cutNode;
+	
+	
+	            cutNode(focusedNodeContextPath);
 	        }
 	    }]);
 	
 	    return CutSelectedNode;
-	}(_react.PureComponent), _class.propTypes = {
-	    isDisabled: _react.PropTypes.bool,
-	    className: _react.PropTypes.string
-	}, _class.defaultProps = {
-	    isDisabled: true
-	}, _temp);
+	}(_react.PureComponent), _class2.propTypes = {
+	    className: _react.PropTypes.string,
+	    focusedNodeContextPath: _react.PropTypes.string,
+	
+	    cutNode: _react.PropTypes.func.isRequired
+	}, _temp)) || _class);
 	exports.default = CutSelectedNode;
 
 /***/ },
@@ -52621,7 +52650,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -52629,7 +52658,7 @@ webpackJsonp([1],[
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -52786,7 +52815,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -52794,7 +52823,7 @@ webpackJsonp([1],[
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -53072,7 +53101,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -53154,7 +53183,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -53162,7 +53191,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -53700,11 +53729,11 @@ webpackJsonp([1],[
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _index = __webpack_require__(546);
 	
@@ -53884,7 +53913,7 @@ webpackJsonp([1],[
 	
 	var _reactAddonsShallowCompare2 = _interopRequireDefault(_reactAddonsShallowCompare);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -53892,7 +53921,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -54186,11 +54215,11 @@ webpackJsonp([1],[
 	
 	var _reactImmutableProptypes2 = _interopRequireDefault(_reactImmutableProptypes);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _index = __webpack_require__(549);
 	
@@ -54280,7 +54309,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -54288,7 +54317,7 @@ webpackJsonp([1],[
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _style = __webpack_require__(629);
 	
@@ -54357,9 +54386,9 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -54449,13 +54478,13 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _IconButton = __webpack_require__(24);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -54539,11 +54568,15 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
+	
+	var _plowJs = __webpack_require__(5);
 	
 	var _IconButton = __webpack_require__(24);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
+	
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -54553,7 +54586,15 @@ webpackJsonp([1],[
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var CutSelectedNode = (_dec = (0, _reactRedux.connect)(), _dec(_class = (_temp = _class2 = function (_PureComponent) {
+	var CutSelectedNode = (_dec = (0, _reactRedux.connect)(function (state) {
+	    return {
+	        focusedNodeContextPath: _neosUiReduxStore.selectors.UI.PageTree.getFocusedNodeContextPathSelector(state),
+	        siteNodeContextPath: (0, _plowJs.$get)('cr.nodes.siteNode', state),
+	        getNodeByContextPath: _neosUiReduxStore.selectors.CR.Nodes.nodeByContextPath(state)
+	    };
+	}, {
+	    cutNode: _neosUiReduxStore.actions.CR.Nodes.cut
+	}), _dec(_class = (_temp = _class2 = function (_PureComponent) {
 	    _inherits(CutSelectedNode, _PureComponent);
 	
 	    function CutSelectedNode(props) {
@@ -54569,9 +54610,18 @@ webpackJsonp([1],[
 	        key: 'render',
 	        value: function render() {
 	            var _props = this.props,
-	                isDisabled = _props.isDisabled,
+	                focusedNodeContextPath = _props.focusedNodeContextPath,
+	                siteNodeContextPath = _props.siteNodeContextPath,
+	                getNodeByContextPath = _props.getNodeByContextPath,
 	                className = _props.className;
 	
+	            var node = getNodeByContextPath(focusedNodeContextPath);
+	
+	            //
+	            // Do not allow deletion, when there's no focused node, the focused node is auto created or the focused node
+	            // is the site node
+	            //
+	            var isDisabled = !node || (0, _plowJs.$get)('isAutoCreated', node) || siteNodeContextPath === focusedNodeContextPath;
 	
 	            return _react2.default.createElement(_IconButton2.default, {
 	                className: className,
@@ -54584,16 +54634,23 @@ webpackJsonp([1],[
 	    }, {
 	        key: 'cutSelectedNode',
 	        value: function cutSelectedNode() {
-	            console.log('cut selected node');
+	            var _props2 = this.props,
+	                focusedNodeContextPath = _props2.focusedNodeContextPath,
+	                cutNode = _props2.cutNode;
+	
+	
+	            cutNode(focusedNodeContextPath);
 	        }
 	    }]);
 	
 	    return CutSelectedNode;
 	}(_react.PureComponent), _class2.propTypes = {
-	    isDisabled: _react.PropTypes.bool,
-	    className: _react.PropTypes.string
-	}, _class2.defaultProps = {
-	    isDisabled: true
+	    className: _react.PropTypes.string,
+	    focusedNodeContextPath: _react.PropTypes.string,
+	    siteNodeContextPath: _react.PropTypes.string,
+	
+	    getNodeByContextPath: _react.PropTypes.func.isRequired,
+	    cutNode: _react.PropTypes.func.isRequired
 	}, _temp)) || _class);
 	exports.default = CutSelectedNode;
 
@@ -54616,7 +54673,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -54624,7 +54681,7 @@ webpackJsonp([1],[
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -54721,7 +54778,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _IconButton = __webpack_require__(24);
 	
@@ -54798,7 +54855,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _IconButton = __webpack_require__(24);
 	
@@ -54875,7 +54932,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -54883,7 +54940,7 @@ webpackJsonp([1],[
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -54990,13 +55047,13 @@ webpackJsonp([1],[
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _lodash = __webpack_require__(82);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _IconButton = __webpack_require__(24);
 	
@@ -55243,13 +55300,13 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _Tree = __webpack_require__(233);
 	
 	var _Tree2 = _interopRequireDefault(_Tree);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -55412,7 +55469,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -55420,7 +55477,7 @@ webpackJsonp([1],[
 	
 	var _Tree2 = _interopRequireDefault(_Tree);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -55552,7 +55609,7 @@ webpackJsonp([1],[
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -55642,7 +55699,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _index = __webpack_require__(64);
 	
@@ -55662,7 +55719,7 @@ webpackJsonp([1],[
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _reactProptypes = __webpack_require__(609);
 	
@@ -55950,7 +56007,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -55962,7 +56019,7 @@ webpackJsonp([1],[
 	
 	var _Grid2 = _interopRequireDefault(_Grid);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiI18n = __webpack_require__(27);
 	
@@ -56081,7 +56138,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -56097,7 +56154,7 @@ webpackJsonp([1],[
 	
 	var _Grid2 = _interopRequireDefault(_Grid);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiI18n = __webpack_require__(27);
 	
@@ -56458,7 +56515,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -56478,7 +56535,7 @@ webpackJsonp([1],[
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -56659,7 +56716,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -56685,7 +56742,7 @@ webpackJsonp([1],[
 	
 	var _neosUiContainers = __webpack_require__(217);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _style = __webpack_require__(634);
 	
@@ -57034,11 +57091,11 @@ webpackJsonp([1],[
 	
 	var _style2 = _interopRequireDefault(_style);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -57117,7 +57174,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -57129,7 +57186,7 @@ webpackJsonp([1],[
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiI18n = __webpack_require__(27);
 	
@@ -57216,7 +57273,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -57228,7 +57285,7 @@ webpackJsonp([1],[
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _style = __webpack_require__(637);
 	
@@ -57410,7 +57467,7 @@ webpackJsonp([1],[
 	
 	var _reactImmutableProptypes2 = _interopRequireDefault(_reactImmutableProptypes);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -57438,7 +57495,7 @@ webpackJsonp([1],[
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _index = __webpack_require__(577);
 	
@@ -57735,7 +57792,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -57847,7 +57904,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -58294,7 +58351,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -58316,7 +58373,7 @@ webpackJsonp([1],[
 	
 	var _neosUiInspector = __webpack_require__(495);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -58587,7 +58644,7 @@ webpackJsonp([1],[
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
@@ -58599,7 +58656,7 @@ webpackJsonp([1],[
 	
 	var _SideBar2 = _interopRequireDefault(_SideBar);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _style = __webpack_require__(237);
 	
@@ -58687,7 +58744,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _style = __webpack_require__(648);
 	
@@ -58765,7 +58822,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _Icon = __webpack_require__(33);
 	
@@ -58787,7 +58844,7 @@ webpackJsonp([1],[
 	
 	var _immutable = __webpack_require__(19);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiI18n = __webpack_require__(27);
 	
@@ -59040,11 +59097,11 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
@@ -59196,7 +59253,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -59206,7 +59263,7 @@ webpackJsonp([1],[
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _style = __webpack_require__(646);
 	
@@ -59334,7 +59391,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(6);
+	var _reactRedux = __webpack_require__(7);
 	
 	var _classnames = __webpack_require__(10);
 	
@@ -59350,7 +59407,7 @@ webpackJsonp([1],[
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _index = __webpack_require__(587);
 	
@@ -59589,7 +59646,7 @@ webpackJsonp([1],[
 	
 	var _reduxSaga = __webpack_require__(70);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _marked = [watchContentURIChange].map(regeneratorRuntime.mark);
 	
@@ -59643,7 +59700,7 @@ webpackJsonp([1],[
 	
 	var _effects = __webpack_require__(88);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiBackendConnector = __webpack_require__(72);
 	
@@ -59730,17 +59787,70 @@ webpackJsonp([1],[
 	});
 	exports.sagas = undefined;
 	
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+	
 	var _reduxSaga = __webpack_require__(70);
 	
 	var _effects = __webpack_require__(88);
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _index = __webpack_require__(64);
 	
-	var _marked = [removeNodeIfConfirmed, determineInsertMode, copyAndPasteNode].map(regeneratorRuntime.mark);
+	var _marked = [removeNodeIfConfirmed, determineInsertMode, copyAndPasteNode, cutAndPasteNode].map(regeneratorRuntime.mark);
+	
+	var parentNodeContextPath = function parentNodeContextPath(contextPath) {
+	    if (typeof contextPath !== 'string') {
+	        return null;
+	    }
+	
+	    var _contextPath$split = contextPath.split('@'),
+	        _contextPath$split2 = _slicedToArray(_contextPath$split, 2),
+	        path = _contextPath$split2[0],
+	        context = _contextPath$split2[1];
+	
+	    return path.substr(0, path.lastIndexOf('/')) + '@' + context;
+	};
+	
+	var _selectors$CR$Nodes = _neosUiReduxStore.selectors.CR.Nodes,
+	    canBePastedAlongsideSelector = _selectors$CR$Nodes.canBePastedAlongsideSelector,
+	    canBePastedIntoSelector = _selectors$CR$Nodes.canBePastedIntoSelector;
+	
+	
+	var calculateDomAddressesFromMode = function calculateDomAddressesFromMode(mode, contextPath, fusionPath) {
+	    switch (mode) {
+	        case 'before':
+	        case 'after':
+	            {
+	                var element = _index.dom.findNode(contextPath, fusionPath);
+	                var parentElement = element ? _index.dom.closestNode(element.parentNode) : null;
+	
+	                return {
+	                    siblingDomAddress: {
+	                        contextPath: contextPath,
+	                        fusionPath: fusionPath
+	                    },
+	                    parentDomAddress: parentElement ? {
+	                        contextPath: parentElement.getAttribute('data-__neos-node-contextpath'),
+	                        fusionPath: parentElement.getAttribute('data-__neos-typoscript-path')
+	                    } : {
+	                        contextPath: parentNodeContextPath(contextPath),
+	                        fusionPath: null
+	                    }
+	                };
+	            }
+	
+	        default:
+	            return {
+	                parentDomAddress: {
+	                    contextPath: contextPath,
+	                    fusionPath: fusionPath
+	                }
+	            };
+	    }
+	};
 	
 	function removeNodeIfConfirmed() {
 	    return regeneratorRuntime.wrap(function removeNodeIfConfirmed$(_context2) {
@@ -59846,15 +59956,12 @@ webpackJsonp([1],[
 	
 	function copyAndPasteNode(_ref) {
 	    var globalRegistry = _ref.globalRegistry;
-	
-	    var nodeTypesRegistry, _selectors$CR$Nodes, canBePastedAlongsideSelector, canBePastedIntoSelector, calculateChangeTypeFromMode, calculateDomAddressesFromMode;
-	
+	    var nodeTypesRegistry, calculateChangeTypeFromMode;
 	    return regeneratorRuntime.wrap(function copyAndPasteNode$(_context5) {
 	        while (1) {
 	            switch (_context5.prev = _context5.next) {
 	                case 0:
 	                    nodeTypesRegistry = globalRegistry.get('@neos-project/neos-ui-contentrepository');
-	                    _selectors$CR$Nodes = _neosUiReduxStore.selectors.CR.Nodes, canBePastedAlongsideSelector = _selectors$CR$Nodes.canBePastedAlongsideSelector, canBePastedIntoSelector = _selectors$CR$Nodes.canBePastedIntoSelector;
 	
 	                    calculateChangeTypeFromMode = function calculateChangeTypeFromMode(mode) {
 	                        switch (mode) {
@@ -59866,35 +59973,6 @@ webpackJsonp([1],[
 	
 	                            default:
 	                                return 'Neos.Neos.Ui:CopyInto';
-	                        }
-	                    };
-	
-	                    calculateDomAddressesFromMode = function calculateDomAddressesFromMode(mode, contextPath, fusionPath) {
-	                        switch (mode) {
-	                            case 'before':
-	                            case 'after':
-	                                {
-	                                    var parentElement = _index.dom.closestNode(_index.dom.findNode(contextPath, fusionPath).parentNode);
-	
-	                                    return {
-	                                        siblingDomAddress: {
-	                                            contextPath: contextPath,
-	                                            fusionPath: fusionPath
-	                                        },
-	                                        parentDomAddress: {
-	                                            contextPath: parentElement.getAttribute('data-__neos-node-contextpath'),
-	                                            fusionPath: parentElement.getAttribute('data-__neos-typoscript-path')
-	                                        }
-	                                    };
-	                                }
-	
-	                            default:
-	                                return {
-	                                    parentDomAddress: {
-	                                        contextPath: contextPath,
-	                                        fusionPath: fusionPath
-	                                    }
-	                                };
 	                        }
 	                    };
 	
@@ -59921,7 +59999,7 @@ webpackJsonp([1],[
 	                                    case 8:
 	                                        getCanBePastedInto = _context4.sent;
 	                                        _context4.next = 11;
-	                                        return (0, _effects.race)([(0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.COPY), (0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.PASTE)]);
+	                                        return (0, _effects.race)([(0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.COPY), (0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.CUT), (0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.PASTE)]);
 	
 	                                    case 11:
 	                                        waitForNextAction = _context4.sent;
@@ -59935,8 +60013,16 @@ webpackJsonp([1],[
 	                                        return _context4.abrupt('return');
 	
 	                                    case 15:
+	                                        if (!(nextAction.type === _neosUiReduxStore.actionTypes.CR.Nodes.CUT)) {
+	                                            _context4.next = 17;
+	                                            break;
+	                                        }
+	
+	                                        return _context4.abrupt('return');
+	
+	                                    case 17:
 	                                        if (!(nextAction.type === _neosUiReduxStore.actionTypes.CR.Nodes.PASTE)) {
-	                                            _context4.next = 28;
+	                                            _context4.next = 30;
 	                                            break;
 	                                        }
 	
@@ -59944,37 +60030,37 @@ webpackJsonp([1],[
 	                                        canBePastedArguments = [nodeToBePasted, contextPath, nodeTypesRegistry];
 	                                        canBePastedAlongside = getCanBePastedAlongside.apply(undefined, canBePastedArguments);
 	                                        canBePastedInto = getCanBePastedInto.apply(undefined, canBePastedArguments);
-	                                        _context4.next = 22;
+	                                        _context4.next = 24;
 	                                        return (0, _effects.call)(determineInsertMode, nodeToBePasted, contextPath, canBePastedAlongside, canBePastedInto);
 	
-	                                    case 22:
+	                                    case 24:
 	                                        mode = _context4.sent;
 	
 	                                        if (!mode) {
-	                                            _context4.next = 26;
+	                                            _context4.next = 28;
 	                                            break;
 	                                        }
 	
-	                                        _context4.next = 26;
+	                                        _context4.next = 28;
 	                                        return (0, _effects.put)(_neosUiReduxStore.actions.Changes.persistChange({
 	                                            type: calculateChangeTypeFromMode(mode),
 	                                            subject: nodeToBePasted,
 	                                            payload: calculateDomAddressesFromMode(mode, contextPath, fusionPath)
 	                                        }));
 	
-	                                    case 26:
-	                                        _context4.next = 28;
+	                                    case 28:
+	                                        _context4.next = 30;
 	                                        return (0, _effects.put)(_neosUiReduxStore.actions.CR.Nodes.copy(nodeToBePasted));
 	
-	                                    case 28:
+	                                    case 30:
 	                                    case 'end':
 	                                        return _context4.stop();
 	                                }
 	                            }
 	                        }, waitForPaste, this);
-	                    })), 't0', 5);
+	                    })), 't0', 3);
 	
-	                case 5:
+	                case 3:
 	                case 'end':
 	                    return _context5.stop();
 	            }
@@ -59982,7 +60068,117 @@ webpackJsonp([1],[
 	    }, _marked[2], this);
 	}
 	
-	var sagas = exports.sagas = [removeNodeIfConfirmed, copyAndPasteNode];
+	function cutAndPasteNode(_ref2) {
+	    var globalRegistry = _ref2.globalRegistry;
+	    var nodeTypesRegistry, calculateChangeTypeFromMode;
+	    return regeneratorRuntime.wrap(function cutAndPasteNode$(_context7) {
+	        while (1) {
+	            switch (_context7.prev = _context7.next) {
+	                case 0:
+	                    nodeTypesRegistry = globalRegistry.get('@neos-project/neos-ui-contentrepository');
+	
+	                    calculateChangeTypeFromMode = function calculateChangeTypeFromMode(mode) {
+	                        switch (mode) {
+	                            case 'before':
+	                                return 'Neos.Neos.Ui:MoveBefore';
+	
+	                            case 'after':
+	                                return 'Neos.Neos.Ui:MoveAfter';
+	
+	                            default:
+	                                return 'Neos.Neos.Ui:MoveInto';
+	                        }
+	                    };
+	
+	                    return _context7.delegateYield((0, _reduxSaga.takeEvery)(_neosUiReduxStore.actionTypes.CR.Nodes.CUT, regeneratorRuntime.mark(function waitForPaste() {
+	                        var nodeToBePasted, getCanBePastedAlongside, getCanBePastedInto, waitForNextAction, nextAction, _nextAction$payload2, contextPath, fusionPath, canBePastedArguments, canBePastedAlongside, canBePastedInto, mode;
+	
+	                        return regeneratorRuntime.wrap(function waitForPaste$(_context6) {
+	                            while (1) {
+	                                switch (_context6.prev = _context6.next) {
+	                                    case 0:
+	                                        _context6.next = 2;
+	                                        return (0, _effects.select)((0, _plowJs.$get)('cr.nodes.clipboard'));
+	
+	                                    case 2:
+	                                        nodeToBePasted = _context6.sent;
+	                                        _context6.next = 5;
+	                                        return (0, _effects.select)(canBePastedAlongsideSelector);
+	
+	                                    case 5:
+	                                        getCanBePastedAlongside = _context6.sent;
+	                                        _context6.next = 8;
+	                                        return (0, _effects.select)(canBePastedIntoSelector);
+	
+	                                    case 8:
+	                                        getCanBePastedInto = _context6.sent;
+	                                        _context6.next = 11;
+	                                        return (0, _effects.race)([(0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.CUT), (0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.COPY), (0, _effects.take)(_neosUiReduxStore.actionTypes.CR.Nodes.PASTE)]);
+	
+	                                    case 11:
+	                                        waitForNextAction = _context6.sent;
+	                                        nextAction = Object.values(waitForNextAction)[0];
+	
+	                                        if (!(nextAction.type === _neosUiReduxStore.actionTypes.CR.Nodes.CUT)) {
+	                                            _context6.next = 15;
+	                                            break;
+	                                        }
+	
+	                                        return _context6.abrupt('return');
+	
+	                                    case 15:
+	                                        if (!(nextAction.type === _neosUiReduxStore.actionTypes.CR.Nodes.COPY)) {
+	                                            _context6.next = 17;
+	                                            break;
+	                                        }
+	
+	                                        return _context6.abrupt('return');
+	
+	                                    case 17:
+	                                        if (!(nextAction.type === _neosUiReduxStore.actionTypes.CR.Nodes.PASTE)) {
+	                                            _context6.next = 28;
+	                                            break;
+	                                        }
+	
+	                                        _nextAction$payload2 = nextAction.payload, contextPath = _nextAction$payload2.contextPath, fusionPath = _nextAction$payload2.fusionPath;
+	                                        canBePastedArguments = [nodeToBePasted, contextPath, nodeTypesRegistry];
+	                                        canBePastedAlongside = getCanBePastedAlongside.apply(undefined, canBePastedArguments);
+	                                        canBePastedInto = getCanBePastedInto.apply(undefined, canBePastedArguments);
+	                                        _context6.next = 24;
+	                                        return (0, _effects.call)(determineInsertMode, nodeToBePasted, contextPath, canBePastedAlongside, canBePastedInto);
+	
+	                                    case 24:
+	                                        mode = _context6.sent;
+	
+	                                        if (!mode) {
+	                                            _context6.next = 28;
+	                                            break;
+	                                        }
+	
+	                                        _context6.next = 28;
+	                                        return (0, _effects.put)(_neosUiReduxStore.actions.Changes.persistChange({
+	                                            type: calculateChangeTypeFromMode(mode),
+	                                            subject: nodeToBePasted,
+	                                            payload: calculateDomAddressesFromMode(mode, contextPath, fusionPath)
+	                                        }));
+	
+	                                    case 28:
+	                                    case 'end':
+	                                        return _context6.stop();
+	                                }
+	                            }
+	                        }, waitForPaste, this);
+	                    })), 't0', 3);
+	
+	                case 3:
+	                case 'end':
+	                    return _context7.stop();
+	            }
+	        }
+	    }, _marked[3], this);
+	}
+	
+	var sagas = exports.sagas = [removeNodeIfConfirmed, copyAndPasteNode, cutAndPasteNode];
 
 /***/ },
 /* 598 */
@@ -60020,7 +60216,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiBackendConnector = __webpack_require__(72);
 	
@@ -60126,7 +60322,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiBackendConnector = __webpack_require__(72);
 	
@@ -60317,7 +60513,7 @@ webpackJsonp([1],[
 	
 	var _reduxSaga = __webpack_require__(70);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _marked = [watchServerFeedback].map(regeneratorRuntime.mark);
 	
@@ -60371,7 +60567,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _marked = [inspectorSaga, flushInspector].map(regeneratorRuntime.mark);
 	
@@ -60668,7 +60864,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiBackendConnector = __webpack_require__(72);
 	
@@ -61408,7 +61604,7 @@ webpackJsonp([1],[
 	
 	var _StyleSelect2 = _interopRequireDefault(_StyleSelect);
 	
-	var _neosUiReduxStore = __webpack_require__(7);
+	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiExtensibility = __webpack_require__(89);
 	
