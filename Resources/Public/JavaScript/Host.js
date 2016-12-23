@@ -5027,86 +5027,6 @@ webpackJsonp([1],[
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	
-	var _reactCssThemr = __webpack_require__(20);
-	
-	var _identifiers = __webpack_require__(21);
-	
-	var _identifiers2 = _interopRequireDefault(_identifiers);
-	
-	var _style = __webpack_require__(244);
-	
-	var _style2 = _interopRequireDefault(_style);
-	
-	var _iconButton = __webpack_require__(453);
-	
-	var _iconButton2 = _interopRequireDefault(_iconButton);
-	
-	var _injectProps = __webpack_require__(35);
-	
-	var _injectProps2 = _interopRequireDefault(_injectProps);
-	
-	var _index = __webpack_require__(71);
-	
-	var _index2 = _interopRequireDefault(_index);
-	
-	var _index3 = __webpack_require__(450);
-	
-	var _index4 = _interopRequireDefault(_index3);
-	
-	function _interopRequireDefault(obj) {
-	    return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var ThemedIconButton = (0, _reactCssThemr.themr)(_identifiers2.default.iconButton, _style2.default)(_iconButton2.default);
-	
-	//
-	// Dependency injection
-	//
-	exports.default = (0, _injectProps2.default)({
-	    IconComponent: _index2.default,
-	    ButtonComponent: _index4.default
-	})(ThemedIconButton);
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// Thank's IE8 for his funny defineProperty
-	module.exports = !__webpack_require__(13)(function(){
-	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
-	});
-
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var anObject       = __webpack_require__(11)
-	  , IE8_DOM_DEFINE = __webpack_require__(254)
-	  , toPrimitive    = __webpack_require__(53)
-	  , dP             = Object.defineProperty;
-	
-	exports.f = __webpack_require__(25) ? Object.defineProperty : function defineProperty(O, P, Attributes){
-	  anObject(O);
-	  P = toPrimitive(P, true);
-	  anObject(Attributes);
-	  if(IE8_DOM_DEFINE)try {
-	    return dP(O, P, Attributes);
-	  } catch(e){ /* empty */ }
-	  if('get' in Attributes || 'set' in Attributes)throw TypeError('Accessors not supported!');
-	  if('value' in Attributes)O[P] = Attributes.value;
-	  return O;
-	};
-
-/***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
 	exports.default = undefined;
 	
 	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -5291,6 +5211,86 @@ webpackJsonp([1],[
 	    params: {}
 	}, _temp)) || _class);
 	exports.default = I18n;
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _reactCssThemr = __webpack_require__(20);
+	
+	var _identifiers = __webpack_require__(21);
+	
+	var _identifiers2 = _interopRequireDefault(_identifiers);
+	
+	var _style = __webpack_require__(244);
+	
+	var _style2 = _interopRequireDefault(_style);
+	
+	var _iconButton = __webpack_require__(453);
+	
+	var _iconButton2 = _interopRequireDefault(_iconButton);
+	
+	var _injectProps = __webpack_require__(35);
+	
+	var _injectProps2 = _interopRequireDefault(_injectProps);
+	
+	var _index = __webpack_require__(71);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	var _index3 = __webpack_require__(450);
+	
+	var _index4 = _interopRequireDefault(_index3);
+	
+	function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var ThemedIconButton = (0, _reactCssThemr.themr)(_identifiers2.default.iconButton, _style2.default)(_iconButton2.default);
+	
+	//
+	// Dependency injection
+	//
+	exports.default = (0, _injectProps2.default)({
+	    IconComponent: _index2.default,
+	    ButtonComponent: _index4.default
+	})(ThemedIconButton);
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Thank's IE8 for his funny defineProperty
+	module.exports = !__webpack_require__(13)(function(){
+	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
+	});
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var anObject       = __webpack_require__(11)
+	  , IE8_DOM_DEFINE = __webpack_require__(254)
+	  , toPrimitive    = __webpack_require__(53)
+	  , dP             = Object.defineProperty;
+	
+	exports.f = __webpack_require__(26) ? Object.defineProperty : function defineProperty(O, P, Attributes){
+	  anObject(O);
+	  P = toPrimitive(P, true);
+	  anObject(Attributes);
+	  if(IE8_DOM_DEFINE)try {
+	    return dP(O, P, Attributes);
+	  } catch(e){ /* empty */ }
+	  if('get' in Attributes || 'set' in Attributes)throw TypeError('Accessors not supported!');
+	  if('value' in Attributes)O[P] = Attributes.value;
+	  return O;
+	};
 
 /***/ },
 /* 28 */
@@ -5718,9 +5718,9 @@ webpackJsonp([1],[
 /* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP         = __webpack_require__(26)
+	var dP         = __webpack_require__(27)
 	  , createDesc = __webpack_require__(67);
-	module.exports = __webpack_require__(25) ? function(object, key, value){
+	module.exports = __webpack_require__(26) ? function(object, key, value){
 	  return dP.f(object, key, createDesc(1, value));
 	} : function(object, key, value){
 	  object[key] = value;
@@ -5812,7 +5812,7 @@ webpackJsonp([1],[
 	  , IE8_DOM_DEFINE = __webpack_require__(254)
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 	
-	exports.f = __webpack_require__(25) ? gOPD : function getOwnPropertyDescriptor(O, P){
+	exports.f = __webpack_require__(26) ? gOPD : function getOwnPropertyDescriptor(O, P){
 	  O = toIObject(O);
 	  P = toPrimitive(P, true);
 	  if(IE8_DOM_DEFINE)try {
@@ -15310,7 +15310,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	if(__webpack_require__(25)){
+	if(__webpack_require__(26)){
 	  var LIBRARY             = __webpack_require__(74)
 	    , global              = __webpack_require__(12)
 	    , fails               = __webpack_require__(13)
@@ -15347,7 +15347,7 @@ webpackJsonp([1],[
 	    , setSpecies          = __webpack_require__(79)
 	    , arrayFill           = __webpack_require__(158)
 	    , arrayCopyWithin     = __webpack_require__(247)
-	    , $DP                 = __webpack_require__(26)
+	    , $DP                 = __webpack_require__(27)
 	    , $GOPD               = __webpack_require__(43)
 	    , dP                  = $DP.f
 	    , gOPD                = $GOPD.f
@@ -16311,7 +16311,7 @@ webpackJsonp([1],[
 	var META     = __webpack_require__(81)('meta')
 	  , isObject = __webpack_require__(17)
 	  , has      = __webpack_require__(34)
-	  , setDesc  = __webpack_require__(26).f
+	  , setDesc  = __webpack_require__(27).f
 	  , id       = 0;
 	var isExtensible = Object.isExtensible || function(){
 	  return true;
@@ -16957,8 +16957,8 @@ webpackJsonp([1],[
 
 	'use strict';
 	var global      = __webpack_require__(12)
-	  , dP          = __webpack_require__(26)
-	  , DESCRIPTORS = __webpack_require__(25)
+	  , dP          = __webpack_require__(27)
+	  , DESCRIPTORS = __webpack_require__(26)
 	  , SPECIES     = __webpack_require__(18)('species');
 	
 	module.exports = function(KEY){
@@ -18725,7 +18725,7 @@ webpackJsonp([1],[
 /* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var def = __webpack_require__(26).f
+	var def = __webpack_require__(27).f
 	  , has = __webpack_require__(34)
 	  , TAG = __webpack_require__(18)('toStringTag');
 	
@@ -23787,7 +23787,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $defineProperty = __webpack_require__(26)
+	var $defineProperty = __webpack_require__(27)
 	  , createDesc      = __webpack_require__(67);
 	
 	module.exports = function(object, index, value){
@@ -24263,7 +24263,7 @@ webpackJsonp([1],[
 
 	'use strict';
 	var global         = __webpack_require__(12)
-	  , DESCRIPTORS    = __webpack_require__(25)
+	  , DESCRIPTORS    = __webpack_require__(26)
 	  , LIBRARY        = __webpack_require__(74)
 	  , $typed         = __webpack_require__(128)
 	  , hide           = __webpack_require__(38)
@@ -24273,7 +24273,7 @@ webpackJsonp([1],[
 	  , toInteger      = __webpack_require__(68)
 	  , toLength       = __webpack_require__(29)
 	  , gOPN           = __webpack_require__(76).f
-	  , dP             = __webpack_require__(26).f
+	  , dP             = __webpack_require__(27).f
 	  , arrayFill      = __webpack_require__(158)
 	  , setToStringTag = __webpack_require__(94)
 	  , ARRAY_BUFFER   = 'ArrayBuffer'
@@ -24543,7 +24543,7 @@ webpackJsonp([1],[
 	  , core           = __webpack_require__(65)
 	  , LIBRARY        = __webpack_require__(74)
 	  , wksExt         = __webpack_require__(269)
-	  , defineProperty = __webpack_require__(26).f;
+	  , defineProperty = __webpack_require__(27).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
 	  if(name.charAt(0) != '_' && !(name in $Symbol))defineProperty($Symbol, name, {value: wksExt.f(name)});
@@ -26869,7 +26869,7 @@ webpackJsonp([1],[
 	
 	var _Label2 = _interopRequireDefault(_Label);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -28416,7 +28416,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var dP          = __webpack_require__(26).f
+	var dP          = __webpack_require__(27).f
 	  , create      = __webpack_require__(75)
 	  , redefineAll = __webpack_require__(78)
 	  , ctx         = __webpack_require__(58)
@@ -28426,7 +28426,7 @@ webpackJsonp([1],[
 	  , $iterDefine = __webpack_require__(168)
 	  , step        = __webpack_require__(257)
 	  , setSpecies  = __webpack_require__(79)
-	  , DESCRIPTORS = __webpack_require__(25)
+	  , DESCRIPTORS = __webpack_require__(26)
 	  , fastKey     = __webpack_require__(66).fastKey
 	  , SIZE        = DESCRIPTORS ? '_s' : 'size';
 	
@@ -28664,7 +28664,7 @@ webpackJsonp([1],[
 /* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = !__webpack_require__(25) && !__webpack_require__(13)(function(){
+	module.exports = !__webpack_require__(26) && !__webpack_require__(13)(function(){
 	  return Object.defineProperty(__webpack_require__(160)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
@@ -28755,11 +28755,11 @@ webpackJsonp([1],[
 /* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP       = __webpack_require__(26)
+	var dP       = __webpack_require__(27)
 	  , anObject = __webpack_require__(11)
 	  , getKeys  = __webpack_require__(77);
 	
-	module.exports = __webpack_require__(25) ? Object.defineProperties : function defineProperties(O, Properties){
+	module.exports = __webpack_require__(26) ? Object.defineProperties : function defineProperties(O, Properties){
 	  anObject(O);
 	  var keys   = getKeys(Properties)
 	    , length = keys.length
@@ -28943,7 +28943,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
-	if(__webpack_require__(25) && /./g.flags != 'g')__webpack_require__(26).f(RegExp.prototype, 'flags', {
+	if(__webpack_require__(26) && /./g.flags != 'g')__webpack_require__(27).f(RegExp.prototype, 'flags', {
 	  configurable: true,
 	  get: __webpack_require__(121)
 	});
@@ -46868,7 +46868,7 @@ webpackJsonp([1],[
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -47393,7 +47393,7 @@ webpackJsonp([1],[
 	
 	var _Label2 = _interopRequireDefault(_Label);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -47504,7 +47504,7 @@ webpackJsonp([1],[
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -47750,7 +47750,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -47913,7 +47913,7 @@ webpackJsonp([1],[
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -48773,6 +48773,10 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _neosUiI18n = __webpack_require__(24);
+	
+	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
+	
 	var _SelectBox = __webpack_require__(102);
 	
 	var _SelectBox2 = _interopRequireDefault(_SelectBox);
@@ -48808,8 +48812,12 @@ webpackJsonp([1],[
 	                commit = _props.commit,
 	                value = _props.value;
 	
-	            var options = Object.keys(this.props.options.values).map(function (k) {
-	                return Object.assign({ value: k }, _this2.props.options.values[k]);
+	            var options = Object.keys(this.props.options.values)
+	            // Filter out items without a label
+	            .map(function (k) {
+	                return _this2.props.options.values[k].label && Object.assign({ value: k }, _this2.props.options.values[k], { label: _react2.default.createElement(_neosUiI18n2.default, { id: _this2.props.options.values[k].label }) });
+	            }).filter(function (k) {
+	                return k;
 	            });
 	            var onDelete = value ? this.handleDelete : null;
 	
@@ -52045,7 +52053,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -52074,7 +52082,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -52422,7 +52430,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -52504,7 +52512,7 @@ webpackJsonp([1],[
 	
 	var _reactRedux = __webpack_require__(7);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -52594,7 +52602,7 @@ webpackJsonp([1],[
 	
 	var _reactRedux = __webpack_require__(7);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -52686,7 +52694,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -52776,7 +52784,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -52881,7 +52889,7 @@ webpackJsonp([1],[
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -53572,7 +53580,7 @@ webpackJsonp([1],[
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -53675,7 +53683,7 @@ webpackJsonp([1],[
 	
 	var _ToggablePanel2 = _interopRequireDefault(_ToggablePanel);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -54145,7 +54153,7 @@ webpackJsonp([1],[
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -54382,7 +54390,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -54461,7 +54469,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -54549,7 +54557,7 @@ webpackJsonp([1],[
 	
 	var _reactRedux = __webpack_require__(7);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -54641,7 +54649,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -54746,7 +54754,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -54849,7 +54857,7 @@ webpackJsonp([1],[
 	
 	var _reactRedux = __webpack_require__(7);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -54928,7 +54936,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -55047,7 +55055,7 @@ webpackJsonp([1],[
 	
 	var _neosUiDecorators = __webpack_require__(31);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -55166,7 +55174,7 @@ webpackJsonp([1],[
 	
 	var _neosUiReduxStore = __webpack_require__(6);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -56133,7 +56141,7 @@ webpackJsonp([1],[
 	
 	var _neosUiReduxStore = __webpack_require__(6);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -56268,7 +56276,7 @@ webpackJsonp([1],[
 	
 	var _neosUiReduxStore = __webpack_require__(6);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -56369,7 +56377,7 @@ webpackJsonp([1],[
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -56499,7 +56507,7 @@ webpackJsonp([1],[
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -56643,7 +56651,7 @@ webpackJsonp([1],[
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -56848,7 +56856,7 @@ webpackJsonp([1],[
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -57191,7 +57199,7 @@ webpackJsonp([1],[
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -57300,7 +57308,7 @@ webpackJsonp([1],[
 	
 	var _neosUiReduxStore = __webpack_require__(6);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -57603,7 +57611,7 @@ webpackJsonp([1],[
 	
 	var _DropDown2 = _interopRequireDefault(_DropDown);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -57916,7 +57924,7 @@ webpackJsonp([1],[
 	
 	var _DropDown2 = _interopRequireDefault(_DropDown);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -58235,7 +58243,7 @@ webpackJsonp([1],[
 	
 	var _ToggablePanel2 = _interopRequireDefault(_ToggablePanel);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -58760,7 +58768,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -58958,7 +58966,7 @@ webpackJsonp([1],[
 	
 	var _neosUiReduxStore = __webpack_require__(6);
 	
-	var _neosUiI18n = __webpack_require__(27);
+	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
 	
@@ -59511,7 +59519,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -61804,7 +61812,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _IconButton = __webpack_require__(24);
+	var _IconButton = __webpack_require__(25);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
@@ -63564,7 +63572,7 @@ webpackJsonp([1],[
 	  , HAS_INSTANCE   = __webpack_require__(18)('hasInstance')
 	  , FunctionProto  = Function.prototype;
 	// 19.2.3.6 Function.prototype[@@hasInstance](V)
-	if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(26).f(FunctionProto, HAS_INSTANCE, {value: function(O){
+	if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(27).f(FunctionProto, HAS_INSTANCE, {value: function(O){
 	  if(typeof this != 'function' || !isObject(O))return false;
 	  if(!isObject(this.prototype))return O instanceof this;
 	  // for environment w/o native `@@hasInstance` logic enough `instanceof`, but add this:
@@ -63576,7 +63584,7 @@ webpackJsonp([1],[
 /* 706 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP         = __webpack_require__(26).f
+	var dP         = __webpack_require__(27).f
 	  , createDesc = __webpack_require__(67)
 	  , has        = __webpack_require__(34)
 	  , FProto     = Function.prototype
@@ -63588,7 +63596,7 @@ webpackJsonp([1],[
 	};
 	
 	// 19.2.4.2 name
-	NAME in FProto || __webpack_require__(25) && dP(FProto, NAME, {
+	NAME in FProto || __webpack_require__(26) && dP(FProto, NAME, {
 	  configurable: true,
 	  get: function(){
 	    try {
@@ -63896,7 +63904,7 @@ webpackJsonp([1],[
 	  , fails             = __webpack_require__(13)
 	  , gOPN              = __webpack_require__(76).f
 	  , gOPD              = __webpack_require__(43).f
-	  , dP                = __webpack_require__(26).f
+	  , dP                = __webpack_require__(27).f
 	  , $trim             = __webpack_require__(95).trim
 	  , NUMBER            = 'Number'
 	  , $Number           = global[NUMBER]
@@ -63941,7 +63949,7 @@ webpackJsonp([1],[
 	      && (BROKEN_COF ? fails(function(){ proto.valueOf.call(that); }) : cof(that) != NUMBER)
 	        ? inheritIfRequired(new Base(toNumber(it)), that, $Number) : toNumber(it);
 	  };
-	  for(var keys = __webpack_require__(25) ? gOPN(Base) : (
+	  for(var keys = __webpack_require__(26) ? gOPN(Base) : (
 	    // ES3:
 	    'MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,' +
 	    // ES6 (in case, if modules with ES6 Number statics required before):
@@ -64217,7 +64225,7 @@ webpackJsonp([1],[
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-	$export($export.S + $export.F * !__webpack_require__(25), 'Object', {defineProperties: __webpack_require__(260)});
+	$export($export.S + $export.F * !__webpack_require__(26), 'Object', {defineProperties: __webpack_require__(260)});
 
 /***/ },
 /* 739 */
@@ -64225,7 +64233,7 @@ webpackJsonp([1],[
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-	$export($export.S + $export.F * !__webpack_require__(25), 'Object', {defineProperty: __webpack_require__(26).f});
+	$export($export.S + $export.F * !__webpack_require__(26), 'Object', {defineProperty: __webpack_require__(27).f});
 
 /***/ },
 /* 740 */
@@ -64790,7 +64798,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
-	var dP          = __webpack_require__(26)
+	var dP          = __webpack_require__(27)
 	  , $export     = __webpack_require__(2)
 	  , anObject    = __webpack_require__(11)
 	  , toPrimitive = __webpack_require__(53);
@@ -64999,7 +65007,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
-	var dP             = __webpack_require__(26)
+	var dP             = __webpack_require__(27)
 	  , gOPD           = __webpack_require__(43)
 	  , getPrototypeOf = __webpack_require__(44)
 	  , has            = __webpack_require__(34)
@@ -65036,7 +65044,7 @@ webpackJsonp([1],[
 
 	var global            = __webpack_require__(12)
 	  , inheritIfRequired = __webpack_require__(164)
-	  , dP                = __webpack_require__(26).f
+	  , dP                = __webpack_require__(27).f
 	  , gOPN              = __webpack_require__(76).f
 	  , isRegExp          = __webpack_require__(123)
 	  , $flags            = __webpack_require__(121)
@@ -65048,7 +65056,7 @@ webpackJsonp([1],[
 	  // "new" creates a new object, old webkit buggy here
 	  , CORRECT_NEW       = new $RegExp(re1) !== re1;
 	
-	if(__webpack_require__(25) && (!CORRECT_NEW || __webpack_require__(13)(function(){
+	if(__webpack_require__(26) && (!CORRECT_NEW || __webpack_require__(13)(function(){
 	  re2[__webpack_require__(18)('match')] = false;
 	  // RegExp constructor can alter flags and IsRegExp works correct with @@match
 	  return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
@@ -65208,7 +65216,7 @@ webpackJsonp([1],[
 	__webpack_require__(271);
 	var anObject    = __webpack_require__(11)
 	  , $flags      = __webpack_require__(121)
-	  , DESCRIPTORS = __webpack_require__(25)
+	  , DESCRIPTORS = __webpack_require__(26)
 	  , TO_STRING   = 'toString'
 	  , $toString   = /./[TO_STRING];
 	
@@ -65569,7 +65577,7 @@ webpackJsonp([1],[
 	// ECMAScript 6 symbols shim
 	var global         = __webpack_require__(12)
 	  , has            = __webpack_require__(34)
-	  , DESCRIPTORS    = __webpack_require__(25)
+	  , DESCRIPTORS    = __webpack_require__(26)
 	  , $export        = __webpack_require__(2)
 	  , redefine       = __webpack_require__(39)
 	  , META           = __webpack_require__(66).KEY
@@ -65590,7 +65598,7 @@ webpackJsonp([1],[
 	  , _create        = __webpack_require__(75)
 	  , gOPNExt        = __webpack_require__(261)
 	  , $GOPD          = __webpack_require__(43)
-	  , $DP            = __webpack_require__(26)
+	  , $DP            = __webpack_require__(27)
 	  , $keys          = __webpack_require__(77)
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f
@@ -66107,10 +66115,10 @@ webpackJsonp([1],[
 	var $export         = __webpack_require__(2)
 	  , toObject        = __webpack_require__(32)
 	  , aFunction       = __webpack_require__(37)
-	  , $defineProperty = __webpack_require__(26);
+	  , $defineProperty = __webpack_require__(27);
 	
 	// B.2.2.2 Object.prototype.__defineGetter__(P, getter)
-	__webpack_require__(25) && $export($export.P + __webpack_require__(125), 'Object', {
+	__webpack_require__(26) && $export($export.P + __webpack_require__(125), 'Object', {
 	  __defineGetter__: function __defineGetter__(P, getter){
 	    $defineProperty.f(toObject(this), P, {get: aFunction(getter), enumerable: true, configurable: true});
 	  }
@@ -66124,10 +66132,10 @@ webpackJsonp([1],[
 	var $export         = __webpack_require__(2)
 	  , toObject        = __webpack_require__(32)
 	  , aFunction       = __webpack_require__(37)
-	  , $defineProperty = __webpack_require__(26);
+	  , $defineProperty = __webpack_require__(27);
 	
 	// B.2.2.3 Object.prototype.__defineSetter__(P, setter)
-	__webpack_require__(25) && $export($export.P + __webpack_require__(125), 'Object', {
+	__webpack_require__(26) && $export($export.P + __webpack_require__(125), 'Object', {
 	  __defineSetter__: function __defineSetter__(P, setter){
 	    $defineProperty.f(toObject(this), P, {set: aFunction(setter), enumerable: true, configurable: true});
 	  }
@@ -66183,7 +66191,7 @@ webpackJsonp([1],[
 	  , getOwnPropertyDescriptor = __webpack_require__(43).f;
 	
 	// B.2.2.4 Object.prototype.__lookupGetter__(P)
-	__webpack_require__(25) && $export($export.P + __webpack_require__(125), 'Object', {
+	__webpack_require__(26) && $export($export.P + __webpack_require__(125), 'Object', {
 	  __lookupGetter__: function __lookupGetter__(P){
 	    var O = toObject(this)
 	      , K = toPrimitive(P, true)
@@ -66206,7 +66214,7 @@ webpackJsonp([1],[
 	  , getOwnPropertyDescriptor = __webpack_require__(43).f;
 	
 	// B.2.2.5 Object.prototype.__lookupSetter__(P)
-	__webpack_require__(25) && $export($export.P + __webpack_require__(125), 'Object', {
+	__webpack_require__(26) && $export($export.P + __webpack_require__(125), 'Object', {
 	  __lookupSetter__: function __lookupSetter__(P){
 	    var O = toObject(this)
 	      , K = toPrimitive(P, true)
