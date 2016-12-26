@@ -40,9 +40,29 @@
 .style__applicationWrapper___1OATQ {
     height: 100vh;
 }
+
 .style__applicationWrapper___1OATQ > div {
     height: 100%;
-}.reset__reset___3moMU {
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #3f3f3f;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #222;
+	border: 1px solid #3f3f3f;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: #3f3f3f;
+}
+.reset__reset___3moMU {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: #FFF;
@@ -2819,10 +2839,15 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     padding-bottom: 2px;
     color: #00ADEE;
 }
+
+.style__icon___mn6Zs {
+    color: #00ADEE;
+}
 .style__btn--isActive___3kb2- {
     transform: translateY(1px);
     padding-bottom: 2px;
     color: #00ADEE;
+    background-color: #141414;
 }
 .style__primaryToolbar___15S1o:before,
     .style__primaryToolbar___15S1o:after {
@@ -3124,6 +3149,8 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .style__tabNavigation__item--isActive___2anDl {
     background-color: #222;
     cursor: default;
+    border-bottom: 1px solid #00ADEE;
+    margin-bottom: -1px;
 }
 
 .style__tabNavigation__item--isActive___2anDl > .style__tabNavigation__itemBtn___386RF {

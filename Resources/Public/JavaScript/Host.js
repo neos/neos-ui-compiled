@@ -5559,16 +5559,6 @@ webpackJsonp([1],[
 /* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// 7.1.13 ToObject(argument)
-	var defined = __webpack_require__(47);
-	module.exports = function(it){
-	  return Object(defined(it));
-	};
-
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -5612,6 +5602,16 @@ webpackJsonp([1],[
 	    _makeValidateId: _fontAwesome.makeValidateId,
 	    _makeGetClassName: _fontAwesome.makeGetClassName
 	})(ThemedIcon);
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.1.13 ToObject(argument)
+	var defined = __webpack_require__(47);
+	module.exports = function(it){
+	  return Object(defined(it));
+	};
 
 /***/ },
 /* 34 */
@@ -5827,7 +5827,7 @@ webpackJsonp([1],[
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 	var has         = __webpack_require__(34)
-	  , toObject    = __webpack_require__(32)
+	  , toObject    = __webpack_require__(33)
 	  , IE_PROTO    = __webpack_require__(173)('IE_PROTO')
 	  , ObjectProto = Object.prototype;
 	
@@ -5946,7 +5946,7 @@ webpackJsonp([1],[
 	// 6 -> Array#findIndex
 	var ctx      = __webpack_require__(58)
 	  , IObject  = __webpack_require__(104)
-	  , toObject = __webpack_require__(32)
+	  , toObject = __webpack_require__(33)
 	  , toLength = __webpack_require__(29)
 	  , asc      = __webpack_require__(673);
 	module.exports = function(TYPE, $create){
@@ -15330,7 +15330,7 @@ webpackJsonp([1],[
 	    , same                = __webpack_require__(267)
 	    , classof             = __webpack_require__(103)
 	    , isObject            = __webpack_require__(17)
-	    , toObject            = __webpack_require__(32)
+	    , toObject            = __webpack_require__(33)
 	    , isArrayIter         = __webpack_require__(165)
 	    , create              = __webpack_require__(75)
 	    , getPrototypeOf      = __webpack_require__(44)
@@ -23768,7 +23768,7 @@ webpackJsonp([1],[
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	'use strict';
-	var toObject = __webpack_require__(32)
+	var toObject = __webpack_require__(33)
 	  , toIndex  = __webpack_require__(80)
 	  , toLength = __webpack_require__(29);
 	module.exports = function fill(value /*, start = 0, end = @length */){
@@ -28311,7 +28311,7 @@ webpackJsonp([1],[
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	'use strict';
-	var toObject = __webpack_require__(32)
+	var toObject = __webpack_require__(33)
 	  , toIndex  = __webpack_require__(80)
 	  , toLength = __webpack_require__(29);
 	
@@ -28354,7 +28354,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(37)
-	  , toObject  = __webpack_require__(32)
+	  , toObject  = __webpack_require__(33)
 	  , IObject   = __webpack_require__(104)
 	  , toLength  = __webpack_require__(29);
 	
@@ -28722,7 +28722,7 @@ webpackJsonp([1],[
 	var getKeys  = __webpack_require__(77)
 	  , gOPS     = __webpack_require__(126)
 	  , pIE      = __webpack_require__(105)
-	  , toObject = __webpack_require__(32)
+	  , toObject = __webpack_require__(33)
 	  , IObject  = __webpack_require__(104)
 	  , $assign  = Object.assign;
 	
@@ -46157,6 +46157,18 @@ webpackJsonp([1],[
 	}, {
 	    deprecated: ['icon-files-o'],
 	    name: 'fa-files-o'
+	}, {
+	    deprecated: ['icon-paint-brush'],
+	    name: 'fa-paint-brush'
+	}, {
+	    deprecated: ['icon-language'],
+	    name: 'fa-language'
+	}, {
+	    deprecated: ['icon-image'],
+	    name: 'fa-image'
+	}, {
+	    deprecated: ['icon-eye'],
+	    name: 'fa-eye'
 	}];
 	
 	function makeValidateId() {
@@ -46864,7 +46876,7 @@ webpackJsonp([1],[
 	
 	var _SelectBox2 = _interopRequireDefault(_SelectBox);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -47627,7 +47639,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -47909,7 +47921,7 @@ webpackJsonp([1],[
 	
 	var _reactImageCrop2 = _interopRequireDefault(_reactImageCrop);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -49166,7 +49178,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -53572,7 +53584,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -53675,7 +53687,7 @@ webpackJsonp([1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -54157,7 +54169,7 @@ webpackJsonp([1],[
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -56262,7 +56274,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -56647,7 +56659,7 @@ webpackJsonp([1],[
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -56852,7 +56864,7 @@ webpackJsonp([1],[
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -57306,6 +57318,10 @@ webpackJsonp([1],[
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
+	var _Icon = __webpack_require__(32);
+	
+	var _Icon2 = _interopRequireDefault(_Icon);
+	
 	var _neosUiReduxStore = __webpack_require__(6);
 	
 	var _neosUiI18n = __webpack_require__(24);
@@ -57361,6 +57377,8 @@ webpackJsonp([1],[
 	                    isFocused: isActive,
 	                    onClick: toggleSidebar
 	                },
+	                _react2.default.createElement(_Icon2.default, { className: _style2.default.icon, icon: 'location-arrow' }),
+	                ' ',
 	                _react2.default.createElement(_neosUiI18n2.default, { id: 'navigate', fallback: 'Navigate' })
 	            );
 	        }
@@ -57595,7 +57613,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -57916,7 +57934,7 @@ webpackJsonp([1],[
 	
 	var _plowJs = __webpack_require__(5);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -58243,6 +58261,10 @@ webpackJsonp([1],[
 	
 	var _ToggablePanel2 = _interopRequireDefault(_ToggablePanel);
 	
+	var _Icon = __webpack_require__(32);
+	
+	var _Icon2 = _interopRequireDefault(_Icon);
+	
 	var _neosUiI18n = __webpack_require__(24);
 	
 	var _neosUiI18n2 = _interopRequireDefault(_neosUiI18n);
@@ -58282,6 +58304,7 @@ webpackJsonp([1],[
 	            var _props = this.props,
 	                properties = _props.properties,
 	                label = _props.label,
+	                icon = _props.icon,
 	                renderSecondaryInspector = _props.renderSecondaryInspector,
 	                transient = _props.transient,
 	                validationErrors = _props.validationErrors,
@@ -58299,6 +58322,8 @@ webpackJsonp([1],[
 	                    _react2.default.createElement(
 	                        _ToggablePanel2.default.Header,
 	                        { theme: headerTheme },
+	                        icon && _react2.default.createElement(_Icon2.default, { icon: icon }),
+	                        ' ',
 	                        _react2.default.createElement(_neosUiI18n2.default, { id: label })
 	                    ),
 	                    _react2.default.createElement(
@@ -58338,6 +58363,7 @@ webpackJsonp([1],[
 	    return PropertyGroup;
 	}(_react.Component), _class.propTypes = {
 	    label: _react.PropTypes.string.isRequired,
+	    icon: _react.PropTypes.string,
 	    properties: _react.PropTypes.array,
 	    renderSecondaryInspector: _react.PropTypes.func.isRequired,
 	    validationErrors: _react.PropTypes.object,
@@ -58419,6 +58445,7 @@ webpackJsonp([1],[
 	                        return _react2.default.createElement(_index2.default, {
 	                            key: group.id,
 	                            label: group.label,
+	                            icon: group.icon,
 	                            properties: group.properties,
 	                            renderSecondaryInspector: renderSecondaryInspector,
 	                            node: node,
@@ -58944,7 +58971,7 @@ webpackJsonp([1],[
 	
 	var _reactRedux = __webpack_require__(7);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -59070,7 +59097,7 @@ webpackJsonp([1],[
 	                    { className: _style2.default.dropDown__btn },
 	                    contentDimensionsObjectKeys.map(function (dimensionName) {
 	                        var dimensionConfiguration = contentDimensionsObject[dimensionName];
-	                        var icon = (0, _plowJs.$get)('icon', dimensionConfiguration) && (0, _plowJs.$get)('icon', dimensionConfiguration).replace('icon-', '');
+	                        var icon = (0, _plowJs.$get)('icon', dimensionConfiguration) && (0, _plowJs.$get)('icon', dimensionConfiguration);
 	                        return _react2.default.createElement(SelectedPreset, {
 	                            key: dimensionName,
 	                            dimensionName: dimensionName,
@@ -59085,7 +59112,7 @@ webpackJsonp([1],[
 	                    { className: _style2.default.dropDown__contents },
 	                    contentDimensionsObjectKeys.map(function (dimensionName) {
 	                        var dimensionConfiguration = contentDimensionsObject[dimensionName];
-	                        var icon = (0, _plowJs.$get)('icon', dimensionConfiguration) && (0, _plowJs.$get)('icon', dimensionConfiguration).replace('icon-', '');
+	                        var icon = (0, _plowJs.$get)('icon', dimensionConfiguration) && (0, _plowJs.$get)('icon', dimensionConfiguration);
 	                        return _react2.default.createElement(DimensionSelector, {
 	                            key: dimensionName,
 	                            dimensionName: dimensionName,
@@ -59523,7 +59550,7 @@ webpackJsonp([1],[
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _Icon = __webpack_require__(33);
+	var _Icon = __webpack_require__(32);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -62689,7 +62716,7 @@ webpackJsonp([1],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"btn--isActive":"style__btn--isActive___3bVXS"};
+	module.exports = {"btn--isActive":"style__btn--isActive___3bVXS","icon":"style__icon___mn6Zs"};
 
 /***/ },
 /* 637 */
@@ -63207,7 +63234,7 @@ webpackJsonp([1],[
 	'use strict';
 	var ctx            = __webpack_require__(58)
 	  , $export        = __webpack_require__(2)
-	  , toObject       = __webpack_require__(32)
+	  , toObject       = __webpack_require__(33)
 	  , call           = __webpack_require__(256)
 	  , isArrayIter    = __webpack_require__(165)
 	  , toLength       = __webpack_require__(29)
@@ -63440,7 +63467,7 @@ webpackJsonp([1],[
 	'use strict';
 	var $export   = __webpack_require__(2)
 	  , aFunction = __webpack_require__(37)
-	  , toObject  = __webpack_require__(32)
+	  , toObject  = __webpack_require__(33)
 	  , fails     = __webpack_require__(13)
 	  , $sort     = [].sort
 	  , test      = [1, 2, 3];
@@ -63515,7 +63542,7 @@ webpackJsonp([1],[
 
 	'use strict';
 	var $export     = __webpack_require__(2)
-	  , toObject    = __webpack_require__(32)
+	  , toObject    = __webpack_require__(33)
 	  , toPrimitive = __webpack_require__(53);
 	
 	$export($export.P + $export.F * __webpack_require__(13)(function(){
@@ -64277,7 +64304,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
-	var toObject        = __webpack_require__(32)
+	var toObject        = __webpack_require__(33)
 	  , $getPrototypeOf = __webpack_require__(44);
 	
 	__webpack_require__(52)('getPrototypeOf', function(){
@@ -64338,7 +64365,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
-	var toObject = __webpack_require__(32)
+	var toObject = __webpack_require__(33)
 	  , $keys    = __webpack_require__(77);
 	
 	__webpack_require__(52)('keys', function(){
@@ -66113,7 +66140,7 @@ webpackJsonp([1],[
 
 	'use strict';
 	var $export         = __webpack_require__(2)
-	  , toObject        = __webpack_require__(32)
+	  , toObject        = __webpack_require__(33)
 	  , aFunction       = __webpack_require__(37)
 	  , $defineProperty = __webpack_require__(27);
 	
@@ -66130,7 +66157,7 @@ webpackJsonp([1],[
 
 	'use strict';
 	var $export         = __webpack_require__(2)
-	  , toObject        = __webpack_require__(32)
+	  , toObject        = __webpack_require__(33)
 	  , aFunction       = __webpack_require__(37)
 	  , $defineProperty = __webpack_require__(27);
 	
@@ -66185,7 +66212,7 @@ webpackJsonp([1],[
 
 	'use strict';
 	var $export                  = __webpack_require__(2)
-	  , toObject                 = __webpack_require__(32)
+	  , toObject                 = __webpack_require__(33)
 	  , toPrimitive              = __webpack_require__(53)
 	  , getPrototypeOf           = __webpack_require__(44)
 	  , getOwnPropertyDescriptor = __webpack_require__(43).f;
@@ -66208,7 +66235,7 @@ webpackJsonp([1],[
 
 	'use strict';
 	var $export                  = __webpack_require__(2)
-	  , toObject                 = __webpack_require__(32)
+	  , toObject                 = __webpack_require__(33)
 	  , toPrimitive              = __webpack_require__(53)
 	  , getPrototypeOf           = __webpack_require__(44)
 	  , getOwnPropertyDescriptor = __webpack_require__(43).f;
