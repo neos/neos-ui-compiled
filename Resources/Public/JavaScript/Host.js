@@ -26805,13 +26805,11 @@ webpackJsonp([1],[
 	            var _props = this.props,
 	                editor = _props.editor,
 	                editorRegistry = _props.editorRegistry,
-	                translations = _props.translations,
-	                packageKey = _props.packageKey,
-	                sourceName = _props.sourceName;
+	                translations = _props.translations;
 	
 	            var editorDefinition = editorRegistry.get(editor);
 	
-	            var translate = (0, _neosUiI18n.i18nService)(translations, packageKey, sourceName);
+	            var translate = (0, _neosUiI18n.i18nService)(translations);
 	
 	            if (editorDefinition && editorDefinition.component) {
 	                var EditorComponent = editorDefinition && editorDefinition.component;
@@ -26871,8 +26869,6 @@ webpackJsonp([1],[
 	    value: _react.PropTypes.any,
 	    renderSecondaryInspector: _react.PropTypes.func,
 	    editorRegistry: _react.PropTypes.object.isRequired,
-	    packageKey: _react.PropTypes.string.isRequired,
-	    sourceName: _react.PropTypes.string.isRequired,
 	    translations: _react.PropTypes.object.isRequired,
 	    validationErrors: _react.PropTypes.array,
 	
@@ -48847,14 +48843,18 @@ webpackJsonp([1],[
 	                value = _props.value,
 	                commit = _props.commit,
 	                nodeTypesRegistry = _props.nodeTypesRegistry,
-	                getAllowedSiblingNodeTypesForFocusedNode = _props.getAllowedSiblingNodeTypesForFocusedNode;
+	                getAllowedSiblingNodeTypesForFocusedNode = _props.getAllowedSiblingNodeTypesForFocusedNode,
+	                translate = _props.translate;
 	
-	            var options = getAllowedSiblingNodeTypesForFocusedNode(nodeTypesRegistry).filter(function (nodeType) {
-	                return nodeTypesRegistry.get(nodeType);
+	            var options = getAllowedSiblingNodeTypesForFocusedNode(nodeTypesRegistry)
+	            // Filter out system nodetypes (i.e. without groups)
+	            // ToDo: move this logic to some more generic place, maybe nodeTypesRegistry
+	            .filter(function (nodeType) {
+	                return (0, _plowJs.$get)('ui.group', nodeTypesRegistry.get(nodeType));
 	            }).map(function (nodeType) {
 	                return {
 	                    icon: (0, _plowJs.$get)('ui.icon', nodeTypesRegistry.get(nodeType)),
-	                    label: (0, _plowJs.$get)('ui.label', nodeTypesRegistry.get(nodeType)) || nodeType,
+	                    label: translate((0, _plowJs.$get)('ui.label', nodeTypesRegistry.get(nodeType))) || nodeType,
 	                    value: nodeType
 	                };
 	            });
@@ -48866,7 +48866,7 @@ webpackJsonp([1],[
 	            return _react2.default.createElement(
 	                'div',
 	                { className: _style2.default.noOptionsAvailable },
-	                (0, _plowJs.$get)('ui.label', nodeTypesRegistry.get(value))
+	                translate((0, _plowJs.$get)('ui.label', nodeTypesRegistry.get(value)))
 	            );
 	        }
 	    }]);
@@ -48877,7 +48877,8 @@ webpackJsonp([1],[
 	    commit: _react.PropTypes.func.isRequired,
 	
 	    getAllowedSiblingNodeTypesForFocusedNode: _react.PropTypes.func,
-	    nodeTypesRegistry: _react.PropTypes.object
+	    nodeTypesRegistry: _react.PropTypes.object,
+	    translate: _react.PropTypes.func.isRequired
 	}, _temp)) || _class) || _class);
 	exports.default = NodeType;
 
@@ -49361,7 +49362,9 @@ webpackJsonp([1],[
 	    return result;
 	};
 	
-	var makeTranslate = function makeTranslate(translations, packageKeyOrig, sourceNameOrig) {
+	var makeTranslate = function makeTranslate(translations) {
+	    var packageKeyOrig = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+	    var sourceNameOrig = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
 	    return function (idOrig, fallbackOrig) {
 	        var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 	
@@ -53675,12 +53678,10 @@ webpackJsonp([1],[
 	                persistChange = _props3.persistChange,
 	                formattingRulesRegistry = _props3.formattingRulesRegistry,
 	                nodeTypesRegistry = _props3.nodeTypesRegistry,
-	                translations = _props3.translations,
-	                packageKey = _props3.packageKey,
-	                sourceName = _props3.sourceName;
+	                translations = _props3.translations;
 	
 	
-	            var translate = (0, _neosUiI18n.i18nService)(translations, packageKey, sourceName);
+	            var translate = (0, _neosUiI18n.i18nService)(translations);
 	
 	            //
 	            // First of all, set the new version of the guest frame window object to the store.
@@ -53830,8 +53831,6 @@ webpackJsonp([1],[
 	    byContextPathDynamicAccess: _react.PropTypes.func.isRequired,
 	    formattingRulesRegistry: _react.PropTypes.object.isRequired,
 	    nodeTypesRegistry: _react.PropTypes.object.isRequired,
-	    packageKey: _react.PropTypes.string.isRequired,
-	    sourceName: _react.PropTypes.string.isRequired,
 	    translations: _react.PropTypes.object.isRequired
 	}, _temp)) || _class) || _class);
 	exports.default = ContentCanvas;
@@ -54377,7 +54376,7 @@ webpackJsonp([1],[
 	                    editModes.map(function (editMode) {
 	                        return _react2.default.createElement(
 	                            _index2.default,
-	                            { key: editMode.id, style: editMode.id === editPreviewMode ? 'brand' : '', onClick: _this3.handleEditPreviewModeClick(editMode.id) },
+	                            { key: editMode.id, style: editMode.id === editPreviewMode ? 'brand' : null, onClick: _this3.handleEditPreviewModeClick(editMode.id) },
 	                            editMode.id
 	                        );
 	                    })
@@ -54393,7 +54392,7 @@ webpackJsonp([1],[
 	                    previewModes.map(function (previewMode) {
 	                        return _react2.default.createElement(
 	                            _index2.default,
-	                            { key: previewMode.id, style: previewMode.id === editPreviewMode ? 'brand' : '', onClick: _this3.handleEditPreviewModeClick(previewMode.id) },
+	                            { key: previewMode.id, style: previewMode.id === editPreviewMode ? 'brand' : null, onClick: _this3.handleEditPreviewModeClick(previewMode.id) },
 	                            previewMode.id
 	                        );
 	                    })
@@ -55416,7 +55415,7 @@ webpackJsonp([1],[
 	    return PasteClipBoardNode;
 	}(_react.PureComponent), _class2.propTypes = {
 	    className: _react.PropTypes.string,
-	    canBePasted: _react.PropTypes.bool,
+	    canBePasted: _react.PropTypes.func.isRequired,
 	    focusedNodeContextPath: _react.PropTypes.string,
 	    clipboardNodeContextPath: _react.PropTypes.string,
 	    nodeTypesRegistry: _react.PropTypes.object.isRequired,
@@ -58481,8 +58480,10 @@ webpackJsonp([1],[
 	                id = _props2.id,
 	                transient = _props2.transient,
 	                otherProps = _objectWithoutProperties(_props2, ['node', 'id', 'transient']);
+	            // If property id starts with "_" then look in object properties directly
 	
-	            var sourceValueRaw = (0, _plowJs.$get)(['properties', id], node);
+	
+	            var sourceValueRaw = id.slice(0, 1) === '_' ? node[id.slice(1)] : (0, _plowJs.$get)(['properties', id], node);
 	            var sourceValue = sourceValueRaw && sourceValueRaw.toJS ? sourceValueRaw.toJS() : sourceValueRaw;
 	            var transientValueRaw = (0, _plowJs.$get)([id], transient);
 	            var transientValue = transientValueRaw && transientValueRaw.toJS ? transientValueRaw.toJS() : transientValueRaw;
