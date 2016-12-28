@@ -5,7 +5,7 @@ webpackJsonp([2],{
 
 	'use strict';
 	
-	var _guestFrameApi = __webpack_require__(466);
+	var _guestFrameApi = __webpack_require__(467);
 	
 	var _guestFrameApi2 = _interopRequireDefault(_guestFrameApi);
 	
@@ -20,7 +20,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 466:
+/***/ 467:
 /***/ function(module, exports) {
 
 	'use strict';

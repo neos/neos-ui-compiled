@@ -2323,9 +2323,6 @@
 .style__dropDown__itemIcon___3TKvU {
     padding-right: .5em;
 }
-.style__wrap___G64PJ {
-    margin-bottom: 16px;
-}
 .style__textInput___17uNr {
     width: 100%;
     height: 40px;
@@ -3212,6 +3209,9 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     border-right-width: 0;
     border-top-width: 0;
     z-index: 1;
+}
+.style__wrap___2Dm7K {
+    padding-bottom: 16px;
 }
 .style__propertyGroupLabel___3dg-u {
     width: 100%;
