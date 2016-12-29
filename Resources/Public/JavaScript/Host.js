@@ -53237,7 +53237,7 @@ webpackJsonp([1],[
 	    return PasteClipBoardNode;
 	}(_react.PureComponent), _class2.propTypes = {
 	    className: _react.PropTypes.string,
-	    canBePasted: _react.PropTypes.bool,
+	    canBePasted: _react.PropTypes.func,
 	
 	    contextPath: _react.PropTypes.string,
 	    fusionPath: _react.PropTypes.string,
