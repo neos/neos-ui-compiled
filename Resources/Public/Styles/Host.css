@@ -3292,6 +3292,15 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .style__dialog__actions___22qLt > * {
     margin-left: calc(16px / 2);
 }
+.style__buttonGroup___3ewAh {
+    display: block;
+}
+.style__root___1m0We {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+}
 .style__nodeType___1ZysQ {
     width: 100%;
     text-align: left;
