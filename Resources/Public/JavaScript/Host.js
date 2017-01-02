@@ -28157,7 +28157,7 @@ webpackJsonp([1],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"btn":"style__btn___1L6Xa reset__reset___3moMU","btn--size-small":"style__btn--size-small___176K7","btn--clean":"style__btn--clean___19fR5","btn--lighter":"style__btn--lighter___2DalC","btn--transparent":"style__btn--transparent___a0FI3","btn--brand":"style__btn--brand___1AudY","btn--warn":"style__btn--warn___27q5p","btn--brandHover":"style__btn--brandHover___1sZj6","btn--isPressed":"style__btn--isPressed___1DHKK","btn--cleanHover":"style__btn--cleanHover___1I8mn","btn--darkenHover":"style__btn--darkenHover___2U4SV","btn--warnHover":"style__btn--warnHover___3nRa2"};
+	module.exports = {"btn":"style__btn___1L6Xa reset__reset___3moMU","btn--isPressed":"style__btn--isPressed___1DHKK","btn--size-small":"style__btn--size-small___176K7","btn--clean":"style__btn--clean___19fR5","btn--lighter":"style__btn--lighter___2DalC","btn--transparent":"style__btn--transparent___a0FI3","btn--brand":"style__btn--brand___1AudY","btn--warn":"style__btn--warn___27q5p","btn--brandHover":"style__btn--brandHover___1sZj6","btn--cleanHover":"style__btn--cleanHover___1I8mn","btn--darkenHover":"style__btn--darkenHover___2U4SV","btn--warnHover":"style__btn--warnHover___3nRa2"};
 
 /***/ },
 /* 240 */
@@ -52741,7 +52741,8 @@ webpackJsonp([1],[
 	                _react2.default.createElement(_IconButton2.default, {
 	                    className: this.props.className,
 	                    icon: 'plus',
-	                    onClick: this.handleOpenModalBtnClick
+	                    onClick: this.handleOpenModalBtnClick,
+	                    hoverStyle: 'clean'
 	                })
 	            );
 	        }
@@ -53224,7 +53225,8 @@ webpackJsonp([1],[
 	                isDisabled: isDisabled,
 	                className: className,
 	                icon: 'paste',
-	                onClick: this.handlePasteButtonClick
+	                onClick: this.handlePasteButtonClick,
+	                hoverStyle: 'clean'
 	            });
 	        }
 	    }, {
@@ -54800,7 +54802,8 @@ webpackJsonp([1],[
 	                    isDisabled: Boolean(focusedNode) === false,
 	                    className: className,
 	                    icon: 'plus',
-	                    onClick: this.handleOpenModalBtnClick
+	                    onClick: this.handleOpenModalBtnClick,
+	                    hoverStyle: 'clean'
 	                })
 	            );
 	        }
@@ -55403,7 +55406,8 @@ webpackJsonp([1],[
 	                isDisabled: isDisabled,
 	                className: className,
 	                icon: 'paste',
-	                onClick: this.handlePasteButtonClick
+	                onClick: this.handlePasteButtonClick,
+	                hoverStyle: 'clean'
 	            });
 	        }
 	    }, {

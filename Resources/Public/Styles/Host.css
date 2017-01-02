@@ -2043,7 +2043,7 @@
     width: auto;
     color: #FFF;
     cursor: pointer;
-    background: #323232;
+    background-color: #323232;
     font-size: 14px;
 }
 .style__btn___1L6Xa:focus {
@@ -2054,6 +2054,15 @@
     cursor: not-allowed;
 }
 .style__btn___1L6Xa[disabled]:hover {
+    color: #FFF;
+}
+.style__btn___1L6Xa[disabled].style__btn--isPressed___1DHKK {
+    color: #FFF;
+}
+.style__btn___1L6Xa[disabled]:hover * {
+    color: #FFF;
+}
+.style__btn___1L6Xa[disabled].style__btn--isPressed___1DHKK * {
     color: #FFF;
 }
 .style__btn--size-small___176K7 {
@@ -2067,10 +2076,16 @@
 .style__btn--clean___19fR5[disabled]:hover {
     background-color: #222;
 }
+.style__btn--clean___19fR5[disabled]:hover * {
+    background-color: #222;
+}
 .style__btn--lighter___2DalC {
     background-color: #3f3f3f;
 }
 .style__btn--lighter___2DalC[disabled]:hover {
+    background-color: #3f3f3f;
+}
+.style__btn--lighter___2DalC[disabled]:hover * {
     background-color: #3f3f3f;
 }
 .style__btn--transparent___a0FI3 {
@@ -2078,14 +2093,23 @@
 }
 .style__btn--brand___1AudY {
     background-color: #00ADEE;
+    color: white !important;
 }
 .style__btn--brand___1AudY[disabled]:hover {
     background-color: #00ADEE;
+    color: white !important;
+}
+.style__btn--brand___1AudY[disabled]:hover * {
+    background-color: #00ADEE;
+    color: white !important;
 }
 .style__btn--warn___27q5p {
     background-color: #ff8700;
 }
 .style__btn--warn___27q5p[disabled]:hover {
+    background-color: #ff8700;
+}
+.style__btn--warn___27q5p[disabled]:hover * {
     background-color: #ff8700;
 }
 .style__btn--brandHover___1sZj6:hover {
@@ -2100,14 +2124,21 @@
 .style__btn--cleanHover___1I8mn:hover {
     color: #00ADEE;
 }
+.style__btn--cleanHover___1I8mn:hover * {
+    color: #00ADEE;
+}
 .style__btn--darkenHover___2U4SV.style__btn--isPressed___1DHKK,
-.style__btn--darkenHover___2U4SV:hover {
-    background: rgba(0, 0, 0, .1);
+.style__btn--darkenHover___2U4SV:hover,
+.style__btn--darkenHover___2U4SV:hover * {
+    background-color: rgba(0, 0, 0, .1);
 }
 .style__btn--warnHover___3nRa2.style__btn--isPressed___1DHKK {
     background-color: #ff8700;
 }
 .style__btn--warnHover___3nRa2:hover {
+    background-color: #ff8700;
+}
+.style__btn--warnHover___3nRa2:hover * {
     background-color: #ff8700;
 }
 .style__toolBar___1vKpl {
