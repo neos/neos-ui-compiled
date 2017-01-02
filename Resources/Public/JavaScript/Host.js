@@ -51280,12 +51280,13 @@ webpackJsonp([1],[
 	    APPLY: APPLY
 	};
 	
-	var open = (0, _reduxActions.createAction)(OPEN, function (subjectContextPath, referenceContextPath, enableAlongsideModes, enableIntoMode) {
-	    return {
+	var open = (0, _reduxActions.createAction)(OPEN, function (subjectContextPath, referenceContextPath, enableAlongsideModes, enableIntoMode, operationType) {
+	    return { // eslint-disable-line max-params
 	        subjectContextPath: subjectContextPath,
 	        referenceContextPath: referenceContextPath,
 	        enableAlongsideModes: enableAlongsideModes,
-	        enableIntoMode: enableIntoMode
+	        enableIntoMode: enableIntoMode,
+	        operationType: operationType
 	    };
 	});
 	var cancel = (0, _reduxActions.createAction)(CANCEL);
@@ -51311,19 +51312,22 @@ webpackJsonp([1],[
 	        subjectContextPath: '',
 	        referenceContextPath: '',
 	        enableAlongsideModes: false,
-	        enableIntoMode: false
+	        enableIntoMode: false,
+	        operationType: null
 	    }));
 	}), _defineProperty(_handleActions, OPEN, function (_ref) {
 	    var subjectContextPath = _ref.subjectContextPath,
 	        referenceContextPath = _ref.referenceContextPath,
 	        enableAlongsideModes = _ref.enableAlongsideModes,
-	        enableIntoMode = _ref.enableIntoMode;
+	        enableIntoMode = _ref.enableIntoMode,
+	        operationType = _ref.operationType;
 	    return (0, _plowJs.$set)('ui.insertionModeModal', new _immutable.Map({
 	        isOpen: true,
 	        subjectContextPath: subjectContextPath,
 	        referenceContextPath: referenceContextPath,
 	        enableAlongsideModes: enableAlongsideModes,
-	        enableIntoMode: enableIntoMode
+	        enableIntoMode: enableIntoMode,
+	        operationType: operationType
 	    }));
 	}), _defineProperty(_handleActions, CANCEL, function () {
 	    return (0, _plowJs.$set)('ui.insertionModeModal', new _immutable.Map({
@@ -57179,6 +57183,7 @@ webpackJsonp([1],[
 	    referenceContextPath: (0, _plowJs.$get)('ui.insertionModeModal.referenceContextPath'),
 	    enableAlongsideModes: (0, _plowJs.$get)('ui.insertionModeModal.enableAlongsideModes'),
 	    enableIntoMode: (0, _plowJs.$get)('ui.insertionModeModal.enableIntoMode'),
+	    operationType: (0, _plowJs.$get)('ui.insertionModeModal.operationType'),
 	    getNodeByContextPath: _neosUiReduxStore.selectors.CR.Nodes.nodeByContextPath
 	}), {
 	    cancel: _neosUiReduxStore.actions.UI.InsertionModeModal.cancel,
@@ -57238,7 +57243,8 @@ webpackJsonp([1],[
 	        value: function renderTitle() {
 	            var _props2 = this.props,
 	                subjectContextPath = _props2.subjectContextPath,
-	                referenceContextPath = _props2.referenceContextPath;
+	                referenceContextPath = _props2.referenceContextPath,
+	                operationType = _props2.operationType;
 	
 	
 	            return _react2.default.createElement(
@@ -57248,8 +57254,17 @@ webpackJsonp([1],[
 	                _react2.default.createElement(
 	                    'span',
 	                    { className: _style2.default.modalTitle },
-	                    _react2.default.createElement(_neosUiI18n2.default, {
+	                    operationType === _neosUiReduxStore.actionTypes.CR.Nodes.COPY && _react2.default.createElement(_neosUiI18n2.default, {
+	                        key: 'copy',
 	                        id: 'Neos.Neos.Ui:Main:copy__from__to--title',
+	                        params: {
+	                            source: this.renderNodeLabel(subjectContextPath),
+	                            target: this.renderNodeLabel(referenceContextPath)
+	                        }
+	                    }),
+	                    operationType === _neosUiReduxStore.actionTypes.CR.Nodes.CUT && _react2.default.createElement(_neosUiI18n2.default, {
+	                        key: 'move',
+	                        id: 'Neos.Neos.Ui:Main:move__from__to--title',
 	                        params: {
 	                            source: this.renderNodeLabel(subjectContextPath),
 	                            target: this.renderNodeLabel(referenceContextPath)
@@ -57362,6 +57377,7 @@ webpackJsonp([1],[
 	    isOpen: _react.PropTypes.bool.isRequired,
 	    enableAlongsideModes: _react.PropTypes.bool.isRequired,
 	    enableIntoMode: _react.PropTypes.bool.isRequired,
+	    operationType: _react.PropTypes.string,
 	    cancel: _react.PropTypes.func.isRequired,
 	    apply: _react.PropTypes.func.isRequired,
 	    nodeTypesRegistry: _react.PropTypes.object.isRequired,
@@ -60359,7 +60375,7 @@ webpackJsonp([1],[
 	    }, _marked[0], this);
 	}
 	
-	function determineInsertMode(subjectContextPath, referenceContextPath, canBePastedAlongside, canBePastedInto) {
+	function determineInsertMode(subjectContextPath, referenceContextPath, canBePastedAlongside, canBePastedInto, operation) {
 	    var waitForNextAction, nextAction;
 	    return regeneratorRuntime.wrap(function determineInsertMode$(_context3) {
 	        while (1) {
@@ -60374,7 +60390,7 @@ webpackJsonp([1],[
 	
 	                case 2:
 	                    _context3.next = 4;
-	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.InsertionModeModal.open(subjectContextPath, referenceContextPath, canBePastedAlongside, canBePastedInto));
+	                    return (0, _effects.put)(_neosUiReduxStore.actions.UI.InsertionModeModal.open(subjectContextPath, referenceContextPath, canBePastedAlongside, canBePastedInto, operation));
 	
 	                case 4:
 	                    _context3.next = 6;
@@ -60479,7 +60495,7 @@ webpackJsonp([1],[
 	                                        canBePastedAlongside = getCanBePastedAlongside.apply(undefined, canBePastedArguments);
 	                                        canBePastedInto = getCanBePastedInto.apply(undefined, canBePastedArguments);
 	                                        _context4.next = 24;
-	                                        return (0, _effects.call)(determineInsertMode, nodeToBePasted, contextPath, canBePastedAlongside, canBePastedInto);
+	                                        return (0, _effects.call)(determineInsertMode, nodeToBePasted, contextPath, canBePastedAlongside, canBePastedInto, _neosUiReduxStore.actionTypes.CR.Nodes.COPY);
 	
 	                                    case 24:
 	                                        mode = _context4.sent;
@@ -60593,7 +60609,7 @@ webpackJsonp([1],[
 	                                        canBePastedAlongside = getCanBePastedAlongside.apply(undefined, canBePastedArguments);
 	                                        canBePastedInto = getCanBePastedInto.apply(undefined, canBePastedArguments);
 	                                        _context6.next = 24;
-	                                        return (0, _effects.call)(determineInsertMode, nodeToBePasted, contextPath, canBePastedAlongside, canBePastedInto);
+	                                        return (0, _effects.call)(determineInsertMode, nodeToBePasted, contextPath, canBePastedAlongside, canBePastedInto, _neosUiReduxStore.actionTypes.CR.Nodes.CUT);
 	
 	                                    case 24:
 	                                        mode = _context6.sent;
