@@ -47288,36 +47288,28 @@ webpackJsonp([1],[
 	                return nodeTypeFilter.indexOf(nodeType.name) !== -1;
 	            }) : Object.values(this._registry);
 	
-	            // Distribute nodetypes into groups
-	            var groups = nodeTypes.reduce(function (groups, nodeType) {
-	                // Fallback to 'general' group
-	                var groupName = nodeType.ui && nodeType.ui.group ? nodeType.ui.group : 'general';
-	                if (groupName in _this2._groups) {
-	                    var group = groups[groupName] || Object.assign({}, _this2._groups[groupName]);
+	            // It's important to preserve the ordering of `this._groups` as we can't sort them again by position in JS (sorting logic is too complex)
+	            return Object.keys(this._groups).map(function (groupName) {
+	                // If a nodetype does not have group defined it means it's a system nodetype like "unstrctured"
+	                var nodesForGroup = nodeTypes
+	                // Filter by current group
+	                .filter(function (i) {
+	                    return (0, _plowJs.$get)('ui.group', i) === groupName;
+	                })
+	                // Sort nodetypes within group by position
+	                .sort(function (a, b) {
+	                    return (0, _plowJs.$get)('ui.position', a) > (0, _plowJs.$get)('ui.position', b) ? 1 : -1;
+	                });
 	
-	                    if (!group.nodeTypes) {
-	                        group.nodeTypes = [];
-	                    }
-	                    group.nodeTypes.push(nodeType);
-	                    groups[groupName] = group;
+	                if (nodesForGroup.length > 0) {
+	                    var group = Object.assign({}, _this2._groups[groupName]);
+	                    group.nodeTypes = nodesForGroup;
+	                    group.name = groupName;
+	                    return group;
 	                }
-	
-	                return groups;
-	            }, {});
-	
-	            // Sort both groups and nodetypes within the group and return as array
-	            return Object.keys(groups).map(function (i) {
-	                if (groups[i].nodeTypes) {
-	                    groups[i].nodeTypes.sort(function (a, b) {
-	                        return (0, _plowJs.$get)('ui.position', a) > (0, _plowJs.$get)('ui.position', b) ? 1 : -1;
-	                    });
-	                }
-	                groups[i].name = i;
-	                return groups[i];
+	                return null;
 	            }).filter(function (i) {
-	                return i.nodeTypes;
-	            }).sort(function (a, b) {
-	                return (0, _plowJs.$get)('position', a) > (0, _plowJs.$get)('position', b) ? 1 : -1;
+	                return i;
 	            });
 	        }
 	    }, {
