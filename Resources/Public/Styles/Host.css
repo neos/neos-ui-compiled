@@ -2380,6 +2380,9 @@
     outline: 2px solid #ff460d !important;
     color: #ff460d !important;
 }
+.style__textInput--highlight___19FPl {
+    outline: 2px solid #00a338;
+}
 .style__tooltip___1Xf-j {
     position: absolute;
 }
