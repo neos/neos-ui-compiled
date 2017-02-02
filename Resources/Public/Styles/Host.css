@@ -2652,6 +2652,17 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .style__dropDown__itemIcon___f52eR {
     padding-right: .5em;
 }
+.style__badge___hQ32t {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #ff8700;
+    white-space: nowrap;
+    background-color: white;
+    border-radius: 3px;
+}
 .style__checkbox___3ZqF1 {
     position: relative;
     display: inline-block;
@@ -2728,6 +2739,11 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 }
 .style__btn--highlighted___10FuU {
     background: #ff8700;
+}
+.style__notAllowed___1k9Ir {
+    padding: 12px 16px;
+    cursor: not-allowed;
+    opacity: .5;
 }
 .style__wrapper___2d4pM {
     display: inline-block;
@@ -2831,6 +2847,10 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 
 .style__dropDown__item--canPublish___fD6Pk {
     background: #ff8700;
+}
+
+.style__badge___34ARD {
+    margin-left: 8px;
 }
 .style__menuToggler--isActive____dC1Y {
     color: #00ADEE;
