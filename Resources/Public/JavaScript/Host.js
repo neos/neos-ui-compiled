@@ -52941,7 +52941,7 @@ webpackJsonp([1],[
 	};
 	
 	var findNode = exports.findNode = function findNode(contextPath, fusionPath) {
-	    return find('[data-__neos-node-contextpath="' + contextPath + '"][data-__neos-typoscript-path="' + fusionPath + '"]');
+	    return find('[data-__neos-node-contextpath="' + contextPath + '"][data-__neos-fusion-path="' + fusionPath + '"]');
 	};
 	
 	var closestNode = exports.closestNode = function closestNode(el) {
@@ -54122,7 +54122,8 @@ webpackJsonp([1],[
 	            // TODO: convert to single action: "guestFrameChange"
 	
 	            // Add nodes before setting the new context path to prevent action ordering issues
-	            addNodes(documentInformation.nodes);
+	            var nodes = iframeWindow['@Neos.Neos.Ui:Nodes'];
+	            addNodes(nodes);
 	
 	            setContextPath(documentInformation.metaData.contextPath);
 	            setPreviewUrl(documentInformation.metaData.previewUrl);
@@ -54134,7 +54135,7 @@ webpackJsonp([1],[
 	            var components = iframeDocument.querySelectorAll('[data-__neos-node-contextpath]');
 	            Array.prototype.forEach.call(components, function (node) {
 	                var contextPath = node.getAttribute('data-__neos-node-contextpath');
-	                var isHidden = (0, _plowJs.$get)([contextPath, 'properties', '_hidden'], documentInformation.nodes);
+	                var isHidden = (0, _plowJs.$get)([contextPath, 'properties', '_hidden'], nodes);
 	
 	                if (isHidden) {
 	                    node.classList.add(_style2.default.markHiddenNodeAsHidden);
@@ -54174,7 +54175,7 @@ webpackJsonp([1],[
 	                    // Do nothing, everything OK!
 	                } else if (selectedDomNode) {
 	                    var contextPath = selectedDomNode.getAttribute('data-__neos-node-contextpath');
-	                    var fusionPath = selectedDomNode.getAttribute('data-__neos-typoscript-path');
+	                    var fusionPath = selectedDomNode.getAttribute('data-__neos-fusion-path');
 	
 	                    focusNode(contextPath, fusionPath);
 	                } else {
@@ -56626,7 +56627,7 @@ webpackJsonp([1],[
 	                    },
 	                    parentDomAddress: {
 	                        contextPath: parentElement.getAttribute('data-__neos-node-contextpath'),
-	                        fusionPath: parentElement.getAttribute('data-__neos-typoscript-path')
+	                        fusionPath: parentElement.getAttribute('data-__neos-fusion-path')
 	                    }
 	                };
 	            }
@@ -60850,7 +60851,7 @@ webpackJsonp([1],[
 	                    },
 	                    parentDomAddress: parentElement ? {
 	                        contextPath: parentElement.getAttribute('data-__neos-node-contextpath'),
-	                        fusionPath: parentElement.getAttribute('data-__neos-typoscript-path')
+	                        fusionPath: parentElement.getAttribute('data-__neos-fusion-path')
 	                    } : {
 	                        contextPath: parentNodeContextPath(contextPath),
 	                        fusionPath: null
