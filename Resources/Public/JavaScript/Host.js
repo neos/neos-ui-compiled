@@ -27764,8 +27764,8 @@ webpackJsonp([1],[
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var CROP_IMAGE_ADJUSTMENT = exports.CROP_IMAGE_ADJUSTMENT = ['object', 'adjustments', 'TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment'];
-	var RESIZE_IMAGE_ADJUSTMENT = exports.RESIZE_IMAGE_ADJUSTMENT = ['object', 'adjustments', 'TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment'];
+	var CROP_IMAGE_ADJUSTMENT = exports.CROP_IMAGE_ADJUSTMENT = ['object', 'adjustments', 'Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment'];
+	var RESIZE_IMAGE_ADJUSTMENT = exports.RESIZE_IMAGE_ADJUSTMENT = ['object', 'adjustments', 'Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment'];
 	
 	var DEFAULT_OFFSET = { x: 0, y: 0 };
 	
@@ -46766,11 +46766,11 @@ webpackJsonp([1],[
 	};
 	
 	/**
-	 * asset[adjustments][TYPO3\Media\Domain\Model\Adjustment\CropImageAdjustment][height]:85
-	 * asset[adjustments][TYPO3\Media\Domain\Model\Adjustment\CropImageAdjustment][position]:10
-	 * asset[adjustments][TYPO3\Media\Domain\Model\Adjustment\CropImageAdjustment][width]:210
-	 * asset[adjustments][TYPO3\Media\Domain\Model\Adjustment\CropImageAdjustment][x]:0
-	 * asset[adjustments][TYPO3\Media\Domain\Model\Adjustment\CropImageAdjustment][y]:0
+	 * asset[adjustments][Neos\Media\Domain\Model\Adjustment\CropImageAdjustment][height]:85
+	 * asset[adjustments][Neos\Media\Domain\Model\Adjustment\CropImageAdjustment][position]:10
+	 * asset[adjustments][Neos\Media\Domain\Model\Adjustment\CropImageAdjustment][width]:210
+	 * asset[adjustments][Neos\Media\Domain\Model\Adjustment\CropImageAdjustment][x]:0
+	 * asset[adjustments][Neos\Media\Domain\Model\Adjustment\CropImageAdjustment][y]:0
 	 * asset[originalAsset]:56d183f2-ee66-c845-7e2d-40661fb27571
 	 * @param asset
 	 */
@@ -48629,7 +48629,7 @@ webpackJsonp([1],[
 	
 	var MediaDetailsScreen = function MediaDetailsScreen(props) {
 	    // TODO: Media package refactoring
-	    window.Typo3MediaBrowserCallbacks = {
+	    window.NeosMediaBrowserCallbacks = {
 	        close: function close() {
 	            props.onClose();
 	        }
@@ -48668,7 +48668,7 @@ webpackJsonp([1],[
 	
 	var MediaSelectionScreen = function MediaSelectionScreen(props) {
 	    // TODO: Media package refactoring
-	    window.Typo3MediaBrowserCallbacks = {
+	    window.NeosMediaBrowserCallbacks = {
 	        assetChosen: function assetChosen(assetIdentifier) {
 	            props.onComplete(assetIdentifier);
 	        }
