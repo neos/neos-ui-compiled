@@ -5,7 +5,7 @@ webpackJsonp([2],{
 
 	'use strict';
 	
-	var _guestFrameApi = __webpack_require__(469);
+	var _guestFrameApi = __webpack_require__(471);
 	
 	var _guestFrameApi2 = _interopRequireDefault(_guestFrameApi);
 	
@@ -405,7 +405,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 469:
+/***/ 471:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -414,7 +414,7 @@ webpackJsonp([2],{
 	    value: true
 	});
 	
-	var _lodash = __webpack_require__(898);
+	var _lodash = __webpack_require__(901);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
@@ -475,7 +475,12 @@ webpackJsonp([2],{
 	                    return;
 	                }
 	
-	                throw new Error('\n                An error occured while checking a format in CK Editor.\n                The description parameter needs to either have a key "command" or\n                a key "style" - none of which could be found.\n            ');
+	                if (formattingRule.extractCurrentFormatFn) {
+	                    formattingUnderCursor[key] = formattingRule.extractCurrentFormatFn(editor, CKEDITOR);
+	                    return;
+	                }
+	
+	                throw new Error('\n                An error occured while checking a format in CK Editor.\n                The description parameter needs to either have a key "command",\n                a key "style", or a style "extractCurrentFormatFn" - none of which could be found.\n            ');
 	            });
 	
 	            editorConfig.setFormattingUnderCursor(formattingUnderCursor);
@@ -524,6 +529,8 @@ webpackJsonp([2],{
 	            editorConfig = _editorConfig;
 	        },
 	        toggleFormat: function toggleFormat(formatting) {
+	            var formattingOptions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	
 	            var formattingRule = editorConfig.formattingRules[formatting];
 	            if (!formattingRule) {
 	                console.warn('Formatting instruction ' + formatting + ' not found.');
@@ -559,7 +566,15 @@ webpackJsonp([2],{
 	                return;
 	            }
 	
-	            throw new Error('\n                An error occured while applying a format in CK Editor.\n                The description parameter needs to either have a key "command",\n                or "style" - none of which could be found.\n            ');
+	            if (formattingRule.applyStyleFn) {
+	                formattingRule.applyStyleFn(formattingOptions, currentEditor, CKEDITOR);
+	
+	                currentEditor.fire('change');
+	                handleUserInteractionCallbackFactory(currentEditor)();
+	                return;
+	            }
+	
+	            throw new Error('\n                An error occured while applying a format in CK Editor.\n                The description parameter needs to either have a key "command",\n                "style", or "applyFn" - none of which could be found.\n            ');
 	        },
 	        createEditor: function createEditor(dom, finalOptions, propertyName, onChange) {
 	            dom.contentEditable = 'true';
@@ -602,7 +617,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 898:
+/***/ 901:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**

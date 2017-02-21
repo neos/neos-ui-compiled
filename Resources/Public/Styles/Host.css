@@ -2440,7 +2440,10 @@
 .style__toolBar__btnGroup__btn___iewGp {
     float: left;
 }
-.style__secondaryToolbar___1MGlE {
+.style__linkIconButton__flyout___2mip6 {
+    position: fixed;
+    z-index: 1000;
+}.style__secondaryToolbar___1MGlE {
     position: absolute;
     top: 41px;
     left: 0;
