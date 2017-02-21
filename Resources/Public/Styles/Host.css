@@ -37,6 +37,9 @@
 .style__markHiddenNodeAsHidden___2W8UK {
     opacity: .5;
 }
+.style__editable___2Y5Uk:focus {
+    outline: none;
+}
 .style__applicationWrapper___1OATQ {
     height: 100vh;
 }
