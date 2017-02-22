@@ -5,7 +5,7 @@ webpackJsonp([2],{
 
 	'use strict';
 	
-	var _guestFrameApi = __webpack_require__(474);
+	var _guestFrameApi = __webpack_require__(472);
 	
 	var _guestFrameApi2 = _interopRequireDefault(_guestFrameApi);
 	
@@ -405,7 +405,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 474:
+/***/ 472:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -414,7 +414,7 @@ webpackJsonp([2],{
 	    value: true
 	});
 	
-	var _lodash = __webpack_require__(916);
+	var _lodash = __webpack_require__(914);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
@@ -429,6 +429,10 @@ webpackJsonp([2],{
 	    toggleFormat: function toggleFormat() {},
 	    createEditor: function createEditor() {}
 	};
+	
+	// We cache the "formattingUnderCursor"; to only emit events when it really changed.
+	// As there is only a single cursor active at any given time, it is safe to do this caching here inside the singleton object.
+	var lastFormattingUnderCursorSerialized = '';
 	
 	var createCKEditorAPI = function createCKEditorAPI(CKEDITOR) {
 	    if (!CKEDITOR) {
@@ -483,7 +487,11 @@ webpackJsonp([2],{
 	                throw new Error('\n                An error occured while checking a format in CK Editor.\n                The description parameter needs to either have a key "command",\n                a key "style", or a style "extractCurrentFormatFn" - none of which could be found.\n            ');
 	            });
 	
-	            editorConfig.setFormattingUnderCursor(formattingUnderCursor);
+	            var formattingUnderCursorSerialized = JSON.stringify(formattingUnderCursor);
+	            if (formattingUnderCursorSerialized !== lastFormattingUnderCursorSerialized) {
+	                editorConfig.setFormattingUnderCursor(formattingUnderCursor);
+	                lastFormattingUnderCursorSerialized = formattingUnderCursorSerialized;
+	            }
 	        };
 	    };
 	
@@ -617,7 +625,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 916:
+/***/ 914:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
