@@ -3089,7 +3089,7 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 }
 .style__pageTree___WQFAt {
     max-height: calc(100vh - 75px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .style__leftSideBar___2qCob {
     padding-top: 41px;
