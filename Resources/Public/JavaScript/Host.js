@@ -57473,7 +57473,7 @@ webpackJsonp([1],[
 	    var contextPath = '';
 	
 	    if ((0, _lodash2.default)(node)) {
-	        contextPath = node.contextPath || node.$node;
+	        contextPath = (0, _plowJs.$get)('contextPath', node) || (0, _plowJs.$get)('$node', node);
 	    } else if ((0, _lodash4.default)(node)) {
 	        contextPath = node;
 	    }
@@ -57548,8 +57548,8 @@ webpackJsonp([1],[
 	    var q = function q(context) {
 	        var ignoreMiddleware = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 	
-	        if ((0, _lodash2.default)(context) && context.contextPath) {
-	            context = [context.contextPath];
+	        if ((0, _lodash2.default)(context) && (0, _plowJs.$get)('contextPath', context)) {
+	            context = [(0, _plowJs.$get)('contextPath', context)];
 	        } else if ((0, _lodash4.default)(context)) {
 	            context = [context];
 	        }
@@ -73937,7 +73937,7 @@ webpackJsonp([1],[
 	                    state = _context4.sent;
 	                    focusedNode = getFocusedNode(state);
 	                    transientInspectorValues = getTransientInspectorValues(state);
-	                    transientInspectorValuesForFocusedNodes = transientInspectorValues[focusedNode.contextPath];
+	                    transientInspectorValuesForFocusedNodes = (0, _plowJs.$get)([(0, _plowJs.$get)('contextPath', focusedNode)], transientInspectorValues);
 	                    _iteratorNormalCompletion = true;
 	                    _didIteratorError = false;
 	                    _iteratorError = undefined;
@@ -73978,7 +73978,7 @@ webpackJsonp([1],[
 	                                        //
 	                                        change = {
 	                                            type: 'Neos.Neos.Ui:Property',
-	                                            subject: focusedNode.contextPath,
+	                                            subject: (0, _plowJs.$get)('contextPath', focusedNode),
 	                                            payload: { propertyName: propertyName, value: value }
 	                                        };
 	
@@ -74209,7 +74209,7 @@ webpackJsonp([1],[
 	                                        }
 	
 	                                        nodes = parentNodes.concat(childNodes).reduce(function (nodeMap, node) {
-	                                            nodeMap[node.contextPath] = node;
+	                                            nodeMap[(0, _plowJs.$get)('contextPath', node)] = node;
 	                                            return nodeMap;
 	                                        }, {});
 	                                        _context3.next = 29;
@@ -74303,7 +74303,7 @@ webpackJsonp([1],[
 	                                        childrenAreFullyLoaded = (0, _plowJs.$get)(['cr', 'nodes', 'byContextPath', contextPath, 'children'], state).toJS().filter(function (childEnvelope) {
 	                                            return nodeTypesRegistry.hasRole(childEnvelope.nodeType, 'document');
 	                                        }).every(function (childEnvelope) {
-	                                            return Boolean((0, _plowJs.$get)(['cr', 'nodes', 'byContextPath', childEnvelope.contextPath], state));
+	                                            return Boolean((0, _plowJs.$get)(['cr', 'nodes', 'byContextPath', (0, _plowJs.$get)('contextPath', childEnvelope)], state));
 	                                        });
 	
 	                                        if (!childrenAreFullyLoaded) {
@@ -74460,7 +74460,7 @@ webpackJsonp([1],[
 	                                        nodes = _context11.sent;
 	                                        _context11.next = 23;
 	                                        return (0, _effects.put)(_neosUiReduxStore.actions.CR.Nodes.add(nodes.reduce(function (nodeMap, node) {
-	                                            nodeMap[node.contextPath] = node;
+	                                            nodeMap[(0, _plowJs.$get)('contextPath', node)] = node;
 	                                            return nodeMap;
 	                                        }, {})));
 	
