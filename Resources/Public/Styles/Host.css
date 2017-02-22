@@ -2980,8 +2980,8 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     outline: 0;
 }
 .node__header___2rTs3 {
+    margin: 0;
     position: relative;
-    height: 11px;
     line-height: 20px;
     padding-left: 15px;
 }
@@ -3010,9 +3010,17 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .node__header__chevron--isLoading___2M9CW:hover {
     color: #adadad !important;
 }
+.node__header__icon___2EJJN {
+    padding: 0 .4em;
+}
 .node__header__data___145Wb {
+    position: relative;
     display: block;
     cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: .2em 0;
 }
 .node__header__data--isHiddenInIndex___2pB5v {
     opacity: .5;
@@ -3028,6 +3036,16 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     .node__header__data--isFocused___2aHrq.node__header__data--isHidden___2ztwj {
     opacity: .8;
 }
+.node__header__data--acceptsDrop___1Bozp {
+    background-color: green;
+}
+.node__header__data--deniesDrop___1O0Yg {
+    background-color: red;
+}
+.node__header__data--acceptsDrop___1Bozp *,
+.node__header__data--deniesDrop___1O0Yg * {
+    pointer-events: none;
+}
 .node__header__label___15h32 {
 }
 .node__header__data--isActive___1RWsv .node__header__label___15h32 {
@@ -3036,9 +3054,12 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .node__contents___3Sqg6 {
     margin-left: 16px;
 }
+.style__pageTree___WQFAt {
+    max-height: calc(100vh - 75px);
+    overflow-y: scroll;
+}
 .style__leftSideBar___2qCob {
     padding-top: 41px;
-    padding-bottom: 41px;
     transition: .2s ease transform;
     will-change: transform;
 }
