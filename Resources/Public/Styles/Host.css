@@ -2446,7 +2446,40 @@
 .style__linkIconButton__flyout___2mip6 {
     position: fixed;
     z-index: 1000;
-}.style__secondaryToolbar___1MGlE {
+}.style__loadingIndicator__container___1yhsy {
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+    padding: 0 320px;
+    width: 100%;
+}
+
+.style__loadingIndicator___1WGcs {
+	height: .25em;
+	position: relative;
+    width: 100%;
+}
+
+.style__loadingIndicator__bar___2sQ1u {
+	height: 100%;
+	position: relative;
+	background-color: #ff8700;
+	animation: style__cssload-width___1HiBF 2s cubic-bezier(.45, 0, 1, 1) infinite;
+}
+
+@keyframes style__cssload-width___1HiBF {
+	0%,
+    100% {
+		transition-timing-function: cubic-bezier(1, 0, .65, .85);
+	}
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+.style__secondaryToolbar___1MGlE {
     position: absolute;
     top: 41px;
     left: 0;
