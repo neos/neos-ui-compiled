@@ -62818,9 +62818,9 @@ webpackJsonp([1],[
 	        var nodeType = nodeTypesRegistry.get((0, _plowJs.$get)('nodeType', focusedNode));
 	        if (!(0, _plowJs.$get)('properties', nodeType)) {
 	            console.error('No properties configured in ' + (0, _plowJs.$get)('nodeType', focusedNode) + ' nodetype');
+	            return null;
 	        }
-	        console.log('VALIDAT');
-	        var validationErrors = (0, _index2.default)(propertiesForValidation, nodeType.properties, validatorRegistry);
+	        var validationErrors = (0, _index2.default)(propertiesForValidation, (0, _plowJs.$get)('properties', nodeType), validatorRegistry);
 	        return validationErrors;
 	    });
 	});
