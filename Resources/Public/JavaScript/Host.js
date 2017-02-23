@@ -109,7 +109,7 @@ webpackJsonp([1],[
 	                    //
 	                    _reactDom2.default.render(_react2.default.createElement(
 	                        'div',
-	                        { style: { width: '100vw', height: '100vh', backgroundColor: 'black' } },
+	                        { style: { width: '100vw', height: '100vh', backgroundColor: 'black', display: 'flex', alignItems: 'center', justifyContent: 'center' } },
 	                        _react2.default.createElement(
 	                            'h1',
 	                            null,
