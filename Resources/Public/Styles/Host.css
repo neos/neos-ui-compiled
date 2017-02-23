@@ -3407,6 +3407,12 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .style__dialog__actions___22qLt > * {
     margin-left: calc(16px / 2);
 }
+.style__modalTitle___33Lzc {
+    margin-left: 16px;
+}
+.style__modalContents___1zQy0 {
+    padding: 16px;
+}
 .style__buttonGroup___3ewAh {
     display: block;
 }
@@ -3416,46 +3422,6 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     -ms-flex-align: center;
         align-items: center;
 }
-.style__nodeType___1ZysQ {
-    width: 100%;
-    text-align: left;
-}
-.style__nodeType__icon___27US4 {
-    color: #00ADEE;
-}
-.style__nodeType___1ZysQ:hover .style__nodeType__icon___27US4 {
-    color: #FFF;
-}
-/* TODO: refactor such typography things to Headline component */
-.style__groupHeader___3urmM {
-    border-bottom: 1px solid #3f3f3f;
-}
-.style__groupTitle___2wtXt {
-    color: #adadad;
-    line-height: 1.2;
-    font-weight: normal;
-}
-.style__groupContents___2uFtA {
-    padding: 0 !important;
-}
-.style__grid___1ZHYg {
-    margin: 0;
-}
-.style__gridItem___3Chlp {
-    padding: 0;
-}
-.style__step2__body___3Cv_g {
-    padding: 16px;
-}
-.style__step2__editor___7gj2c {
-    margin-bottom: 16px;
-}
-.style__modalTitle___33Lzc {
-    margin-left: 16px;
-}
-.style__modalContents___1zQy0 {
-    padding: 16px;
-}
 .style__modalTitle___M4cdz {
     margin-left: 16px;
 }
@@ -3464,6 +3430,41 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 }
 .style__applyBtn___sAeF5 {
     background: #00a338 !important;
+}
+.style__nodeType___2Bm7H {
+    width: 100%;
+    text-align: left;
+}
+.style__nodeType__icon___25w2d {
+    color: #00ADEE;
+}
+.style__nodeType___2Bm7H:hover .style__nodeType__icon___25w2d {
+    color: #FFF;
+}
+/* TODO: refactor such typography things to Headline component */
+.style__groupHeader___5Ceyu {
+    border-bottom: 1px solid #3f3f3f;
+}
+.style__groupTitle___2rtQ4 {
+    color: #adadad;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.style__groupContents___11txw {
+    padding: 0 !important;
+}
+.style__grid___1zTco {
+    margin: 0;
+}
+.style__gridItem___3--SF {
+    padding: 0;
+}
+.style__body___3gZjN {
+    padding: 16px;
+}
+
+.style__editor___1_xsB {
+    margin-bottom: 16px;
 }
 .style__calendarInputWrapper___3EKou {
     display: table;
