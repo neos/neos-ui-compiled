@@ -68020,7 +68020,7 @@ webpackJsonp([1],[
 	
 	    return Node;
 	}(_react.PureComponent), _class2.propTypes = {
-	    ChildRenderer: _react.PropTypes.object,
+	    ChildRenderer: _react.PropTypes.func.isRequired,
 	    node: _react.PropTypes.object,
 	    currentlyDraggedNode: _react.PropTypes.object,
 	    hasChildren: _react.PropTypes.bool,
@@ -68179,7 +68179,6 @@ webpackJsonp([1],[
 	}(_react.PureComponent), _class2.propTypes = {
 	    siteNode: _react.PropTypes.object,
 	    pageTreeState: _react.PropTypes.object.isRequired,
-	    nodeTypesRegistry: _react.PropTypes.object.isRequired,
 	
 	    onNodeToggle: _react.PropTypes.func,
 	    onNodeFocus: _react.PropTypes.func,
@@ -68934,7 +68933,6 @@ webpackJsonp([1],[
 	            var _props = this.props,
 	                isOpen = _props.isOpen,
 	                configuration = _props.configuration,
-	                isDirty = _props.isDirty,
 	                onHandleClose = _props.onHandleClose;
 	
 	
@@ -68942,7 +68940,9 @@ webpackJsonp([1],[
 	                return null;
 	            }
 	
-	            var validationErrors = this.state.validationErrors;
+	            var _state = this.state,
+	                validationErrors = _state.validationErrors,
+	                isDirty = _state.isDirty;
 	
 	
 	            return _react2.default.createElement(
@@ -68986,14 +68986,12 @@ webpackJsonp([1],[
 	    return NodeCreationDialog;
 	}(_react.PureComponent), _class2.propTypes = {
 	    isOpen: _react.PropTypes.bool.isRequired,
-	    label: _react.PropTypes.string.isRequired,
-	    configuration: _react.PropTypes.object.isRequired,
-	    selectedNodeType: _react.PropTypes.object.isRequired,
+	    label: _react.PropTypes.string,
+	    configuration: _react.PropTypes.object,
 	    validatorRegistry: _react.PropTypes.object.isRequired,
 	    apply: _react.PropTypes.func.isRequired,
 	    onHandleBack: _react.PropTypes.func.isRequired,
-	    onHandleClose: _react.PropTypes.func.isRequired,
-	    isDirty: _react.PropTypes.bool.isRequired
+	    onHandleClose: _react.PropTypes.func.isRequired
 	}, _temp2)) || _class) || _class);
 	exports.default = NodeCreationDialog;
 
@@ -70215,7 +70213,7 @@ webpackJsonp([1],[
 	                    _react2.default.createElement(_neosUiI18n2.default, { id: 'to' }),
 	                    ' ',
 	                    baseWorkspaceTitle,
-	                    publishableNodesInDocumentCount > 0 && _react2.default.createElement(_Badge2.default, { className: _style2.default.badge, label: publishableNodesInDocumentCount })
+	                    publishableNodesInDocumentCount > 0 && _react2.default.createElement(_Badge2.default, { className: _style2.default.badge, label: String(publishableNodesInDocumentCount) })
 	                ),
 	                _react2.default.createElement(
 	                    _DropDown2.default,
@@ -72291,7 +72289,7 @@ webpackJsonp([1],[
 	
 	    return LoadingIndicator;
 	}(_react.PureComponent), _class2.propTypes = {
-	    isLoading: _react.PropTypes.string.isRequired
+	    isLoading: _react.PropTypes.bool.isRequired
 	}, _temp)) || _class);
 	exports.default = LoadingIndicator;
 
@@ -109286,7 +109284,7 @@ webpackJsonp([1],[
 	
 	            var acceptsDrop = this.state.acceptsDrop;
 	
-	            var rest = (0, _lodash2.default)(restProps, ['onToggle']);
+	            var rest = (0, _lodash2.default)(restProps, ['onToggle', 'isCollapsed', 'isLoading', 'hasError']);
 	            var dataClassNames = (0, _classnames2.default)((_mergeClassNames = {}, _defineProperty(_mergeClassNames, theme.header__data, true), _defineProperty(_mergeClassNames, theme['header__data--isActive'], isActive), _defineProperty(_mergeClassNames, theme['header__data--isFocused'], isFocused), _defineProperty(_mergeClassNames, theme['header__data--isHiddenInIndex'], isHiddenInIndex), _defineProperty(_mergeClassNames, theme['header__data--isHidden'], isHidden), _defineProperty(_mergeClassNames, theme['header__data--acceptsDrop'], acceptsDrop === true), _defineProperty(_mergeClassNames, theme['header__data--deniesDrop'], acceptsDrop === false), _mergeClassNames));
 	
 	            return _react2.default.createElement('ul', { className: theme.header }, hasChildren ? this.renderCollapseControl() : null, _react2.default.createElement('li', {
