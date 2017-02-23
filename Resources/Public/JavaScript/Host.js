@@ -60087,11 +60087,13 @@ webpackJsonp([1],[
 	
 	var _SelectBox2 = _interopRequireDefault(_SelectBox);
 	
-	var _neosUiDecorators = __webpack_require__(23);
-	
 	var _neosUiBackendConnector = __webpack_require__(61);
 	
 	var _neosUiBackendConnector2 = _interopRequireDefault(_neosUiBackendConnector);
+	
+	var _neosUiReduxStore = __webpack_require__(6);
+	
+	var _neosUiDecorators = __webpack_require__(23);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -60102,8 +60104,7 @@ webpackJsonp([1],[
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var ReferenceEditor = (_dec = (0, _reactRedux.connect)((0, _plowJs.$transform)({
-	    activeWorkspace: (0, _plowJs.$get)('cr.workspaces.personalWorkspace.name'),
-	    siteNodePath: (0, _plowJs.$get)('cr.nodes.siteNode')
+	    contextForNodeLinking: _neosUiReduxStore.selectors.UI.NodeLinking.contextForNodeLinking
 	})), _dec2 = (0, _neosUiDecorators.neos)(function (globalRegistry) {
 	    return {
 	        i18nRegistry: globalRegistry.get('@neos-project/neos-ui-i18n')
@@ -60117,6 +60118,7 @@ webpackJsonp([1],[
 	        var _this = _possibleConstructorReturn(this, (ReferenceEditor.__proto__ || Object.getPrototypeOf(ReferenceEditor)).call(this, props));
 	
 	        _this.searchNodes = _neosUiBackendConnector2.default.get().endpoints.searchNodes;
+	        _this.optionGenerator = _this.optionGenerator.bind(_this);
 	        _this.handleDelete = function () {
 	            return _this.props.commit('');
 	        };
@@ -60124,57 +60126,53 @@ webpackJsonp([1],[
 	    }
 	
 	    _createClass(ReferenceEditor, [{
+	        key: 'optionGenerator',
+	        value: function optionGenerator(_ref) {
+	            var value = _ref.value,
+	                callback = _ref.callback;
+	
+	            var searchNodesQuery = this.props.contextForNodeLinking.toJS();
+	            if (!value && this.props.value) {
+	                searchNodesQuery.nodeIdentifiers = [this.props.value];
+	            } else if (!value || value.length < 2) {
+	                return;
+	            } else {
+	                searchNodesQuery.searchTerm = value;
+	            }
+	
+	            this.searchNodes(searchNodesQuery).then(function (result) {
+	                callback(result);
+	            });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _this2 = this;
-	
 	            var _props = this.props,
 	                commit = _props.commit,
 	                options = _props.options,
 	                i18nRegistry = _props.i18nRegistry;
 	
-	            var valueSoFar = this.props.value;
-	
-	            var selectBoxOptions = function selectBoxOptions(_ref) {
-	                var value = _ref.value,
-	                    callback = _ref.callback;
-	
-	                var searchQuery = {
-	                    workspaceName: _this2.props.activeWorkspace,
-	                    contextNode: _this2.props.siteNodePath
-	                };
-	
-	                if (!value && valueSoFar) {
-	                    searchQuery.nodeIdentifiers = [valueSoFar];
-	                } else if (!value || value.length < 2) {
-	                    return;
-	                } else {
-	                    searchQuery.searchTerm = value;
-	                }
-	
-	                _this2.searchNodes(searchQuery).then(function (result) {
-	                    callback(result);
-	                });
-	            };
-	
-	            var placeholder = options && options.placeholder && i18nRegistry.translate(unescape(options.placeholder));
 	            var onDelete = this.props.value ? this.handleDelete : null;
+	            var placeholder = options && options.placeholder && i18nRegistry.translate(unescape(options.placeholder));
 	
-	            return _react2.default.createElement(_SelectBox2.default, { options: selectBoxOptions, value: this.props.value, onSelect: commit, onDelete: onDelete, placeholder: placeholder });
+	            return _react2.default.createElement(_SelectBox2.default, {
+	                options: this.optionGenerator,
+	                value: this.props.value,
+	                placeholder: placeholder,
+	                onSelect: commit,
+	                onDelete: onDelete
+	            });
 	        }
 	    }]);
 	
 	    return ReferenceEditor;
 	}(_react.PureComponent), _class2.propTypes = {
+	    value: _react.PropTypes.string,
 	    commit: _react.PropTypes.func.isRequired,
-	    value: _react.PropTypes.any,
-	
 	    options: _react.PropTypes.shape({
 	        nodeTypes: _react.PropTypes.arrayOf(_react.PropTypes.string)
 	    }),
-	
-	    activeWorkspace: _react.PropTypes.string.isRequired,
-	    siteNodePath: _react.PropTypes.string.isRequired,
+	    contextForNodeLinking: _react.PropTypes.object.isRequired,
 	
 	    i18nRegistry: _react.PropTypes.object.isRequired
 	}, _temp)) || _class) || _class);
