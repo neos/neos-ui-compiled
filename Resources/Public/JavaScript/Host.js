@@ -70745,10 +70745,13 @@ webpackJsonp([1],[
 	                id = _props2.id,
 	                transientValueRaw = _props2.transientValueRaw,
 	                otherProps = _objectWithoutProperties(_props2, ['node', 'id', 'transientValueRaw']);
-	            // If property id starts with "_" then look in object properties directly
+	
+	            //
+	            // nodeType needs to be read directly from node
+	            //
 	
 	
-	            var sourceValueRaw = id.slice(0, 1) === '_' ? node[id.slice(1)] : (0, _plowJs.$get)(['properties', id], node);
+	            var sourceValueRaw = id === '_nodeType' ? (0, _plowJs.$get)('nodeType', node) : (0, _plowJs.$get)(['properties', id], node);
 	            var sourceValue = sourceValueRaw && sourceValueRaw.toJS ? sourceValueRaw.toJS() : sourceValueRaw;
 	            var transientValue = transientValueRaw && transientValueRaw.toJS ? transientValueRaw.toJS() : transientValueRaw;
 	
