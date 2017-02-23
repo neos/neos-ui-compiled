@@ -2489,6 +2489,7 @@
     background: #323232;
     transition: .2s ease padding;
     will-change: padding;
+    border-bottom: 1px solid #3f3f3f;
 }
 .style__secondaryToolbar___1MGlE:before,
     .style__secondaryToolbar___1MGlE:after {
