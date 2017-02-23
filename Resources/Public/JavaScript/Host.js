@@ -74817,17 +74817,16 @@ webpackJsonp([1],[
 	
 	    var timer = null;
 	    var debounceLocalStorageTimeout = 1000;
-	    var persistentActionsPatterns = ['@neos/neos-ui/UI', '@neos/neos-ui/User/Settings'];
+	    var persistentActionsPatterns = ['@neos/neos-ui/UI/LeftSideBar/TOGGLE', '@neos/neos-ui/UI/RightSidebar/TOGGLE'];
 	
 	    return function (next) {
 	        return function (action) {
 	            var returnValue = next(action);
 	
-	            var actionMatched = persistentActionsPatterns.map(function (pattern) {
-	                return action.type.startsWith(pattern);
-	            }).reduce(function (result, current) {
-	                return result || current;
-	            }, false);
+	            var actionMatched = persistentActionsPatterns.some(function (pattern) {
+	                return action.type === pattern;
+	            });
+	
 	            // If UI kind of action, persist state to local storage
 	            if (actionMatched) {
 	                clearTimeout(timer);
@@ -74835,9 +74834,13 @@ webpackJsonp([1],[
 	                    var state = getState();
 	                    // TODO: figure out a more declarative way to manage this. Or just move all persistent state under "ui"
 	                    var persistentStateSubset = {
-	                        ui: (0, _plowJs.$get)('ui', state) && (0, _plowJs.$get)('ui', state).toJS(),
-	                        user: {
-	                            settings: (0, _plowJs.$get)('user.settings', state)
+	                        ui: {
+	                            leftSideBar: {
+	                                isHidden: (0, _plowJs.$get)('ui.leftSideBar.isHidden', state)
+	                            },
+	                            rightSideBar: {
+	                                isHidden: (0, _plowJs.$get)('ui.rightSideBar.isHidden', state)
+	                            }
 	                        }
 	                    };
 	                    localStorage.setItem('persistedState', JSON.stringify(persistentStateSubset));
