@@ -414,7 +414,7 @@ webpackJsonp([2],{
 	    value: true
 	});
 	
-	var _lodash = __webpack_require__(918);
+	var _lodash = __webpack_require__(917);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
@@ -625,7 +625,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 918:
+/***/ 917:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**

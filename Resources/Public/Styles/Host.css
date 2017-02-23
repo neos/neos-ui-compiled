@@ -2545,17 +2545,11 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     font-size: 14px;
     position: relative;
     width: 512px;
-    max-height: 0;
     margin: 0 auto 4px;
     word-wrap: break-word;
     overflow: hidden;
     box-sizing: border-box;
     box-shadow: 0 0 14px rgba(0,0,0, .15);
-    transition: .1s ease max-height;
-}
-
-.style__flashMessage--visible___ficQ4 {
-    max-height: 100vh;
 }
 
 .style__flashMessage--success___3KYoa {
