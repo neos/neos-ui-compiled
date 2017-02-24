@@ -75,16 +75,545 @@
     .reset__reset___3moMU:after {
     box-sizing: border-box;
 }
-.style__iconButton___3ECsM {
-    vertical-align: top;
-    width: 40px;
-    padding-left: 0;
-    padding-right: 0;
+.style__badge___hQ32t {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #ff8700;
+    white-space: nowrap;
+    background-color: white;
+    border-radius: 3px;
 }
-
-.style__size-small___q-2qZ {
-    width: 32px !important;
-    min-width: 32px !important;
+.style__bar___3aynj {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #222;
+    height: 41px;
+    border-bottom: 1px solid #3f3f3f;
+}
+.style__bar--top___2hN_8 {
+    top: 0;
+}
+.style__bar--bottom___1n4Hk {
+    bottom: 0;
+}
+.style__btn___1L6Xa {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    min-width: 40px;
+    padding: 0 16px;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    width: auto;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #323232;
+    font-size: 14px;
+}
+.style__btn___1L6Xa:focus {
+    outline: 1px dotted #FFF;
+}
+.style__btn___1L6Xa[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+}
+.style__btn___1L6Xa[disabled]:hover {
+    color: #FFF;
+}
+.style__btn___1L6Xa[disabled].style__btn--isPressed___1DHKK {
+    color: #FFF;
+}
+.style__btn___1L6Xa[disabled]:hover * {
+    color: #FFF;
+}
+.style__btn___1L6Xa[disabled].style__btn--isPressed___1DHKK * {
+    color: #FFF;
+}
+.style__btn--size-small___176K7 {
+    height: 32px;
+    font-size: 13px;
+    padding: 0 8px;
+}
+.style__btn--clean___19fR5 {
+    background-color: #222;
+}
+.style__btn--clean___19fR5[disabled]:hover {
+    background-color: #222;
+}
+.style__btn--clean___19fR5[disabled]:hover * {
+    background-color: #222;
+}
+.style__btn--lighter___2DalC {
+    background-color: #3f3f3f;
+}
+.style__btn--lighter___2DalC[disabled]:hover {
+    background-color: #3f3f3f;
+}
+.style__btn--lighter___2DalC[disabled]:hover * {
+    background-color: #3f3f3f;
+}
+.style__btn--transparent___a0FI3 {
+    background: 0;
+}
+.style__btn--brand___1AudY {
+    background-color: #00ADEE;
+    color: white !important;
+}
+.style__btn--brand___1AudY[disabled]:hover {
+    background-color: #00ADEE;
+    color: white !important;
+}
+.style__btn--brand___1AudY[disabled]:hover * {
+    background-color: #00ADEE;
+    color: white !important;
+}
+.style__btn--warn___27q5p {
+    background-color: #ff8700;
+}
+.style__btn--warn___27q5p[disabled]:hover {
+    background-color: #ff8700;
+}
+.style__btn--warn___27q5p[disabled]:hover * {
+    background-color: #ff8700;
+}
+.style__btn--brandHover___1sZj6:hover {
+    background-color: #00ADEE;
+}
+.style__btn--brandHover___1sZj6.style__btn--isPressed___1DHKK {
+    background-color: #00ADEE;
+}
+.style__btn--cleanHover___1I8mn.style__btn--isPressed___1DHKK {
+    color: #00ADEE;
+}
+.style__btn--cleanHover___1I8mn:hover {
+    color: #00ADEE;
+}
+.style__btn--cleanHover___1I8mn:hover * {
+    color: #00ADEE;
+}
+.style__btn--darkenHover___2U4SV.style__btn--isPressed___1DHKK,
+.style__btn--darkenHover___2U4SV:hover,
+.style__btn--darkenHover___2U4SV:hover * {
+    background-color: rgba(0, 0, 0, .1);
+}
+.style__btn--warnHover___3nRa2.style__btn--isPressed___1DHKK {
+    background-color: #ff8700;
+}
+.style__btn--warnHover___3nRa2:hover {
+    background-color: #ff8700;
+}
+.style__btn--warnHover___3nRa2:hover * {
+    background-color: #ff8700;
+}
+.style__buttonGroup___3ewAh {
+    display: block;
+}
+.style__checkbox___3ZqF1 {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.style__checkbox__input___KC0KV {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+.style__checkbox__inputMirror___3B0Zy {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #adadad;
+    vertical-align: text-bottom;
+    background: #3f3f3f;
+    color: #FFF;
+}
+.style__label___11Uli:hover .style__checkbox__inputMirror___3B0Zy {
+    border-color: #00ADEE;
+}
+.style__checkbox__inputMirror--active___Cd2N7 {
+    background: #00ADEE;
+    border-color: #00ADEE;
+}
+.style__checkbox__inputMirror--active___Cd2N7:before {
+    content: '\2713';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.style__calendarInputWrapper___3EKou {
+    display: table;
+    width: 100%;
+}
+.style__closeCalendarIconBtn___162lf {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    height: 40px;
+    min-width: 41px;
+    border: none;
+    border-radius: 0;
+    background: #323232;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.style__calendarIconBtn___4U04r {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    height: 40px;
+    min-width: 41px;
+    border: none;
+    border-radius: 0;
+    background: #323232;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.style__closeCalendarIconBtn___162lf:hover {
+    background: #00ADEE;
+}
+.style__calendarIconBtn___4U04r:hover {
+    background: #00ADEE;
+}
+.style__closeCalendarIconBtn___162lf {
+    border-left: 1px solid #222;
+}
+.style__calendarIconBtn___4U04r {
+    border-right: 1px solid #222;
+}
+.style__calendarFakeInputWrapper___3sDZC {
+    display: table-cell;
+    position: relative;
+}
+.style__calendarFakeInputMirror___383GB {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.style__calendarFakeInput___2HCF5 {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #323232;
+    background: #323232;
+    font-size: 14px;
+    padding: 0 14px;
+    margin: 0;
+    box-shadow: none;
+    transition: none;
+}
+.style__calendarFakeInput___2HCF5:focus {
+    outline: 0;
+}
+.style__selectTodayBtn___BdUJl {
+    width: calc(100% - 2px);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #323232;
+    border-top: 0;
+    font-size: 14px;
+    cursor: pointer;
+    background: #141414;
+    color: #FFF;
+}
+.style__selectTodayBtn___BdUJl:hover {
+    background: #00ADEE !important;
+}
+.style__wrapper___LPC7Y {
+    width: 288px;
+}
+.style__wrapper___LPC7Y tfoot,
+    .style__wrapper___LPC7Y input[type='text'] {
+    display: none;
+}
+/**
+     * Styles from the react-datetime package.
+     * Since we cannot import other packages css in css modules and
+     * putting them in a "global" scope at the same time, we had to
+     * copy the css directly.
+     *
+     * @todo: revisit if we can solve this in a better way.
+     */
+/*!
+        * https://github.com/arqex/react-datetime
+        */
+.style__wrapper___LPC7Y .rdt {
+    position: relative;
+}
+.style__wrapper___LPC7Y .rdtPicker {
+    display: none;
+    /*position: absolute;*/
+    width: 250px;
+    padding: 4px;
+    margin-top: 1px;
+    z-index: 99999 !important;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    border: 1px solid #f9f9f9;
+}
+.style__wrapper___LPC7Y .rdtOpen .rdtPicker {
+    display: block;
+}
+.style__wrapper___LPC7Y .rdtStatic .rdtPicker {
+    box-shadow: none;
+    position: static;
+}
+.style__wrapper___LPC7Y .rdtPicker .rdtTimeToggle {
+    text-align: center;
+}
+.style__wrapper___LPC7Y .rdtPicker table {
+    width: 100%;
+    margin: 0;
+}
+.style__wrapper___LPC7Y .rdtPicker td,
+        .style__wrapper___LPC7Y .rdtPicker th {
+    text-align: center;
+    height: 28px;
+}
+.style__wrapper___LPC7Y .rdtPicker td {
+    cursor: pointer;
+}
+.style__wrapper___LPC7Y .rdtPicker td.rdtToday:hover,
+        .style__wrapper___LPC7Y .rdtPicker td.rdtHour:hover,
+        .style__wrapper___LPC7Y .rdtPicker td.rdtMinute:hover,
+        .style__wrapper___LPC7Y .rdtPicker td.rdtSecond:hover,
+        .style__wrapper___LPC7Y .rdtPicker .rdtTimeToggle:hover {
+    background: #eeeeee;
+    cursor: pointer;
+}
+.style__wrapper___LPC7Y .rdtPicker td.rdtOld,
+        .style__wrapper___LPC7Y .rdtPicker td.rdtNew {
+    color: #999999;
+}
+.style__wrapper___LPC7Y .rdtPicker td.rdtToday {
+    position: relative;
+}
+.style__wrapper___LPC7Y .rdtPicker td.rdtToday:before {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid #428bca;
+    border-top-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+.style__wrapper___LPC7Y .rdtPicker td.rdtActive,
+        .style__wrapper___LPC7Y .rdtPicker td.rdtActive:hover {
+    background-color: #428bca;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+.style__wrapper___LPC7Y .rdtPicker td.rdtActive.rdtToday:before {
+    border-bottom-color: #fff;
+}
+.style__wrapper___LPC7Y .rdtPicker td.rdtDisabled,
+        .style__wrapper___LPC7Y .rdtPicker td.rdtDisabled:hover {
+    background: none;
+    color: #999999;
+    cursor: not-allowed;
+}
+.style__wrapper___LPC7Y .rdtPicker td span.rdtOld {
+    color: #999999;
+}
+.style__wrapper___LPC7Y .rdtPicker td span.rdtDisabled,
+        .style__wrapper___LPC7Y .rdtPicker td span.rdtDisabled:hover {
+    background: none;
+    color: #999999;
+    cursor: not-allowed;
+}
+.style__wrapper___LPC7Y .rdtPicker th {
+    border-bottom: 1px solid #f9f9f9;
+}
+.style__wrapper___LPC7Y .rdtPicker .dow {
+    width: 14.2857%;
+    border-bottom: none;
+}
+.style__wrapper___LPC7Y .rdtPicker th.rdtSwitch {
+    width: 100px;
+}
+.style__wrapper___LPC7Y .rdtPicker th.rdtNext,
+        .style__wrapper___LPC7Y .rdtPicker th.rdtPrev {
+    font-size: 21px;
+    vertical-align: top;
+}
+.style__wrapper___LPC7Y .rdtPrev span,
+        .style__wrapper___LPC7Y .rdtNext span {
+    display: block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.style__wrapper___LPC7Y .rdtPicker th.rdtDisabled,
+        .style__wrapper___LPC7Y .rdtPicker th.rdtDisabled:hover {
+    background: none;
+    color: #999999;
+    cursor: not-allowed;
+}
+.style__wrapper___LPC7Y .rdtPicker thead tr:first-child th {
+    cursor: pointer;
+}
+.style__wrapper___LPC7Y .rdtPicker thead tr:first-child th:hover {
+    background: #eeeeee;
+}
+.style__wrapper___LPC7Y .rdtPicker tfoot {
+    border-top: 1px solid #f9f9f9;
+}
+.style__wrapper___LPC7Y .rdtPicker button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.style__wrapper___LPC7Y .rdtPicker button:hover {
+    background-color: #eee;
+}
+.style__wrapper___LPC7Y .rdtPicker thead button {
+    width: 100%;
+    height: 100%;
+}
+.style__wrapper___LPC7Y td.rdtMonth,
+        .style__wrapper___LPC7Y td.rdtYear {
+    height: 50px;
+    width: 25%;
+    cursor: pointer;
+}
+.style__wrapper___LPC7Y td.rdtMonth:hover,
+        .style__wrapper___LPC7Y td.rdtYear:hover {
+    background: #eee;
+}
+.style__wrapper___LPC7Y .rdtCounters {
+    display: inline-block;
+}
+.style__wrapper___LPC7Y .rdtCounters > div {
+    float: left;
+}
+.style__wrapper___LPC7Y .rdtCounter {
+    height: 100px;
+}
+.style__wrapper___LPC7Y .rdtCounter {
+    width: 40px;
+}
+.style__wrapper___LPC7Y .rdtCounterSeparator {
+    line-height: 100px;
+}
+.style__wrapper___LPC7Y .rdtCounter .rdtBtn {
+    height: 40%;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.style__wrapper___LPC7Y .rdtCounter .rdtBtn:hover {
+    background: #eee;
+}
+.style__wrapper___LPC7Y .rdtCounter .rdtCount {
+    height: 20%;
+    font-size: 1.2em;
+}
+.style__wrapper___LPC7Y .rdtMilli {
+    vertical-align: middle;
+    padding-left: 8px;
+    width: 48px;
+}
+.style__wrapper___LPC7Y .rdtMilli input {
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 37px;
+}
+.style__wrapper___LPC7Y .rdtDayPart {
+    margin-top: 43px;
+}
+/**
+     * Overwrites for the calendar
+     */
+.style__wrapper___LPC7Y .rdtPicker {
+    position: relative;
+    width: calc(100% - 3px);
+    background: #141414;
+    padding: 0;
+    border: 1px solid #222;
+    border-top: 0;
+    margin: 0;
+    box-shadow: none;
+}
+.style__wrapper___LPC7Y .rdtPicker table {
+    border-collapse: collapse;
+}
+.style__wrapper___LPC7Y .rdtPicker th {
+    width: 37px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 0;
+    border-right: 1px solid #323232;
+    border-left: 1px solid #323232;
+}
+.style__wrapper___LPC7Y .rdtPicker th.rdtPrev:hover {
+    background: #00ADEE !important;
+}
+.style__wrapper___LPC7Y .rdtPicker th.rdtNext:hover {
+    background: #00ADEE !important;
+}
+.style__wrapper___LPC7Y .rdtPicker th.rdtSwitch:hover {
+    background: #00ADEE !important;
+}
+.style__wrapper___LPC7Y .rdtPicker th.dow {
+    width: 40px;
+    background: #323232;
+    text-align: center;
+}
+.style__wrapper___LPC7Y td {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #323232;
+}
+.style__wrapper___LPC7Y td:hover {
+    background: #00ADEE !important;
+}
+.style__wrapper___LPC7Y td.rdtOld,
+            .style__wrapper___LPC7Y td.rdtNew {
+    color: #5b5b5b;
+}
+.style__wrapper___LPC7Y td.rdtToday:before {
+    border-bottom-color: #00ADEE !important;
+}
+.style__wrapper___LPC7Y td.rdtActive {
+    background: #00ADEE !important;
+    color: #FFF;
+}
+.style__wrapper___LPC7Y td.rdtActive:before {
+    display: none !important;
 }
 @font-face {
   font-family: 'FontAwesome';
@@ -2034,611 +2563,6 @@
 .style__icon--spin___3WIBl {
     animation: style__fa-spin___3u4Ro 2s infinite linear;
 }
-.style__btn___1L6Xa {
-    position: relative;
-    display: inline-block;
-    height: 40px;
-    min-width: 40px;
-    padding: 0 16px;
-    border: 0;
-    -webkit-font-smoothing: antialiased;
-    vertical-align: middle;
-    width: auto;
-    color: #FFF;
-    cursor: pointer;
-    background-color: #323232;
-    font-size: 14px;
-}
-.style__btn___1L6Xa:focus {
-    outline: 1px dotted #FFF;
-}
-.style__btn___1L6Xa[disabled] {
-    opacity: .5;
-    cursor: not-allowed;
-}
-.style__btn___1L6Xa[disabled]:hover {
-    color: #FFF;
-}
-.style__btn___1L6Xa[disabled].style__btn--isPressed___1DHKK {
-    color: #FFF;
-}
-.style__btn___1L6Xa[disabled]:hover * {
-    color: #FFF;
-}
-.style__btn___1L6Xa[disabled].style__btn--isPressed___1DHKK * {
-    color: #FFF;
-}
-.style__btn--size-small___176K7 {
-    height: 32px;
-    font-size: 13px;
-    padding: 0 8px;
-}
-.style__btn--clean___19fR5 {
-    background-color: #222;
-}
-.style__btn--clean___19fR5[disabled]:hover {
-    background-color: #222;
-}
-.style__btn--clean___19fR5[disabled]:hover * {
-    background-color: #222;
-}
-.style__btn--lighter___2DalC {
-    background-color: #3f3f3f;
-}
-.style__btn--lighter___2DalC[disabled]:hover {
-    background-color: #3f3f3f;
-}
-.style__btn--lighter___2DalC[disabled]:hover * {
-    background-color: #3f3f3f;
-}
-.style__btn--transparent___a0FI3 {
-    background: 0;
-}
-.style__btn--brand___1AudY {
-    background-color: #00ADEE;
-    color: white !important;
-}
-.style__btn--brand___1AudY[disabled]:hover {
-    background-color: #00ADEE;
-    color: white !important;
-}
-.style__btn--brand___1AudY[disabled]:hover * {
-    background-color: #00ADEE;
-    color: white !important;
-}
-.style__btn--warn___27q5p {
-    background-color: #ff8700;
-}
-.style__btn--warn___27q5p[disabled]:hover {
-    background-color: #ff8700;
-}
-.style__btn--warn___27q5p[disabled]:hover * {
-    background-color: #ff8700;
-}
-.style__btn--brandHover___1sZj6:hover {
-    background-color: #00ADEE;
-}
-.style__btn--brandHover___1sZj6.style__btn--isPressed___1DHKK {
-    background-color: #00ADEE;
-}
-.style__btn--cleanHover___1I8mn.style__btn--isPressed___1DHKK {
-    color: #00ADEE;
-}
-.style__btn--cleanHover___1I8mn:hover {
-    color: #00ADEE;
-}
-.style__btn--cleanHover___1I8mn:hover * {
-    color: #00ADEE;
-}
-.style__btn--darkenHover___2U4SV.style__btn--isPressed___1DHKK,
-.style__btn--darkenHover___2U4SV:hover,
-.style__btn--darkenHover___2U4SV:hover * {
-    background-color: rgba(0, 0, 0, .1);
-}
-.style__btn--warnHover___3nRa2.style__btn--isPressed___1DHKK {
-    background-color: #ff8700;
-}
-.style__btn--warnHover___3nRa2:hover {
-    background-color: #ff8700;
-}
-.style__btn--warnHover___3nRa2:hover * {
-    background-color: #ff8700;
-}
-.style__flashMessage___1KVsF {
-    color: white;
-    font-size: 14px;
-    position: relative;
-    width: 512px;
-    margin: 0 auto 4px;
-    word-wrap: break-word;
-    overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 0 0 14px rgba(0,0,0, .15);
-}
-
-.style__flashMessage--success___3KYoa {
-    background-color: #00a338;
-}
-
-.style__flashMessage--error___QT1Aq {
-    background-color: #ff460d;
-}
-
-.style__flashMessage--info___1o28I {
-    background-color: #00ADEE;
-}
-
-.style__flashMessage__icon___12yMh {
-    position: absolute;
-    left: 0;
-    top: 0;
-	height: 100%;
-    line-height: 40px;
-    width: 40px;
-    text-align: center;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-    vertical-align: text-top;
-    border-right: 1px solid rgba(255,255,255, .3);
-}
-
-.style__flashMessage__heading___3o2dj {
-    padding: 12px 49px 12px;
-    margin-bottom: 0;
-    color: white;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-}
-
-.style__flashMessage__btnClose___2zRBq {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.style__flashMessageContainer___o2r5- {
-    position: fixed;
-    z-index: 999999;
-    top: 0;
-    left: 50%;
-    width: 512px;
-    padding-top: 8px;
-    transform: translate(-50%, 0);
-}
-.style__flashMessageContainer___o2r5-:empty {
-    display: none;
-}
-.style__badge___hQ32t {
-    display: inline-block;
-    padding: 2px 4px;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: bold;
-    color: #ff8700;
-    white-space: nowrap;
-    background-color: white;
-    border-radius: 3px;
-}
-.style__bar___3aynj {
-    position: absolute;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #222;
-    height: 41px;
-    border-bottom: 1px solid #3f3f3f;
-}
-.style__bar--top___2hN_8 {
-    top: 0;
-}
-.style__bar--bottom___1n4Hk {
-    bottom: 0;
-}
-.style__buttonGroup___3ewAh {
-    display: block;
-}
-.style__checkbox___3ZqF1 {
-    position: relative;
-    display: inline-block;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-.style__checkbox__input___KC0KV {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 1;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    cursor: pointer;
-}
-.style__checkbox__inputMirror___3B0Zy {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #adadad;
-    vertical-align: text-bottom;
-    background: #3f3f3f;
-    color: #FFF;
-}
-.style__label___11Uli:hover .style__checkbox__inputMirror___3B0Zy {
-    border-color: #00ADEE;
-}
-.style__checkbox__inputMirror--active___Cd2N7 {
-    background: #00ADEE;
-    border-color: #00ADEE;
-}
-.style__checkbox__inputMirror--active___Cd2N7:before {
-    content: '\2713';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-.style__calendarInputWrapper___3EKou {
-    display: table;
-    width: 100%;
-}
-.style__closeCalendarIconBtn___162lf {
-    position: relative;
-    display: table-cell;
-    vertical-align: top;
-    padding: 10px;
-    height: 40px;
-    min-width: 41px;
-    border: none;
-    border-radius: 0;
-    background: #323232;
-    text-align: center;
-    font-size: 14px;
-    cursor: pointer;
-}
-.style__calendarIconBtn___4U04r {
-    position: relative;
-    display: table-cell;
-    vertical-align: top;
-    padding: 10px;
-    height: 40px;
-    min-width: 41px;
-    border: none;
-    border-radius: 0;
-    background: #323232;
-    text-align: center;
-    font-size: 14px;
-    cursor: pointer;
-}
-.style__closeCalendarIconBtn___162lf:hover {
-    background: #00ADEE;
-}
-.style__calendarIconBtn___4U04r:hover {
-    background: #00ADEE;
-}
-.style__closeCalendarIconBtn___162lf {
-    border-left: 1px solid #222;
-}
-.style__calendarIconBtn___4U04r {
-    border-right: 1px solid #222;
-}
-.style__calendarFakeInputWrapper___3sDZC {
-    display: table-cell;
-    position: relative;
-}
-.style__calendarFakeInputMirror___383GB {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    cursor: pointer;
-}
-.style__calendarFakeInput___2HCF5 {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    height: 40px;
-    border: 2px solid #323232;
-    background: #323232;
-    font-size: 14px;
-    padding: 0 14px;
-    margin: 0;
-    box-shadow: none;
-    transition: none;
-}
-.style__calendarFakeInput___2HCF5:focus {
-    outline: 0;
-}
-.style__selectTodayBtn___BdUJl {
-    width: calc(100% - 2px);
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border: 1px solid #323232;
-    border-top: 0;
-    font-size: 14px;
-    cursor: pointer;
-    background: #141414;
-    color: #FFF;
-}
-.style__selectTodayBtn___BdUJl:hover {
-    background: #00ADEE !important;
-}
-.style__wrapper___LPC7Y {
-    width: 288px;
-}
-.style__wrapper___LPC7Y tfoot,
-    .style__wrapper___LPC7Y input[type='text'] {
-    display: none;
-}
-/**
-     * Styles from the react-datetime package.
-     * Since we cannot import other packages css in css modules and
-     * putting them in a "global" scope at the same time, we had to
-     * copy the css directly.
-     *
-     * @todo: revisit if we can solve this in a better way.
-     */
-/*!
-        * https://github.com/arqex/react-datetime
-        */
-.style__wrapper___LPC7Y .rdt {
-    position: relative;
-}
-.style__wrapper___LPC7Y .rdtPicker {
-    display: none;
-    /*position: absolute;*/
-    width: 250px;
-    padding: 4px;
-    margin-top: 1px;
-    z-index: 99999 !important;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-    border: 1px solid #f9f9f9;
-}
-.style__wrapper___LPC7Y .rdtOpen .rdtPicker {
-    display: block;
-}
-.style__wrapper___LPC7Y .rdtStatic .rdtPicker {
-    box-shadow: none;
-    position: static;
-}
-.style__wrapper___LPC7Y .rdtPicker .rdtTimeToggle {
-    text-align: center;
-}
-.style__wrapper___LPC7Y .rdtPicker table {
-    width: 100%;
-    margin: 0;
-}
-.style__wrapper___LPC7Y .rdtPicker td,
-        .style__wrapper___LPC7Y .rdtPicker th {
-    text-align: center;
-    height: 28px;
-}
-.style__wrapper___LPC7Y .rdtPicker td {
-    cursor: pointer;
-}
-.style__wrapper___LPC7Y .rdtPicker td.rdtToday:hover,
-        .style__wrapper___LPC7Y .rdtPicker td.rdtHour:hover,
-        .style__wrapper___LPC7Y .rdtPicker td.rdtMinute:hover,
-        .style__wrapper___LPC7Y .rdtPicker td.rdtSecond:hover,
-        .style__wrapper___LPC7Y .rdtPicker .rdtTimeToggle:hover {
-    background: #eeeeee;
-    cursor: pointer;
-}
-.style__wrapper___LPC7Y .rdtPicker td.rdtOld,
-        .style__wrapper___LPC7Y .rdtPicker td.rdtNew {
-    color: #999999;
-}
-.style__wrapper___LPC7Y .rdtPicker td.rdtToday {
-    position: relative;
-}
-.style__wrapper___LPC7Y .rdtPicker td.rdtToday:before {
-    content: '';
-    display: inline-block;
-    border-left: 7px solid transparent;
-    border-bottom: 7px solid #428bca;
-    border-top-color: rgba(0, 0, 0, .2);
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-}
-.style__wrapper___LPC7Y .rdtPicker td.rdtActive,
-        .style__wrapper___LPC7Y .rdtPicker td.rdtActive:hover {
-    background-color: #428bca;
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
-}
-.style__wrapper___LPC7Y .rdtPicker td.rdtActive.rdtToday:before {
-    border-bottom-color: #fff;
-}
-.style__wrapper___LPC7Y .rdtPicker td.rdtDisabled,
-        .style__wrapper___LPC7Y .rdtPicker td.rdtDisabled:hover {
-    background: none;
-    color: #999999;
-    cursor: not-allowed;
-}
-.style__wrapper___LPC7Y .rdtPicker td span.rdtOld {
-    color: #999999;
-}
-.style__wrapper___LPC7Y .rdtPicker td span.rdtDisabled,
-        .style__wrapper___LPC7Y .rdtPicker td span.rdtDisabled:hover {
-    background: none;
-    color: #999999;
-    cursor: not-allowed;
-}
-.style__wrapper___LPC7Y .rdtPicker th {
-    border-bottom: 1px solid #f9f9f9;
-}
-.style__wrapper___LPC7Y .rdtPicker .dow {
-    width: 14.2857%;
-    border-bottom: none;
-}
-.style__wrapper___LPC7Y .rdtPicker th.rdtSwitch {
-    width: 100px;
-}
-.style__wrapper___LPC7Y .rdtPicker th.rdtNext,
-        .style__wrapper___LPC7Y .rdtPicker th.rdtPrev {
-    font-size: 21px;
-    vertical-align: top;
-}
-.style__wrapper___LPC7Y .rdtPrev span,
-        .style__wrapper___LPC7Y .rdtNext span {
-    display: block;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.style__wrapper___LPC7Y .rdtPicker th.rdtDisabled,
-        .style__wrapper___LPC7Y .rdtPicker th.rdtDisabled:hover {
-    background: none;
-    color: #999999;
-    cursor: not-allowed;
-}
-.style__wrapper___LPC7Y .rdtPicker thead tr:first-child th {
-    cursor: pointer;
-}
-.style__wrapper___LPC7Y .rdtPicker thead tr:first-child th:hover {
-    background: #eeeeee;
-}
-.style__wrapper___LPC7Y .rdtPicker tfoot {
-    border-top: 1px solid #f9f9f9;
-}
-.style__wrapper___LPC7Y .rdtPicker button {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-.style__wrapper___LPC7Y .rdtPicker button:hover {
-    background-color: #eee;
-}
-.style__wrapper___LPC7Y .rdtPicker thead button {
-    width: 100%;
-    height: 100%;
-}
-.style__wrapper___LPC7Y td.rdtMonth,
-        .style__wrapper___LPC7Y td.rdtYear {
-    height: 50px;
-    width: 25%;
-    cursor: pointer;
-}
-.style__wrapper___LPC7Y td.rdtMonth:hover,
-        .style__wrapper___LPC7Y td.rdtYear:hover {
-    background: #eee;
-}
-.style__wrapper___LPC7Y .rdtCounters {
-    display: inline-block;
-}
-.style__wrapper___LPC7Y .rdtCounters > div {
-    float: left;
-}
-.style__wrapper___LPC7Y .rdtCounter {
-    height: 100px;
-}
-.style__wrapper___LPC7Y .rdtCounter {
-    width: 40px;
-}
-.style__wrapper___LPC7Y .rdtCounterSeparator {
-    line-height: 100px;
-}
-.style__wrapper___LPC7Y .rdtCounter .rdtBtn {
-    height: 40%;
-    line-height: 40px;
-    cursor: pointer;
-    display: block;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.style__wrapper___LPC7Y .rdtCounter .rdtBtn:hover {
-    background: #eee;
-}
-.style__wrapper___LPC7Y .rdtCounter .rdtCount {
-    height: 20%;
-    font-size: 1.2em;
-}
-.style__wrapper___LPC7Y .rdtMilli {
-    vertical-align: middle;
-    padding-left: 8px;
-    width: 48px;
-}
-.style__wrapper___LPC7Y .rdtMilli input {
-    width: 100%;
-    font-size: 1.2em;
-    margin-top: 37px;
-}
-.style__wrapper___LPC7Y .rdtDayPart {
-    margin-top: 43px;
-}
-/**
-     * Overwrites for the calendar
-     */
-.style__wrapper___LPC7Y .rdtPicker {
-    position: relative;
-    width: calc(100% - 3px);
-    background: #141414;
-    padding: 0;
-    border: 1px solid #222;
-    border-top: 0;
-    margin: 0;
-    box-shadow: none;
-}
-.style__wrapper___LPC7Y .rdtPicker table {
-    border-collapse: collapse;
-}
-.style__wrapper___LPC7Y .rdtPicker th {
-    width: 37px;
-    height: 40px;
-    line-height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    border: 0;
-    border-right: 1px solid #323232;
-    border-left: 1px solid #323232;
-}
-.style__wrapper___LPC7Y .rdtPicker th.rdtPrev:hover {
-    background: #00ADEE !important;
-}
-.style__wrapper___LPC7Y .rdtPicker th.rdtNext:hover {
-    background: #00ADEE !important;
-}
-.style__wrapper___LPC7Y .rdtPicker th.rdtSwitch:hover {
-    background: #00ADEE !important;
-}
-.style__wrapper___LPC7Y .rdtPicker th.dow {
-    width: 40px;
-    background: #323232;
-    text-align: center;
-}
-.style__wrapper___LPC7Y td {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border: 1px solid #323232;
-}
-.style__wrapper___LPC7Y td:hover {
-    background: #00ADEE !important;
-}
-.style__wrapper___LPC7Y td.rdtOld,
-            .style__wrapper___LPC7Y td.rdtNew {
-    color: #5b5b5b;
-}
-.style__wrapper___LPC7Y td.rdtToday:before {
-    border-bottom-color: #00ADEE !important;
-}
-.style__wrapper___LPC7Y td.rdtActive {
-    background: #00ADEE !important;
-    color: #FFF;
-}
-.style__wrapper___LPC7Y td.rdtActive:before {
-    display: none !important;
-}
 .style__dialog___3StDd {
     position: fixed;
     top: 0;
@@ -2682,6 +2606,17 @@
 }
 .style__dialog__actions___22qLt > * {
     margin-left: calc(16px / 2);
+}
+.style__iconButton___3ECsM {
+    vertical-align: top;
+    width: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.style__size-small___q-2qZ {
+    width: 32px !important;
+    min-width: 32px !important;
 }
 .style__dropDown___29Yzq {
     position: relative;
@@ -3212,7 +3147,72 @@
 .style__linkIconButton__flyout___2mip6 {
     position: fixed;
     z-index: 1000;
-}.style__modalTitle___33Lzc {
+}.style__flashMessage___1KVsF {
+    color: white;
+    font-size: 14px;
+    position: relative;
+    width: 512px;
+    margin: 0 auto 4px;
+    word-wrap: break-word;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0 14px rgba(0,0,0, .15);
+}
+
+.style__flashMessage--success___3KYoa {
+    background-color: #00a338;
+}
+
+.style__flashMessage--error___QT1Aq {
+    background-color: #ff460d;
+}
+
+.style__flashMessage--info___1o28I {
+    background-color: #00ADEE;
+}
+
+.style__flashMessage__icon___12yMh {
+    position: absolute;
+    left: 0;
+    top: 0;
+	height: 100%;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    vertical-align: text-top;
+    border-right: 1px solid rgba(255,255,255, .3);
+}
+
+.style__flashMessage__heading___3o2dj {
+    padding: 12px 49px 12px;
+    margin-bottom: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.style__flashMessage__btnClose___2zRBq {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.style__flashMessageContainer___o2r5- {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 50%;
+    width: 512px;
+    padding-top: 8px;
+    transform: translate(-50%, 0);
+}
+.style__flashMessageContainer___o2r5-:empty {
+    display: none;
+}
+.style__modalTitle___33Lzc {
     margin-left: 16px;
 }
 .style__modalContents___1zQy0 {
