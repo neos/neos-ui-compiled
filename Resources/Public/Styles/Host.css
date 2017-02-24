@@ -3867,6 +3867,9 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
 .style__wrap___2Dm7K {
     padding-bottom: 16px;
 }
+.style__wrap___1PlJd {
+    padding-bottom: 16px;
+}
 .style__propertyGroupLabel___3dg-u {
     width: 100%;
     overflow-x: hidden;
@@ -4642,5 +4645,26 @@ span.CodeMirror-selectedtext { background: none; }
 
 .cm-s-twilight .CodeMirror-activeline-background { background: #27282E; }
 .cm-s-twilight .CodeMirror-matchingbracket { outline:1px solid grey; color:white !important; }
+.style__nodeInfoView___hHq-3 {
+    background-color: #323232;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.style__nodeInfoView___hHq-3 li {
+    padding: 8px;
+    border-bottom: 1px solid #222;
+    text-align: right;
+    line-height: 20px;
+    min-height: 20px;
+}
+.style__nodeInfoView___hHq-3 li:first-child {
+    border-top: 1px solid #222;
+}
+.style__nodeInfoView___hHq-3 li span {
+    float: left;
+    padding-right: 8px;
+    font-weight: bold;
+}
 
 /*# sourceMappingURL=Host.css.map*/
