@@ -63818,7 +63818,8 @@ webpackJsonp([1],[
 	                validationErrors = _props.validationErrors,
 	                options = _props.options,
 	                i18nRegistry = _props.i18nRegistry,
-	                highlight = _props.highlight;
+	                highlight = _props.highlight,
+	                onKeyPress = _props.onKeyPress;
 	
 	            // Placeholder text must be unescaped in case html entities were used
 	
@@ -63829,7 +63830,8 @@ webpackJsonp([1],[
 	                onChange: commit,
 	                validationErrors: validationErrors,
 	                placeholder: placeholder,
-	                highlight: highlight
+	                highlight: highlight,
+	                onKeyPress: onKeyPress
 	            });
 	        }
 	    }]);
@@ -63841,6 +63843,7 @@ webpackJsonp([1],[
 	    validationErrors: _react.PropTypes.array,
 	    highlight: _react.PropTypes.bool,
 	    options: _react.PropTypes.object,
+	    onKeyPress: _react.PropTypes.func,
 	
 	    i18nRegistry: _react.PropTypes.object.isRequired
 	}, _temp)) || _class);
@@ -72433,6 +72436,14 @@ webpackJsonp([1],[
 	
 	
 	            apply(values);
+	        }, _this.handleKeyPress = function (event) {
+	            var _this$state = _this.state,
+	                validationErrors = _this$state.validationErrors,
+	                isDirty = _this$state.isDirty;
+	
+	            if (!validationErrors && isDirty && event.key === 'Enter') {
+	                _this.handleApply();
+	            }
 	        }, _temp), _possibleConstructorReturn(_this, _ret);
 	    }
 	
@@ -72466,13 +72477,15 @@ webpackJsonp([1],[
 	    }, {
 	        key: 'renderSaveAction',
 	        value: function renderSaveAction() {
-	            var validationErrors = this.state.validationErrors;
+	            var _state = this.state,
+	                validationErrors = _state.validationErrors,
+	                isDirty = _state.isDirty;
 	
 	
 	            return _react2.default.createElement(
 	                _Button2.default,
 	                {
-	                    disabled: Boolean(validationErrors),
+	                    disabled: Boolean(validationErrors || !isDirty),
 	                    key: 'save',
 	                    style: 'lighter',
 	                    hoverStyle: 'brand',
@@ -72495,9 +72508,9 @@ webpackJsonp([1],[
 	                return null;
 	            }
 	
-	            var _state = this.state,
-	                validationErrors = _state.validationErrors,
-	                isDirty = _state.isDirty;
+	            var _state2 = this.state,
+	                validationErrors = _state2.validationErrors,
+	                isDirty = _state2.isDirty;
 	
 	
 	            return _react2.default.createElement(
@@ -72529,7 +72542,8 @@ webpackJsonp([1],[
 	                                editor: (0, _plowJs.$get)('ui.editor', element),
 	                                options: options,
 	                                commit: _this2.handleDialogEditorValueChange(elementName),
-	                                validationErrors: validationErrorsForElement
+	                                validationErrors: validationErrorsForElement,
+	                                onKeyPress: _this2.handleKeyPress
 	                            })
 	                        );
 	                    })
