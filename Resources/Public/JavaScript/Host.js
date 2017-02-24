@@ -65901,6 +65901,7 @@ webpackJsonp([1],[
 	                setCurrentlyEditedPropertyName: setCurrentlyEditedPropertyName
 	            };
 	
+	            console.log("CKEDITOR EDITORCONFIG", editorConfig, iframeWindow.NeosCKEditorApi);
 	            iframeWindow.NeosCKEditorApi.initialize(editorConfig);
 	
 	            //
