@@ -5,7 +5,7 @@ webpackJsonp([2],{
 
 	'use strict';
 	
-	var _guestFrameApi = __webpack_require__(470);
+	var _guestFrameApi = __webpack_require__(505);
 	
 	var _guestFrameApi2 = _interopRequireDefault(_guestFrameApi);
 	
@@ -20,7 +20,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 135:
+/***/ 136:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -405,7 +405,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 470:
+/***/ 505:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -414,11 +414,11 @@ webpackJsonp([2],{
 	    value: true
 	});
 	
-	var _lodash = __webpack_require__(920);
+	var _lodash = __webpack_require__(945);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _lodash3 = __webpack_require__(135);
+	var _lodash3 = __webpack_require__(136);
 	
 	var _lodash4 = _interopRequireDefault(_lodash3);
 	
@@ -625,7 +625,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 920:
+/***/ 945:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
