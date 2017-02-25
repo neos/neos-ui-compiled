@@ -67935,7 +67935,7 @@ webpackJsonp([1],[
 	    };
 	}), _dec2 = (0, _neosUiDecorators.neos)(function (globalRegistry) {
 	    return {
-	        i18nRegistry: globalRegistry.get('@neos-project/neos-ui-i18n')
+	        i18nRegistry: globalRegistry.get('i18n')
 	    };
 	}), _dec(_class = _dec2(_class = (_temp = _class2 = function (_PureComponent) {
 	    _inherits(NodeInfoView, _PureComponent);
