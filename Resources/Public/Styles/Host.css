@@ -3763,8 +3763,8 @@ a.style__secondaryToolbar__buttonLink___3vB_e:hover {
     float: left;
     width: 40px;
 }
-.style__pageTree___WQFAt {
-    max-height: calc(100vh - 75px);
+.style__pageTree___1vfOV {
+    height: calc(50vh - 71px);
     overflow-y: auto;
 }
 .style__toolBar___1vKpl {
