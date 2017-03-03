@@ -68171,13 +68171,14 @@ webpackJsonp([1],[
 	
 	
 	            var node = getNodeByContextPath(focusedNodeContextPath);
-	
-	            var identifier = (0, _plowJs.$get)('identifier', node);
-	            var creationDateTime = (0, _plowJs.$get)('properties._creationDateTime', node);
-	            var lastModificationDateTime = (0, _plowJs.$get)('properties._lastModificationDateTime', node);
-	            var lastPublicationDateTime = (0, _plowJs.$get)('properties._lastPublicationDateTime', node);
-	            var path = (0, _plowJs.$get)('properties._path', node);
-	            var name = (0, _plowJs.$get)('properties._name', node) ? (0, _plowJs.$get)('properties._name', node) : '/';
+	            var properties = {
+	                identifier: (0, _plowJs.$get)('identifier', node),
+	                created: (0, _plowJs.$get)('properties._creationDateTime', node),
+	                lastModification: (0, _plowJs.$get)('properties._lastModificationDateTime', node),
+	                lastPublication: (0, _plowJs.$get)('properties._lastPublicationDateTime', node),
+	                path: (0, _plowJs.$get)('properties._path', node),
+	                name: (0, _plowJs.$get)('properties._name', node) ? (0, _plowJs.$get)('properties._name', node) : '/'
+	            };
 	
 	            return _react2.default.createElement(
 	                'ul',
@@ -68191,7 +68192,7 @@ webpackJsonp([1],[
 	                        i18nRegistry.translate('created', 'Created', {}, 'Neos.Neos')
 	                    ),
 	                    ' ',
-	                    creationDateTime
+	                    new Date(properties.created).toLocaleString()
 	                ),
 	                _react2.default.createElement(
 	                    'li',
@@ -68202,9 +68203,9 @@ webpackJsonp([1],[
 	                        i18nRegistry.translate('lastModification', 'Last modification', {}, 'Neos.Neos')
 	                    ),
 	                    ' ',
-	                    lastModificationDateTime
+	                    new Date(properties.lastModification).toLocaleString()
 	                ),
-	                _react2.default.createElement(
+	                properties.lastPublication ? _react2.default.createElement(
 	                    'li',
 	                    null,
 	                    _react2.default.createElement(
@@ -68213,8 +68214,8 @@ webpackJsonp([1],[
 	                        i18nRegistry.translate('lastPublication', 'Last publication', {}, 'Neos.Neos')
 	                    ),
 	                    ' ',
-	                    lastPublicationDateTime
-	                ),
+	                    new Date(properties.lastPublication).toLocaleString()
+	                ) : [],
 	                _react2.default.createElement(
 	                    'li',
 	                    null,
@@ -68224,18 +68225,18 @@ webpackJsonp([1],[
 	                        i18nRegistry.translate('identifier', 'Identifier', {}, 'Neos.Neos')
 	                    ),
 	                    ' ',
-	                    identifier
+	                    properties.identifier
 	                ),
 	                _react2.default.createElement(
 	                    'li',
-	                    { title: path },
+	                    { title: properties.path },
 	                    _react2.default.createElement(
 	                        'span',
 	                        null,
 	                        i18nRegistry.translate('name', 'Name', {}, 'Neos.Neos')
 	                    ),
 	                    ' ',
-	                    name
+	                    properties.name
 	                )
 	            );
 	        }

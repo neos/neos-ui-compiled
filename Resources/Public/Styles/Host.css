@@ -4663,8 +4663,8 @@ span.CodeMirror-selectedtext { background: none; }
     line-height: 20px;
     min-height: 20px;
 }
-.style__nodeInfoView___hHq-3 li:first-child {
-    border-top: 1px solid #222;
+.style__nodeInfoView___hHq-3 li:last-child {
+    border-bottom: none;
 }
 .style__nodeInfoView___hHq-3 li span {
     float: left;
