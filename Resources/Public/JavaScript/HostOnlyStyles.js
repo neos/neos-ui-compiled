@@ -1,9 +1,2 @@
-webpackJsonp([2],[
-/* 0 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ }
-]);
+webpackJsonp([3],[function(n,c){}]);
 //# sourceMappingURL=HostOnlyStyles.js.map
