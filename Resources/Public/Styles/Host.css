@@ -41,7 +41,7 @@
 .neos-inline-editable:focus {
     outline: none;
 }
-.neos-inline-editable:hover {
+.style__inlineEditorIsInitialized___2kmg-:hover {
     outline-offset: .5em;
     outline: 2px dashed #00ADEE;
 }
