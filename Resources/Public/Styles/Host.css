@@ -196,6 +196,19 @@ body::-webkit-scrollbar-corner {
     .reset__reset___2e25U:after {
     box-sizing: border-box;
 }
+.reset__reset___2e25U // some browsers set a font-size in their user stylesheets
+    input {
+    font-size: 14px;
+}
+.reset__reset___2e25U textarea {
+    font-size: 14px;
+}
+.reset__reset___2e25U select {
+    font-size: 14px;
+}
+.reset__reset___2e25U button {
+    font-size: 14px;
+}
 :root {}
 :root {}
 :root {}
