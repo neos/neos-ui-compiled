@@ -3534,7 +3534,7 @@ body::-webkit-scrollbar-corner {
     color: white;
     cursor: pointer;
     font-size: 14px;
-    padding: 0 38px 0 16px;
+    padding: 0 calc(16px + 40px) 0 16px;
     border: 0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3553,6 +3553,18 @@ body::-webkit-scrollbar-corner {
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
+}
+.style__dropDown__chevron___3wN4N::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    top: 0;
+    right: 25px;
+    background-color: #fff;
+    opacity: .15;
+    margin-top: -5px;
 }
 .style__dropDown__contents___GBeJA {
     position: absolute;
@@ -3881,7 +3893,7 @@ body::-webkit-scrollbar-corner {
 .style__selectBox__loadingIcon___-0m5a {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 41px;
     z-index: 1;
     display: block;
     width: 40px;
@@ -3890,6 +3902,11 @@ body::-webkit-scrollbar-corner {
     background: transparent;
     color: #FFF;
     line-height: 40px;
+}
+.style__selectBox__twoIconIndention___1upfO {
+    padding: 0 calc(16px + 40px + 40px) 0 16px;
+}
+.style__selectBox__deleteIcon___HiS0F {
 }
 .style__selectBox__btnIcon___1UQwH {
     margin-right: .5em;
