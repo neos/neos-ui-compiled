@@ -3554,18 +3554,6 @@ body::-webkit-scrollbar-corner {
     top: 50%;
     transform: translateY(-50%);
 }
-.style__dropDown__chevron___3wN4N::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 24px;
-    top: 0;
-    right: 25px;
-    background-color: #fff;
-    opacity: .15;
-    margin-top: -5px;
-}
 .style__dropDown__contents___GBeJA {
     position: absolute;
     top: 100%;
@@ -3902,6 +3890,18 @@ body::-webkit-scrollbar-corner {
     background: transparent;
     color: #FFF;
     line-height: 40px;
+}
+.style__selectBox__twoIconIndention___1upfO .style__selectBox__loadingIcon___-0m5a::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: .15;
+    margin-top: 8px;
 }
 .style__selectBox__twoIconIndention___1upfO {
     padding: 0 calc(16px + 40px + 40px) 0 16px;
