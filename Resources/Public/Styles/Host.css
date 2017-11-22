@@ -7579,9 +7579,10 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__referenceOption__link___ptcdm {
-    color: #999;
+    color: #FFF;
     display: block;
     font-size: 12px;
+    padding-left: calc(16px * 1.25);
 }
 :root {}
 :root {}
