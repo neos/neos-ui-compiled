@@ -4520,7 +4520,7 @@ body::-webkit-scrollbar-corner {
 .node__header__chevron___zXVME:hover {
     color: #00ADEE;
 }
-.node__header__chevron--isCollapsed___WH7x- > i {
+.node__header__chevron--isCollapsed___WH7x- > span {
     transform: translateY(3px) translateX(-2px) rotate(-90deg);
 }
 .node__header__chevron--isHiddenInIndex___3w-RN,
