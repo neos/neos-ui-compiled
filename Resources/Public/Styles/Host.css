@@ -3582,6 +3582,7 @@ body::-webkit-scrollbar-corner {
     margin: 0;
     list-style: none;
     background: #323232;
+    box-shadow: 1px 2px 5px #222;
 }
 .style__dropDown__contents--scrollable___mFW8d {
     max-height: 80vh;
@@ -5467,6 +5468,10 @@ body::-webkit-scrollbar-corner {
     text-align: center;
     vertical-align: top;
     cursor: pointer;
+}
+
+.style__dropDown__item___3GbLY {
+    border-top: 1px solid #222;
 }
 
 .style__dropDown__item___3GbLY:hover {
