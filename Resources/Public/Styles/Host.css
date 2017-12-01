@@ -5340,9 +5340,8 @@ body::-webkit-scrollbar-corner {
 }
 .node__header__data___3ySAh {
     position: relative;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: inline-block;
+    min-width: 100%;
     padding: .2em 0;
 
     border-left: 2px solid transparent;
@@ -5377,6 +5376,14 @@ body::-webkit-scrollbar-corner {
 .node__header__data--acceptsDrop___32Nys *,
 .node__header__data--deniesDrop___1lOiO * {
     pointer-events: none;
+}
+.node__header__labelWrapper___dJ7OH {
+    max-width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
 }
 .node__header__label___kPC7f {
 }
