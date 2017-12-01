@@ -4670,6 +4670,8 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 .style__textInput___2OxV7 {
+    /* TODO: should eventually be moved to reset.css, but there maybe be plenty of side-effects */
+    font-size: 14px;
     width: 100%;
     height: 40px;
     padding: 0 14px;
@@ -9956,6 +9958,94 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 .style__button___Mzo1O {
     margin-right: 4px;
+}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+.style__resizeControls___CLhGl {
+    display: -ms-flexbox;
+    display: flex;
+}
+.style__resizeControls__label___1dlfj {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+.style__resizeControls__before___3jhiG {
+    height: 40px;
+    width: 40px;
+    border-right: 1px solid #222;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: #323232;
+}
+.style__resizeControls__main___26RKD {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+}
+.style__resizeControls__after___2X_2S {
+    height: 40px;
+    width: 40px;
+    background: #323232;
+    border-left: 1px solid #222;
+    text-align: center;
+
+    line-height: 40px;
+}
+.style__resizeControls__checkbox___3xvJo {
+    margin-right: 0 !important;
 }
 :root {}
 :root {}
