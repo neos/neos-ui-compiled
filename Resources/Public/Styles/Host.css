@@ -1,89 +1,4 @@
 :root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-:root {}
-.style__markHoveredNodeAsHovered___cRNRV {
-    outline-offset: .5em;
-    outline: 2px solid rgba(0,0,0, .2);
-}
-.style__markHiddenNodeAsHidden___3Tdvw {
-    opacity: .5;
-}
-.style__addEmptyContentCollectionOverlay___2cOs0 {
-    height: 20px;
-    width: 100%;
-    outline: 2px solid #adadad;
-}
-.style__markActiveNodeAsFocused--focusedNode___2G2se {
-    outline-offset: .5em;
-    outline: 2px solid #00ADEE;
-}
-.neos-inline-editable:focus {
-    outline: none;
-}
-.style__inlineEditorIsInitialized___2kmg-:hover {
-    outline-offset: .5em;
-    outline: 2px dashed #00ADEE;
-}
-.style__notInlineEditableOverlay___9Lzv1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background-size: 100%;
-    background-image: linear-gradient(to bottom, rgba(50, 50, 50, .1), rgba(50, 50, 50, .2), rgba(50, 50, 50, .1));
-}
-:root {}
 
 :root {}
 
@@ -5800,6 +5715,91 @@ body::-webkit-scrollbar-corner {
 }
 .node__dropTarget__inner--acceptsDrop___3mSD7 {
     background-color: #00ADEE;
+}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+:root {}
+.style__markHoveredNodeAsHovered___cRNRV {
+    outline-offset: .5em;
+    outline: 2px solid rgba(0,0,0, .2);
+}
+.style__markHiddenNodeAsHidden___3Tdvw {
+    opacity: .5;
+}
+.style__addEmptyContentCollectionOverlay___2cOs0 {
+    height: 20px;
+    width: 100%;
+    outline: 2px solid #adadad;
+}
+.style__markActiveNodeAsFocused--focusedNode___2G2se {
+    outline-offset: .5em;
+    outline: 2px solid #00ADEE;
+}
+.neos-inline-editable:focus {
+    outline: none;
+}
+.style__inlineEditorIsInitialized___2kmg-:hover {
+    outline-offset: .5em;
+    outline: 2px dashed #00ADEE;
+}
+.style__notInlineEditableOverlay___9Lzv1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50, .1), rgba(50, 50, 50, .2), rgba(50, 50, 50, .1));
 }
 :root {}
 
