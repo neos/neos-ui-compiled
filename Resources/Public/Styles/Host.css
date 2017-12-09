@@ -10650,6 +10650,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__multiLineWithThumbnail__item___2qeYA {
     box-sizing: content-box;
     line-height: 20px;
+    padding: 0;
 }
 
 .style__multiLineWithThumbnail__secondaryLabel___2h1h8 {
@@ -10665,8 +10666,10 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__multiLineWithThumbnail__image___2N_k9 {
-    max-height: 1.5em;
-    max-width: 1.5em;
+    width: calc(1.33 * 40px);
+    height: 40px;
+    object-fit: contain;
+    background-color: #141414;
     margin-right: .75em;
     display: inline-block;
     vertical-align: middle;
