@@ -233,6 +233,9 @@ body::-webkit-scrollbar-corner {
 .reset__reset___2e25U button {
     font-size: 14px;
 }
+.reset__reset___2e25U ul {
+    padding: 0;
+}
 /* webkit adds some weird spacing otherwise */
 .reset__reset___2e25U li {
     display: block;
@@ -4421,6 +4424,13 @@ body::-webkit-scrollbar-corner {
 
 .style__selectBox__item___XqlG3 {
     border-top: 1px solid #222;
+}
+
+.style__selectBox__groupHeader___1GSDP {
+    background-color: #3f3f3f;
+    font-weight: bold;
+    padding-left: 16px;
+    line-height: 40px;
 }
 :root {}
 
