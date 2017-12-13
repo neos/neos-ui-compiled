@@ -247,6 +247,12 @@ body::-webkit-scrollbar-corner {
 .reset__reset___2e25U input::-webkit-search-cancel-button {
     display: none;
 }
+/* webkit adds white box around search box */
+.reset__reset___2e25U input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 :root {}
 :root {}
 :root {}
