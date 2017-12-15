@@ -4438,8 +4438,10 @@ body::-webkit-scrollbar-corner {
     position: relative;
     display: inline-block;
     text-overflow: clip;
-    height: 40px;
+    height: auto;
+    min-height: 40px;
     line-height: 40px;
+    padding-left: 0;
     border: 0;
     background: #323232;
     min-width: 160px;
@@ -4696,10 +4698,17 @@ body::-webkit-scrollbar-corner {
 .style__selectBoxHeader___3ysc8 {
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+}
+
+.style__selectBoxHeader__innerPreview___yrmpH {
+    overflow: hidden;
+    width: 100%;
 }
 
 .style__selectBoxHeader__icon___1TJFO {
     line-height: 40px;
+    height: 100%;
 }
 
 .style__selectBoxHeader__seperator___NJDj- {
@@ -4708,18 +4717,18 @@ body::-webkit-scrollbar-corner {
     position: absolute;
     width: 1px;
     height: 24px;
-    top: 8px;
+    top: calc(50% - 12px);
     right: calc(40px + 1px);
     background-color: #fff;
     opacity: .15;
 }
 
 .style__selectBoxHeader__label___2j4EL {
-    padding: 0 8px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    width: 100%;
+    padding: 0 16px;
+}
+
+.style__selectBoxHeader__wrapperIconWrapper___11ISw {
+    padding: 0 16px;
 }
 :root {}
 
@@ -4828,6 +4837,7 @@ body::-webkit-scrollbar-corner {
 .style__selectBoxHeaderWithSearchInput___GTrXd {
     display: -ms-flexbox;
     display: flex;
+    padding-left: 16px;
 }
 
 .style__selectBoxHeaderWithSearchInput__inputContainer___22AtJ {
