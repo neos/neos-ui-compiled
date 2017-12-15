@@ -10784,146 +10784,40 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__multiLineWithThumbnail__item___2qeYA {
     box-sizing: content-box;
     line-height: 20px;
-    padding: 0;
 }
 
 .style__multiLineWithThumbnail__secondaryLabel___2h1h8 {
     color: #999;
     display: block;
     font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .style__multiLineWithThumbnail__tertiaryLabel___2FMf_ {
     color: #999;
     display: block;
     font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .style__multiLineWithThumbnail__image___2N_k9 {
-    width: calc(1.33 * 40px);
-    height: 40px;
+    width: calc(1.33 * (40px + 16px));
+    height: calc(40px + 16px);
     object-fit: contain;
     background-color: #141414;
     margin-right: .75em;
     display: inline-block;
     vertical-align: middle;
-}
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-:root {}
-
-.style__referenceOption___7LQKM {
-    padding: 8px;
-    box-sizing: content-box;
-    height: 40px;
-    line-height: 20px;
+    margin-left: -16px;
+    margin-top: -8px;
+    margin-bottom: -8px;
 }
 
-.style__referenceOption__link___ptcdm {
-    color: #FFF;
-    display: block;
-    font-size: 12px;
-    padding-left: calc(16px * 1.25);
-    overflow: hidden;
-    text-overflow: ellipsis;
+.style__multiLineWithThumbnail__item___2qeYA:hover .style__multiLineWithThumbnail__secondaryLabel___2h1h8,
+.style__multiLineWithThumbnail__item___2qeYA:hover .style__multiLineWithThumbnail__tertiaryLabel___2FMf_ {
+    color: white;
 }
 :root {}
 :root {}
