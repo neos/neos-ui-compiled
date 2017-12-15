@@ -100,6 +100,8 @@
 
 :root {}
 
+:root {}
+
 .style__applicationWrapper___1OATQ {
     height: 100vh;
 }
@@ -157,6 +159,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-corner {
     background-color: #3f3f3f;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -304,6 +307,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__badge___3SRp9 {
     display: inline-block;
     padding: 2px 4px;
@@ -315,6 +319,7 @@ body::-webkit-scrollbar-corner {
     background-color: white;
     border-radius: 3px;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -381,6 +386,7 @@ body::-webkit-scrollbar-corner {
 .style__bar--bottom___195IB {
     bottom: 0;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -590,9 +596,11 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__buttonGroup___3Esar {
     display: block;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -709,6 +717,7 @@ body::-webkit-scrollbar-corner {
 .style__checkbox__disabled___3uf8I .style__checkbox__input___slK2g {
     cursor: not-allowed;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -1202,12 +1211,14 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 @font-face {
   font-family: 'FontAwesome';
   src: url(./.././Styles/Font-af7ae505a9eed503f8b8e6982036873e.woff2) format('woff2'), url(./.././Styles/Font-fee66e712a8a08eef5805a46892932ad.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -3609,6 +3620,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__icon___3acxC {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -3646,6 +3658,7 @@ body::-webkit-scrollbar-corner {
 .style__icon--spin___2DsYg {
     animation: style__fa-spin___3Y_m1 2s infinite linear;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -3849,6 +3862,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__iconButton___pVWPN {
     vertical-align: top;
     width: 40px;
@@ -3865,6 +3880,7 @@ body::-webkit-scrollbar-corner {
     width: 32px !important;
     min-width: 32px !important;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -4032,6 +4048,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__grid___12tik {
 }
 .style__grid___12tik:before,
@@ -4117,6 +4134,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__heading___1W7n8 {
     font-size: 14px;
     text-rendering: optimizelegibility;
@@ -4124,6 +4142,7 @@ body::-webkit-scrollbar-corner {
 .style__heading--h1___3kXr4 {
     font-size: 16px;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -4280,6 +4299,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__label___1xSQ_ {
     display: block;
     -webkit-font-smoothing: antialiased;
@@ -4296,6 +4316,8 @@ body::-webkit-scrollbar-corner {
         -ms-user-select: none;
             user-select: none;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -4545,6 +4567,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__listPreviewElement___2D3TC {
     background: #323232;
     cursor: pointer;
@@ -4565,6 +4589,8 @@ body::-webkit-scrollbar-corner {
 .style__listPreviewElement__icon___3qFLa {
     padding-right: .5em;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -4797,6 +4823,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__selectBoxHeaderWithSearchInput___GTrXd {
     display: -ms-flexbox;
     display: flex;
@@ -4821,6 +4849,7 @@ body::-webkit-scrollbar-corner {
 .style__selectBoxHeaderWithSearchInput__icon___RVwfF {
     line-height: 40px;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -5005,6 +5034,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__tooltip___1n9Qt {
     position: absolute;
 }
@@ -5078,6 +5109,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__sideBar___26rmh {
     position: absolute;
     width: 320px;
@@ -5090,6 +5122,8 @@ body::-webkit-scrollbar-corner {
 .style__sideBar--right___36g1c {
     right: 0;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -5313,6 +5347,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__textArea___3TmV8 {
     width: 100%;
     height: 40px;
@@ -5340,6 +5375,8 @@ body::-webkit-scrollbar-corner {
     opacity: .65;
     cursor: not-allowed;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -5534,6 +5571,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .tree__treeWrapper___2ODH- {
 
     padding: 5px 0;
@@ -5541,6 +5579,7 @@ body::-webkit-scrollbar-corner {
 .tree__treeWrapper___2ODH-:focus {
     outline: 0;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -5761,6 +5800,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__markHoveredNodeAsHovered___cRNRV {
     outline-offset: .5em;
     outline: 2px solid rgba(0,0,0, .2);
@@ -5794,6 +5834,8 @@ body::-webkit-scrollbar-corner {
     background-size: 100%;
     background-image: linear-gradient(to bottom, rgba(50, 50, 50, .1), rgba(50, 50, 50, .2), rgba(50, 50, 50, .1));
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -6000,6 +6042,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__flashMessageContainer___o2r5- {
     position: fixed;
     z-index: 2;
@@ -6012,6 +6055,7 @@ body::-webkit-scrollbar-corner {
 .style__flashMessageContainer___o2r5-:empty {
     display: none;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -6120,12 +6164,14 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__root___1m0We {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -6186,6 +6232,7 @@ body::-webkit-scrollbar-corner {
 .style__applyBtn___sAeF5 {
     background: #00a338 !important;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -6332,10 +6379,13 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__envelope__error___dGIZw {
     padding: .5em;
     border: 1px solid #ff460d;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -6547,6 +6597,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__body___3KGB_ {
     padding: 16px;
 }
@@ -6610,6 +6662,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__modalContents___pBNI6 {
     padding: 16px;
 }
@@ -6619,6 +6672,7 @@ body::-webkit-scrollbar-corner {
 .style__loginButton___1nLYF {
     width: 100%;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -6742,6 +6796,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__fullScreenClose___3t_sE {
     position: fixed;
     top: 16px;
@@ -6750,6 +6805,7 @@ body::-webkit-scrollbar-corner {
     background-color: #00ADEE;
     box-shadow: 0 0 8px rgba(0,0,0, .25);
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -6827,6 +6883,7 @@ body::-webkit-scrollbar-corner {
 .style__primaryToolbar__btn___1l1Y7 {
     border-right: 1px solid #3f3f3f;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -6988,6 +7045,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__btn___2K7jN {
     display: inline-block;
     padding: 0 16px;
@@ -7060,11 +7118,14 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__notAllowed___1k9Ir {
     padding: 12px 16px;
     cursor: not-allowed;
     opacity: .5;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -7380,6 +7441,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__menuToggler--isActive____dC1Y {
     color: #00ADEE;
 }
@@ -7520,6 +7583,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__btn___1VXOc {
     vertical-align: top;
 }
@@ -7533,6 +7598,8 @@ body::-webkit-scrollbar-corner {
 .style__btn--isActive___3bVXS .style__icon___mn6Zs {
     color: #00ADEE;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -7849,11 +7916,12 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__editModePanel___s4KDK {
     position: absolute;
     top: 41px; /*-70px;*/
     left: 0;
-    padding: 0 370px; /*leave some space for slider button --sidebarWidth + 50px*/
+    padding: 0 370px; /*leave some space for slider button --size-SidebarWidth + 50px*/
     width: 100%;
     height: 110px;
     background: #141414;
@@ -7894,6 +7962,7 @@ body::-webkit-scrollbar-corner {
 .style__editModePanel__current___QNqy1 {
     color: #00ADEE;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -8029,6 +8098,7 @@ body::-webkit-scrollbar-corner {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__dropDown___3dyGn {
     max-width: 352px;
     border-right: 1px solid #3f3f3f;
@@ -8036,6 +8106,8 @@ body::-webkit-scrollbar-corner {
 .style__dropDown__btnIcon___19b3J {
     margin-right: .5em;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -8274,6 +8346,8 @@ body::-webkit-scrollbar-corner {
 
 :root {}
 
+:root {}
+
 .style__secondaryToolbar__buttonLink___272lF {
     position: relative;
     display: inline-block;
@@ -8301,6 +8375,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__secondaryToolbar__buttonLink--isDisabled___3TOfd {
     opacity: .5;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -8384,6 +8459,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__drawer__menuItemGroupBtn___1KTQK {
     font-weight: 700;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -8634,6 +8711,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
 :root {}
 
+:root {}
+
 @keyframes style__spin___25f_H {
     from {
         transform: rotate(0deg);
@@ -8646,6 +8725,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__spinning___Qi6ga i {
     animation: style__spin___25f_H 2s infinite linear;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -8767,6 +8847,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 /* TODO: get rid of magick numbers here, they are not safe! */
 .style__pageTree___1vfOV {
     overflow-y: auto;
@@ -8776,6 +8857,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__pageTree--expanded___2Fx4G {
     height: calc(100vh - 164px);
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -9021,6 +9104,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
 :root {}
 
+:root {}
+
 .style__searchBar___1g7lz {
     display: -ms-flexbox;
     display: flex;
@@ -9042,6 +9127,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__searchBar__clearButton--focused___14dGy > i {
     color: #323232;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -9206,6 +9293,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__contentCanvas___3a_4z {
     position: relative;
     float: left;
@@ -9316,6 +9404,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__rightSideBar___2I7-m {
     padding-top: 41px;
     padding-bottom: 41px;
@@ -9348,6 +9437,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__rightSideBar__section___2LmQG {
     border-bottom: 1px solid #3f3f3f;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -9483,9 +9573,11 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__wrap___2Dm7K {
     padding-bottom: 16px;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -9591,12 +9683,15 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__propertyGroupLabel___3dg-u {
     width: 100%;
     overflow-x: hidden;
     text-overflow: ellipsis;
     padding: 0 40px 0 16px;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -9770,11 +9865,13 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__inspectorTabPanel___2z7Yl {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -9915,10 +10012,13 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__boolean__disabled___DyVUX {
     opacity: .65;
     cursor: not-allowed;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -10176,6 +10276,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
 :root {}
 
+:root {}
+
 .style__dropzone___24iIU {
     border: none;
 }
@@ -10229,6 +10331,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -10337,6 +10440,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__resizeControls___CLhGl {
     display: -ms-flexbox;
     display: flex;
@@ -10373,6 +10477,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__resizeControls__checkbox___3xvJo {
     margin-right: 0 !important;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -10534,6 +10639,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
 :root {}
 
+:root {}
+
 .style__selectedOptions___3omQr {
 
     position: relative;
@@ -10547,6 +10654,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     outline: 2px solid #00a338;
     margin-bottom: 2px;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -10781,6 +10890,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
 :root {}
 
+:root {}
+
 .style__multiLineWithThumbnail__item___2qeYA {
     box-sizing: content-box;
     line-height: 20px;
@@ -10819,6 +10930,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__multiLineWithThumbnail__item___2qeYA:hover .style__multiLineWithThumbnail__tertiaryLabel___2FMf_ {
     color: white;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -10931,10 +11043,13 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__button___24NhC {
     margin-top: 4px;
     margin-right: 4px;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -11113,6 +11228,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__wrapper___12Z_h {
     display: inline-block;
     position: relative;
@@ -11192,6 +11308,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     top: 0;
     right: 40px;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -11519,12 +11636,14 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
+:root {}
 .style__iframe___MJKvO {
     position: absolute;
     width: 100%;
     height: 100%;
     border: 0;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -12006,6 +12125,7 @@ span.CodeMirror-selectedtext { background: none; }
 :root {}
 :root {}
 :root {}
+:root {}
 .style__nodeInfoView___hHq-3 {
     background-color: #323232;
     margin: 0;
@@ -12078,10 +12198,13 @@ span.CodeMirror-selectedtext { background: none; }
 :root {}
 :root {}
 :root {}
+:root {}
 .style__columnsWrap___1qEOJ {
     display: -ms-flexbox;
     display: flex;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -12260,9 +12383,12 @@ span.CodeMirror-selectedtext { background: none; }
 :root {}
 :root {}
 :root {}
+:root {}
 .style__warnIcon___1gW7J {
     color: #ff8700;
 }
+:root {}
+
 :root {}
 
 :root {}
@@ -12487,6 +12613,8 @@ span.CodeMirror-selectedtext { background: none; }
 
 :root {}
 
+:root {}
+
 .column__column___1w3OY {
     -ms-flex-positive: 1;
         flex-grow: 1;
@@ -12551,6 +12679,7 @@ span.CodeMirror-selectedtext { background: none; }
 :root {}
 :root {}
 :root {}
+:root {}
 .style__table___3-F55 {
     width: 100%;
 }
@@ -12560,6 +12689,7 @@ span.CodeMirror-selectedtext { background: none; }
 .style__icon___1L9SM {
     padding-right: 4px;
 }
+:root {}
 :root {}
 :root {}
 :root {}
@@ -12743,6 +12873,8 @@ span.CodeMirror-selectedtext { background: none; }
 
 :root {}
 
+:root {}
+
 .style__inlineUi___3GJLs {
     color: #fff;
 }
@@ -12750,6 +12882,7 @@ span.CodeMirror-selectedtext { background: none; }
 .style__inlineUi___3GJLs a {
     color: #fff;
 }
+:root {}
 :root {}
 :root {}
 :root {}
