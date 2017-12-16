@@ -8603,21 +8603,27 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__leftSideBar__top___3hY-V {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 
 .style__leftSideBar__bottom___3FJcQ {
-    height: auto;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
     transition: flex-basis .5s, height .5s, overflow-y .5s;
     transition: flex-basis .5s, height .5s, overflow-y .5s, -ms-flex-preferred-size .5s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 
 .style__leftSideBar__bottom--isCollapsed___fR02r {
-    -ms-flex-preferred-size: 0%;
-        flex-basis: 0%;
-    height: auto;
-    overflow-y: visible;
+    -ms-flex: 0 0 40px;
+        flex: 0 0 40px;
+    overflow-y: hidden;
 }
 :root {}
 
@@ -8790,6 +8796,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__toolBar___36acp {
     border-top: 1px solid #3f3f3f;
     border-bottom: 1px solid #3f3f3f;
+    -ms-flex: 0 0 40px;
+        flex: 0 0 40px;
 }
 .style__toolBar___36acp:first-child {
     border-top: 0;
@@ -8858,14 +8866,12 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 :root {}
 :root {}
-/* TODO: get rid of magick numbers here, they are not safe! */
 .style__pageTree___1vfOV {
     overflow-y: auto;
-    height: calc(50vh - 85px);
+    /* Node Tree is expected to be rendered inside a display: flex container - and it will take up all remaining space */
+    -ms-flex: 1 0 0px;
+        flex: 1 0 0px;
     transition: .5s ease height, overflow-y .5s;
-}
-.style__pageTree--expanded___2Fx4G {
-    height: calc(100vh - 164px);
 }
 :root {}
 
@@ -9242,6 +9248,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 :root {}
 
 .style__searchBar___1ioc- {
+    -ms-flex: 0 0 40px;
+        flex: 0 0 40px;
     display: -ms-flexbox;
     display: flex;
     line-height: 0;
