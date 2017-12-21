@@ -4588,6 +4588,10 @@ body::-webkit-scrollbar-corner {
     background: #00ADEE;
 }
 
+.style__listPreviewElement--isHighlighted___26ad1 > span {
+    color: #fff;
+}
+
 .style__listPreviewElement__icon___3qFLa {
     padding-right: .5em;
 }
@@ -8465,6 +8469,12 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     padding: 0;
     text-align: left;
     font-size: 15px;
+}
+/* Set an explicit width for the icons so that the chars are starting */
+/* on the same place for every MenuItem */
+.style__drawer__menuItemGroupBtn___1KTQK i,
+.style__drawer__menuItemBtn___25Hgm i {
+    width: 2em;
 }
 .style__drawer__menuItemGroupBtn___1KTQK {
     font-weight: 700;
