@@ -8479,6 +8479,12 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__drawer__menuItemGroupBtn___1KTQK {
     font-weight: 700;
 }
+.style__drawer__version___32tQx {
+    color: #999;
+    padding: 16px;
+    bottom: 40px;
+    position: absolute;
+}
 :root {}
 
 :root {}
