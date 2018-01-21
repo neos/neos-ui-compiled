@@ -13043,12 +13043,14 @@ span.CodeMirror-selectedtext { background: none; }
     z-index: 1;
     width: 460px;
     border: 8px solid #222;
-    /* 8px border top and bottom */
-    height: calc(40px + 16px);
+    /* 8px border top and bottom (spacing-Full) */
+    /* the height of the SelectBox header is 50 px, GoldenUnit is 40px */
+    /* so I have to add 10px */
+    height: calc(40px + 16px + 10px);
 }
 .style__linkIconButton__item___otnn7 {
     padding: 8px;
-    box-sizing:content-box;
+    box-sizing: content-box;
     height: calc(40px * 1.5);
     line-height: 20px;
 }
