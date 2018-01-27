@@ -210,10 +210,10 @@ body::-webkit-scrollbar-corner {
 .style__btn--warn___mYaSC i {
     background-color: #ff8700;
 }
-.style__btn--brandHover___3ZVrT:hover {
+.style__btn--brandHover___3ZVrT:hover:enabled {
     background-color: #00ADEE;
 }
-.style__btn--brandHover___3ZVrT:hover i {
+.style__btn--brandHover___3ZVrT:hover:enabled i {
     background-color: #00ADEE;
 }
 .style__btn--brandHover___3ZVrT.style__btn--isPressed___3CoIu {
@@ -228,16 +228,16 @@ body::-webkit-scrollbar-corner {
 .style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu i {
     color: #00ADEE;
 }
-.style__btn--cleanHover___eru_z:hover {
+.style__btn--cleanHover___eru_z:hover:enabled {
     color: #00ADEE;
 }
-.style__btn--cleanHover___eru_z:hover i {
+.style__btn--cleanHover___eru_z:hover:enabled i {
     color: #00ADEE;
 }
 .style__btn--darkenHover___3ltdb.style__btn--isPressed___3CoIu,
 .style__btn--darkenHover___3ltdb.style__btn--isPressed___3CoIu i,
-.style__btn--darkenHover___3ltdb:hover,
-.style__btn--darkenHover___3ltdb:hover i {
+.style__btn--darkenHover___3ltdb:hover:enabled,
+.style__btn--darkenHover___3ltdb:hover:enabled i {
     background-color: rgba(0, 0, 0, .1);
 }
 .style__btn--warnHover___3T3eD.style__btn--isPressed___3CoIu {
@@ -246,10 +246,10 @@ body::-webkit-scrollbar-corner {
 .style__btn--warnHover___3T3eD.style__btn--isPressed___3CoIu i {
     background-color: #ff8700;
 }
-.style__btn--warnHover___3T3eD:hover {
+.style__btn--warnHover___3T3eD:hover:enabled {
     background-color: #ff8700;
 }
-.style__btn--warnHover___3T3eD:hover i {
+.style__btn--warnHover___3T3eD:hover:enabled i {
     background-color: #ff8700;
 }
 .style__buttonGroup___3Esar {
