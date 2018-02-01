@@ -155,10 +155,6 @@ body::-webkit-scrollbar-corner {
     font-size: 14px;
 }
 
-    .style__btn___3rhzP:focus {
-        outline: unset;
-    }
-
     .style__btn___3rhzP[disabled] {
         opacity: .5;
         cursor: not-allowed;
@@ -3183,9 +3179,6 @@ body::-webkit-scrollbar-corner {
     line-height: 40px;
     background: #323232;
 }
-.style__dropDown__btn___2W0C9:focus {
-        outline: unset;
-    }
 .style__dropDown__btn--withChevron___JMZEI {
     padding-right: 40px;
 }
