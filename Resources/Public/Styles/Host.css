@@ -3870,6 +3870,12 @@ body::-webkit-scrollbar-corner {
     .style__flashMessageContainer___o2r5-:empty {
         display: none;
     }
+.style__modalTitle___1PUpg {
+    margin-left: 16px;
+}
+.style__modalContents___3xZ0S {
+    padding: 16px;
+}
 .style__modalTitle___33Lzc {
     margin-left: 16px;
 }
