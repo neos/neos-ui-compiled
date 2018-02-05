@@ -4542,6 +4542,20 @@ body::-webkit-scrollbar-corner {
 .style__dropDown__btnIcon___19b3J {
     margin-right: .5em;
 }
+.style__cancelButton___5sROF {
+    margin-right: 4px !important;
+}
+.style__dimensionLabel___3aCBZ {
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+.style__buttonGroup___38j-g {
+    text-align: right;
+    margin-top: 8px;
+}
+.style__selectPreset___3Nwfm {
+    margin-right: 16px;
+}
 .style__loadingIndicator__container___1yhsy {
     left: 0;
     top: 0;
