@@ -3361,6 +3361,11 @@ body::-webkit-scrollbar-corner {
     padding: 5px 16px;
 }
 
+.style__listPreviewElement--isDisabled___2bTD- {
+    color: #999;
+    cursor: not-allowed;
+}
+
 .style__listPreviewElement--isHighlighted___26ad1 {
     background: #00ADEE;
 }
