@@ -3335,7 +3335,7 @@ body::-webkit-scrollbar-corner {
     min-width: 160px;
     -webkit-box-shadow: 0 5px 10px rgba(0,0,0, .2);
             box-shadow: 0 5px 10px rgba(0,0,0, .2);
-    z-index: 1;
+    z-index: 3;
 }
 
 .style__selectBox__item___XqlG3 {
@@ -4890,10 +4890,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     line-height: 0;
     border-bottom: 1px solid #3f3f3f;
     background-color: #323232;
-}
-
-.style__searchBar___1ioc- > * {
-    width: 50%;
 }
 .style__contentCanvas___3a_4z {
     position: relative;
