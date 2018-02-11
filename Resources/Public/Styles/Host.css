@@ -4882,8 +4882,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 .style__searchBar___1ioc- {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40px;
-            flex: 0 0 40px;
+        -ms-flex: 0 0 calc(40px + 2px);
+            flex: 0 0 calc(40px + 2px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
