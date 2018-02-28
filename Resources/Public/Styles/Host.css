@@ -6262,7 +6262,7 @@ span.CodeMirror-selectedtext { background: none; }
     z-index: 1;
     width: 460px;
     border: 8px solid #222;
-    height: calc(40px + 16px + 1px);
+    height: calc(40px + 16px);
 }
 .style__linkIconButton__item___otnn7 {
     padding: 8px;
