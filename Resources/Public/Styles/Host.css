@@ -5108,6 +5108,18 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         height: 40px;
         width: 320px;
     }
+.style__loader___2OI4F {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+}
 .style__boolean__disabled___DyVUX {
     opacity: .65;
     cursor: not-allowed;
