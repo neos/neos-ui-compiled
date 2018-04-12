@@ -3772,6 +3772,10 @@ body::-webkit-scrollbar-corner {
 .node__dropTarget__inner--acceptsDrop___3mSD7 {
     background-color: #00ADEE;
 }
+.style__envelope__error___dGIZw {
+    padding: .5em;
+    border: 1px solid #ff460d;
+}
 .style__markHoveredNodeAsHovered___cRNRV {
     outline-offset: .5em;
     outline: 2px solid rgba(0,0,0, .2);
@@ -3954,10 +3958,6 @@ body::-webkit-scrollbar-corner {
 }
 .style__nodeTypeFilter__label___1xllr {
     margin-right: 8px;
-}
-.style__envelope__error___dGIZw {
-    padding: .5em;
-    border: 1px solid #ff460d;
 }
 .style__body___3gZjN {
     padding: 16px;
