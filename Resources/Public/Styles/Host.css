@@ -326,6 +326,10 @@ body::-webkit-scrollbar-corner {
 .style__calendarInputWrapper--highlight___OjkhY {
     outline: 2px solid #00a338;
 }
+.style__calendarInputWrapper--invalid___2LSdA {
+    outline: 2px solid #ff460d;
+    color: #ff460d;
+}
 .style__closeCalendarIconBtn___3kkZX {
     position: relative;
     display: table-cell;
@@ -3091,6 +3095,28 @@ body::-webkit-scrollbar-corner {
     -webkit-animation: style__fa-spin___3Y_m1 2s infinite linear;
             animation: style__fa-spin___3Y_m1 2s infinite linear;
 }
+.style__tooltip___1n9Qt {
+    position: absolute;
+}
+
+.style__tooltip--arrow___xV99a {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ff460d;
+}
+
+.style__tooltip--inner___3DM9n {
+    position: relative;
+    padding: 8px;
+    background: #ff460d;
+    color: white;
+}
 .style__dialog___LLhlp {
     position: fixed;
     top: 0;
@@ -3470,28 +3496,6 @@ body::-webkit-scrollbar-corner {
 .style__textInput--disabled___2S4ZK {
     opacity: .65;
     cursor: not-allowed;
-}
-.style__tooltip___1n9Qt {
-    position: absolute;
-}
-
-.style__tooltip--arrow___xV99a {
-    position: relative;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin-left: -8px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #ff460d;
-}
-
-.style__tooltip--inner___3DM9n {
-    position: relative;
-    padding: 8px;
-    background: #ff460d;
-    color: white;
 }
 .style__sideBar___26rmh {
     position: absolute;
