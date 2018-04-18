@@ -327,8 +327,8 @@ body::-webkit-scrollbar-corner {
     outline: 2px solid #00a338;
 }
 .style__calendarInputWrapper--invalid___2LSdA {
-    outline: 2px solid #ff460d;
-    color: #ff460d;
+    outline: 2px solid #ff460d !important;
+    color: #ff460d !important;
 }
 .style__closeCalendarIconBtn___3kkZX {
     position: relative;
