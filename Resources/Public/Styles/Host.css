@@ -4102,15 +4102,6 @@ body::-webkit-scrollbar-corner {
 .style__publishButton___2FhAJ:hover {
     background: #00a338 !important;
 }
-.style__fullScreenClose___3t_sE {
-    position: fixed;
-    top: 16px;
-    right: calc(2 * 16px);
-    z-index: 1;
-    background-color: #00ADEE;
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0, .25);
-            box-shadow: 0 0 8px rgba(0,0,0, .25);
-}
 .style__primaryToolbar___15S1o {
 
     z-index: 1;
@@ -4625,8 +4616,11 @@ body::-webkit-scrollbar-corner {
 .style__secondaryToolbar--isFringeRight___2eh9E {
     padding-right: 46px;
 }
-.style__secondaryToolbar--isHidden___2yZor {
-    display: none;
+.style__secondaryToolbar--fullScreen___2uy3_ {
+    top: 0;
+    padding: 0 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
 }
 .style__secondaryToolbar__rightHandedActions___2qKvW {
     margin-left: auto;
@@ -4731,6 +4725,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
 .style__secondaryToolbar__buttonLink--isDisabled___3TOfd {
     opacity: .5;
+}
+.style__fullScreenClose___3ulIk {
+    background-color: #00ADEE;
 }
 .style__drawer___1JteR {
     position: fixed;
@@ -5005,7 +5002,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     padding-top: 192px; /* height of EditModePanel added */
 }
 .style__contentCanvas--isFullScreen___2UVnV {
-    padding: 0;
+    padding: 40px 0 0 0;
 }
 .style__contentCanvas--isHidden___31sha::after {
         top: 0;
