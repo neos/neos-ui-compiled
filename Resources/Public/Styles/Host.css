@@ -720,6 +720,12 @@ body::-webkit-scrollbar-corner {
 .style__wrapper___3H2rO td.rdtActive:before {
                 display: none !important;
             }
+.style__disabled___30DXk {
+    opacity: .5;
+}
+.style__disabled-cursor___1HPe7 {
+    cursor: not-allowed;
+}
 @font-face {
   font-family: 'FontAwesome';
   src: url(./.././Styles/Font-af7ae505a9eed503f8b8e6982036873e.woff2) format('woff2'), url(./.././Styles/Font-fee66e712a8a08eef5805a46892932ad.woff) format('woff');
@@ -3374,6 +3380,12 @@ body::-webkit-scrollbar-corner {
     padding-left: 16px;
     line-height: 40px;
 }
+
+.style__selectBox--disabled___3Z10k {
+    -webkit-filter: opacity(50%);
+            filter: opacity(50%);
+    cursor: not-allowed;
+}
 .style__listPreviewElement___2D3TC {
     background: #323232;
     cursor: pointer;
@@ -3438,6 +3450,10 @@ body::-webkit-scrollbar-corner {
 
 .style__selectBoxHeader__wrapperIconWrapper___11ISw {
     padding: 0 16px;
+}
+
+.style__selectBoxHeader--disabled___3UWbf {
+    cursor: not-allowed;
 }
 .style__selectBoxHeaderWithSearchInput___GTrXd {
     display: -webkit-box;
@@ -5285,6 +5301,11 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     overflow: hidden;
     cursor: pointer;
     /* TODO: border-color: #fff; on hover */
+}
+
+.style__thumbnail--disabled___38ikJ {
+    cursor: not-allowed;
+    opacity: .5;
 }
 
 .style__thumbnail--highlight___37uMB {
