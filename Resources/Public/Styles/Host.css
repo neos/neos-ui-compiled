@@ -1370,7 +1370,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__selectBox___1PAF9 {
     position: relative;
     display: inline-block;
-    height: 40px;
+    line-height: 0;
 }
 
 .style__selectBox__btn___2BHW4 {
@@ -4329,7 +4329,7 @@ span.CodeMirror-selectedtext { background: none; }
     z-index: 1;
     width: 460px;
     border: 8px solid #222;
-    height: calc(40px + 16px);
+    line-height: 0;
 }
 .style__linkIconButton__item___otnn7 {
     padding: 8px;
