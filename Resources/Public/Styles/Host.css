@@ -756,30 +756,6 @@ body::-webkit-scrollbar-corner {
 .style__icon--paddedRight___2FV_M {
     margin-right: .75em;
 }
-@-webkit-keyframes style__fa-spin___3Y_m1 {
-    0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-                transform: rotate(359deg);
-    }
-}
-@keyframes style__fa-spin___3Y_m1 {
-    0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-                transform: rotate(359deg);
-    }
-}
-.style__icon--spin___2DsYg {
-    -webkit-animation: style__fa-spin___3Y_m1 2s infinite linear;
-            animation: style__fa-spin___3Y_m1 2s infinite linear;
-}
 /*!
  * Font Awesome Free 5.0.9 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -2390,6 +2366,11 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__dropDown__item--canPublish___fD6Pk {
     background: #ff8700;
+}
+
+.style__dropDown__item--isPublishing___PXkl- {
+    background: #ff8700;
+    opacity: .5;
 }
 
 .style__badge___34ARD {
