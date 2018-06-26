@@ -756,6 +756,15 @@ body::-webkit-scrollbar-corner {
 .style__icon--paddedRight___2FV_M {
     margin-right: .75em;
 }
+.style__icon--color-warn___27ZqM {
+    color: #ff8700;
+}
+.style__icon--color-error___3tJnv {
+    color: #ff460d;
+}
+.style__icon--color-primaryBlue___2CAOS {
+    color: #00ADEE;
+}
 /*!
  * Font Awesome Free 5.0.9 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -1701,8 +1710,7 @@ svg:not(:root).neos-svg-inline--fa {
     -webkit-transform: translateY(3px) translateX(-2px) rotate(-90deg);
             transform: translateY(3px) translateX(-2px) rotate(-90deg);
 }
-.node__header__chevron--isHiddenInIndex___3w-RN,
-.node__header__data--isHidden___34ear {
+.node__header__chevron--isHiddenInIndex___3w-RN {
     opacity: .5;
 }
 .node__header__chevron--isLoading___2ruux {
@@ -1733,7 +1741,6 @@ svg:not(:root).neos-svg-inline--fa {
     opacity: .5;
 }
 .node__header__data--isHidden___34ear {
-    opacity: .5;
     text-decoration: line-through;
 }
 .node__header__data--isDragging___2TQZt {
