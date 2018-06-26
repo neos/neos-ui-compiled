@@ -2788,22 +2788,53 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 .style__drawer___1JteR {
     position: fixed;
-    top: 41px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    top: calc(40px + 1px);
     left: 0;
     z-index: 1;
-    height: 100%;
+    height: calc(100% - calc(40px + 1px));
     width: 320px;
     background: #222;
     -webkit-transition: .3s ease transform;
     transition: .3s ease transform;
-    padding-bottom: 41px;
     overflow: scroll;
 }
 .style__drawer--isHidden___q6sjz {
     -webkit-transform: translateX(-320px);
             transform: translateX(-320px);
 }
+.style__drawer__menuItemGroupsWrapper___b-3kS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: auto;
+    padding-bottom: calc(40px + 1px);
+}
 .style__drawer__menuItem___VmZHT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-top: 1px solid #3f3f3f;
     cursor: pointer;
 }
@@ -2812,6 +2843,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     }
 .style__drawer__menuItemGroupBtn___1KTQK,
 .style__drawer__menuItemBtn___25Hgm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     padding: 0;
     text-align: left;
@@ -2829,8 +2863,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__drawer__version___32tQx {
     color: #999;
     padding: 16px;
-    bottom: 40px;
-    position: absolute;
+    margin-top: auto;
 }
 .style__leftSideBar___2qCob {
     display: -webkit-box;
