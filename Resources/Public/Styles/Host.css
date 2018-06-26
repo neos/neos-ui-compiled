@@ -2380,6 +2380,15 @@ svg:not(:root).neos-svg-inline--fa {
     opacity: .5;
 }
 
+.style__dropDown__item--isSaving___YyJdt {
+    background: #ff8700;
+    opacity: .5;
+}
+
+.style__dropDown__item--isDiscarding___2vnQc {
+    opacity: .5;
+}
+
 .style__badge___34ARD {
     margin-left: 8px;
 }
