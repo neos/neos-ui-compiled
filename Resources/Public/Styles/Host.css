@@ -738,18 +738,6 @@ body::-webkit-scrollbar-corner {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.style__icon--big___Hbu57 {
-    font-size: 1.5em;
-}
-.style__icon--medium___3OkZV {
-    font-size: 1.25em;
-}
-.style__icon--small___1MyBp {
-    font-size: .75em;
-}
-.style__icon--tiny___k1Fls {
-    font-size: .5em;
-}
 .style__icon--paddedLeft___3FiTY {
     margin-left: .75em;
 }
@@ -3387,7 +3375,35 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     height: 216px;
     overflow: hidden;
     cursor: pointer;
-    /* TODO: border-color: #fff; on hover */
+}
+
+.style__thumbnail___24oLR:hover > .style__thumbnail__overlay___GeOwH {
+    height: 100%;
+    width: 100%;
+    background-color: #00ADEE;
+}
+
+.style__thumbnail___24oLR:hover .style__cropArea___2hPZV {
+    opacity: .7;
+}
+
+.style__thumbnail___24oLR .style__thumbnail__overlay__icon___lnl7q {
+    display: none;
+}
+
+.style__thumbnail___24oLR:hover .style__thumbnail__overlay__icon___lnl7q {
+    position: relative;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000;
 }
 
 .style__thumbnail--disabled___38ikJ {
