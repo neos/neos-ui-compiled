@@ -2655,9 +2655,6 @@ svg:not(:root).neos-svg-inline--fa {
     margin-right: 1rem;
     white-space: nowrap;
 }
-.style__editModePanel__buttonWrapper___IMmdX:last-child {
-        margin-right: 0;
-    }
 .style__editModePanel__current___QNqy1 {
     color: #00ADEE;
 }
