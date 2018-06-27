@@ -210,6 +210,12 @@ body::-webkit-scrollbar-corner {
 .style__btn--warn___mYaSC i {
     background-color: #ff8700;
 }
+.style__btn--brandActive___3UtEy {
+    background-color: #00ADEE;
+}
+.style__btn--brandActive___3UtEy svg {
+        color: #FFF;
+    }
 .style__btn--brandHover___3ZVrT:hover:enabled {
     background-color: #00ADEE;
 }
@@ -2981,6 +2987,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     float: left;
     width: 40px;
 }
+.style__toolBar__btnGroup__btn___3A1Nd:hover {
+        background-color: #00ADEE;
+    }
 .style__pageTree___1vfOV {
     overflow-y: auto;
     /* Node Tree is expected to be rendered inside a display: flex container - and it will take up all remaining space */
@@ -4329,6 +4338,9 @@ span.CodeMirror-selectedtext { background: none; }
 .style__toolBar__btnGroup__btn___2PFz3 {
     float: left;
 }
+.style__toolBar__btnGroup__btn___2PFz3:hover {
+        background-color: #00ADEE;
+    }
 .style__toolBar__btnGroup__btn___2PFz3 svg {
         width: 1em;
     }
