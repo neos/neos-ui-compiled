@@ -1117,14 +1117,22 @@ svg:not(:root).neos-svg-inline--fa {
     margin-left: -8px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
+    border-bottom: 8px solid #323232;
+}
+
+.style__tooltip--asError___3OleK .style__tooltip--arrow___xV99a {
     border-bottom: 8px solid #ff460d;
 }
 
 .style__tooltip--inner___3DM9n {
     position: relative;
     padding: 8px;
-    background: #ff460d;
+    background: #323232;
     color: white;
+}
+
+.style__tooltip--asError___3OleK .style__tooltip--inner___3DM9n {
+    background: #ff460d;
 }
 .style__dialog___LLhlp {
     position: fixed;
@@ -1884,6 +1892,29 @@ svg:not(:root).neos-svg-inline--fa {
     padding: .5em;
     border: 1px solid #ff460d;
 }
+
+.style__envelope__label___2NiEj {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.style__envelope__tooltipButton___2pIzZ {
+    padding-left: 8px;
+}
+
+.style__envelope__tooltip___P0K0r {
+    position: absolute;
+    z-index: 2147483647;
+    max-width: 100%;
+}
 .style__widget___11ObM {
     background-color: #323232;
 }
@@ -2047,11 +2078,18 @@ svg:not(:root).neos-svg-inline--fa {
     background: #00a338 !important;
 }
 .style__nodeType___2Bm7H {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
     width: calc(100% / 3);
     text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .style__nodeType__icon___25w2d {
     color: #00ADEE;
