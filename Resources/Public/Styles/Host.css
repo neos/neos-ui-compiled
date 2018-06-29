@@ -2152,6 +2152,52 @@ svg:not(:root).neos-svg-inline--fa {
 .style__loginButton___1nLYF {
     width: 100%;
 }
+.style__keyboardShortcutIntroText___BPDey {
+    padding: 8px 16px;
+}
+
+.style__keyboardShortcutList___39h93 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.style__keyboardShortcut___2-d8h {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: calc(100% / 2);
+    border-bottom: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
+    padding: 8px 16px;
+    font-size: 14px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    vertical-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.style__keyboardShortcut__keys___12iGG {
+    background-color: #323232;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    width: 60px;
+    margin-left: 16px;
+}
 .style__modalContents___39SEC {
     display: -webkit-box;
     display: -ms-flexbox;
