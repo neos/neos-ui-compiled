@@ -3475,6 +3475,11 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     cursor: pointer;
 }
 
+.style__thumbnail__overlay___GeOwH {
+    -webkit-transition: .3s background-color ease-out;
+    transition: .3s background-color ease-out;
+}
+
 .style__thumbnail___24oLR:hover > .style__thumbnail__overlay___GeOwH {
     height: 100%;
     width: 100%;
