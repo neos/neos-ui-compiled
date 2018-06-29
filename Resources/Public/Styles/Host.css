@@ -1535,6 +1535,10 @@ svg:not(:root).neos-svg-inline--fa {
         color: #00ADEE;
     }
 
+.style__tabNavigation__item--isActive___2zdy_ > .style__tabNavigation__itemBtn___2s4ZD:hover {
+            color: #FFF;
+        }
+
 .style__tabNavigation__itemBtn___2s4ZD {
     display: inline-block;
     height: 40px;
@@ -1544,6 +1548,10 @@ svg:not(:root).neos-svg-inline--fa {
     border: 0;
     background: 0;
 }
+
+.style__tabNavigation__itemBtn___2s4ZD:hover {
+        background-color: #00ADEE;
+    }
 
 .style__tabNavigation__itemBtn___2s4ZD:focus {
         outline: 0;
