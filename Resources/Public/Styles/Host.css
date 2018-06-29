@@ -314,14 +314,6 @@ body::-webkit-scrollbar-corner {
         -webkit-transform: translateX(-50%) translateY(-50%);
                 transform: translateX(-50%) translateY(-50%);
     }
-.style__checkbox__inputMirror--highlight-checked___3QGM9 {
-    background: #00a338;
-    border-color: #00a338;
-    color: #fff;
-}
-.style__checkbox__inputMirror--highlight-unchecked___2drYD {
-    border-color: #00a338;
-}
 .style__checkbox__disabled___3uf8I {
     opacity: .65;
     cursor: not-allowed;
@@ -1104,36 +1096,6 @@ svg:not(:root).neos-svg-inline--fa {
   overflow: visible;
   position: static;
   width: auto; }
-.style__tooltip___1n9Qt {
-    position: absolute;
-}
-
-.style__tooltip--arrow___xV99a {
-    position: relative;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin-left: -8px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #323232;
-}
-
-.style__tooltip--asError___3OleK .style__tooltip--arrow___xV99a {
-    border-bottom: 8px solid #ff460d;
-}
-
-.style__tooltip--inner___3DM9n {
-    position: relative;
-    padding: 8px;
-    background: #323232;
-    color: white;
-}
-
-.style__tooltip--asError___3OleK .style__tooltip--inner___3DM9n {
-    background: #ff460d;
-}
 .style__dialog___LLhlp {
     position: fixed;
     top: 0;
@@ -1350,10 +1312,6 @@ svg:not(:root).neos-svg-inline--fa {
     padding: 0;
 }
 
-.style__selectBox--highlight___2IM3t {
-    outline: 2px solid #00a338;
-}
-
 .style__selectBox___1PAF9 {
     position: relative;
     display: inline-block;
@@ -1516,13 +1474,6 @@ svg:not(:root).neos-svg-inline--fa {
     font-weight: normal;
     color: #999;
 }
-.style__textInput--invalid___1edwH {
-    outline: 2px solid #ff460d !important;
-    color: #ff460d !important;
-}
-.style__textInput--highlight___6OUmG {
-    outline: 2px solid #00a338;
-}
 .style__textInput--disabled___2S4ZK {
     opacity: .65;
     cursor: not-allowed;
@@ -1679,6 +1630,46 @@ svg:not(:root).neos-svg-inline--fa {
 .style__panel__contents--noPadding___2aCPX {
     padding: 0;
 }
+.style__tooltip___1n9Qt {
+    position: absolute;
+}
+
+    .style__tooltip___1n9Qt ul  {
+        margin: 0;
+    }
+
+.style__tooltip--inline___1BcaT {
+    position: relative;
+}
+
+.style__tooltip--arrow___xV99a {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #141414;
+}
+
+.style__tooltip--asError___3OleK .style__tooltip--arrow___xV99a {
+    border-bottom: 8px solid #ff460d;
+}
+
+.style__tooltip--inner___3DM9n {
+    position: relative;
+    padding: 8px;
+    background: #141414;
+    color: white;
+    -webkit-box-shadow: 0px 0px 10px rgba(125, 125, 125, .2);
+            box-shadow: 0px 0px 10px rgba(125, 125, 125, .2);
+}
+
+.style__tooltip--asError___3OleK .style__tooltip--inner___3DM9n {
+    background: #ff460d;
+}
 .tree__treeWrapper___2ODH- {
 
     padding: 5px 0;
@@ -1812,11 +1803,6 @@ svg:not(:root).neos-svg-inline--fa {
     padding-left: 0;
 
 }
-
-.style__selectedOptions--highlight___2nGLV {
-    outline: 2px solid #00a338;
-    margin-bottom: 2px;
-}
 .style__selectedOptions__item___G4pEV {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1888,11 +1874,6 @@ svg:not(:root).neos-svg-inline--fa {
 .style__multiLineWithThumbnail__item___2qeYA:hover .style__multiLineWithThumbnail__tertiaryLabel___2FMf_ {
     color: white;
 }
-.style__envelope__error___dGIZw {
-    padding: .5em;
-    border: 1px solid #ff460d;
-}
-
 .style__envelope__label___2NiEj {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1910,10 +1891,18 @@ svg:not(:root).neos-svg-inline--fa {
     padding-left: 8px;
 }
 
-.style__envelope__tooltip___P0K0r {
+.style__envelope__helpmessage___Nf9kS {
     position: absolute;
     z-index: 2147483647;
     max-width: 100%;
+}
+
+.style__envelope--invalid___3TFDf {
+    outline: 2px solid #ff460d;
+}
+
+.style__envelope--highlight___fQPJf {
+    outline: 2px solid #00a338;
 }
 .style__widget___11ObM {
     background-color: #323232;
@@ -3347,6 +3336,14 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     opacity: .65;
     cursor: not-allowed;
 }
+
+.style__boolean__wrapper___1p_11 {
+    padding: 5px;
+}
+
+.style__boolean__wrapper___1p_11 label {
+        margin-bottom: 0 !important;
+    }
 .style__dropzone___pvLcT {
     border: none;
 }
@@ -3556,6 +3553,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     border: 0;
     background: #323232;
     width: 100%;
+}
+.style__codemirror__label___2wVEr {
+    padding: 2px;
 }
 .style__controls___2yR4Y {
     margin-top: 4px;
