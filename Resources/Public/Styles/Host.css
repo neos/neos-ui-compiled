@@ -752,7 +752,7 @@ body::-webkit-scrollbar-corner {
     color: #00ADEE;
 }
 /*!
- * Font Awesome Free 5.0.9 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 svg:not(:root).neos-svg-inline--fa {
@@ -1308,6 +1308,73 @@ svg:not(:root).neos-svg-inline--fa {
         -ms-user-select: none;
             user-select: none;
 }
+.style__dropDown___1SeFF {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.style__dropDown__btn___2W0C9 {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 16px;
+    border: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 40px;
+    background: #323232;
+}
+.style__dropDown__btn___2W0C9:focus{
+        outline: 1px solid #00ADEE;
+    }
+.style__dropDown__btn--withChevron___JMZEI {
+    padding-right: 40px;
+}
+.style__dropDown__btnLabel___2I0__ {
+    margin-right: .5em;
+}
+.style__dropDown__chevron___3wN4N {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.style__dropDown__contents___GBeJA {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #323232;
+    -webkit-box-shadow: 1px 2px 5px #222;
+            box-shadow: 1px 2px 5px #222;
+}
+.style__dropDown__contents--scrollable___mFW8d {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.style__dropDown__contents--isOpen___1szzg {
+    display: block;
+}
+.style__dropDown--darker___1GLKD > .style__dropDown__btn--open___2CTio {
+        background-color: #222;
+    }
+.style__dropDown--darker___1GLKD > .style__dropDown__contents___GBeJA {
+        background-color: #222;
+    }
+.style__dropDown--padded___328_- > .style__dropDown__contents___GBeJA {
+        padding: 16px;
+    }
 .style__selectBox__list___3CDrD {
     padding: 0;
 }
@@ -1647,7 +1714,8 @@ svg:not(:root).neos-svg-inline--fa {
     }
 
 .style__tooltip--inline___1BcaT {
-    position: relative;
+    position: relative !important;
+    margin-bottom: 8px;
 }
 
 .style__tooltip--arrow___xV99a {
@@ -2074,6 +2142,10 @@ svg:not(:root).neos-svg-inline--fa {
 .style__applyBtn___sAeF5 {
     background: #00a338 !important;
 }
+.style__dialog__padded___3Vy-U {
+    padding-bottom: 80px;
+}
+
 .style__nodeType___2Bm7H {
     width: calc(100% / 3);
     text-align: left;
@@ -2084,25 +2156,89 @@ svg:not(:root).neos-svg-inline--fa {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    position: relative;
 }
+
+.style__nodeType___2Bm7H:hover button {
+            background-color: #00ADEE;
+        }
+
+.style__nodeType___2Bm7H:hover .style__nodeType__helpIcon___2DAjs {
+            background-color: #00ADEE;
+            border-left: 1px solid #3f3f3f;
+        }
+
+.style__nodeType__toolTip___3vvOv {
+    top: 40px;
+}
+
 .style__nodeType__icon___25w2d {
     color: #00ADEE;
 }
+
 .style__nodeType___2Bm7H:hover .style__nodeType__icon___25w2d {
         color: #FFF;
     }
+
+.style__nodeType__item___1XIA4 {
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.style__nodeType__helpIcon___2DAjs {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+}
+
+.style__nodeType__helpIcon___2DAjs:focus {
+        outline: none;
+    }
+
+.style__helpMessage__wrapper___376iY {
+    position: relative;
+    height: 120px;
+    background-color: #3f3f3f;
+}
+
+.style__helpMessage___296Nj {
+    position: absolute;
+    background-color: #3f3f3f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #3f3f3f;
+    padding: 16px;
+    height: 120px;
+    overflow: scroll;
+}
+
+.style__helpMessage__label___12XY0 {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.style__helpMessage__closeButton___32Vya {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    background-color: #3f3f3f;
+}
+
 /* TODO: refactor such typography things to Headline component */
+
 .style__groupHeader___5Ceyu {
     border-bottom: 1px solid #3f3f3f;
 }
+
 .style__groupTitle___2rtQ4 {
     color: #adadad;
     line-height: 1.2;
     font-weight: normal;
 }
+
 .style__groupContents___11txw {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2112,6 +2248,7 @@ svg:not(:root).neos-svg-inline--fa {
         flex-wrap: wrap;
     padding: 0 !important;
 }
+
 .style__nodeTypeDialogHeader___2nvTz {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2120,6 +2257,7 @@ svg:not(:root).neos-svg-inline--fa {
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+
 .style__nodeTypeDialogHeader__filter___8hPYR {
     margin-right: 40px;
     display: -webkit-box;
@@ -2129,6 +2267,7 @@ svg:not(:root).neos-svg-inline--fa {
         -ms-flex-align: center;
             align-items: center;
 }
+
 .style__nodeTypeFilter__label___1xllr {
     margin-right: 8px;
 }
@@ -4345,6 +4484,57 @@ span.CodeMirror-selectedtext { background: none; }
 }
 .style__linkIconButton__link--active___2w3TJ {
     color: #fff;
+}
+.style__toolBar__btnGroup___dKcBv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+    .style__toolBar__btnGroup___dKcBv:before,
+    .style__toolBar__btnGroup___dKcBv:after {
+        content: '';
+        display: table;
+    }
+
+    .style__toolBar__btnGroup___dKcBv:after {
+        clear: both;
+    }
+.style__toolBar__btnGroup__btn___2njBn {
+    float: left;
+}
+.style__linkIconButton__flyout___21ynh {
+    position: fixed;
+    z-index: 1;
+    width: 460px;
+    border: 8px solid #222;
+    line-height: 0;
+}
+.style__linkIconButton__item___4e2dz {
+    padding: 8px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    height: calc(40px * 1.5);
+    line-height: 20px;
+}
+.style__linkIconButton__link___PMUT2 {
+    color: #999;
+    display: block;
+    font-size: 12px;
+}
+.style__linkIconButton__image___33AZ- {
+    height: calc(40px * 1.5);
+    width: auto;
+    float: right;
+}
+.style__linkIconButton__link--active___2S1A- {
+    color: #fff;
+}
+[data-neos-placeholder]:before {
+    color: #999;
+    content: attr(data-neos-placeholder);
+    cursor: text;
+    position: absolute;
 }
 
 /*# sourceMappingURL=Host.css.map*/
