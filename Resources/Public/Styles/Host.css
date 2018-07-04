@@ -2977,6 +2977,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: 40px;
 }
 
 .style__leftSideBar__bottom___3FJcQ {
@@ -2994,6 +2995,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: 40px;
 }
 
 .style__leftSideBar__bottom--isCollapsed___fR02r {
