@@ -4401,12 +4401,8 @@ span.CodeMirror-selectedtext { background: none; }
 }
 .style__toolBar___2kVaR {
     position: absolute;
-    border-bottom: 1px solid #3f3f3f;
     background: #222;
     z-index: 2147483647;
-}
-.style__toolBar__btnGroup___a36xF {
-    border-bottom: 1px solid #3f3f3f;
 }
 .style__toolBar__btnGroup___a36xF:before,
     .style__toolBar__btnGroup___a36xF:after {
