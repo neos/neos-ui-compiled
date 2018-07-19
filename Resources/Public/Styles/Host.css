@@ -4617,11 +4617,48 @@ span.CodeMirror-selectedtext { background: none; }
     float: left;
 }
 .style__linkIconButton__flyout___21ynh {
+    background-color: #222;
     position: fixed;
     z-index: 1;
     width: 460px;
     border: 8px solid #222;
-    line-height: 0;
+}
+.style__linkIconButton__wrap___21Gid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}
+.style__linkIconButton__optionsPanelDouble___jfj9J {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+}
+.style__linkIconButton__optionsPanel___15tZZ {
+    padding-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.style__linkIconButton__optionsPanelItem___24DDg {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 8px;
+}
+.style__linkIconButton__optionsPanelLabel___1MbPU {
+    margin-bottom: 4px;
+}
+.style__linkIconButton__innerButton___2KN46 {
+    height: auto;
+}
+.style__linkIconButton__loader___2J2a_ {
+    margin: 4px;
 }
 .style__linkIconButton__item___4e2dz {
     padding: 8px;
