@@ -4528,7 +4528,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 :root {
 	--ck-z-default: 1;
-	--ck-z-modal: 999;
+	--ck-z-modal: calc( var(--ck-z-default) + 999 );
 }
 /*
  * Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
@@ -4598,32 +4598,34 @@ span.CodeMirror-selectedtext { background: none; }
 	display: block;
 	width: 100%;
 }
-.style__toolBar__btnGroup___dKcBv {
+.index__toolBar__btnGroup___P0J6R {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-    .style__toolBar__btnGroup___dKcBv:before,
-    .style__toolBar__btnGroup___dKcBv:after {
+    .index__toolBar__btnGroup___P0J6R:before,
+    .index__toolBar__btnGroup___P0J6R:after {
         content: '';
         display: table;
     }
 
-    .style__toolBar__btnGroup___dKcBv:after {
+    .index__toolBar__btnGroup___P0J6R:after {
         clear: both;
     }
-.style__toolBar__btnGroup__btn___2njBn {
+
+.index__toolBar__btnGroup__btn___2S64F {
     float: left;
 }
-.style__linkIconButton__flyout___21ynh {
+.LinkButton__linkButton__flyout___2d0Rm {
     background-color: #222;
     position: fixed;
     z-index: 1;
     width: 460px;
     border: 8px solid #222;
 }
-.style__linkIconButton__wrap___21Gid {
+
+.LinkButton__linkButton__wrap___1M5tF {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4631,14 +4633,16 @@ span.CodeMirror-selectedtext { background: none; }
         -ms-flex-align: stretch;
             align-items: stretch;
 }
-.style__linkIconButton__optionsPanelDouble___jfj9J {
+
+.LinkButton__linkButton__optionsPanelDouble___3SUWm {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
 }
-.style__linkIconButton__optionsPanel___15tZZ {
+
+.LinkButton__linkButton__optionsPanel___33w4x {
     padding-top: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4646,39 +4650,252 @@ span.CodeMirror-selectedtext { background: none; }
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-.style__linkIconButton__optionsPanelItem___24DDg {
+
+.LinkButton__linkButton__optionsPanelItem___zM4FD {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     padding: 8px;
 }
-.style__linkIconButton__optionsPanelLabel___1MbPU {
+
+.LinkButton__linkButton__optionsPanelLabel___1Z69K {
     margin-bottom: 4px;
 }
-.style__linkIconButton__innerButton___2KN46 {
+
+.LinkButton__linkButton__innerButton___2Fqoj {
     height: auto;
 }
-.style__linkIconButton__loader___2J2a_ {
+
+.LinkButton__linkButton__loader___19buZ {
     margin: 4px;
 }
-.style__linkIconButton__item___4e2dz {
+
+.LinkButton__linkButton__item___CCr-J {
     padding: 8px;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     height: calc(40px * 1.5);
     line-height: 20px;
 }
-.style__linkIconButton__link___PMUT2 {
+
+.LinkButton__linkButton__link___1J20i {
     color: #999;
     display: block;
     font-size: 12px;
 }
-.style__linkIconButton__image___33AZ- {
+
+.LinkButton__linkButton__image___z9bHq {
     height: calc(40px * 1.5);
     width: auto;
     float: right;
 }
-.style__linkIconButton__link--active___2S1A- {
+
+.LinkButton__linkButton__link--active___3fr9p {
     color: #fff;
+}
+.TableButton__tableCreationGrid___2FeDB {
+    background-color: #222;
+    padding: 10px;
+}
+.TableButton__tableCreationGrid__row___35wuV {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.TableButton__tableCreationGrid__cell___utdWN {
+    width: 10px;
+    height: 9px;
+    margin: 1px;
+    border: 1px solid #FFF;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.TableButton__tableCreationGrid__cell--active___2ZADM {
+    background-color: #00ADEE;
+}
+.TableButton__tableCreationGrid__display___3uG3g {
+    text-align: center;
+}
+/* This CSS code was extracted by hand from CKE build and some colors were altered.
+ It's not worth to set up proper CKE theme build as we only need this code for the table feature currently.
+ Feel free to remove it and setup a proper CKE styles build together with a custom theme. */
+
+.ck-hidden{
+    display:none!important
+}
+
+:root{
+    --ck-color-base-foreground:#fafafa;
+    --ck-color-base-background:#fff;
+    --ck-color-base-border:#c4c4c4;
+    --ck-color-base-action:#61b045;
+    --ck-color-base-focus:#6cb5f9;
+    --ck-color-base-text:#333;
+    --ck-color-base-active:#198cf0;
+    --ck-color-base-active-focus:#0e7fe1;
+    --ck-color-focus-border:#47a4f5;
+    --ck-color-focus-shadow:rgba(119,186,248,.5);
+    --ck-color-focus-disabled-shadow:rgba(119,186,248,.3);
+    --ck-color-text:var(--ck-color-base-text);
+    --ck-color-shadow-drop:rgba(0,0,0,.15);
+    --ck-color-shadow-inner:rgba(0,0,0,.1);
+    --ck-focus-outer-shadow-geometry:0 0 0 3px;
+    --ck-focus-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-shadow);
+    --ck-focus-disabled-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-disabled-shadow);
+    --ck-focus-ring:1px solid var(--ck-color-focus-border);
+    --ck-border-radius:2px;
+    --ck-inner-shadow:2px 2px 3px var(--ck-color-shadow-inner) inset;
+    --ck-drop-shadow:0 1px 2px 1px var(--ck-color-shadow-drop);
+    --ck-spacing-unit:0.6em;
+    --ck-spacing-large:calc(var(--ck-spacing-unit) * 1.5);
+    --ck-spacing-standard:var(--ck-spacing-unit);
+    --ck-spacing-medium:calc(var(--ck-spacing-unit) * 0.8);
+    --ck-spacing-small:calc(var(--ck-spacing-unit) * 0.5);
+    --ck-spacing-tiny:calc(var(--ck-spacing-unit) * 0.3);
+    --ck-spacing-extra-tiny:calc(var(--ck-spacing-unit) * 0.16);
+    --ck-icon-size:calc(var(--ck-line-height-base) * var(--ck-font-size-normal))
+}
+.ck.ck-icon{
+    vertical-align:middle;
+    width:var(--ck-icon-size);
+    height:var(--ck-icon-size);
+    font-size:.8333350694em;
+    will-change:transform
+}
+.ck.ck-icon,.ck.ck-icon *{
+    color:inherit;
+    cursor:inherit
+}
+.ck.ck-icon *{
+    fill:currentColor
+}
+.ck .ck-widget.ck-widget_selectable{
+    position:relative
+}
+.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{
+    visibility:hidden;
+    position:absolute
+}
+.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{
+    display:block
+}
+.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{
+    visibility:visible
+}
+:root{
+    --ck-widget-outline-thickness:3px;
+    --ck-widget-handler-icon-size:16px;
+    --ck-widget-handler-animation-duration:200ms;
+    --ck-widget-handler-animation-curve:ease;
+    --ck-color-widget-blurred-border:#dedede;
+    --ck-color-widget-hover-border:#ffc83d;
+    --ck-color-widget-editable-focus-background:var(--ck-color-base-background);
+    --ck-color-widget-drag-handler-icon-color:var(--ck-color-base-background);
+}
+.ck .ck-widget{
+    margin:var(--ck-spacing-standard) 0;
+    padding:0;
+    outline-width:var(--ck-widget-outline-thickness);
+    outline-style:solid;
+    outline-color:transparent;
+    transition:outline-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve)
+}
+.ck .ck-widget.ck-widget_selected,.ck .ck-widget.ck-widget_selected:hover{
+    outline:var(--ck-widget-outline-thickness) solid var(--ck-color-focus-border)
+}
+.ck .ck-widget:hover{
+    outline-color:var(--ck-color-widget-hover-border)
+}
+.ck .ck-editor__nested-editable{
+    border:1px solid transparent
+}
+.ck .ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck .ck-editor__nested-editable:focus{
+    outline:none;
+    border:var(--ck-focus-ring);
+    box-shadow:var(--ck-inner-shadow),0 0;
+    background-color:var(--ck-color-widget-editable-focus-background)
+}
+.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{
+    padding:4px;
+    box-sizing:border-box;
+    background-color:transparent;
+    opacity:0;
+    transition:background-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),visibility var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),opacity var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve);
+    border-radius:var(--ck-border-radius) var(--ck-border-radius) 0 0;
+    transform:translateY(-100%);
+    left:calc(0px - var(--ck-widget-outline-thickness))
+}
+.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler:hover .ck-icon .ck-icon__selected-indicator{
+    opacity:1
+}
+.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{
+    width:var(--ck-widget-handler-icon-size);
+    height:var(--ck-widget-handler-icon-size);
+    color:var(--ck-color-widget-drag-handler-icon-color)
+}
+.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{
+    opacity:0;
+    transition:opacity .3s var(--ck-widget-handler-animation-curve)
+}
+.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler{
+    opacity:1;
+    background-color:var(--ck-color-focus-border)
+}
+.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{
+    opacity:1
+}
+.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{
+    opacity:1;
+    background-color:var(--ck-color-widget-hover-border)
+}
+.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover{
+    outline-color:var(--ck-color-widget-blurred-border)
+}
+.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler:hover,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler:hover{
+    background:var(--ck-color-widget-blurred-border)
+}
+:root{
+    --ck-color-table-focused-cell-background:#f5fafe
+}
+.ck-widget.table td.ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck-widget.table th.ck-editor__nested-editable.ck-editor__nested-editable_focused{
+    background:var(--ck-color-table-focused-cell-background);
+    border-style:none;
+    outline:1px solid var(--ck-color-focus-border);
+    outline-offset:-1px
+}
+.ck-content .table{
+    display:table;
+    width: initial;
+}
+.ck-content .table table{
+    border-collapse:collapse;
+    border-spacing:0;
+    border:1px double #b3b3b3
+}
+.ck-content .table table td,.ck-content .table table th{
+    min-width:2em;
+    padding:.4em;
+    text-align:center;
+    border-color:#d9d9d9
+}
+.ck-content .table table th{
+    font-weight:700;
+    background:#fafafa
+}
+.TableDropDown__contents___23Jyb {
+    width: 180px;
+}
+.TableDropDown__button___1IBAo {
+    width: 100%;
+    border-top: 1px solid #222;
+    text-align: left;
+}
+.TableDropDown__checkBox___2T3Lk {
+    height: 40px;
+    border-top: 1px solid #222;
+    padding-top: 8px;
+    padding-left: 16px;
+    display: block;
+    cursor: pointer;
 }
 [data-neos-placeholder]:before {
     color: #999;
@@ -4815,11 +5032,28 @@ a.button__ck___2ARZJ.button__ck-button___pCD5E {
 	@mixin ck-tooltip_enabled;
 
 	position: relative;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
 }
 
 .button__ck___2ARZJ.button__ck-button___pCD5E.button__ck-button_with-text___148vq .button__ck-button__label___1JlKa, a.button__ck___2ARZJ.button__ck-button___pCD5E.button__ck-button_with-text___148vq .button__ck-button__label___1JlKa {
 			display: inline-block;
 		}
+
+/* Center the icon horizontally in a button without text. */
+
+.button__ck___2ARZJ.button__ck-button___pCD5E:not(.button__ck-button_with-text___148vq),  a.button__ck___2ARZJ.button__ck-button___pCD5E:not(.button__ck-button_with-text___148vq)  {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
 
 .button__ck___2ARZJ.button__ck-button___pCD5E:hover, a.button__ck___2ARZJ.button__ck-button___pCD5E:hover {
 		@mixin ck-tooltip_visible;
@@ -4907,11 +5141,6 @@ a.button__ck___2ARZJ.button__ck-button___pCD5E {
 .dropdown__ck___14JyX.dropdown__ck-dropdown___1fy3B .dropdown__ck-dropdown__arrow___wFtDr {
 		pointer-events: none;
 		z-index: undefined;
-
-		position: absolute;
-		top: 50%;
-		-webkit-transform: translate3d( 0, -50%, 0 );
-		        transform: translate3d( 0, -50%, 0 );
 	}
 
 /* Dropdown button should span horizontally, e.g. in vertical toolbars */
@@ -4971,8 +5200,15 @@ a.button__ck___2ARZJ.button__ck-button___pCD5E {
 .list__ck___FQVcD.list__ck-list___8aP3P {
 	@mixin ck-unselectable;
 
-	/* Crop the the items when the list has huge border-radius. */
-	overflow: hidden;
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .list__ck___FQVcD.list__ck-list___8aP3P .list__ck-list__item___3vzz6,
@@ -4980,10 +5216,26 @@ a.button__ck___2ARZJ.button__ck-button___pCD5E {
 		display: block;
 	}
 
-.list__ck___FQVcD.list__ck-list___8aP3P .list__ck-list__item___3vzz6:focus {
+/* Make sure that whatever child of the list item gets focus, it remains on the
+	top. Thanks to that, styles like box-shadow, outline, etc. are not masked by
+	adjacent list items. */
+
+.list__ck___FQVcD.list__ck-list___8aP3P .list__ck-list__item___3vzz6 > *:focus {
 		position: relative;
 		z-index: undefined;
 	}
+/*
+ * Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+.switchbutton__ck___bCMfg.switchbutton__ck-button___3fidT.switchbutton__ck-switchbutton___pd_Ku .switchbutton__ck-button__toggle___1gkys {
+		display: block;
+	}
+
+.switchbutton__ck___bCMfg.switchbutton__ck-button___3fidT.switchbutton__ck-switchbutton___pd_Ku .switchbutton__ck-button__toggle___1gkys .switchbutton__ck-button__toggle__inner___1xNjR {
+			display: block;
+		}
 /*
  * Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
@@ -5089,11 +5341,33 @@ a.button__ck___2ARZJ.button__ck-button___pCD5E {
  * For licensing, see LICENSE.md.
  */
 
-/*
- * Note: This file should contain the wireframe styles only. But since there are no such styles,
- * it acts as a message to the builder telling that it should look for the corresponding styles
- * **in the theme** when compiling the editor.
- */
+.widget__ck___tWCRR .widget__ck-widget___2JPx8.widget__ck-widget_selectable___e5zEO {
+	/* Make the widget wrapper a relative positioning container for the drag handler. */
+	position: relative;
+}
+
+.widget__ck___tWCRR .widget__ck-widget___2JPx8.widget__ck-widget_selectable___e5zEO .widget__ck-widget__selection-handler___ZCplE {
+		visibility: hidden;
+		position: absolute;
+	}
+
+.widget__ck___tWCRR .widget__ck-widget___2JPx8.widget__ck-widget_selectable___e5zEO .widget__ck-widget__selection-handler___ZCplE .widget__ck-icon___2Hmyg {
+			/* Make sure the icon in not a subject to fon-size/line-height to avoid
+			unnecessary spacing around it. */
+			display: block;
+		}
+
+/* Show the selection handler on mouse hover over the widget. */
+
+.widget__ck___tWCRR .widget__ck-widget___2JPx8.widget__ck-widget_selectable___e5zEO:hover .widget__ck-widget__selection-handler___ZCplE {
+			visibility: visible;
+		}
+
+/* Show the selection handler when the widget is selected. */
+
+.widget__ck___tWCRR .widget__ck-widget___2JPx8.widget__ck-widget_selectable___e5zEO.widget__ck-widget_selected___2m5Ka .widget__ck-widget__selection-handler___ZCplE {
+			visibility: visible;
+		}
 /*
  * Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
