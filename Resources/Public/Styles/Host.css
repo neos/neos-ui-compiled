@@ -4523,6 +4523,16 @@ span.CodeMirror-selectedtext { background: none; }
             align-items: stretch;
 }
 
+.LinkButton__linkButton__optionWrapper___2SXub {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    /* see https://css-tricks.com/flexbox-truncated-text/ */
+    min-width: 0;
+}
+
 .LinkButton__linkButton__optionsPanelDouble___3SUWm {
     display: -webkit-box;
     display: -ms-flexbox;
