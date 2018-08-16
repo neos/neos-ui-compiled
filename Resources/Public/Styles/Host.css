@@ -1791,8 +1791,11 @@ svg:not(:root).neos-svg-inline--fa {
 .node__header__chevron--isLoading___2ruux > svg {
     margin-top: 6px;
 }
-.node__header__icon___1KHge {
-    margin: 0 .4em;
+.node__header__iconWrapper___3_L5- {
+    width: 2em;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
 }
 .node__header__data___3ySAh {
     position: relative;
@@ -1841,6 +1844,7 @@ svg:not(:root).neos-svg-inline--fa {
     vertical-align: middle;
 }
 .node__header__label___kPC7f {
+    margin-left: 2em;
 }
 .node__header__data--isActive___2VU25 .node__header__label___kPC7f {
         color: #00ADEE;
