@@ -3072,6 +3072,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     -webkit-transition: .5s ease height, overflow-y .5s;
     transition: .5s ease height, overflow-y .5s;
 }
+.style__loader___4ePtl {
+    margin: 8px;
+}
 .style__searchInput___jsas5 {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
