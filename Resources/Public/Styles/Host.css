@@ -1984,6 +1984,10 @@ svg:not(:root).neos-svg-inline--fa {
 .style__envelope--highlight___fQPJf {
     outline: 2px solid #00a338;
 }
+
+.style__envelope__helpThumbnail___3HqGC {
+    max-width: 100%;
+}
 .style__widget___11ObM {
     background-color: #323232;
 }
