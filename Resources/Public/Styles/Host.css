@@ -1894,12 +1894,12 @@ svg:not(:root).neos-svg-inline--fa {
 }
 
     .style__selectedOptions__item___G4pEV:hover .style__selectedOptions__itemIcon___1kKKq {
-        display: none;
-      }
+            display: none;
+        }
 
     .style__selectedOptions__item___G4pEV:hover .style__selectedOptions__itemIcon--onHover___2K1K5 {
-        display: inline;
-      }
+            display: inline;
+        }
 
 .style__selectedOptions__item--draggable___3uZmH {
     cursor: move;
