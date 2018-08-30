@@ -1688,8 +1688,8 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__panel__contents___2NfjT {
     padding: 0 16px;
-    -webkit-transition: .5s ease padding;
-    transition: .5s ease padding;
+    -webkit-transition: .25s ease padding;
+    transition: .25s ease padding;
 }
 
 .style__panel--isOpen___kgdth .style__panel__contents___2NfjT {
@@ -2689,8 +2689,8 @@ td {
     width: 100%;
     height: 110px;
     background: #141414;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
     will-change: padding;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -2747,7 +2747,7 @@ td {
 }
 .style__secondaryToolbar--isMovedDown___32EFe {
     -webkit-transform: translateY(110px);
-            transform: translateY(110px);  /* height of EditModePanel - 41px added */
+            transform: translateY(110px); /* height of EditModePanel - 41px added */
 }
 .style__secondaryToolbar--isFringeLeft___37_ab {
     padding-left: 0;
@@ -2888,8 +2888,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     height: calc(100% - calc(40px + 1px));
     width: 320px;
     background: #222;
-    -webkit-transition: .3s ease transform;
-    transition: .3s ease transform;
+    -webkit-transition: .25s ease transform;
+    transition: .25s ease transform;
     overflow: scroll;
 }
 .style__drawer--isHidden___q6sjz {
@@ -2959,8 +2959,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         flex-basis: 100%;
 
     padding-top: 41px;
-    -webkit-transition: .3s  ease transform;
-    transition: .3s  ease transform;
+    -webkit-transition: .25s ease transform;
+    transition: .25s ease transform;
     will-change: transform;
 }
 
@@ -2996,10 +2996,10 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-    -webkit-transition: height .5s, overflow-y .5s, -webkit-flex-basis .5s;
-    transition: height .5s, overflow-y .5s, -webkit-flex-basis .5s;
-    transition: flex-basis .5s, height .5s, overflow-y .5s;
-    transition: flex-basis .5s, height .5s, overflow-y .5s, -webkit-flex-basis .5s, -ms-flex-preferred-size .5s;
+    -webkit-transition: height .25s, overflow-y .25s, -webkit-flex-basis .25s;
+    transition: height .25s, overflow-y .25s, -webkit-flex-basis .25s;
+    transition: flex-basis .25s, height .25s, overflow-y .25s;
+    transition: flex-basis .25s, height .25s, overflow-y .25s, -webkit-flex-basis .25s, -ms-flex-preferred-size .25s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3162,8 +3162,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     height: 100%;
     width: 100%;
     padding: 82px 320px 0;
-    -webkit-transition: .3s  ease padding;
-    transition: .3s  ease padding;
+    -webkit-transition: .25s  ease padding;
+    transition: .25s  ease padding;
     will-change: padding;
     background-color: #222;
 }
@@ -3197,8 +3197,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: .3s  ease width, .3s  ease height;
-    transition: .3s  ease width, .3s  ease height;
+    -webkit-transition: .25s  ease width, .25s  ease height;
+    transition: .25s  ease width, .25s  ease height;
 }
 .style__contentCanvas__contents___23sBI {
     position: absolute;
@@ -3221,8 +3221,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__rightSideBar___2I7-m {
     padding-top: 41px;
     padding-bottom: 41px;
-    -webkit-transition: .3s  ease transform;
-    transition: .3s  ease transform;
+    -webkit-transition: .25s  ease transform;
+    transition: .25s  ease transform;
 }
 
     .style__rightSideBar___2I7-m:before,
@@ -3245,8 +3245,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     top: 41px;
     border-left: 1px solid #3f3f3f;
     background: #222;
-    -webkit-transition: .3s  ease transform;
-    transition: .3s  ease transform;
+    -webkit-transition: .25s  ease transform;
+    transition: .25s  ease transform;
     will-change: transform;
 }
 .style__rightSideBar--isHidden___pa_ce .style__rightSideBar__toggleBtn___36Rba {
@@ -3265,8 +3265,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     height: calc(100% - 82px);
     border: 1px solid #3f3f3f;
     border-bottom-width: 0;
-    -webkit-transition: .3s  ease left, .3s  ease right;
-    transition: .3s  ease left, .3s  ease right;
+    -webkit-transition: .25s  ease left, .25s  ease right;
+    transition: .25s  ease left, .25s  ease right;
     will-change: left, right;
 }
 .style__secondaryInspector--isFringeLeft___363hA {
@@ -3475,8 +3475,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__thumbnail__overlay___GeOwH {
-    -webkit-transition: .3s background-color ease-out;
-    transition: .3s background-color ease-out;
+    -webkit-transition: .25s background-color ease-out;
+    transition: .25s background-color ease-out;
 }
 
 .style__thumbnail___24oLR:hover > .style__thumbnail__overlay___GeOwH {
