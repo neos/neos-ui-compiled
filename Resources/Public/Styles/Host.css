@@ -3602,6 +3602,83 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     .style__imageEditor___12xTp:after {
         clear: both;
     }
+.LinkInput__linkInput__wrap___1kF3U {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}
+
+.LinkInput__linkInput__optionWrapper___D9OQR {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    /* see https://css-tricks.com/flexbox-truncated-text/ */
+    min-width: 0;
+}
+
+.LinkInput__linkInput__optionsPanelDouble___V5YYk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+}
+
+.LinkInput__linkInput__optionsPanel___Tqad8 {
+    padding-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.LinkInput__linkInput__optionsPanelItem___rbQS4 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 8px;
+}
+
+.LinkInput__linkInput__optionsPanelLabel___1keJo {
+    margin-bottom: 4px;
+}
+
+.LinkInput__linkInput__innerButton___1zJ3P {
+    height: auto;
+}
+
+.LinkInput__linkInput__loader___1nIdC {
+    margin: 4px;
+}
+
+.LinkInput__linkInput__item___2k1Cp {
+    padding: 8px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    height: calc(40px * 1.5);
+    line-height: 20px;
+}
+
+.LinkInput__linkInput__link___2UAC2 {
+    color: #999;
+    display: block;
+    font-size: 12px;
+}
+
+.LinkInput__linkInput__image___3JCNV {
+    height: calc(40px * 1.5);
+    width: auto;
+    float: right;
+}
+
+.LinkInput__linkInput__link--active___3BJG2 {
+    color: #fff;
+}
 .style__noOptionsAvailable___3c4Y8 {
     position: relative;
     display: inline-block;
@@ -4523,84 +4600,6 @@ span.CodeMirror-selectedtext { background: none; }
     z-index: 1;
     width: 460px;
     border: 8px solid #222;
-}
-
-.LinkButton__linkButton__wrap___1M5tF {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-}
-
-.LinkButton__linkButton__optionWrapper___2SXub {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-    /* see https://css-tricks.com/flexbox-truncated-text/ */
-    min-width: 0;
-}
-
-.LinkButton__linkButton__optionsPanelDouble___3SUWm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-}
-
-.LinkButton__linkButton__optionsPanel___33w4x {
-    padding-top: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
-
-.LinkButton__linkButton__optionsPanelItem___zM4FD {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    padding: 8px;
-}
-
-.LinkButton__linkButton__optionsPanelLabel___1Z69K {
-    margin-bottom: 4px;
-}
-
-.LinkButton__linkButton__innerButton___2Fqoj {
-    height: auto;
-}
-
-.LinkButton__linkButton__loader___19buZ {
-    margin: 4px;
-}
-
-.LinkButton__linkButton__item___CCr-J {
-    padding: 8px;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    height: calc(40px * 1.5);
-    line-height: 20px;
-}
-
-.LinkButton__linkButton__link___1J20i {
-    color: #999;
-    display: block;
-    font-size: 12px;
-}
-
-.LinkButton__linkButton__image___z9bHq {
-    height: calc(40px * 1.5);
-    width: auto;
-    float: right;
-}
-
-.LinkButton__linkButton__link--active___3fr9p {
-    color: #fff;
 }
 .TableButton__tableCreationGrid___2FeDB {
     background-color: #222;
