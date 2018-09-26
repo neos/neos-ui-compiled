@@ -2034,11 +2034,17 @@ svg:not(:root).neos-svg-inline--fa {
     outline-offset: .5em;
     outline: 2px solid #00ADEE;
 }
+.neos-contentelement-shine-through:hover.style__markHoveredNodeAsHovered___cRNRV {
+    outline-color: #ff8700;
+}
+.neos-contentelement-shine-through.style__markActiveNodeAsFocused--focusedNode___2G2se {
+    outline-color: #ff8700;
+}
 .neos-inline-editable:focus {
     outline: none;
 }
 [data-neos-inline-editor-is-initialized]:hover {
-    outline-offset: .5em;
+    outline-offset: .3em;
     outline: 2px dashed #00ADEE;
 }
 .style__notInlineEditableOverlay___9Lzv1 {
@@ -3207,16 +3213,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     width: 100%;
     height: 100%;
     background-color: white;
-}
-.style__markHoveredNodeAsHovered___2CuH3 {
-    outline-offset: .5em;
-    outline: 2px solid rgba(0,0,0, .2);
-}
-.style__markHiddenNodeAsHidden___2W8UK {
-    opacity: .5;
-}
-.style__editable___2Y5Uk:focus {
-    outline: none;
 }
 .style__rightSideBar___2I7-m {
     padding-top: 41px;
