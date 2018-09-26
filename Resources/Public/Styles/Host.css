@@ -2160,10 +2160,6 @@ td {
 .style__applyBtn___sAeF5 {
     background: #00a338 !important;
 }
-.style__dialog__padded___3Vy-U {
-    padding-bottom: 80px;
-}
-
 .style__nodeType___2Bm7H {
     width: calc(100% / 3);
     text-align: left;
@@ -2177,11 +2173,11 @@ td {
     position: relative;
 }
 
-.style__nodeType___2Bm7H:hover button {
+    .style__nodeType___2Bm7H:hover button {
             background-color: #00ADEE;
         }
 
-.style__nodeType___2Bm7H:hover .style__nodeType__helpIcon___2DAjs {
+    .style__nodeType___2Bm7H:hover .style__nodeType__helpIcon___2DAjs {
             background-color: #00ADEE;
             border-left: 1px solid #3f3f3f;
         }
@@ -2217,20 +2213,15 @@ td {
 
 .style__helpMessage__wrapper___376iY {
     position: relative;
-    height: 120px;
+    width: 100%;
     background-color: #3f3f3f;
+    clear: right;
 }
 
 .style__helpMessage___296Nj {
-    position: absolute;
     background-color: #3f3f3f;
-    left: 0;
-    right: 0;
-    bottom: 0;
     border-top: 1px solid #3f3f3f;
     padding: 16px;
-    height: 120px;
-    overflow: scroll;
 }
 
 .style__helpMessage__label___12XY0 {
@@ -2243,6 +2234,13 @@ td {
     right: 1px;
     top: 1px;
     background-color: #3f3f3f;
+}
+
+.style__helpThumbnail___IZZEz {
+    float: right;
+    max-width: 342px;
+    margin-bottom: 16px;
+    margin-left: 16px;
 }
 
 /* TODO: refactor such typography things to Headline component */
