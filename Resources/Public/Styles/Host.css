@@ -4804,7 +4804,6 @@ span.CodeMirror-selectedtext { background: none; }
     color: #999;
     content: attr(data-neos-placeholder);
     cursor: text;
-    position: absolute;
 }
 
 /*# sourceMappingURL=Host.css.map*/
