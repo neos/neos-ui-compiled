@@ -2380,14 +2380,14 @@ td {
     background: #ff8700 !important;
 }
 .style__discardButton___iqH-t:hover {
-    background: #ff8700 !important;
-}
+        background: #fda23d !important;
+    }
 .style__publishButton___2FhAJ {
     background: #00a338 !important;
 }
 .style__publishButton___2FhAJ:hover {
-    background: #00a338 !important;
-}
+        background: #0bb344 !important;
+    }
 .style__primaryToolbar___15S1o {
 
     z-index: 1;
@@ -2427,6 +2427,9 @@ td {
     background-color: #222;
     text-align: right;
 }
+.style__dropDown__btn___2rYJF:hover {
+        color: #00ADEE;
+    }
 .style__dropDown__btnIcon___3Whrm {
     margin-right: .5em;
 }
@@ -2492,6 +2495,9 @@ td {
 .style__btn--highlighted___10FuU {
     background: #ff8700;
 }
+.style__btn--highlighted___10FuU:hover {
+        background: #fda23d;
+    }
 .style__notAllowed___1k9Ir {
     padding: 12px 16px;
     cursor: not-allowed;
@@ -2604,6 +2610,10 @@ td {
 .style__dropDown__item--canPublish___fD6Pk {
     background: #ff8700;
 }
+
+.style__dropDown__item--canPublish___fD6Pk:hover {
+        background: #fda23d;
+    }
 
 .style__dropDown__item--isPublishing___PXkl- {
     background: #ff8700;
@@ -3341,8 +3351,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     background: #00a338 !important;
 }
 .style__publishButton___t1dLo:hover {
-    background: #00a338 !important;
-}
+        background: #0bb344 !important;
+    }
 .style__tabs___1OALF > div {
     height: 100%;
 }
