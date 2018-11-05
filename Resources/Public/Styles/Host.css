@@ -728,29 +728,6 @@ body::-webkit-scrollbar-corner {
 .style__disabled-cursor___1HPe7 {
     cursor: not-allowed;
 }
-.style__icon___3acxC {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.style__icon--paddedLeft___3FiTY {
-    margin-left: .75em;
-}
-.style__icon--paddedRight___2FV_M {
-    margin-right: .75em;
-}
-.style__icon--color-warn___27ZqM {
-    color: #ff8700;
-}
-.style__icon--color-error___3tJnv {
-    color: #ff460d;
-}
-.style__icon--color-primaryBlue___2CAOS {
-    color: #00ADEE;
-}
 /*!
  * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -1096,6 +1073,29 @@ svg:not(:root).neos-svg-inline--fa {
   overflow: visible;
   position: static;
   width: auto; }
+.style__icon___3acxC {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.style__icon--paddedLeft___3FiTY {
+    margin-left: .75em;
+}
+.style__icon--paddedRight___2FV_M {
+    margin-right: .75em;
+}
+.style__icon--color-warn___27ZqM {
+    color: #ff8700;
+}
+.style__icon--color-error___3tJnv {
+    color: #ff460d;
+}
+.style__icon--color-primaryBlue___2CAOS {
+    color: #00ADEE;
+}
 .style__dialog___LLhlp {
     position: fixed;
     top: 0;
