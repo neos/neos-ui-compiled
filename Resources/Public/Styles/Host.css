@@ -1096,6 +1096,22 @@ svg:not(:root).neos-svg-inline--fa {
 .style__icon--color-primaryBlue___2CAOS {
     color: #00ADEE;
 }
+.style__iconButton___pVWPN {
+    vertical-align: top;
+    width: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.style__iconButton--disabled___2sG1k {
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+.style__size-small___1mDVh {
+    width: 32px !important;
+    min-width: 32px !important;
+}
 .style__dialog___LLhlp {
     position: fixed;
     top: 0;
@@ -1112,6 +1128,7 @@ svg:not(:root).neos-svg-inline--fa {
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
     background: #222;
+    outline: none;
 }
 .style__dialog__contents___32lNX {
     position: relative;
@@ -1147,21 +1164,10 @@ svg:not(:root).neos-svg-inline--fa {
 .style__dialog__actions___3nKLE > * {
     margin-left: calc(16px / 2);
 }
-.style__iconButton___pVWPN {
-    vertical-align: top;
-    width: 40px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.style__iconButton--disabled___2sG1k {
-    opacity: .65;
-    cursor: not-allowed;
-}
-
-.style__size-small___1mDVh {
-    width: 32px !important;
-    min-width: 32px !important;
+.style__dialog__backDrop___3-6AE {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 .style__dropDown___1SeFF {
     position: relative;
