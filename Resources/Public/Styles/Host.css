@@ -729,7 +729,7 @@ body::-webkit-scrollbar-corner {
     cursor: not-allowed;
 }
 /*!
- * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 svg:not(:root).neos-svg-inline--fa {
@@ -1034,7 +1034,7 @@ svg:not(:root).neos-svg-inline--fa {
   display: inline-block;
   height: 2em;
   position: relative;
-  width: 2em; }
+  width: 2.5em; }
 
 .fa-stack-1x,
 .fa-stack-2x {
@@ -1047,11 +1047,11 @@ svg:not(:root).neos-svg-inline--fa {
 
 .neos-svg-inline--fa.fa-stack-1x {
   height: 1em;
-  width: 1em; }
+  width: 1.25em; }
 
 .neos-svg-inline--fa.fa-stack-2x {
   height: 2em;
-  width: 2em; }
+  width: 2.5em; }
 
 .fa-inverse {
   color: #fff; }
