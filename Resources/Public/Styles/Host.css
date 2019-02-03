@@ -668,8 +668,8 @@ svg:not(:root).neos-svg-inline--fa {
   width: auto; }
 .style__icon___3acxC {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
+    font: normal normal normal FontAwesome;
+    font-size: 14px/1;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
