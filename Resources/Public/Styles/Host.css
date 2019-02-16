@@ -13,35 +13,26 @@
 #appContainer ::-webkit-scrollbar,
 #appContainer ~ * ::-webkit-scrollbar,
 body::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 4px;
+    height: 4px;
 }
 
-#appContainer ::-webkit-scrollbar-track {
-    background-color: #3f3f3f;
-}
-
-#appContainer ~ * ::-webkit-scrollbar-track {
-    background-color: #3f3f3f;
-}
-
+#appContainer ::-webkit-scrollbar-track,
+#appContainer ~ * ::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track {
-    background-color: #3f3f3f;
+    background-color: transparent;
 }
 
 #appContainer ::-webkit-scrollbar-thumb {
-    background-color: #222;
-    border: 1px solid #3f3f3f;
+    background-color: #999;
 }
 
 #appContainer ~ * ::-webkit-scrollbar-thumb {
-    background-color: #222;
-    border: 1px solid #3f3f3f;
+    background-color: #999;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #222;
-    border: 1px solid #3f3f3f;
+    background-color: #999;
 }
 
 #appContainer ::-webkit-scrollbar-corner {
@@ -3194,6 +3185,13 @@ td {
     padding: 5px;
     border: 1px solid gray;
 }
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #141414 !important;
+}
 .style__flashMessage___1KVsF {
     color: white;
     font-size: 14px;
@@ -4372,18 +4370,23 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         content: '';
         position: absolute;
     }
+
 .style__contentCanvas--isFringeLeft___252It {
     padding-left: 0;
 }
+
 .style__contentCanvas--isFringeRight___1s4o5 {
     padding-right: 0;
 }
+
 .style__contentCanvas--isMovedDown___Psbhw {
     padding-top: 192px; /* height of EditModePanel added */
 }
+
 .style__contentCanvas--isFullScreen___2UVnV {
     padding: 40px 0 0 0;
 }
+
 .style__contentCanvas--isHidden___31sha::after {
         top: 0;
         left: 0;
@@ -4391,6 +4394,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         right: 0;
         background-color: white;
     }
+
 .style__contentCanvas__itemWrapper___2dtHh {
     width: 100%;
     height: 100%;
@@ -4400,6 +4404,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     -webkit-transition: .25s  ease width, .25s  ease height;
     transition: .25s  ease width, .25s  ease height;
 }
+
 .style__contentCanvas__contents___23sBI {
     position: absolute;
     left: 0;
