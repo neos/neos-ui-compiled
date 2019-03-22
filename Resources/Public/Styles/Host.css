@@ -46,6 +46,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-corner {
     background-color: #3f3f3f;
 }
+
 .reset__reset___2e25U {
     font-family: 'Noto Sans', sans-serif;
     font-weight: normal;
@@ -104,6 +105,7 @@ body::-webkit-scrollbar-corner {
            -moz-appearance: none;
                 appearance: none;
     }
+
 .style__badge___3SRp9 {
     display: inline-block;
     padding: 2px 4px;
@@ -115,6 +117,7 @@ body::-webkit-scrollbar-corner {
     background-color: white;
     border-radius: 3px;
 }
+
 .style__bar___1FOi1 {
     position: absolute;
     left: 0;
@@ -130,6 +133,7 @@ body::-webkit-scrollbar-corner {
 .style__bar--bottom___195IB {
     bottom: 0;
 }
+
 .style__btn___3rhzP {
     position: relative;
     display: inline-block;
@@ -301,9 +305,11 @@ body::-webkit-scrollbar-corner {
 .style__btn--errorHover___63ulE.style__btn--isPressed___3CoIu i {
     background-color: #ff6a3c;
 }
+
 .style__buttonGroup___3Esar {
     display: block;
 }
+
 /*!
  * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -649,6 +655,7 @@ svg:not(:root).neos-svg-inline--fa {
   overflow: visible;
   position: static;
   width: auto; }
+
 .style__icon___3acxC {
     display: inline-block;
     font: normal normal normal FontAwesome;
@@ -672,6 +679,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__icon--color-primaryBlue___2CAOS {
     color: #00ADEE;
 }
+
 .style__checkbox___35Udl {
     position: relative;
     display: inline-block;
@@ -721,6 +729,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__checkbox__disabled___3uf8I .style__checkbox__input___slK2g {
         cursor: not-allowed;
     }
+
 .style__calendarInputWrapper___3b3zP {
     display: table;
     width: 100%;
@@ -1134,6 +1143,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__disabled-cursor___1HPe7 {
     cursor: not-allowed;
 }
+
 .style__iconButton___pVWPN {
     vertical-align: top;
     width: 40px;
@@ -1150,6 +1160,7 @@ svg:not(:root).neos-svg-inline--fa {
     width: 32px !important;
     min-width: 32px !important;
 }
+
 @-webkit-keyframes style__slideDialogContents___2dMWV {
     from {
         opacity: 0;
@@ -1228,7 +1239,7 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__dialog__body___3U6ba {
     max-height: calc(65vh);
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 .style__dialog__actions___3nKLE {
@@ -1248,6 +1259,7 @@ svg:not(:root).neos-svg-inline--fa {
     height: 100%;
     width: 100%;
 }
+
 .style__dropDown___1SeFF {
     position: relative;
     display: inline-block;
@@ -1315,6 +1327,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__dropDown--padded___328_- > .style__dropDown__contents___GBeJA {
         padding: 16px;
     }
+
 .style__heading___1W7n8 {
     font-size: 14px;
     text-rendering: optimizelegibility;
@@ -1322,6 +1335,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__heading--h1___3kXr4 {
     font-size: 16px;
 }
+
 .style__wrapper___11p60 {
     position: relative;
     display: inline-block;
@@ -1377,6 +1391,7 @@ svg:not(:root).neos-svg-inline--fa {
         -webkit-transform: translateX(-50%) translateY(-50%);
                 transform: translateX(-50%) translateY(-50%);
     }
+
 .style__label___1xSQ_ {
     display: block;
     -webkit-font-smoothing: antialiased;
@@ -1393,73 +1408,7 @@ svg:not(:root).neos-svg-inline--fa {
         -ms-user-select: none;
             user-select: none;
 }
-.style__dropDown___1SeFF {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-.style__dropDown__btn___2W0C9 {
-    display: block;
-    width: 100%;
-    height: 40px;
-    text-align: left;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 0 16px;
-    border: 0;
-    border-radius: 2px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    line-height: 40px;
-    background: #323232;
-}
-.style__dropDown__btn___2W0C9:focus{
-        outline: 1px solid #00ADEE;
-    }
-.style__dropDown__btn--withChevron___JMZEI {
-    padding-right: 40px;
-}
-.style__dropDown__btnLabel___2I0__ {
-    margin-right: .5em;
-}
-.style__dropDown__chevron___3wN4N {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-.style__dropDown__contents___GBeJA {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    display: none;
-    width: 100%;
-    margin: 0;
-    list-style: none;
-    background: #323232;
-    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-}
-.style__dropDown__contents--scrollable___mFW8d {
-    max-height: 80vh;
-    overflow-y: auto;
-}
-.style__dropDown__contents--isOpen___1szzg {
-    display: block;
-}
-.style__dropDown--darker___1GLKD > .style__dropDown__btn--open___2CTio {
-        background-color: #222;
-    }
-.style__dropDown--darker___1GLKD > .style__dropDown__contents___GBeJA {
-        background-color: #222;
-    }
-.style__dropDown--padded___328_- > .style__dropDown__contents___GBeJA {
-        padding: 16px;
-    }
+
 .style__selectBox__list___3CDrD {
     padding: 0;
 }
@@ -1494,6 +1443,7 @@ svg:not(:root).neos-svg-inline--fa {
     z-index: 3;
     padding: 2px !important;
     margin-top: -2px;
+    max-height: calc(30vh);
 }
 
 .style__selectBox__item___XqlG3 {
@@ -1518,6 +1468,7 @@ svg:not(:root).neos-svg-inline--fa {
             filter: opacity(50%);
     cursor: not-allowed;
 }
+
 .style__listPreviewElement___2D3TC {
     cursor: pointer;
     overflow: hidden;
@@ -1553,6 +1504,7 @@ svg:not(:root).neos-svg-inline--fa {
     display: inline-block;
     text-align: center;
 }
+
 .style__selectBoxHeader___3ysc8 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1581,6 +1533,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__selectBoxHeader--disabled___3UWbf {
     cursor: not-allowed;
 }
+
 .style__selectBoxHeaderWithSearchInput___GTrXd {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1607,6 +1560,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__selectBoxHeaderWithSearchInput__icon___RVwfF {
     height: 40px;
 }
+
 .style__textInput___2OxV7 {
     /* TODO: should eventually be moved to reset.css, but there maybe be plenty of side-effects */
     font-size: 14px;
@@ -1633,6 +1587,7 @@ svg:not(:root).neos-svg-inline--fa {
     opacity: .65;
     cursor: not-allowed;
 }
+
 .style__sideBar___26rmh {
     position: absolute;
     width: 320px;
@@ -1645,6 +1600,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__sideBar--right___36g1c {
     right: 0;
 }
+
 .style__tabs___1EIxU {
     height: 100%;
 }
@@ -1732,6 +1688,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__panel___27YB0 {
     overflow-y: auto;
 }
+
 .style__textArea___3TmV8 {
     width: 100%;
     height: 40px;
@@ -1763,6 +1720,7 @@ svg:not(:root).neos-svg-inline--fa {
     opacity: .65;
     cursor: not-allowed;
 }
+
 .style__panel___2dVHy {
     position: relative;
 }
@@ -1805,6 +1763,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__panel__contents--noPadding___2aCPX {
     padding: 0;
 }
+
 .style__tooltip___1n9Qt {
     position: absolute;
 }
@@ -1846,6 +1805,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__tooltip--asError___3OleK .style__tooltip--inner___3DM9n {
     background: #ff460d;
 }
+
 .tree__treeWrapper___2ODH- {
 
     padding: 5px 0;
@@ -1854,6 +1814,7 @@ svg:not(:root).neos-svg-inline--fa {
     .tree__treeWrapper___2ODH-:focus {
         outline: 0;
     }
+
 .node__header___VjnDK {
     margin: 0;
     position: relative;
@@ -1975,6 +1936,7 @@ svg:not(:root).neos-svg-inline--fa {
 .node__dropTarget__inner--acceptsDrop___3mSD7 {
     background-color: #00ADEE;
 }
+
 .style__selectedOptions___3omQr {
 
     position: relative;
@@ -1983,6 +1945,7 @@ svg:not(:root).neos-svg-inline--fa {
     padding-left: 0;
 
 }
+
 .style__selectedOptions__item___G4pEV {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2046,6 +2009,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__selectedOption__moveButton___1SMqY:focus {
         background: #3f3f3f;
     }
+
 .style__multiLineWithThumbnail__item___2qeYA {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
@@ -2090,6 +2054,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__multiLineWithThumbnail__item___2qeYA:hover .style__multiLineWithThumbnail__tertiaryLabel___2FMf_ {
     color: white;
 }
+
 .style__envelope__label___2NiEj {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2128,6 +2093,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__envelope__helpThumbnail___3HqGC {
     max-width: 100%;
 }
+
 .style__boolean__disabled___DyVUX {
     opacity: .65;
     cursor: not-allowed;
@@ -2145,6 +2111,7 @@ svg:not(:root).neos-svg-inline--fa {
     max-width: none;
     display: inline;
 }
+
 .style__dropzone___pvLcT {
     border: none;
 }
@@ -2201,6 +2168,7 @@ svg:not(:root).neos-svg-inline--fa {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
+
 .style__dropzone___24iIU {
     border: none;
     background: #141414;
@@ -2303,12 +2271,14 @@ svg:not(:root).neos-svg-inline--fa {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
+
 .style__cropButton___3utMg {
     float: right;
 }
 .style__button___Mzo1O {
     margin-right: 4px !important;
 }
+
 .style__resizeControls___CLhGl {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2350,6 +2320,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__resizeControls__checkbox___3xvJo {
     margin-right: 0 !important;
 }
+
 .style__imageEditor___12xTp:before,
     .style__imageEditor___12xTp:after {
         content: '';
@@ -2358,6 +2329,7 @@ svg:not(:root).neos-svg-inline--fa {
     .style__imageEditor___12xTp:after {
         clear: both;
     }
+
 .LinkInput__linkInput__wrap___1kF3U {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2451,6 +2423,7 @@ svg:not(:root).neos-svg-inline--fa {
 .LinkInput__linkInput__link--active___3BJG2 {
     color: #fff;
 }
+
 .style__noOptionsAvailable___3c4Y8 {
     position: relative;
     display: inline-block;
@@ -2461,11 +2434,13 @@ svg:not(:root).neos-svg-inline--fa {
     background: #323232;
     width: 100%;
 }
+
 .style__codemirror__label___2wVEr {
     padding: 2px;
     max-width: none;
     display: inline;
 }
+
 .style__controls___2yR4Y {
     margin-top: 4px;
 }
@@ -2473,6 +2448,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__button___24NhC {
     margin-right: 4px !important;
 }
+
 .style__pluginViewContainer___1nVzW {
     width: 100%;
     list-style: none;
@@ -2498,6 +2474,7 @@ svg:not(:root).neos-svg-inline--fa {
     text-decoration: none;
     margin-left: calc(8px / 2);
 }
+
 .style__wrapper___12Z_h {
     display: inline-block;
     position: relative;
@@ -2578,6 +2555,7 @@ svg:not(:root).neos-svg-inline--fa {
     top: 0;
     right: 40px;
 }
+
 .style__tools___2YJCf {
     height: 56px;
     margin: 3em 0 1em 0;
@@ -2604,6 +2582,7 @@ svg:not(:root).neos-svg-inline--fa {
     width: 6em;
     display: inline-block;
 }
+
 .ReactCrop {
   position: relative;
   display: inline-block;
@@ -2804,18 +2783,21 @@ svg:not(:root).neos-svg-inline--fa {
   .ReactCrop__drag-bar.ord-w {
     width: 14px;
     margin-left: -12px; } }
+
 .style__iframe___MJKvO {
     position: absolute;
     width: 100%;
     height: 100%;
     border: 0;
 }
+
 .style__iframe___2XyzO {
     position: absolute;
     width: 100%;
     height: 100%;
     border: 0;
 }
+
 /* BASICS */
 
 .CodeMirror {
@@ -3157,6 +3139,7 @@ div.CodeMirror-dragcursors {
 
 /* Help users use markselection to safely style text background */
 span.CodeMirror-selectedtext { background: none; }
+
 .cm-s-twilight.CodeMirror { background: #141414; color: #f7f7f7; } /**/
 .cm-s-twilight div.CodeMirror-selected { background: #323232; } /**/
 .cm-s-twilight .CodeMirror-line::selection, .cm-s-twilight .CodeMirror-line > span::selection, .cm-s-twilight .CodeMirror-line > span > span::selection { background: rgba(50, 50, 50, 0.99); }
@@ -3189,6 +3172,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .cm-s-twilight .CodeMirror-activeline-background { background: #27282E; }
 .cm-s-twilight .CodeMirror-matchingbracket { outline:1px solid grey; color:white !important; }
+
 .style__widget___11ObM {
     background-color: #323232;
 }
@@ -3216,9 +3200,11 @@ span.CodeMirror-selectedtext { background: none; }
     color: #adadad;
     text-align: right;
 }
+
 .style__warnIcon___1gW7J {
     color: #ff8700;
 }
+
 .style__markHoveredNodeAsHovered___cRNRV {
     outline-offset: 10px;
     outline: 2px solid rgba(0,0,0, .2);
@@ -3270,6 +3256,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     background-color: #141414 !important;
 }
+
 .style__flashMessage___1KVsF {
     color: white;
     font-size: 14px;
@@ -3325,6 +3312,7 @@ body::-webkit-scrollbar-track {
     right: 0;
     top: 0;
 }
+
 .style__flashMessageContainer___o2r5- {
     position: fixed;
     z-index: 5;
@@ -3339,6 +3327,7 @@ body::-webkit-scrollbar-track {
     .style__flashMessageContainer___o2r5-:empty {
         display: none;
     }
+
 .style__modalTitle___1PUpg {
     margin-left: 16px;
 }
@@ -3348,6 +3337,7 @@ body::-webkit-scrollbar-track {
 .style__buttonIcon___3zycs {
     margin-right: 8px;
 }
+
 .style__modalTitle___33Lzc {
     margin-left: 16px;
 }
@@ -3357,6 +3347,7 @@ body::-webkit-scrollbar-track {
 .style__buttonIcon___3aKr5 {
     margin-right: 8px;
 }
+
 .style__root___1m0We {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3379,6 +3370,7 @@ body::-webkit-scrollbar-track {
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
     }
+
 .style__modalTitle___M4cdz {
     margin-left: 16px;
 }
@@ -3388,6 +3380,7 @@ body::-webkit-scrollbar-track {
 .style__applyBtn___sAeF5 {
     background: #00a338 !important;
 }
+
 .style__nodeType___2Bm7H {
     width: calc(100% / 6);
     text-align: left;
@@ -3552,6 +3545,7 @@ body::-webkit-scrollbar-track {
 .style__nodeTypeFilter__label___1xllr {
     margin-right: 8px;
 }
+
 .style__body___3gZjN {
     padding: 16px;
 }
@@ -3561,6 +3555,7 @@ body::-webkit-scrollbar-track {
 .style__buttonIcon___IttQA {
     margin-right: 8px;
 }
+
 .style__body___3KGB_ {
     padding: 16px;
 }
@@ -3573,6 +3568,7 @@ body::-webkit-scrollbar-track {
     padding: 0 16px 16px 16px;
     color: #adadad;
 }
+
 .style__modalContents___pBNI6 {
     padding: 16px;
 }
@@ -3582,6 +3578,7 @@ body::-webkit-scrollbar-track {
 .style__loginButton___1nLYF {
     width: 100%;
 }
+
 .style__keyboardShortcutIntroText___BPDey {
     padding: 8px 16px;
 }
@@ -3628,6 +3625,7 @@ body::-webkit-scrollbar-track {
     width: 60px;
     margin-left: 16px;
 }
+
 .style__modalTitle___C_B2_ {
     margin-left: 16px;
 }
@@ -3640,6 +3638,7 @@ body::-webkit-scrollbar-track {
 .style__buttonIcon___3Gp7q {
     margin-right: 8px;
 }
+
 .style__primaryToolbar___15S1o {
 
     z-index: 4;
@@ -3663,6 +3662,7 @@ body::-webkit-scrollbar-track {
 .style__primaryToolbar__btn___1l1Y7 {
     border-right: 1px solid #3f3f3f;
 }
+
 .style__wrapper___2kjbh {
     display: inline-block;
     position: relative;
@@ -3729,6 +3729,7 @@ body::-webkit-scrollbar-track {
 .style__dropDown__itemIcon___f52eR {
     margin-right: .5em;
 }
+
 .style__btn___2K7jN {
     display: inline-block;
     padding: 0 16px;
@@ -3753,6 +3754,7 @@ body::-webkit-scrollbar-track {
 .style__btn--highlighted___10FuU:hover {
         background: #fda23d;
     }
+
 .style__selectBox___182ST {
     border-radius: 0;
 }
@@ -3761,6 +3763,7 @@ body::-webkit-scrollbar-track {
     cursor: not-allowed;
     opacity: .5;
 }
+
 .style__wrapper___2d4pM {
     display: inline-block;
     position: relative;
@@ -3926,6 +3929,7 @@ body::-webkit-scrollbar-track {
 .style__badge___34ARD {
     margin-left: 8px;
 }
+
 .style__menuToggler___1tnQq:focus {
         outline: 0;
     }
@@ -3968,6 +3972,7 @@ body::-webkit-scrollbar-track {
         text-decoration: none;
         color: #00ADEE;
     }
+
 .style__btn___1VXOc {
     vertical-align: top;
 }
@@ -3986,6 +3991,7 @@ body::-webkit-scrollbar-track {
 .style__btn--isActive___3bVXS .style__icon___mn6Zs {
         color: #00ADEE;
     }
+
 .style__btn___4AP2q {
     vertical-align: top;
 }
@@ -4001,6 +4007,7 @@ body::-webkit-scrollbar-track {
     color: #00ADEE;
     background-color: #141414;
 }
+
 .style__editModePanel___s4KDK {
     position: absolute;
     top: 41px; /*-70px;*/
@@ -4047,6 +4054,7 @@ body::-webkit-scrollbar-track {
 .style__editModePanel__current___QNqy1 {
     color: #00ADEE;
 }
+
 .style__secondaryToolbar___1MGlE {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4087,6 +4095,7 @@ body::-webkit-scrollbar-track {
 .style__dimensionCategory__icon___2LrgA {
     margin-right: .5em;
 }
+
 .style__dropDown___3dyGn {
     max-width: 352px;
     border-right: 1px solid #3f3f3f;
@@ -4108,6 +4117,7 @@ body::-webkit-scrollbar-track {
 .style__selectPreset___3Nwfm {
     margin-right: 16px;
 }
+
 .style__loadingIndicator__container___1yhsy {
     left: 0;
     top: 0;
@@ -4158,6 +4168,7 @@ body::-webkit-scrollbar-track {
         width: 100%;
     }
 }
+
 .style__secondaryToolbar__buttonLink___272lF {
     position: relative;
     display: inline-block;
@@ -4185,9 +4196,11 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__secondaryToolbar__buttonLink--isDisabled___3TOfd {
     opacity: .5;
 }
+
 .style__fullScreenClose___3ulIk {
     background-color: #00ADEE;
 }
+
 .style__drawer___1JteR {
     position: fixed;
     display: -webkit-box;
@@ -4267,6 +4280,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     padding: 16px;
     margin-top: auto;
 }
+
 .style__leftSideBar___2qCob {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4336,6 +4350,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
             flex: 0 0 40px;
     overflow-y: hidden;
 }
+
 @-webkit-keyframes style__spin___25f_H {
     from {
         -webkit-transform: rotate(0deg);
@@ -4362,9 +4377,11 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     -webkit-animation: style__spin___25f_H 2s infinite linear;
             animation: style__spin___25f_H 2s infinite linear;
 }
+
 .style__toggleBtn___3Orxb {
     background: #3f3f3f;
 }
+
 .style__toolBar___36acp {
     border-top: 1px solid #3f3f3f;
     border-bottom: 1px solid #3f3f3f;
@@ -4387,6 +4404,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     float: left;
     width: 40px;
 }
+
 .style__pageTree___1vfOV {
     overflow-y: auto;
     /* Node Tree is expected to be rendered inside a display: flex container - and it will take up all remaining space */
@@ -4399,6 +4417,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__loader___4ePtl {
     margin: 8px;
 }
+
 .style__searchInput___jsas5 {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -4436,6 +4455,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     left: 16px;
     height: 40px;
 }
+
 .style__searchBar___1g7lz {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4459,6 +4479,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__searchBar__clearButton--focused___14dGy > i {
     color: #323232;
 }
+
 .style__searchBar___1ioc- {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(40px + 2px);
@@ -4470,6 +4491,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     border-bottom: 1px solid #3f3f3f;
     background-color: #323232;
 }
+
 .style__contentCanvas___3a_4z {
     position: relative;
     float: left;
@@ -4529,6 +4551,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     height: 100%;
     background-color: white;
 }
+
 .style__rightSideBar___2I7-m {
     padding-top: 41px;
     padding-bottom: 41px;
@@ -4567,6 +4590,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__rightSideBar__section___2LmQG {
     border-bottom: 1px solid #3f3f3f;
 }
+
 .style__secondaryInspector___Frwci {
     position: absolute;
     top: 82px;
@@ -4601,12 +4625,15 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     border-top-width: 0;
     z-index: 3;
 }
+
 .style__wrap___2Dm7K {
     padding-bottom: 16px;
 }
+
 .style__wrap___1PlJd {
     padding-bottom: 16px;
 }
+
 .style__propertyGroupLabel___3dg-u {
     width: 100%;
     overflow-x: hidden;
@@ -4620,6 +4647,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     text-align: center;
     margin-left: -5px;
 }
+
 .style__label___V4oT8 {
     width: 100%;
     overflow-x: hidden;
@@ -4647,11 +4675,13 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     text-align: center;
     margin-left: -5px;
 }
+
 .style__inspectorTabPanel___2z7Yl {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 }
+
 .style__inspector___1yy6N {
     height: 100%;
     width: 100%;
@@ -4710,6 +4740,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
             justify-content: center;
     height: 100%;
 }
+
 .style__nodeInfoView___hHq-3 {
     margin: 0;
     padding: 0;
@@ -4743,11 +4774,13 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         font-size: 13px;
         color: #999;
     }
+
 .style__columnsWrap___1qEOJ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
+
 .hero__hero___1x8G9 {
     line-height: 54px;
     margin-bottom: 16px;
@@ -4771,6 +4804,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
             flex-grow: 1;
     text-align: right;
 }
+
 .column__column___1w3OY {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -4785,6 +4819,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     color: #adadad;
     text-align: right;
 }
+
 .style__table___3-F55 {
     width: 100%;
 }
@@ -4794,6 +4829,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__icon___1L9SM {
     padding-right: 4px;
 }
+
 .style__toolBar___2kVaR {
     position: absolute;
     background: #222;
@@ -4833,6 +4869,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__toolBar--isBlurred___3KnK1 {
     display: none;
 }
+
 .style__inlineUi___3GJLs {
     color: #fff;
 }
@@ -4840,6 +4877,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__inlineUi___3GJLs a {
     color: #fff;
 }
+
 .style__toolBar__btnGroup___1k5Cj {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4885,6 +4923,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__linkIconButton__link--active___2w3TJ {
     color: #fff;
 }
+
 .index__toolBar__btnGroup___P0J6R {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4904,6 +4943,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .index__toolBar__btnGroup__btn___2S64F {
     float: left;
 }
+
 .LinkButton__linkButton__flyout___2d0Rm {
     background-color: #222;
     position: fixed;
@@ -4911,6 +4951,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     width: 460px;
     border: 8px solid #222;
 }
+
 .TableButton__tableCreationGrid___2FeDB {
     background-color: #222;
     padding: 10px;
@@ -4934,6 +4975,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .TableButton__tableCreationGrid__display___3uG3g {
     text-align: center;
 }
+
 /* This CSS code was extracted by hand from CKE build and some colors were altered.
  It's not worth to set up proper CKE theme build as we only need this code for the table feature currently.
  Feel free to remove it and setup a proper CKE styles build together with a custom theme. */
@@ -5100,6 +5142,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     font-weight:700;
     background:#fafafa
 }
+
 .TableDropDown__contents___23Jyb {
     width: 180px;
 }
@@ -5116,10 +5159,12 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     display: block;
     cursor: pointer;
 }
+
 [data-neos-placeholder]:before {
     color: #999;
     content: attr(data-neos-placeholder);
     cursor: text;
 }
+
 
 /*# sourceMappingURL=Host.css.map*/
