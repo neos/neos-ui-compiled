@@ -1606,7 +1606,7 @@ svg:not(:root).neos-svg-inline--fa {
 }
 
 .style__tabs__content___OZ4nq {
-    height: calc(100% - 41px);
+    height: calc(100% - 141px);
     overflow-y: auto;
 }
 
@@ -1632,6 +1632,7 @@ svg:not(:root).neos-svg-inline--fa {
 .style__tabNavigation__item___2WsIL {
     position: relative;
     float: left;
+    border-top: 1px solid #3f3f3f;
     border-right: 1px solid #3f3f3f;
     color: #FFF;
 }
@@ -1647,7 +1648,7 @@ svg:not(:root).neos-svg-inline--fa {
         display: block;
         content: ' ';
         position: absolute;
-        top: 0;
+        top: -1px;
         left: 0;
         right: 0;
         height: 2px;
@@ -1897,7 +1898,7 @@ svg:not(:root).neos-svg-inline--fa {
     pointer-events: none;
 }
 .node__header__labelWrapper___dJ7OH {
-    max-width: 260px;
+    max-width: 264px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
@@ -2004,11 +2005,21 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__selectedOption__moveButton___1SMqY:hover {
         background: #3f3f3f;
+        color: #999 !important;
     }
+
+.style__selectedOption__moveButton___1SMqY:hover svg {
+            color: var(--colors-ContrastBright) !important;
+        }
 
 .style__selectedOption__moveButton___1SMqY:focus {
         background: #3f3f3f;
+        color: #999 !important;
     }
+
+.style__selectedOption__moveButton___1SMqY:focus svg {
+            color: var(--colors-ContrastBright) !important;
+        }
 
 .style__multiLineWithThumbnail__item___2qeYA {
     -webkit-box-sizing: content-box;
@@ -3659,9 +3670,6 @@ body::-webkit-scrollbar-track {
     right: 0;
     top: 0;
 }
-.style__primaryToolbar__btn___1l1Y7 {
-    border-right: 1px solid #3f3f3f;
-}
 
 .style__wrapper___2kjbh {
     display: inline-block;
@@ -3973,27 +3981,10 @@ body::-webkit-scrollbar-track {
         color: #00ADEE;
     }
 
-.style__btn___1VXOc {
-    vertical-align: top;
-}
-
-    .style__btn___1VXOc:focus {
-        outline: none;
-    }
-
-.style__btn--isActive___3bVXS {
-    -webkit-transform: translateY(1px);
-            transform: translateY(1px);
-    padding-bottom: 2px;
-    color: #00ADEE;
-}
-
-.style__btn--isActive___3bVXS .style__icon___mn6Zs {
-        color: #00ADEE;
-    }
-
 .style__btn___4AP2q {
     vertical-align: top;
+    border-right: 1px solid #3f3f3f;
+    border-left: 1px solid #3f3f3f;
 }
 
     .style__btn___4AP2q:focus {
@@ -4031,7 +4022,7 @@ body::-webkit-scrollbar-track {
     padding-left: 2rem;
 }
 .style__editModePanel--isFringeLeft___2ePEI {
-    padding-left: 0;
+    padding-left: 46px;
 }
 .style__editModePanel--isFringeRight___yMwjg {
     padding-right: 40px;
@@ -4065,7 +4056,7 @@ body::-webkit-scrollbar-track {
     padding: 0 320px;
     width: 100%;
     height: 41px;
-    background: #323232;
+    background: #141414;
     will-change: padding;
     border-bottom: 1px solid #3f3f3f;
     -webkit-transform: translateY(0);
@@ -4078,7 +4069,7 @@ body::-webkit-scrollbar-track {
             transform: translateY(110px); /* height of EditModePanel - 41px added */
 }
 .style__secondaryToolbar--isFringeLeft___37_ab {
-    padding-left: 0;
+    padding-left: 46px;
 }
 .style__secondaryToolbar--isFringeRight___2eh9E {
     padding-right: 46px;
@@ -4291,7 +4282,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
             flex-direction: column;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-
+    background: #141414;
     padding-top: 41px;
     -webkit-transition: .25s ease transform;
     transition: .25s ease transform;
@@ -4324,6 +4315,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 40px;
+    margin-right: 4px;
 }
 
 .style__leftSideBar__bottom___3FJcQ {
@@ -4342,6 +4334,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 40px;
+    margin-right: 4px;
 }
 
 .style__leftSideBar__bottom--isCollapsed___fR02r {
@@ -4349,6 +4342,37 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         -ms-flex: 0 0 40px;
             flex: 0 0 40px;
     overflow-y: hidden;
+}
+
+.style__leftSideBar__toggleBtn___3Bh-D {
+    width: 46px;
+    position: absolute!important;
+    left: 0;
+    top: 41px;
+    border: none;
+    background: #141414;
+    -webkit-transition: .25s  ease transform;
+    transition: .25s  ease transform;
+    will-change: transform;
+}
+
+.style__leftSideBar--isHidden___3lOmF .style__leftSideBar__toggleBtn___3Bh-D {
+        -webkit-transform: translateX(320px);
+                transform: translateX(320px);
+    }
+
+.style__leftSideBar__header___2Tosu {
+    height: 41px;
+    padding-left: 55px;
+    line-height: 40px;
+    font-weight: bold;
+    background: #141414;
+}
+
+.style__hr___PCqXa {
+    height: 8px;
+    background: #141414;
+    border: none;
 }
 
 @-webkit-keyframes style__spin___25f_H {
@@ -4379,19 +4403,24 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__toggleBtn___3Orxb {
-    background: #3f3f3f;
+    background: #141414;
+    width: 46px;
+}
+.style__toggleLabel___1ti_m {
+    line-height: 40px;
+    font-weight: bold;
+    padding-left: 9px;
 }
 
 .style__toolBar___36acp {
     border-top: 1px solid #3f3f3f;
     border-bottom: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40px;
             flex: 0 0 40px;
+    background: #222;
 }
-    .style__toolBar___36acp:first-child {
-        border-top: 0;
-    }
 .style__toolBar__btnGroup___3Qn-l:before,
     .style__toolBar__btnGroup___3Qn-l:after {
         content: '';
@@ -4413,9 +4442,12 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
             flex: 1 0 0px;
     -webkit-transition: .5s ease height, overflow-y .5s;
     transition: .5s ease height, overflow-y .5s;
+    background: #222;
+    border-bottom: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
 }
 .style__loader___4ePtl {
-    margin: 8px;
+    margin: 4px;
 }
 
 .style__searchInput___jsas5 {
@@ -4480,6 +4512,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     color: #323232;
 }
 
+.style__searchWrapper___2peny {
+    position: relative;
+}
 .style__searchBar___1ioc- {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(40px + 2px);
@@ -4489,7 +4524,24 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     display: flex;
     line-height: 0;
     border-bottom: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
     background-color: #323232;
+}
+.style__searchToggleButton___2Vid_ {
+    position: absolute;
+    top: -41px;
+    right: 1px;
+    width: 32px;
+    min-width: 32px;
+    height: 40px;
+    border-left: 1px solid #3f3f3f;
+}
+.style__searchToggleButton___2Vid_:focus {
+        outline: none;
+    }
+.style__searchToggleButton--active___3hLcH {
+    height: 41px;
+    background: #323232;
 }
 
 .style__contentCanvas___3a_4z {
@@ -4557,6 +4609,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     padding-bottom: 41px;
     -webkit-transition: .25s  ease transform;
     transition: .25s  ease transform;
+    background: #141414;
 }
 
     .style__rightSideBar___2I7-m:before,
@@ -4577,8 +4630,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     position: absolute!important;
     right: 0;
     top: 41px;
-    border-left: 1px solid #3f3f3f;
-    background: #3f3f3f;
+    border: none;
+    background: #141414;
     -webkit-transition: .25s  ease transform;
     transition: .25s  ease transform;
     will-change: transform;
@@ -4589,6 +4642,10 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     }
 .style__rightSideBar__section___2LmQG {
     border-bottom: 1px solid #3f3f3f;
+}
+.style__rightSideBar__header___2Cuvv {
+    background: #141414;
+    margin-left: 4px;
 }
 
 .style__secondaryInspector___Frwci {
@@ -4626,28 +4683,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     z-index: 3;
 }
 
-.style__wrap___2Dm7K {
-    padding-bottom: 16px;
-}
-
-.style__wrap___1PlJd {
-    padding-bottom: 16px;
-}
-
-.style__propertyGroupLabel___3dg-u {
-    width: 100%;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    padding: 0 40px 0 16px;
-}
-
-.style__iconWrapper___2FyWp {
-    width: 2em;
-    display: inline-block;
-    text-align: center;
-    margin-left: -5px;
-}
-
 .style__label___V4oT8 {
     width: 100%;
     overflow-x: hidden;
@@ -4676,19 +4711,42 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     margin-left: -5px;
 }
 
+.style__wrap___2Dm7K {
+    padding-bottom: 16px;
+}
+
+.style__wrap___1PlJd {
+    padding-bottom: 16px;
+}
+
+.style__propertyGroupLabel___3dg-u {
+    width: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding: 0 40px 0 16px;
+}
+
+.style__iconWrapper___2FyWp {
+    width: 2em;
+    display: inline-block;
+    text-align: center;
+    margin-left: -5px;
+}
+
 .style__inspectorTabPanel___2z7Yl {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    background: #222;
 }
 
 .style__inspector___1yy6N {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .style__actions___218tc {
-    border-top: 2px solid #222;
+    margin-left: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4704,7 +4762,12 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__publishButton___t1dLo:hover {
         background: #0bb344 !important;
     }
-.style__tabs___1OALF > div {
+.style__tabs___1OALF {
+    margin-left: 4px;
+    border-left: 1px solid #3f3f3f;
+    background: #222;
+}
+.style__tabsContent___VHosW > div {
     height: 100%;
 }
 .style__unappliedChangesOverlay___3pQ9T {
