@@ -1239,7 +1239,7 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__dialog__body___3U6ba {
     max-height: calc(65vh);
-    overflow-y: visible;
+    overflow-y: auto;
 }
 
 .style__dialog__actions___3nKLE {
@@ -1443,7 +1443,6 @@ svg:not(:root).neos-svg-inline--fa {
     z-index: 3;
     padding: 2px !important;
     margin-top: -2px;
-    max-height: calc(30vh);
 }
 
 .style__selectBox__item___XqlG3 {
