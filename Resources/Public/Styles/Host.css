@@ -4108,6 +4108,10 @@ body::-webkit-scrollbar-track {
 .style__selectPreset___3Nwfm {
     margin-right: 16px;
 }
+.style__dimmed___20oyc {
+    -webkit-filter: opacity(50%);
+            filter: opacity(50%);
+}
 
 .style__loadingIndicator__container___1yhsy {
     left: 0;
