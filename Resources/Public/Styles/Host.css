@@ -4448,32 +4448,19 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     margin: 4px;
 }
 
-.style__searchInput___jsas5 {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-}
-
-    .style__searchInput___jsas5 input {
+.style__searchInput___jsas5 input {
         /* magic number, sorry */
         padding-left: 40px;
         border-radius: 0;
     }
 
+        .style__searchInput___jsas5 input:focus {
+            background: #3f3f3f;
+            color: undefined;
+        }
+
 .style__clearButton___2f14Z {
-    background: #323232;
-}
-
-.style__clearButton--focused___2Mx-u {
-    background: white;
-}
-
-.style__wrapper___2JsDe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-right: 1px solid #3f3f3f;
-    position: relative;
+    background: transparent;
 }
 
 .style__hidden___FOux3 {
@@ -4486,16 +4473,24 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     height: 40px;
 }
 
+.style__wrapper___2JsDe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-right: 1px solid #3f3f3f;
+    position: relative;
+    width: calc((320px / 2) - 4px);
+}
+
+.style__wrapper--focused___3ec9H .style__clearButton___2f14Z {
+        background: #3f3f3f;
+    }
+
 .style__searchBar___1g7lz {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-}
-
-.style__searchBar__searchInput___3auTt {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    width: calc(40px * 4);
 }
 
 .style__searchBar__clearButton___2oQbY {
@@ -4515,8 +4510,8 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 .style__searchBar___1ioc- {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(40px + 2px);
-            flex: 0 0 calc(40px + 2px);
+        -ms-flex: 0 0 calc(40px - 2px);
+            flex: 0 0 calc(40px - 2px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
