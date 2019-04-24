@@ -4256,6 +4256,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding: 0;
     text-align: left;
