@@ -3556,6 +3556,18 @@ body::-webkit-scrollbar-track {
     margin-right: 8px;
 }
 
+.style__noMatchesFound___3eZKS {
+    width: 100%;
+    padding: 16px;
+    background: #141414;
+    border-radius: 2px;
+    color: #999;
+}
+
+.style__noMatchesFound___3eZKS svg {
+        color: #999;
+    }
+
 .style__body___3gZjN {
     padding: 16px;
 }
