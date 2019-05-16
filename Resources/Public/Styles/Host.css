@@ -119,7 +119,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .style__bar___1FOi1 {
-    position: absolute;
+    position: fixed;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -310,10 +310,6 @@ body::-webkit-scrollbar-corner {
     display: block;
 }
 
-/*!
- * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
 svg:not(:root).neos-svg-inline--fa {
   overflow: visible; }
 
@@ -599,7 +595,7 @@ svg:not(:root).neos-svg-inline--fa {
   -webkit-transform: scale(1, -1);
           transform: scale(1, -1); }
 
-.fa-flip-horizontal.fa-flip-vertical {
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1); }
@@ -608,7 +604,8 @@ svg:not(:root).neos-svg-inline--fa {
 :root .fa-rotate-180,
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
-:root .fa-flip-vertical {
+:root .fa-flip-vertical,
+:root .fa-flip-both {
   -webkit-filter: none;
           filter: none; }
 
@@ -1214,6 +1211,14 @@ svg:not(:root).neos-svg-inline--fa {
         max-width: calc(40px * 24);
     }
 
+@media(max-width: 576px) {
+
+.style__dialog--wide___2Okqj .style__dialog__contents___32lNX {
+            max-width: 100vw;
+            width: 100vw
+    }
+        }
+
 .style__dialog--narrow___3V0FP .style__dialog__contents___32lNX {
         max-width: 400px;
     }
@@ -1241,6 +1246,13 @@ svg:not(:root).neos-svg-inline--fa {
     max-height: calc(65vh);
     overflow-y: auto;
 }
+
+@media(max-width: 576px) {
+
+.style__dialog__body___3U6ba {
+        max-height: calc(55vh)
+}
+    }
 
 .style__dialog__actions___3nKLE {
     text-align: right;
@@ -1588,7 +1600,7 @@ svg:not(:root).neos-svg-inline--fa {
 }
 
 .style__sideBar___26rmh {
-    position: absolute;
+    position: fixed;
     width: 320px;
     height: 100%;
     background: #222;
@@ -3367,6 +3379,13 @@ body::-webkit-scrollbar-track {
             align-items: center;
 }
 
+@media(max-width: 720px) {
+
+.style__label___1VsrG {
+        display: none
+}
+    }
+
 .style__buttonGroup___1SlhT {
     margin-left: 4px;
 }
@@ -3704,6 +3723,11 @@ body::-webkit-scrollbar-track {
 .style__dropDown__btnIcon___3Whrm {
     margin-right: .5em;
 }
+@media(max-width: 768px) {
+.style__dropDown__userName___3Pfx4 {
+        display: none
+}
+    }
 .style__dropDown__contents___3DKZa {
     position: relative;
     min-width: 160px;
@@ -3713,6 +3737,15 @@ body::-webkit-scrollbar-track {
     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
             box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
+@media(max-width: 768px) {
+.style__dropDown__contents___3DKZa {
+        position: absolute;
+        min-width: 240px;
+        top: 40px;
+        left: 0;
+        margin-top: 0
+}
+    }
 .style__dropDown__item___1oU7u {
     height: 40px;
     border-top: 1px solid #222;
@@ -3794,6 +3827,13 @@ body::-webkit-scrollbar-track {
 .style__publishBtn___2VFIB {
     min-width: 212px;
 }
+
+@media(max-width: 768px) {
+
+.style__publishBtn___2VFIB {
+        min-width: auto
+}
+    }
 
 .style__dropDown___1u7rB {
     position: static;
@@ -4003,6 +4043,13 @@ body::-webkit-scrollbar-track {
         outline: none;
     }
 
+    @media(max-width: 768px) {
+
+    .style__btn___4AP2q {
+        display: none
+}
+    }
+
 .style__btn--isActive___3kb2- {
     -webkit-transform: translateY(1px);
             transform: translateY(1px);
@@ -4012,7 +4059,7 @@ body::-webkit-scrollbar-track {
 }
 
 .style__editModePanel___s4KDK {
-    position: absolute;
+    position: fixed;
     top: 41px; /*-70px;*/
     left: 0;
     padding: 0 370px; /*leave some space for slider button --size-SidebarWidth + 50px*/
@@ -4062,7 +4109,7 @@ body::-webkit-scrollbar-track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 41px;
     left: 0;
     padding: 0 320px;
@@ -4318,10 +4365,25 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         clear: both;
     }
 
+    @media(max-width: 576px) {
+
+    .style__leftSideBar___2qCob {
+        width: 100%
+}
+    }
+
 .style__leftSideBar--isHidden___3lOmF {
     -webkit-transform: translateX(-320px);
             transform: translateX(-320px);
 }
+
+@media(max-width: 576px) {
+
+.style__leftSideBar--isHidden___3lOmF {
+        -webkit-transform: translateX(-576px);
+                transform: translateX(-576px)
+}
+    }
 
 .style__leftSideBar__top___3hY-V {
     -ms-flex-preferred-size: 100%;
@@ -4379,6 +4441,14 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         -webkit-transform: translateX(320px);
                 transform: translateX(320px);
     }
+
+@media(max-width: 576px) {
+
+.style__leftSideBar--isHidden___3lOmF .style__leftSideBar__toggleBtn___3Bh-D {
+            -webkit-transform: translateX(576px);
+                    transform: translateX(576px)
+    }
+        }
 
 .style__leftSideBar__header___2Tosu {
     height: 41px;
@@ -4629,10 +4699,23 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     .style__rightSideBar___2I7-m:after {
         clear: both;
     }
+
+    @media(max-width: 576px) {
+
+    .style__rightSideBar___2I7-m {
+        width: 100%
+}
+    }
 .style__rightSideBar--isHidden___pa_ce {
     -webkit-transform: translateX(320px);
             transform: translateX(320px);
 }
+@media(max-width: 576px) {
+.style__rightSideBar--isHidden___pa_ce {
+        -webkit-transform: translateX(576px);
+                transform: translateX(576px)
+}
+    }
 .style__rightSideBar__toggleBtn___36Rba {
     width: 46px;
     position: absolute!important;
@@ -4648,6 +4731,12 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         -webkit-transform: translateX(-320px);
                 transform: translateX(-320px);
     }
+@media(max-width: 576px) {
+.style__rightSideBar--isHidden___pa_ce .style__rightSideBar__toggleBtn___36Rba {
+            -webkit-transform: translateX(-576px);
+                    transform: translateX(-576px)
+    }
+        }
 .style__rightSideBar__section___2LmQG {
     border-bottom: 1px solid #3f3f3f;
 }
@@ -4754,10 +4843,14 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     overflow: hidden;
 }
 .style__actions___218tc {
-    margin-left: 4px;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-left: 1px solid #3f3f3f;
+    left: 4px;
+    right: 0;
+    bottom: 0;
 }
 .style__discardButton___15Eao,
 .style__publishButton___t1dLo {
