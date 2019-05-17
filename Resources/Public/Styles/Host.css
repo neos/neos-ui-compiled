@@ -3267,7 +3267,7 @@ span.CodeMirror-selectedtext { background: none; }
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, .1)), color-stop(rgba(50, 50, 50, .2)), to(rgba(50, 50, 50, .1)));
     background-image: linear-gradient(to bottom, rgba(50, 50, 50, .1), rgba(50, 50, 50, .2), rgba(50, 50, 50, .1));
 }
-td {
+.ck-content .table table td {
     padding: 5px;
     border: 1px solid gray;
 }
