@@ -1141,23 +1141,6 @@ svg:not(:root).neos-svg-inline--fa {
     cursor: not-allowed;
 }
 
-.style__iconButton___pVWPN {
-    vertical-align: top;
-    width: 40px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.style__iconButton--disabled___2sG1k {
-    opacity: .65;
-    cursor: not-allowed;
-}
-
-.style__size-small___1mDVh {
-    width: 32px !important;
-    min-width: 32px !important;
-}
-
 @-webkit-keyframes style__slideDialogContents___2dMWV {
     from {
         opacity: 0;
@@ -1346,6 +1329,23 @@ svg:not(:root).neos-svg-inline--fa {
 }
 .style__heading--h1___3kXr4 {
     font-size: 16px;
+}
+
+.style__iconButton___pVWPN {
+    vertical-align: top;
+    width: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.style__iconButton--disabled___2sG1k {
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+.style__size-small___1mDVh {
+    width: 32px !important;
+    min-width: 32px !important;
 }
 
 .style__wrapper___11p60 {
@@ -3613,8 +3613,8 @@ body::-webkit-scrollbar-track {
 .style__modalContents___pBNI6 {
     padding: 16px;
 }
-.style__inputField___2UZiS {
-    margin-bottom: 15px;
+.style__inputFieldWrapper___11FNr {
+    margin-bottom: 8px;
 }
 .style__loginButton___1nLYF {
     width: 100%;
@@ -4541,7 +4541,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
         .style__searchInput___jsas5 input:focus {
             background: #3f3f3f;
-            color: undefined;
+            color: #FFF;
         }
 
 .style__clearButton___2f14Z {
