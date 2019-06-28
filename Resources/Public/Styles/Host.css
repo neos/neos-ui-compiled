@@ -1546,6 +1546,10 @@ svg:not(:root).neos-svg-inline--fa {
     padding: 0 16px;
 }
 
+.style__selectBoxHeader__wrapperPlaceholderIconWrapper___1X9N8 {
+    padding: 0 8px 0 0;
+}
+
 .style__selectBoxHeader--disabled___3UWbf {
     cursor: not-allowed;
 }
