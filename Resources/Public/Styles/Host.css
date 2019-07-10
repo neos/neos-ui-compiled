@@ -1421,6 +1421,11 @@ svg:not(:root).neos-svg-inline--fa {
             user-select: none;
 }
 
+.style__logo___3Jtvl {
+    height: 24px;
+    width: auto;
+}
+
 .style__selectBox__list___3CDrD {
     padding: 0;
 }
@@ -1539,6 +1544,10 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__selectBoxHeader__wrapperIconWrapper___11ISw {
     padding: 0 16px;
+}
+
+.style__selectBoxHeader__wrapperPlaceholderIconWrapper___1X9N8 {
+    padding: 0 8px 0 0;
 }
 
 .style__selectBoxHeader--disabled___3UWbf {
@@ -3995,8 +4004,20 @@ body::-webkit-scrollbar-track {
     }
 
 .style__menuToggler--isActive____dC1Y {
-    color: #00ADEE;
+    color: #FFF;
 }
+
+.style__menuToggler--isActive____dC1Y .style__menuToggler__icon___mrSCk {
+        color: #00ADEE;
+    }
+
+.style__menuToggler--isActive____dC1Y .style__menuToggler__icon___mrSCk:hover {
+            color: #00ADEE;
+        }
+
+.style__menuToggler--isActive____dC1Y .style__menuToggler__icon___mrSCk:focus {
+            color: #00ADEE;
+        }
 
 .style__menuToggler__icon___mrSCk {
     position: relative;
@@ -4031,6 +4052,20 @@ body::-webkit-scrollbar-track {
 .style__menuToggler__icon___mrSCk:hover {
         text-decoration: none;
         color: #00ADEE;
+    }
+
+.style__wrapper___1KTM4 {
+    position: relative;
+    display: inline-block;
+    padding: 8px 1px; /* 1px to prevent spacing issue */
+    vertical-align: top;
+}
+
+    @media(max-width: 576px) {
+
+    .style__wrapper___1KTM4 {
+        display: none
+}
     }
 
 .style__btn___4AP2q {
@@ -5193,17 +5228,17 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .ck.ck-icon *{
     fill:currentColor
 }
-.ck .ck-widget.ck-widget_selectable{
+.ck .ck-widget.ck-widget_with-selection-handler{
     position:relative
 }
-.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{
+.ck .ck-widget.ck-widget_with-selection-handler .ck-widget__selection-handler{
     visibility:hidden;
     position:absolute
 }
-.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{
+.ck .ck-widget.ck-widget_with-selection-handler .ck-widget__selection-handler .ck-icon{
     display:block
 }
-.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{
+.ck .ck-widget.ck-widget_with-selection-handler .ck-widget__selection-handler,.ck .ck-widget.ck-widget_with-selection-handler:hover .ck-widget__selection-handler{
     visibility:visible
 }
 :root{
@@ -5239,7 +5274,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     box-shadow:var(--ck-inner-shadow),0 0;
     background-color:var(--ck-color-widget-editable-focus-background)
 }
-.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{
+.ck .ck-widget.ck-widget_with-selection-handler .ck-widget__selection-handler{
     padding:4px;
     box-sizing:border-box;
     background-color:transparent;
@@ -5249,26 +5284,26 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     transform:translateY(-100%);
     left:calc(0px - var(--ck-widget-outline-thickness))
 }
-.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler:hover .ck-icon .ck-icon__selected-indicator{
+.ck .ck-widget.ck-widget_with-selection-handler .ck-widget__selection-handler:hover .ck-icon .ck-icon__selected-indicator{
     opacity:1
 }
-.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{
+.ck .ck-widget.ck-widget_with-selection-handler .ck-widget__selection-handler .ck-icon{
     width:var(--ck-widget-handler-icon-size);
     height:var(--ck-widget-handler-icon-size);
     color:var(--ck-color-widget-drag-handler-icon-color)
 }
-.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{
+.ck .ck-widget.ck-widget_with-selection-handler .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{
     opacity:0;
     transition:opacity .3s var(--ck-widget-handler-animation-curve)
 }
-.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler{
+.ck .ck-widget.ck-widget_with-selection-handler.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_with-selection-handler.ck-widget_selected:hover .ck-widget__selection-handler{
     opacity:1;
     background-color:var(--ck-color-focus-border)
 }
-.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{
+.ck .ck-widget.ck-widget_with-selection-handler.ck-widget_selected .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator,.ck .ck-widget.ck-widget_with-selection-handler.ck-widget_selected:hover .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{
     opacity:1
 }
-.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{
+.ck .ck-widget.ck-widget_with-selection-handler:hover .ck-widget__selection-handler{
     opacity:1;
     background-color:var(--ck-color-widget-hover-border)
 }
