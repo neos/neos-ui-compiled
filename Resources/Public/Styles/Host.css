@@ -2105,7 +2105,7 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__envelope__helpmessage___Nf9kS {
     position: absolute;
-    z-index: 2147483647;
+    z-index: 2147483646;
     max-width: 100%;
 }
 
@@ -5032,7 +5032,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__toolBar___2kVaR {
     position: absolute;
     background: #222;
-    z-index: 2147483647;
+    z-index: 2147483646;
     margin: -2px 5px 0 5px;
     border: 2px solid #00ADEE;
     border-bottom: 0;
