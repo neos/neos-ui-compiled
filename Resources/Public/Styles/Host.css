@@ -5077,6 +5077,16 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     color: #fff;
 }
 
+.style__border___1iIdt {
+    border: 2px solid #ff460d;
+    position: absolute;
+    pointer-events: none;
+}
+
+.style__tooltip___2x1za {
+    position: absolute;
+}
+
 .style__toolBar__btnGroup___1k5Cj {
     display: -webkit-box;
     display: -ms-flexbox;
