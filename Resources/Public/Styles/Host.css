@@ -3204,6 +3204,53 @@ span.CodeMirror-selectedtext { background: none; }
 .cm-s-twilight .CodeMirror-activeline-background { background: #27282E; }
 .cm-s-twilight .CodeMirror-matchingbracket { outline:1px solid grey; color:white !important; }
 
+.index__toolBar__btnGroup___P0J6R {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+    .index__toolBar__btnGroup___P0J6R:before,
+    .index__toolBar__btnGroup___P0J6R:after {
+        content: '';
+        display: table;
+    }
+
+    .index__toolBar__btnGroup___P0J6R:after {
+        clear: both;
+    }
+
+.index__toolBar__btnGroup__btn___2S64F {
+    float: left;
+}
+
+.index__wrap___3Re0B {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.index__toolBar__wrap___3-JxE {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.index__editor___7im2d {
+    background-color: white;
+    color: black;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    outline: 0;
+    padding: 15px;
+}
+
 .style__widget___11ObM {
     background-color: #323232;
 }
@@ -5131,26 +5178,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 .style__linkIconButton__link--active___2w3TJ {
     color: #fff;
-}
-
-.index__toolBar__btnGroup___P0J6R {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-    .index__toolBar__btnGroup___P0J6R:before,
-    .index__toolBar__btnGroup___P0J6R:after {
-        content: '';
-        display: table;
-    }
-
-    .index__toolBar__btnGroup___P0J6R:after {
-        clear: both;
-    }
-
-.index__toolBar__btnGroup__btn___2S64F {
-    float: left;
 }
 
 .LinkButton__linkButton__flyout___2d0Rm {
