@@ -4115,76 +4115,84 @@ body::-webkit-scrollbar-track {
 }
     }
 
-.style__btn___4AP2q {
+.style__wrapper___3vBLp {
+    display: inline-block;
+    position: relative;
     vertical-align: top;
-    border-right: 1px solid #3f3f3f;
-    border-left: 1px solid #3f3f3f;
 }
-
-    .style__btn___4AP2q:focus {
-        outline: none;
+.style__dropDown___26s8j {
+    position: static;
+    display: block;
+}
+.style__dropDown__btn___3f0Wy {
+    position: relative;
+    height: 40px;
+    border: 0;
+    background-color: #222;
+    text-align: right;
+}
+.style__dropDown__btn___3f0Wy:hover {
+        color: #00ADEE;
     }
-
-    @media(max-width: 768px) {
-
-    .style__btn___4AP2q {
-        display: none
+.style__dropDown__btnIcon___26MXW {
+    margin-right: .5em;
+}
+.style__dropDown__contents___3BV6_ {
+    position: relative;
+    min-width: 160px;
+    padding: 2px !important;
+    margin-top: -2px;
+    background: #222;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+@media(max-width: 768px) {
+.style__dropDown__contents___3BV6_ {
+        position: absolute;
+        min-width: 240px;
+        top: 40px;
+        left: 0;
+        margin-top: 0
 }
     }
-
-.style__btn--isActive___3kb2- {
-    -webkit-transform: translateY(1px);
-            transform: translateY(1px);
-    padding-bottom: 2px;
-    color: #00ADEE;
-    background-color: #141414;
-}
-
-.style__editModePanel___s4KDK {
-    position: fixed;
-    top: 41px; /*-70px;*/
-    left: 0;
-    padding: 0 370px; /*leave some space for slider button --size-SidebarWidth + 50px*/
-    width: 100%;
-    height: 110px;
+.style__dropDown__item___1-1Qd {
+    height: 40px;
+    border-top: 1px solid #222;
     background: #141414;
-    -webkit-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-    will-change: padding;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
 }
-.style__editModePanel__wrapper___3tSjE {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding-left: 2rem;
+.style__dropDown__item___1-1Qd:hover {
+        background: #00ADEE;
+    }
+.style__dropDown__item___1-1Qd > a {
+        display: block;
+        width: 100%;
+        border: 0;
+        padding: 0 16px;
+        background: 0;
+        color: #FFF;
+        cursor: pointer;
+        text-decoration: none;
+        line-height: 40px;
+        text-align: left;
+    }
+.style__dropDown__item___1-1Qd button {
+        display: block;
+        width: 100%;
+        border: 0;
+        padding: 0 16px;
+        background: 0;
+        color: #FFF;
+        cursor: pointer;
+        text-decoration: none;
+        line-height: 40px;
+        text-align: left;
+    }
+.style__dropDown__groupHeader___IC4GX {
+    color: #FFF;
+    padding: 8px 16px;
 }
-.style__editModePanel--isFringeLeft___2ePEI {
-    padding-left: 46px;
-}
-.style__editModePanel--isFringeRight___yMwjg {
-    padding-right: 40px;
-}
-.style__editModePanel--isHidden___2GCN5 {
-    display: none;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    opacity: 0;
-}
-.style__editModePanel__previewModes___UuAGh,
-.style__editModePanel__editingModes___1mO9a {
-    width: 50%;
-    margin-right: 2rem;
-}
-.style__editModePanel__buttonWrapper___IMmdX {
-    margin-right: 1rem;
-    white-space: nowrap;
-}
-.style__editModePanel__current___QNqy1 {
-    color: #00ADEE;
+.style__dropDown__itemIcon___1uYqk {
+    margin-right: .5em;
 }
 
 .style__secondaryToolbar___1MGlE {
@@ -4204,10 +4212,6 @@ body::-webkit-scrollbar-track {
             transform: translateY(0);
     -webkit-transition: .1s ease-in-out;
     transition: .1s ease-in-out;
-}
-.style__secondaryToolbar--isMovedDown___32EFe {
-    -webkit-transform: translateY(110px);
-            transform: translateY(110px); /* height of EditModePanel - 41px added */
 }
 .style__secondaryToolbar--isFringeLeft___37_ab {
     padding-left: 46px;
@@ -4727,10 +4731,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 
 .style__contentCanvas--isFringeRight___1s4o5 {
     padding-right: 0;
-}
-
-.style__contentCanvas--isMovedDown___Psbhw {
-    padding-top: 192px; /* height of EditModePanel added */
 }
 
 .style__contentCanvas--isFullScreen___2UVnV {
