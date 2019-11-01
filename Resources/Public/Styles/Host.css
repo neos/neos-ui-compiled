@@ -3346,7 +3346,7 @@ body::-webkit-scrollbar-track {
 
 .style__flashMessageContainer___o2r5- {
     position: fixed;
-    z-index: 5;
+    z-index: 6;
     top: 0;
     left: 50%;
     width: 512px;
@@ -4213,7 +4213,7 @@ body::-webkit-scrollbar-track {
     height: 2px;
     position: absolute;
     width: 100vw;
-    z-index: 2;
+    z-index: 5;
 }
 
 .style__loadingIndicator___1WGcs {
@@ -5344,7 +5344,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .ck-content .table table td,.ck-content .table table th{
     min-width:2em;
     padding:.4em;
-    text-align:center;
     border-color:#d9d9d9
 }
 .ck-content .table table th{
