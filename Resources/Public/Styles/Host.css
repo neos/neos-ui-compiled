@@ -188,6 +188,12 @@ body::-webkit-scrollbar-corner {
 .style__btn--lighter___2noEC i {
     background-color: #3f3f3f;
 }
+.style__btn--neutral___27fsr {
+    background-color: #323232;
+}
+.style__btn--neutral___27fsr i {
+    background-color: #323232;
+}
 .style__btn--transparent___37d3Q {
     background: 0;
 }
@@ -2504,6 +2510,10 @@ svg:not(:root).neos-svg-inline--fa {
     color: #00ADEE;
     text-decoration: none;
     margin-left: calc(8px / 2);
+}
+
+.style__syncButton___3D3OC {
+    outline: none !important;
 }
 
 .style__wrapper___12Z_h {
