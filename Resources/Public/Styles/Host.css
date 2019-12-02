@@ -5002,6 +5002,16 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     border-left: 1px solid #3f3f3f;
     background: #222;
 }
+.style__tabs__notificationBadge___28swp {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 1;
+    background-color: #ff460d;
+    color: #FFF;
+    -webkit-transform: scale(.75);
+            transform: scale(.75);
+}
 .style__tabsContent___VHosW > div {
     height: 100%;
 }
