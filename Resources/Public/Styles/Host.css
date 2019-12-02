@@ -1759,6 +1759,7 @@ svg:not(:root).neos-svg-inline--fa {
 }
 
 .style__panel__headline___3upR_ {
+    cursor: pointer;
     height: 40px;
     margin: 0;
     padding: 0 16px;
@@ -4589,6 +4590,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
         }
 
 .style__leftSideBar__header___2Tosu {
+    cursor: pointer;
     height: 41px;
     padding-left: 55px;
     line-height: 40px;
@@ -4623,6 +4625,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
             animation: style__spin___25f_H 2s infinite linear;
 }
 
+.style__toggle___ebx0q {
+    cursor: pointer;
+}
 .style__toggleBtn___3Orxb {
     background: #141414;
     width: 46px;
