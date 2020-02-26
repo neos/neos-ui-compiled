@@ -10,16 +10,12 @@
 
 /* Scrollbar styles for appContainer, its siblings (needed for React portals) and also for contentcanvas' body */
 
-#appContainer ::-webkit-scrollbar,
-#appContainer ~ * ::-webkit-scrollbar,
-body::-webkit-scrollbar {
+#appContainer ::-webkit-scrollbar, #appContainer ~ * ::-webkit-scrollbar, body::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
-#appContainer ::-webkit-scrollbar-track,
-#appContainer ~ * ::-webkit-scrollbar-track,
-body::-webkit-scrollbar-track {
+#appContainer ::-webkit-scrollbar-track, #appContainer ~ * ::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
@@ -1976,6 +1972,7 @@ svg:not(:root).neos-svg-inline--fa {
     left: 0;
     right: 0;
     padding-left: 15px;
+    height: 2px;
 }
 .node__dropTarget--before___2mVtk {
     top: -5px;
@@ -1984,16 +1981,62 @@ svg:not(:root).neos-svg-inline--fa {
     padding-bottom: 4px;
 }
 .node__dropTarget--after___1qMPH {
-    bottom: 0;
+    bottom: 1px;
     z-index: 2;
     padding-top: 6px;
     padding-bottom: 0;
 }
 .node__dropTarget__inner___1ZBVS {
-    height: 2px;
+    visibility: hidden;
+    margin-top: -8px;
+    height: 0;
 }
 .node__dropTarget__inner--acceptsDrop___3mSD7 {
-    background-color: #00ADEE;
+    z-index: 100000;
+    visibility: visible;
+}
+.node__dropTarget__inner___1ZBVS svg {
+    fill: #00ADEE;
+}
+
+.dragLayer__layer___2VoUc {
+    position: fixed;
+    pointer-events: none;
+    z-index: 2147483646;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dragLayer__dragWrapper___vEcaR {
+    display: inline-block;
+    position: relative;
+    opacity: .7;
+    left: 0;
+}
+
+.dragLayer__count___39hAH {
+    z-index: 2147483646;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    color: #FFF;
+    background-color: #ff460d;
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dragLayer__node___3GjdP {
+    position: absolute;
+    width: 280px;
+    background-color: #323232;
+    border: 1px solid #3f3f3f;
 }
 
 .style__selectedOptions___3omQr {
