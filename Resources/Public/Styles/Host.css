@@ -1334,7 +1334,8 @@ svg:not(:root).neos-svg-inline--fa {
             box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
 .style__dropDown__contents--scrollable___mFW8d {
-    max-height: 80vh;
+    position: fixed;
+    top: auto;
     overflow-y: auto;
 }
 .style__dropDown__contents--isOpen___1szzg {
@@ -1490,7 +1491,7 @@ svg:not(:root).neos-svg-inline--fa {
     min-width: 160px;
     -webkit-box-shadow: 0 5px 5px rgba(0,0,0, .2);
             box-shadow: 0 5px 5px rgba(0,0,0, .2);
-    z-index: 3;
+    z-index: 4;
     padding: 2px !important;
     margin-top: -2px;
 }
