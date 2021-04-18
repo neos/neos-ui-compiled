@@ -1458,10 +1458,6 @@ svg:not(:root).neos-svg-inline--fa {
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
     cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 288px;
     padding: 0;
     margin-bottom: 4px;
     -webkit-user-select: none;
@@ -1469,6 +1465,14 @@ svg:not(:root).neos-svg-inline--fa {
         -ms-user-select: none;
             user-select: none;
 }
+
+    .style__label___1xSQ_,
+    .style__label___1xSQ_ span {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
 
 .style__logo___3Jtvl {
     height: 24px;
