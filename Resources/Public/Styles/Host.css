@@ -706,7 +706,9 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__checkbox___35Udl {
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
     vertical-align: middle;
 }
@@ -1468,9 +1470,6 @@ svg:not(:root).neos-svg-inline--fa {
 
     .style__label___1xSQ_,
     .style__label___1xSQ_ span {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         max-width: 100%;
     }
 
@@ -2241,7 +2240,9 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__boolean__label___1uy69 {
     max-width: none;
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .style__dropzone___pvLcT {
