@@ -2209,6 +2209,18 @@ svg:not(:root).neos-svg-inline--fa {
     max-width: 100%;
 }
 
+.style__envelope__helpmessage___Nf9kS a {
+    color: #00ADEE;
+}
+
+.style__envelope__helpmessage___Nf9kS a:hover {
+    color: #35c3f8;
+}
+
+.style__envelope__helpmessage___Nf9kS a:focus {
+    color: #35c3f8;
+}
+
 .style__envelope--invalid___3TFDf {
     -webkit-box-shadow: 0 0 0 2px #ff460d;
             box-shadow: 0 0 0 2px #ff460d;
@@ -3668,6 +3680,18 @@ body::-webkit-scrollbar-track {
     border-radius: 2px;
     margin: 1px;
     position: relative;
+}
+
+.style__helpMessage___296Nj a {
+    color: #00ADEE;
+}
+
+.style__helpMessage___296Nj a:hover {
+    color: #35c3f8;
+}
+
+.style__helpMessage___296Nj a:focus {
+    color: #35c3f8;
 }
 
 .style__helpMessage__label___12XY0 {
