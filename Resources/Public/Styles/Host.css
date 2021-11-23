@@ -706,7 +706,9 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__checkbox___35Udl {
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
     vertical-align: middle;
 }
@@ -1468,9 +1470,6 @@ svg:not(:root).neos-svg-inline--fa {
 
     .style__label___1xSQ_,
     .style__label___1xSQ_ span {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         max-width: 100%;
     }
 
@@ -2210,6 +2209,18 @@ svg:not(:root).neos-svg-inline--fa {
     max-width: 100%;
 }
 
+.style__envelope__helpmessage___Nf9kS a {
+    color: #00ADEE;
+}
+
+.style__envelope__helpmessage___Nf9kS a:hover {
+    color: #35c3f8;
+}
+
+.style__envelope__helpmessage___Nf9kS a:focus {
+    color: #35c3f8;
+}
+
 .style__envelope--invalid___3TFDf {
     -webkit-box-shadow: 0 0 0 2px #ff460d;
             box-shadow: 0 0 0 2px #ff460d;
@@ -2241,7 +2252,9 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__boolean__label___1uy69 {
     max-width: none;
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .style__dropzone___pvLcT {
@@ -3667,6 +3680,18 @@ body::-webkit-scrollbar-track {
     border-radius: 2px;
     margin: 1px;
     position: relative;
+}
+
+.style__helpMessage___296Nj a {
+    color: #00ADEE;
+}
+
+.style__helpMessage___296Nj a:hover {
+    color: #35c3f8;
+}
+
+.style__helpMessage___296Nj a:focus {
+    color: #35c3f8;
 }
 
 .style__helpMessage__label___12XY0 {
