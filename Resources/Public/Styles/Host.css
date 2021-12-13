@@ -730,7 +730,7 @@ svg:not(:root).neos-svg-inline--fa {
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
-    opacity: .2;
+    opacity: 0;
 }
 .style__checkbox__inputMirror___39k5Z {
     display: inline-block;
