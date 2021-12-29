@@ -2594,35 +2594,50 @@ svg:not(:root).neos-svg-inline--fa {
     height: 25px;
     outline: none;
     width: 100%;
+    border-radius: 2px;
 }
 
 .style__rangeEditor___2ebib input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
             appearance: none;
-    background: #00adee;
+    background: #00ADEE;
     border-radius: 5px;
     -webkit-box-shadow: 0 0 0 #000, 0 0 0 #0d0d0d;
             box-shadow: 0 0 0 #000, 0 0 0 #0d0d0d;
     cursor: pointer;
     height: 20px;
     opacity: .7;
-    -webkit-transition: opacity .2s;
-    transition: opacity .2s;
     width: 20px;
+    border: none;
+}
+
+.style__rangeEditor___2ebib input[type='range']::-webkit-slider-thumb:hover {
+    background: #35c3f8;
+}
+
+.style__rangeEditor___2ebib input[type='range']::-webkit-slider-thumb:focus {
+    background: #35c3f8;
 }
 
 .style__rangeEditor___2ebib input[type='range']::-moz-range-thumb {
     -moz-appearance: none;
          appearance: none;
-    background: #00adee;
+    background: #00ADEE;
     border-radius: 5px;
     box-shadow: 0 0 0 #000, 0 0 0 #0d0d0d;
     cursor: pointer;
     height: 25px;
     opacity: .7;
-    -moz-transition: opacity .2s;
-    transition: opacity .2s;
     width: 25px;
+    border: none;
+}
+
+.style__rangeEditor___2ebib input[type='range']::-moz-range-thumb:hover {
+    background: #35c3f8;
+}
+
+.style__rangeEditor___2ebib input[type='range']::-moz-range-thumb:focus {
+    background: #35c3f8;
 }
 
 .style__rangeEditorValue___eZmQr {
@@ -2659,10 +2674,29 @@ svg:not(:root).neos-svg-inline--fa {
     text-align: right;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
+    margin-right: 4px;
 }
 
 .style__rangeEditorValue___eZmQr input:focus {
-    outline: 1px solid #00adee;
+    outline: 1px solid #00ADEE;
+}
+
+.style__rangeEditorDisabled___3B-Td {
+    opacity: .65;
+}
+
+.style__rangeEditorDisabled___3B-Td input[disabled] {
+    cursor: not-allowed;
+}
+
+.style__rangeEditorDisabled___3B-Td input[type='range']::-webkit-slider-thumb {
+    pointer-events: none;
+    background: #999;
+}
+
+.style__rangeEditorDisabled___3B-Td input[type='range']::-moz-range-thumb {
+    pointer-events: none;
+    background: #999;
 }
 
 .style__noOptionsAvailable___3c4Y8 {
