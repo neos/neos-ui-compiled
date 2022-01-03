@@ -1510,8 +1510,11 @@ svg:not(:root).neos-svg-inline--fa {
     -webkit-box-shadow: 0 5px 5px rgba(0,0,0, .2);
             box-shadow: 0 5px 5px rgba(0,0,0, .2);
     z-index: 4;
-    padding: 2px !important;
     margin-top: -2px;
+}
+
+.style__selectBox__contents--hasItems___1KdWD {
+    padding: 2px !important;
 }
 
 .style__selectBox__item___XqlG3 {
