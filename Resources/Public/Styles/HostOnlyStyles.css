@@ -352,28 +352,28 @@ template {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Noto Sans'), local('NotoSans'), url(./.././Styles/Font-61c3431e4e0ac62b136bc26b427ee05f.ttf) format('truetype');
+    src: local('Noto Sans'), local('NotoSans'), url(./.././Styles/Font-0e98433b1317e0b8fae6b9fd2010201f.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(./.././Styles/Font-781171b269d6b31469f12789b8ba525a.ttf) format('truetype');
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(./.././Styles/Font-78ff1d858f0c20af3fd0f50d7fe345e4.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sans';
     font-style: italic;
     font-weight: 400;
-    src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(./.././Styles/Font-154da4697acc779b55af0a67f1241e4e.ttf) format('truetype');
+    src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(./.././Styles/Font-ca2fdbe41daea2d4d56803b20cc4c729.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sans';
     font-style: italic;
     font-weight: 700;
-    src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(./.././Styles/Font-4f6ff3639c1e5728b905b650c1a06e75.ttf) format('truetype');
+    src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(./.././Styles/Font-d122a04e9eedb5c22eb8bcc30f57078f.ttf) format('truetype');
 }
 
 * {
