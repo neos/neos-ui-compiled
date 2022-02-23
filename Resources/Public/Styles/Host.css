@@ -707,7 +707,8 @@ svg:not(:root).neos-svg-inline--fa {
         height: 1.33em;
     }
 .style__icon--small___1MyBp svg {
-        height: 1em;
+        max-height: 1em;
+        max-width: 100%;
     }
 .style__icon--tiny___k1Fls svg {
         height: .75em;
