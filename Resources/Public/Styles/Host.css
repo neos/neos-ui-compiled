@@ -5631,11 +5631,13 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     text-align: left;
 }
 .TableDropDown__checkBox___2T3Lk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 40px;
     border-top: 1px solid #222;
     padding-top: 8px;
     padding-left: 16px;
-    display: block;
     cursor: pointer;
 }
 
