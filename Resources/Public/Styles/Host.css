@@ -5510,52 +5510,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     position: absolute;
 }
 
-.style__toolBar__btnGroup___1k5Cj {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-    .style__toolBar__btnGroup___1k5Cj:before,
-    .style__toolBar__btnGroup___1k5Cj:after {
-        content: '';
-        display: table;
-    }
-
-    .style__toolBar__btnGroup___1k5Cj:after {
-        clear: both;
-    }
-.style__toolBar__btnGroup__btn___359OB {
-    float: left;
-}
-.style__linkIconButton__flyout___18VmI {
-    position: fixed;
-    z-index: 1;
-    width: 460px;
-    border: 8px solid #222;
-    line-height: 0;
-}
-.style__linkIconButton__item___otnn7 {
-    padding: 8px;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    height: calc(40px * 1.5);
-    line-height: 20px;
-}
-.style__linkIconButton__link___WRy2S {
-    color: #999;
-    display: block;
-    font-size: 12px;
-}
-.style__linkIconButton__image___2W1YO {
-    height: calc(40px * 1.5);
-    width: auto;
-    float: right;
-}
-.style__linkIconButton__link--active___2w3TJ {
-    color: #fff;
-}
-
 .LinkButton__linkButton__flyout___2d0Rm {
     background-color: #222;
     position: fixed;
