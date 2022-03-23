@@ -703,6 +703,12 @@ svg:not(:root).neos-svg-inline--fa {
 .style__icon--color-primaryBlue___2CAOS {
     color: #00ADEE;
 }
+.style__icon--huge___1sjkO svg {
+        height: 3em;
+    }
+.style__icon--large___10gT3 svg {
+        height: 2em;
+    }
 .style__icon--big___Hbu57 svg {
         height: 1.33em;
     }
