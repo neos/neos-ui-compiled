@@ -1576,7 +1576,7 @@ svg:not(:root).neos-svg-inline--fa {
 }
 
 .style__listPreviewElement--isHighlighted___26ad1 {
-    background: #00ADEE;
+    background-color: #00ADEE !important;
 }
 
 .style__listPreviewElement--isHighlighted___26ad1 > span {
@@ -2165,8 +2165,11 @@ svg:not(:root).neos-svg-inline--fa {
 .style__multiLineWithThumbnail__item___2qeYA {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
+    background-color: #141414;
+}
+
+.style__multiLineWithThumbnail__item--multiLine___Cd1o4 {
     line-height: 20px;
-    background: #141414;
 }
 
 .style__multiLineWithThumbnail__secondaryLabel___2h1h8 {
