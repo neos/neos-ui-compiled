@@ -755,7 +755,7 @@ svg:not(:root).neos-svg-inline--fa {
     width: 20px;
     height: 20px;
     border-radius: 2px;
-    vertical-align: text-bottom;
+    vertical-align: top;
     background: #3f3f3f;
     font-size: 20px;
     font-weight: bold;
@@ -4324,10 +4324,6 @@ body::-webkit-scrollbar-track {
             color: #00ADEE;
         }
 
-.style__dropDown__item___3GbLY > label {
-        margin-bottom: 0;
-    }
-
 .style__dropDown__item___3GbLY > a {
         display: block;
         width: 100%;
@@ -4378,6 +4374,16 @@ body::-webkit-scrollbar-track {
         .style__dropDown__item___3GbLY > button > input {
             margin-right: .5em;
         }
+
+.style__dropDown__item___3GbLY > label {
+        margin-bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
 
 .style__dropDown__item___3GbLY .style__badge___34ARD {
         position: absolute;
