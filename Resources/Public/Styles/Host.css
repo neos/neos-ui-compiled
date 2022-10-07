@@ -4084,7 +4084,7 @@ body::-webkit-scrollbar-track {
 }
 
 .style__dropDown___3PKoi {
-    max-width: 296px;
+    max-width: 320px;
     width: auto;
 }
 .style__dropDown__header___1Mf6S {
@@ -4106,6 +4106,9 @@ body::-webkit-scrollbar-track {
 .style__dimensionCategory___3kBau {
     background-color: #141414;
     padding: 16px;
+}
+.style__dimensionSwitcherDropDown___1ZMsb {
+    min-width: 240px;
 }
 .style__dimensionCategory___3kBau + .style__dimensionCategory___3kBau {
     padding-top: 0;
