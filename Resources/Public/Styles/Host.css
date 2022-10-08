@@ -4313,6 +4313,36 @@ body::-webkit-scrollbar-track {
     margin-right: 5px;
 }
 
+/**
+PLEASE NOTE: this absolute positioning is a fix, because react checkboxes inside a react select component are buggy,
+for further information see https://github.com/neos/neos-ui/pull/3211
+ */
+
+.style__dropdownOptionCheckbox__label___2nDs1 {
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+
+.style__dropdownOptionCheckbox___ACabG {
+    position: relative;
+    min-height: 40px;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb > input {
+    width: 100%;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb > svg {
+    left: 10px;
+    top: 20px;
+}
+
 .style__dropDown__item___3GbLY {
     position: relative;
     border-top: 1px solid #222;
@@ -4327,8 +4357,12 @@ body::-webkit-scrollbar-track {
             color: #00ADEE;
         }
 
-.style__dropDown__item___3GbLY > a {
+.style__dropDown__item___3GbLY > a,
+    .style__dropDown__item___3GbLY > button {
         display: block;
+    }
+
+.style__dropDown__item___3GbLY > a {
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4345,7 +4379,6 @@ body::-webkit-scrollbar-track {
         }
 
 .style__dropDown__item___3GbLY > label {
-        display: block;
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4362,7 +4395,6 @@ body::-webkit-scrollbar-track {
         }
 
 .style__dropDown__item___3GbLY > button {
-        display: block;
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4380,9 +4412,6 @@ body::-webkit-scrollbar-track {
 
 .style__dropDown__item___3GbLY > label {
         margin-bottom: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
