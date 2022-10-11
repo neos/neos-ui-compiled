@@ -4090,6 +4090,9 @@ body::-webkit-scrollbar-track {
 .style__dropDown__header___1Mf6S {
     background-color: transparent;
 }
+.style__dropDown__header___1Mf6S:hover {
+        color: #00ADEE;
+    }
 .style__dropDown__contents___30VjA {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -4172,8 +4175,10 @@ body::-webkit-scrollbar-track {
 }
     }
 .style__dropDown__contents___3DKZa {
-    position: relative;
+    position: absolute;
     min-width: 160px;
+    right: 0px;
+    left: auto;
     padding: 2px !important;
     margin-top: -2px;
     background: #222;
@@ -4182,10 +4187,8 @@ body::-webkit-scrollbar-track {
 }
 @media(max-width: 768px) {
 .style__dropDown__contents___3DKZa {
-        position: absolute;
         min-width: 240px;
         top: 40px;
-        left: 0;
         margin-top: 0
 }
     }
