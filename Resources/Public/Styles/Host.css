@@ -3605,6 +3605,10 @@ body::-webkit-scrollbar-track {
             box-shadow: 0 0 14px rgba(0,0,0, .15);
 }
 
+    .style__flashMessage___1KVsF:last-child {
+        margin-bottom: 0px;
+    }
+
 .style__flashMessage--success___3KYoa {
     background-color: #00a338;
 }
@@ -3652,10 +3656,12 @@ body::-webkit-scrollbar-track {
     z-index: 6;
     top: 0;
     left: 50%;
-    width: 512px;
-    padding-top: 8px;
+    width: 516px;
+    margin-top: 8px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+    max-height: calc(100% - 16px);
+    overflow: auto;
 }
 
     .style__flashMessageContainer___o2r5-:empty {
