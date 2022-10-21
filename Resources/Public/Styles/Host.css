@@ -761,7 +761,7 @@ svg:not(:root).neos-svg-inline--fa {
     width: 20px;
     height: 20px;
     border-radius: 2px;
-    vertical-align: text-bottom;
+    vertical-align: top;
     background: #3f3f3f;
     font-size: 20px;
     font-weight: bold;
@@ -1348,6 +1348,9 @@ svg:not(:root).neos-svg-inline--fa {
 .style__dropDown__btn___2W0C9:focus{
         outline: 1px solid #00ADEE;
     }
+.style__dropDown__btn___2W0C9 svg{
+        pointer-events: none;
+    }
 .style__dropDown__btn--withChevron___JMZEI {
     padding-right: 40px;
 }
@@ -1582,7 +1585,7 @@ svg:not(:root).neos-svg-inline--fa {
 }
 
 .style__listPreviewElement--isHighlighted___26ad1 {
-    background: #00ADEE;
+    background-color: #00ADEE !important;
 }
 
 .style__listPreviewElement--isHighlighted___26ad1 > span {
@@ -2171,8 +2174,11 @@ svg:not(:root).neos-svg-inline--fa {
 .style__multiLineWithThumbnail__item___2qeYA {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
+    background-color: #141414;
+}
+
+.style__multiLineWithThumbnail__item--multiLine___Cd1o4 {
     line-height: 20px;
-    background: #141414;
 }
 
 .style__multiLineWithThumbnail__secondaryLabel___2h1h8 {
@@ -3608,6 +3614,10 @@ body::-webkit-scrollbar-track {
             box-shadow: 0 0 14px rgba(0,0,0, .15);
 }
 
+    .style__flashMessage___1KVsF:last-child {
+        margin-bottom: 0px;
+    }
+
 .style__flashMessage--success___3KYoa {
     background-color: #00a338;
 }
@@ -3655,10 +3665,12 @@ body::-webkit-scrollbar-track {
     z-index: 6;
     top: 0;
     left: 50%;
-    width: 512px;
-    padding-top: 8px;
+    width: 516px;
+    margin-top: 8px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+    max-height: calc(100% - 16px);
+    overflow: auto;
 }
 
     .style__flashMessageContainer___o2r5-:empty {
@@ -4087,12 +4099,15 @@ body::-webkit-scrollbar-track {
 }
 
 .style__dropDown___3PKoi {
-    max-width: 296px;
+    max-width: 320px;
     width: auto;
 }
 .style__dropDown__header___1Mf6S {
     background-color: transparent;
 }
+.style__dropDown__header___1Mf6S:hover {
+        color: #00ADEE;
+    }
 .style__dropDown__contents___30VjA {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -4109,6 +4124,9 @@ body::-webkit-scrollbar-track {
 .style__dimensionCategory___3kBau {
     background-color: #141414;
     padding: 16px;
+}
+.style__dimensionSwitcherDropDown___1ZMsb {
+    min-width: 240px;
 }
 .style__dimensionCategory___3kBau + .style__dimensionCategory___3kBau {
     padding-top: 0;
@@ -4172,8 +4190,10 @@ body::-webkit-scrollbar-track {
 }
     }
 .style__dropDown__contents___3DKZa {
-    position: relative;
+    position: absolute;
     min-width: 160px;
+    right: 0px;
+    left: auto;
     padding: 2px !important;
     margin-top: -2px;
     background: #222;
@@ -4182,10 +4202,8 @@ body::-webkit-scrollbar-track {
 }
 @media(max-width: 768px) {
 .style__dropDown__contents___3DKZa {
-        position: absolute;
         min-width: 240px;
         top: 40px;
-        left: 0;
         margin-top: 0
 }
     }
@@ -4313,6 +4331,36 @@ body::-webkit-scrollbar-track {
     margin-right: 5px;
 }
 
+/**
+PLEASE NOTE: this absolute positioning is a fix, because react checkboxes inside a react select component are buggy,
+for further information see https://github.com/neos/neos-ui/pull/3211
+ */
+
+.style__dropdownOptionCheckbox__label___2nDs1 {
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+
+.style__dropdownOptionCheckbox___ACabG {
+    position: relative;
+    min-height: 40px;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb > input {
+    width: 100%;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb > svg {
+    left: 10px;
+    top: 20px;
+}
+
 .style__dropDown__item___3GbLY {
     position: relative;
     border-top: 1px solid #222;
@@ -4327,12 +4375,12 @@ body::-webkit-scrollbar-track {
             color: #00ADEE;
         }
 
-.style__dropDown__item___3GbLY > label {
-        margin-bottom: 0;
+.style__dropDown__item___3GbLY > a,
+    .style__dropDown__item___3GbLY > button {
+        display: block;
     }
 
 .style__dropDown__item___3GbLY > a {
-        display: block;
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4349,7 +4397,6 @@ body::-webkit-scrollbar-track {
         }
 
 .style__dropDown__item___3GbLY > label {
-        display: block;
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4366,7 +4413,6 @@ body::-webkit-scrollbar-track {
         }
 
 .style__dropDown__item___3GbLY > button {
-        display: block;
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4381,6 +4427,13 @@ body::-webkit-scrollbar-track {
         .style__dropDown__item___3GbLY > button > input {
             margin-right: .5em;
         }
+
+.style__dropDown__item___3GbLY > label {
+        margin-bottom: 0;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
 
 .style__dropDown__item___3GbLY .style__badge___34ARD {
         position: absolute;
