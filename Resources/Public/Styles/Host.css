@@ -1342,6 +1342,9 @@ svg:not(:root).neos-svg-inline--fa {
 .style__dropDown__btn___2W0C9:focus{
         outline: 1px solid #00ADEE;
     }
+.style__dropDown__btn___2W0C9 svg{
+        pointer-events: none;
+    }
 .style__dropDown__btn--withChevron___JMZEI {
     padding-right: 40px;
 }
