@@ -1333,6 +1333,9 @@ svg:not(:root).neos-svg-inline--fa {
 .style__dropDown__btn___2W0C9:focus{
         outline: 1px solid #00ADEE;
     }
+.style__dropDown__btn___2W0C9 svg{
+        pointer-events: none;
+    }
 .style__dropDown__btn--withChevron___JMZEI {
     padding-right: 40px;
 }
@@ -1363,7 +1366,8 @@ svg:not(:root).neos-svg-inline--fa {
     overflow-y: auto;
 }
 .style__dropDown__contents--isOpen___1szzg {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 .style__dropDown--darker___1GLKD > .style__dropDown__btn--open___2CTio {
         background-color: #222;
@@ -2473,6 +2477,10 @@ svg:not(:root).neos-svg-inline--fa {
     padding: 8px;
 }
 
+.LinkInput__linkInput__optionsPanelCheckbox___1cCkZ {
+    display: flex;
+}
+
 .LinkInput__linkInput__optionsPanelLabel___1keJo {
     margin-bottom: 4px;
 }
@@ -3501,6 +3509,10 @@ body::-webkit-scrollbar-track {
     box-shadow: 0 0 14px rgba(0,0,0, .15);
 }
 
+    .style__flashMessage___1KVsF:last-child {
+        margin-bottom: 0px;
+    }
+
 .style__flashMessage--success___3KYoa {
     background-color: #00a338;
 }
@@ -3548,9 +3560,11 @@ body::-webkit-scrollbar-track {
     z-index: 6;
     top: 0;
     left: 50%;
-    width: 512px;
-    padding-top: 8px;
+    width: 516px;
+    margin-top: 8px;
     transform: translate(-50%, 0);
+    max-height: calc(100% - 16px);
+    overflow: auto;
 }
 
     .style__flashMessageContainer___o2r5-:empty {
@@ -3932,12 +3946,15 @@ body::-webkit-scrollbar-track {
 }
 
 .style__dropDown___3PKoi {
-    max-width: 296px;
+    max-width: 320px;
     width: auto;
 }
 .style__dropDown__header___1Mf6S {
     background-color: transparent;
 }
+.style__dropDown__header___1Mf6S:hover {
+        color: #00ADEE;
+    }
 .style__dropDown__contents___30VjA {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -3953,6 +3970,9 @@ body::-webkit-scrollbar-track {
 .style__dimensionCategory___3kBau {
     background-color: #141414;
     padding: 16px;
+}
+.style__dimensionSwitcherDropDown___1ZMsb {
+    min-width: 240px;
 }
 .style__dimensionCategory___3kBau + .style__dimensionCategory___3kBau {
     padding-top: 0;
@@ -3991,6 +4011,7 @@ body::-webkit-scrollbar-track {
 .style__dropDown___2EKkm {
     position: static;
     display: block;
+    overflow-x: auto;
 }
 .style__dropDown__btn___2rYJF {
     position: relative;
@@ -4011,8 +4032,13 @@ body::-webkit-scrollbar-track {
 }
     }
 .style__dropDown__contents___3DKZa {
-    position: relative;
+    position: absolute;
     min-width: 160px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    right: 0px;
+    left: auto;
     padding: 2px !important;
     margin-top: -2px;
     background: #222;
@@ -4020,10 +4046,8 @@ body::-webkit-scrollbar-track {
 }
 @media(max-width: 768px) {
 .style__dropDown__contents___3DKZa {
-        position: absolute;
         min-width: 240px;
         top: 40px;
-        left: 0;
         margin-top: 0
 }
     }
@@ -4151,6 +4175,36 @@ body::-webkit-scrollbar-track {
     margin-right: 5px;
 }
 
+/**
+PLEASE NOTE: this absolute positioning is a fix, because react checkboxes inside a react select component are buggy,
+for further information see https://github.com/neos/neos-ui/pull/3211
+ */
+
+.style__dropdownOptionCheckbox__label___2nDs1 {
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+
+.style__dropdownOptionCheckbox___ACabG {
+    position: relative;
+    min-height: 40px;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb > input {
+    width: 100%;
+}
+
+.style__dropdownOptionCheckbox__input___2CBXb > svg {
+    left: 10px;
+    top: 20px;
+}
+
 .style__dropDown__item___3GbLY {
     position: relative;
     border-top: 1px solid #222;
@@ -4165,8 +4219,12 @@ body::-webkit-scrollbar-track {
             color: #00ADEE;
         }
 
-.style__dropDown__item___3GbLY > a {
+.style__dropDown__item___3GbLY > a,
+    .style__dropDown__item___3GbLY > button {
         display: block;
+    }
+
+.style__dropDown__item___3GbLY > a {
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4183,7 +4241,6 @@ body::-webkit-scrollbar-track {
         }
 
 .style__dropDown__item___3GbLY > label {
-        display: block;
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4200,7 +4257,6 @@ body::-webkit-scrollbar-track {
         }
 
 .style__dropDown__item___3GbLY > button {
-        display: block;
         width: 100%;
         border: 0;
         padding: 0 16px;
@@ -4218,7 +4274,6 @@ body::-webkit-scrollbar-track {
 
 .style__dropDown__item___3GbLY > label {
         margin-bottom: 0;
-        display: flex;
         align-items: center;
     }
 
