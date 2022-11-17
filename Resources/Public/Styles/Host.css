@@ -2,9 +2,34 @@
     height: 100vh;
 }
 
-    .style__applicationWrapper___1OATQ > div {
-        height: 100%;
-    }
+.style__app___vXTDL {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'primaryToolbar primaryToolbar primaryToolbar'
+        'leftSideBarHeader secondaryToolbar rightSidebar'
+        'leftSidebar content rightSidebar';
+    grid-template-rows: 41px 41px 1fr;
+    grid-template-columns: min-content 1fr min-content;
+}
+
+/* FIXME: This would be much easier to implement with actual css-variables (which we cannot use yet due to the postcss conversion) */
+
+.style__app--leftSidebarIsHidden___1xIeV {
+    grid-template-columns: 0 1fr min-content;
+}
+
+.style__app--rightSidebarIsHidden___kWxvB {
+    grid-template-columns: min-content 1fr 0;
+}
+
+.style__app--leftSidebarIsHidden___1xIeV.style__app--rightSidebarIsHidden___kWxvB {
+    grid-template-columns: 0 1fr 0;
+}
+
+.style__app--isFullScreen___377EH {
+    grid-template-rows: 0 41px 1fr;
+    grid-template-columns: 0 1fr 0;
+}
 
 /* stylelint-disable selector-max-id */
 
@@ -1184,13 +1209,6 @@ svg:not(:root).neos-svg-inline--fa {
     cursor: not-allowed;
 }
 
-@-webkit-keyframes style__slideDialogContents___2dMWV {
-    from {
-        opacity: 0;
-        transform: translateX(-50%) scale(.9);
-    }
-}
-
 @keyframes style__slideDialogContents___2dMWV {
     from {
         opacity: 0;
@@ -1218,8 +1236,7 @@ svg:not(:root).neos-svg-inline--fa {
     border-radius: 0;
     outline: none;
     opacity: 1;
-    -webkit-animation: style__slideDialogContents___2dMWV .3s ease-in-out;
-            animation: style__slideDialogContents___2dMWV .3s ease-in-out;
+    animation: style__slideDialogContents___2dMWV .3s ease-in-out;
 }
 
 .style__dialog__contents___32lNX {
@@ -3379,19 +3396,29 @@ span.CodeMirror-selectedtext { background: none; }
 .cm-s-twilight .CodeMirror-activeline-background { background: #27282E; }
 .cm-s-twilight .CodeMirror-matchingbracket { outline:1px solid grey; color:white !important; }
 
-.index__toolBar__btnGroup___P0J6R {
-    display: flex;
+.index__toolbar___3jHwi {
+    flex: 0 1 auto;
 }
 
-    .index__toolBar__btnGroup___P0J6R:before,
+.index__toolBar__btnGroup___P0J6R {
+    display: flex;
+    flex-wrap: wrap;
+    background: #141414;
+}
+
+.index__toolBar__btnGroup___P0J6R:before,
     .index__toolBar__btnGroup___P0J6R:after {
         content: '';
         display: table;
     }
 
-    .index__toolBar__btnGroup___P0J6R:after {
+.index__toolBar__btnGroup___P0J6R:after {
         clear: both;
     }
+
+.index__toolBar__btnGroup___P0J6R > * {
+         width: auto;
+     }
 
 .index__toolBar__btnGroup__btn___2S64F {
     float: left;
@@ -3962,7 +3989,11 @@ body::-webkit-scrollbar-track {
 
 .style__primaryToolbar___15S1o {
     display: flex;
-
+    grid-area: primaryToolbar;
+    position: relative;
+    left: unset;
+    top: unset;
+    height: unset;
     z-index: 4;
 }
 .style__primaryToolbar--isHidden___3dG-_ {
@@ -3991,7 +4022,6 @@ body::-webkit-scrollbar-track {
         color: #00ADEE;
     }
 .style__dropDown__contents___30VjA {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     min-width: 100%;
@@ -4069,7 +4099,6 @@ body::-webkit-scrollbar-track {
 .style__dropDown__contents___3DKZa {
     position: absolute;
     min-width: 160px;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     right: 0px;
@@ -4517,29 +4546,24 @@ for further information see https://github.com/neos/neos-ui/pull/3211
 }
 
 .style__secondaryToolbar___1MGlE {
+    grid-area: secondaryToolbar;
     display: flex;
-    position: fixed;
-    top: 41px;
-    left: 0;
-    padding: 0 320px;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    top: unset;
+    left: unset;
     width: 100%;
     height: 41px;
     background: #141414;
     will-change: padding;
     border-bottom: 1px solid #3f3f3f;
-    transform: translateY(0);
-    transition: .1s ease-in-out;
 }
 .style__secondaryToolbar--isFringeLeft___37_ab {
     padding-left: 46px;
 }
 .style__secondaryToolbar--isFringeRight___2eh9E {
     padding-right: 46px;
-}
-.style__secondaryToolbar--fullScreen___2uy3_ {
-    top: 0;
-    padding: 0 0;
-    transform: translateY(0);
 }
 .style__secondaryToolbar__rightHandedActions___2qKvW {
     margin-left: auto;
@@ -4567,21 +4591,7 @@ for further information see https://github.com/neos/neos-ui/pull/3211
     height: 100%;
     position: relative;
     background-color: #ff8700;
-    -webkit-animation: style__cssload-width___1HiBF 2s cubic-bezier(.45, 0, 1, 1) infinite;
-            animation: style__cssload-width___1HiBF 2s cubic-bezier(.45, 0, 1, 1) infinite;
-}
-
-@-webkit-keyframes style__cssload-width___1HiBF {
-    0%,
-    100% {
-        transition-timing-function: cubic-bezier(1, 0, .65, .85);
-    }
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
+    animation: style__cssload-width___1HiBF 2s cubic-bezier(.45, 0, 1, 1) infinite;
 }
 
 @keyframes style__cssload-width___1HiBF {
@@ -4690,54 +4700,60 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__leftSideBar___2qCob {
+    grid-area: leftSidebar;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     background: #141414;
-    padding-top: 41px;
-    transition: .25s ease transform;
-    will-change: transform;
+    min-width: 320px;
+    max-width: 50vw;
+    right: unset;
+    position: relative;
+    resize: horizontal;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
-
-    .style__leftSideBar___2qCob:before,
-    .style__leftSideBar___2qCob:after {
-        content: '';
-        display: table;
-    }
-
-    .style__leftSideBar___2qCob:after {
-        clear: both;
-    }
-
-    @media(max-width: 576px) {
-
-    .style__leftSideBar___2qCob {
-        width: 100%
-}
-    }
 
 .style__leftSideBar--isHidden___3lOmF {
-    transform: translateX(-320px);
+    display: none;
 }
 
-@media(max-width: 576px) {
-
-.style__leftSideBar--isHidden___3lOmF {
-        transform: translateX(-576px)
+.style__leftSideBar__header___2Tosu {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    height: 41px;
+    line-height: 40px;
+    font-weight: bold;
+    background: #141414;
+    grid-area: leftSideBarHeader;
 }
-    }
+
+.style__leftSideBar__toggleBtn___3Bh-D {
+    width: 46px;
+    border: none;
+    background: #141414;
+}
 
 .style__leftSideBar__top___3hY-V {
-    flex-basis: 100%;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
-    min-height: 40px;
+    /* Leave space for the toolbar and the resize icon */
+    min-height: calc(40px + 40px);
+    height: 50%;
     margin-right: 4px;
+    resize: vertical;
+    overflow-y: auto;
+}
+
+.style__leftSideBar__top--isFullHeight___jbE2i {
+    flex: 1;
+    resize: none;
 }
 
 .style__leftSideBar__bottom___3FJcQ {
-    flex: 0 0 50%;
-    transition: flex-basis .25s, height .25s, overflow-y .25s;
+    flex: 1;
     display: flex;
     flex-direction: column;
     min-height: 40px;
@@ -4747,46 +4763,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 .style__leftSideBar__bottom--isCollapsed___fR02r {
     flex: 0 0 40px;
     overflow-y: hidden;
-}
-
-.style__leftSideBar__toggleBtn___3Bh-D {
-    width: 46px;
-    position: absolute!important;
-    left: 0;
-    top: 41px;
-    border: none;
-    background: #141414;
-    transition: .25s  ease transform;
-    will-change: transform;
-}
-
-.style__leftSideBar--isHidden___3lOmF .style__leftSideBar__toggleBtn___3Bh-D {
-        transform: translateX(320px);
-    }
-
-@media(max-width: 576px) {
-
-.style__leftSideBar--isHidden___3lOmF .style__leftSideBar__toggleBtn___3Bh-D {
-            transform: translateX(576px)
-    }
-        }
-
-.style__leftSideBar__header___2Tosu {
-    cursor: pointer;
-    height: 41px;
-    padding-left: 55px;
-    line-height: 40px;
-    font-weight: bold;
-    background: #141414;
-}
-
-@-webkit-keyframes style__spin___25f_H {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 @keyframes style__spin___25f_H {
@@ -4799,8 +4775,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__spinning___Qi6ga i {
-    -webkit-animation: style__spin___25f_H 2s infinite linear;
-            animation: style__spin___25f_H 2s infinite linear;
+    animation: style__spin___25f_H 2s infinite linear;
 }
 
 .style__toggle___ebx0q {
@@ -4931,31 +4906,10 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__contentCanvas___3a_4z {
-    position: relative;
-    float: left;
+    grid-area: content;
     height: 100%;
     width: 100%;
-    padding: 82px 320px 0;
-    transition: .25s  ease padding;
-    will-change: padding;
     background-color: #222;
-}
-
-    .style__contentCanvas___3a_4z::after {
-        content: '';
-        position: absolute;
-    }
-
-.style__contentCanvas--isFringeLeft___252It {
-    padding-left: 0;
-}
-
-.style__contentCanvas--isFringeRight___1s4o5 {
-    padding-right: 0;
-}
-
-.style__contentCanvas--isFullScreen___2UVnV {
-    padding: 40px 0 0 0;
 }
 
 .style__contentCanvas--isHidden___31sha::after {
@@ -4985,54 +4939,35 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__rightSideBar___2I7-m {
-    padding-top: 41px;
+    grid-area: rightSidebar;
+    min-width: 320px;
+    max-width: 50vw;
     padding-bottom: 41px;
-    transition: .25s  ease transform;
-    background: #141414;
+    right: unset;
+    position: relative;
+    background-color: #141414;
 }
-
-    .style__rightSideBar___2I7-m:before,
-    .style__rightSideBar___2I7-m:after {
-        content: '';
-        display: table;
-    }
-
-    .style__rightSideBar___2I7-m:after {
-        clear: both;
-    }
-
-    @media(max-width: 576px) {
-
-    .style__rightSideBar___2I7-m {
-        width: 100%
-}
-    }
 .style__rightSideBar--isHidden___pa_ce {
-    transform: translateX(320px);
+    width: 0;
 }
-@media(max-width: 576px) {
-.style__rightSideBar--isHidden___pa_ce {
-        transform: translateX(576px)
+.style__rightSideBar--isHidden___pa_ce > div {
+    display: none;
 }
-    }
 .style__rightSideBar__toggleBtn___36Rba {
     width: 46px;
     position: absolute!important;
     right: 0;
-    top: 41px;
+    top: 0;
     border: none;
     background: #141414;
-    transition: .25s  ease transform;
-    will-change: transform;
 }
 .style__rightSideBar--isHidden___pa_ce .style__rightSideBar__toggleBtn___36Rba {
-        transform: translateX(-320px);
+        right: 100%;
     }
-@media(max-width: 576px) {
-.style__rightSideBar--isHidden___pa_ce .style__rightSideBar__toggleBtn___36Rba {
-            transform: translateX(-576px)
-    }
-        }
+.style__rightSideBar__components___2nNXG {
+    background: #141414;
+    height: 100%;
+}
 .style__rightSideBar__section___2LmQG {
     border-bottom: 1px solid #3f3f3f;
 }
@@ -5042,22 +4977,11 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
 }
 
 .style__secondaryInspector___Frwci {
-    position: absolute;
-    top: 82px;
-    right: 320px;
-    left: 320px;
+    grid-area: content;
+    position: relative;
     background: #222;
-    height: calc(100% - 82px);
     border: 1px solid #3f3f3f;
     border-bottom-width: 0;
-    transition: .25s  ease left, .25s  ease right;
-    will-change: left, right;
-}
-.style__secondaryInspector--isFringeLeft___363hA {
-    left: 0;
-}
-.style__secondaryInspector--isFringeRight___283nE {
-    right: 0;
 }
 .style__secondaryInspector--isElevated___1XAkJ {
     z-index: 1;
