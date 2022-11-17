@@ -1187,14 +1187,14 @@ svg:not(:root).neos-svg-inline--fa {
 @-webkit-keyframes style__slideDialogContents___2dMWV {
     from {
         opacity: 0;
-        transform: translateX(-50%) translateY(-50%) scale(.9);
+        transform: translateX(-50%) scale(.9);
     }
 }
 
 @keyframes style__slideDialogContents___2dMWV {
     from {
         opacity: 0;
-        transform: translateX(-50%) translateY(-50%) scale(.9);
+        transform: translateX(-50%) scale(.9);
     }
 }
 
@@ -1210,9 +1210,9 @@ svg:not(:root).neos-svg-inline--fa {
 
 .style__dialog__contentsPosition___1527H {
     position: absolute;
-    top: 50%;
+    top: 20vh;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) scale(1);
     background: #222;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
     border-radius: 0;
@@ -3683,6 +3683,10 @@ body::-webkit-scrollbar-track {
     position: relative;
 }
 
+.style__nodeType__item--focused___oy9Mv {
+    background: #00ADEE;
+}
+
 .style__nodeType__helpIcon___2DAjs {
     display: block;
     position: absolute;
@@ -3787,8 +3791,39 @@ body::-webkit-scrollbar-track {
 }
 
 .style__nodeTypeDialogHeader__filter___8hPYR {
+    position: relative;
     display: flex;
+    flex: 1;
     align-items: center;
+    margin-right: 16px;
+}
+
+.style__nodeTypeDialogHeader__filterInput___2uqCs {
+    padding-left: 40px;
+}
+
+.style__nodeTypeDialogHeader__filterInput___2uqCs:focus {
+        background: #3f3f3f;
+        color: #FFF;
+    }
+
+.style__nodeTypeDialogHeader__filterInputContainer___2_ZQi {
+    width: 100%;
+}
+
+.style__nodeTypeDialogHeader__filterIconSearch___1_oVN {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 16px;
+}
+
+.style__nodeTypeDialogHeader__filterIconReset___1LcJ_ {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
 }
 
 .style__nodeTypeFilter__label___1xllr {
