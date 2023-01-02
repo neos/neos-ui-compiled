@@ -3695,12 +3695,19 @@ body::-webkit-scrollbar-track {
 
 .style__modalTitle___33Lzc {
     margin-left: 16px;
+    word-break: break-all;
 }
 .style__modalContents___1zQy0 {
     padding: 16px;
+    word-break: break-all;
 }
 .style__buttonIcon___3aKr5 {
     margin-right: 8px;
+}
+.style__modalTitleContainer___2za5s {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .style__root___1m0We {
