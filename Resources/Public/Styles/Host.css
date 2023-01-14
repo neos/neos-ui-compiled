@@ -3955,6 +3955,7 @@ body::-webkit-scrollbar-track {
         .25s ease opacity;
     transition: .25s ease width,
         .25s ease opacity;
+    overflow: hidden;
 }
 .style__expanded___331Qy .style__secondaryColumn___9CJQ7 {
         width: 100%;
