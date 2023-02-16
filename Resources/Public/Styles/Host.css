@@ -1383,7 +1383,13 @@ svg:not(:root).neos-svg-inline--fa {
     overflow-y: auto;
 }
 .style__dropDown__contents--isOpen___SmNcr {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .style__dropDown--darker___3BLuC > .style__dropDown__btn--open___zQJL3 {
         background-color: #222;
@@ -3412,7 +3418,13 @@ svg:not(:root).neos-svg-inline--fa {
     overflow-y: auto;
 }
 .style__dropDown__contents--isOpen___1szzg {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .style__dropDown--darker___1GLKD > .style__dropDown__btn--open___2CTio {
         background-color: #222;
@@ -5632,6 +5644,7 @@ body::-webkit-scrollbar-track {
 .style__dropDown___2EKkm {
     position: static;
     display: block;
+    overflow-x: auto;
 }
 .style__dropDown__btn___2rYJF {
     position: relative;
@@ -5654,6 +5667,9 @@ body::-webkit-scrollbar-track {
 .style__dropDown__contents___3DKZa {
     position: absolute;
     min-width: 160px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     right: 0px;
     left: auto;
     padding: 2px !important;
