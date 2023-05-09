@@ -1047,9 +1047,11 @@ svg:not(:root).neos-svg-inline--fa {
             width: 25%;
             cursor: pointer;
         }
-.style__wrapper___3dKGg td.rdtMonth:hover,
-        .style__wrapper___3dKGg td.rdtYear:hover {
-            background: #eee;
+.style__wrapper___3dKGg td.rdtMonth:hover {
+            background: #00ADEE;
+        }
+.style__wrapper___3dKGg td.rdtYear:hover {
+            background: #00ADEE;
         }
 .style__wrapper___3dKGg .rdtCounters {
             display: inline-block;
@@ -2970,9 +2972,11 @@ svg:not(:root).neos-svg-inline--fa {
             width: 25%;
             cursor: pointer;
         }
-.style__wrapper___3H2rO td.rdtMonth:hover,
-        .style__wrapper___3H2rO td.rdtYear:hover {
-            background: #eee;
+.style__wrapper___3H2rO td.rdtMonth:hover {
+            background: #00ADEE;
+        }
+.style__wrapper___3H2rO td.rdtYear:hover {
+            background: #00ADEE;
         }
 .style__wrapper___3H2rO .rdtCounters {
             display: inline-block;
