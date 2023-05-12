@@ -7174,8 +7174,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     width: calc(100% - 320px);
     height: 100%;
     z-index: 1;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
 }
 .style__unappliedChangesOverlay___3pQ9T,
     .style__unappliedChangesOverlay___3pQ9T::after {
