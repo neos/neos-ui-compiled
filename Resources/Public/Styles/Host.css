@@ -3828,7 +3828,11 @@ svg:not(:root).neos-svg-inline--fa {
     width: 100%;
     border-radius: 2px;
 }
-
+.style__rangeEditor___2ebib.style__rangeEditorHighlight___2ufXq input[type='range'] {
+    -webkit-box-shadow: 0 0 0 2px #ff8700;
+            box-shadow: 0 0 0 2px #ff8700;
+    border-radius: 2px;
+}
 .style__rangeEditor___2ebib input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
             appearance: none;
@@ -3842,15 +3846,12 @@ svg:not(:root).neos-svg-inline--fa {
     width: 20px;
     border: none;
 }
-
 .style__rangeEditor___2ebib input[type='range']::-webkit-slider-thumb:hover {
     background: #35c3f8;
 }
-
 .style__rangeEditor___2ebib input[type='range']::-webkit-slider-thumb:focus {
     background: #35c3f8;
 }
-
 .style__rangeEditor___2ebib input[type='range']::-moz-range-thumb {
     -moz-appearance: none;
          appearance: none;
@@ -3863,15 +3864,12 @@ svg:not(:root).neos-svg-inline--fa {
     width: 25px;
     border: none;
 }
-
 .style__rangeEditor___2ebib input[type='range']::-moz-range-thumb:hover {
     background: #35c3f8;
 }
-
 .style__rangeEditor___2ebib input[type='range']::-moz-range-thumb:focus {
     background: #35c3f8;
 }
-
 .style__rangeEditorValue___eZmQr {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3887,13 +3885,11 @@ svg:not(:root).neos-svg-inline--fa {
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-
 .style__rangeEditorValue___eZmQr > span:first-child,
 .style__rangeEditorValue___eZmQr > span:last-child {
     cursor: default;
     opacity: .7;
 }
-
 .style__rangeEditorValue___eZmQr input {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -3908,24 +3904,19 @@ svg:not(:root).neos-svg-inline--fa {
             box-sizing: content-box;
     margin-right: 4px;
 }
-
 .style__rangeEditorValue___eZmQr input:focus {
     outline: 1px solid #00ADEE;
 }
-
 .style__rangeEditorDisabled___3B-Td {
     opacity: .65;
 }
-
 .style__rangeEditorDisabled___3B-Td input[disabled] {
     cursor: not-allowed;
 }
-
 .style__rangeEditorDisabled___3B-Td input[type='range']::-webkit-slider-thumb {
     pointer-events: none;
     background: #999;
 }
-
 .style__rangeEditorDisabled___3B-Td input[type='range']::-moz-range-thumb {
     pointer-events: none;
     background: #999;
