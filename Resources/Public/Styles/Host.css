@@ -2023,7 +2023,11 @@ svg:not(:root).neos-svg-inline--fa {
     right: 0;
     padding-left: 15px;
     height: 2px;
+    visibility: hidden;
 }
+[data-is-drag-happening] .node__dropTarget___hMvzm {
+        visibility: visible;
+    }
 .node__dropTarget--before___2aL1g {
     top: -5px;
     z-index: 1;
@@ -6631,7 +6635,11 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     right: 0;
     padding-left: 15px;
     height: 2px;
+    visibility: hidden;
 }
+[data-is-drag-happening] .node__dropTarget___2w6E- {
+        visibility: visible;
+    }
 .node__dropTarget--before___2mVtk {
     top: -5px;
     z-index: 1;
