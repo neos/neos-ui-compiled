@@ -1,49 +1,53 @@
-.style__applicationWrapper___1OATQ {
-    height: 100vh;
+.style-module__container___3erIY {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
 }
 
-    .style__applicationWrapper___1OATQ > div {
-        height: 100%;
-    }
-
-/* stylelint-disable selector-max-id */
-
-/* Scrollbar styles for appContainer, its siblings (needed for React portals) and also for contentcanvas' body */
-
-#appContainer ::-webkit-scrollbar, #appContainer ~ * ::-webkit-scrollbar, body::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+.style-module__container___3erIY > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 800px;
+            flex: 0 1 800px;
+    margin: 16px;
+    overflow: auto;
 }
 
-#appContainer ::-webkit-scrollbar-track, #appContainer ~ * ::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
-    background-color: transparent;
+.style-module__title___1hPRL {
+    line-height: 1;
 }
 
-#appContainer ::-webkit-scrollbar-thumb {
-    background-color: #999;
+.style-module__stackTrace___3GHFA {
+    overflow-x: auto;
+    border-top: 1px solid #00ADEE;
+    border-bottom: 1px solid #00ADEE;
+    padding: 8px 0;
 }
 
-#appContainer ~ * ::-webkit-scrollbar-thumb {
-    background-color: #999;
+.style-module__buttonGroup___qpF80 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px 16px;
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: #999;
+.style__logo___3Jtvl {
+    height: 24px;
+    width: auto;
 }
 
-#appContainer ::-webkit-scrollbar-corner {
-    background-color: #3f3f3f;
-}
-
-#appContainer ~ * ::-webkit-scrollbar-corner {
-    background-color: #3f3f3f;
-}
-
-body::-webkit-scrollbar-corner {
-    background-color: #3f3f3f;
-}
-
-.reset__reset___1Yfmz {
+.reset__reset___2e25U {
     font-family: 'Noto Sans', sans-serif;
     font-weight: normal;
     color: #FFF;
@@ -51,86 +55,58 @@ body::-webkit-scrollbar-corner {
     padding: 0;
 }
 
-    .reset__reset___1Yfmz,
-    .reset__reset___1Yfmz:before,
-    .reset__reset___1Yfmz:after {
+    .reset__reset___2e25U,
+    .reset__reset___2e25U:before,
+    .reset__reset___2e25U:after {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
     }
 
     /* some browsers set a font-size or margin in their user stylesheets */
 
-    .reset__reset___1Yfmz input {
+    .reset__reset___2e25U input {
         font-size: 14px;
         margin: 0;
     }
 
-    .reset__reset___1Yfmz textarea {
+    .reset__reset___2e25U textarea {
         font-size: 14px;
         margin: 0;
     }
 
-    .reset__reset___1Yfmz select {
+    .reset__reset___2e25U select {
         font-size: 14px;
         margin: 0;
     }
 
-    .reset__reset___1Yfmz button {
+    .reset__reset___2e25U button {
         font-size: 14px;
         margin: 0;
     }
 
-    .reset__reset___1Yfmz ul {
+    .reset__reset___2e25U ul {
         padding: 0;
     }
 
     /* webkit adds some weird spacing otherwise */
 
-    .reset__reset___1Yfmz li {
+    .reset__reset___2e25U li {
         display: block;
     }
 
-    .reset__reset___1Yfmz input::-webkit-search-cancel-button {
+    .reset__reset___2e25U input::-webkit-search-cancel-button {
         display: none;
     }
 
     /* webkit adds white box around search box */
 
-    .reset__reset___1Yfmz input {
+    .reset__reset___2e25U input {
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
     }
 
-.style__badge___3QwR3 {
-    display: inline-block;
-    padding: 2px 4px;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: bold;
-    color: #ff8700;
-    white-space: nowrap;
-    background-color: white;
-    border-radius: 3px;
-}
-
-.style__bar___32H1E {
-    position: fixed;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #222;
-    height: 41px;
-    border-bottom: 1px solid #3f3f3f;
-}
-.style__bar--top___2Ldd- {
-    top: 0;
-}
-.style__bar--bottom___JI1zP {
-    bottom: 0;
-}
-
-.style__btn___1MxmJ {
+.style__btn___3rhzP {
     position: relative;
     display: inline-block;
     height: 40px;
@@ -146,170 +122,166 @@ body::-webkit-scrollbar-corner {
     font-size: 14px;
 }
 
-    .style__btn___1MxmJ:focus {
+    .style__btn___3rhzP:focus {
         outline: 1px solid #00ADEE;
     }
 
-    .style__btn___1MxmJ[disabled] {
+    .style__btn___3rhzP[disabled] {
         opacity: .5;
         cursor: not-allowed;
     }
 
-    .style__btn___1MxmJ[disabled]:hover {
+    .style__btn___3rhzP[disabled]:hover {
             color: #FFF;
         }
 
-    .style__btn___1MxmJ[disabled].style__btn--isPressed___1gLL0 {
+    .style__btn___3rhzP[disabled].style__btn--isPressed___3CoIu {
             color: #FFF;
         }
 
-    .style__btn___1MxmJ[disabled]:hover i {
+    .style__btn___3rhzP[disabled]:hover i {
             color: #FFF;
         }
 
-    .style__btn___1MxmJ[disabled] i {
+    .style__btn___3rhzP[disabled] i {
             color: #FFF;
         }
-.style__btn--size-small___3MoO2 {
+.style__btn--size-small___2NM3c {
     height: 32px;
     font-size: 13px;
     padding: 0 8px;
 }
-.style__btn--clean___3LTjV {
+.style__btn--clean___JST6q {
     background-color: #222;
 }
-.style__btn--lighter___1wesw {
+.style__btn--lighter___2noEC {
     background-color: #3f3f3f;
 }
-.style__btn--lighter___1wesw i {
+.style__btn--lighter___2noEC i {
     background-color: #3f3f3f;
 }
-.style__btn--neutral___29FQf {
+.style__btn--neutral___27fsr {
     background-color: #323232;
 }
-.style__btn--neutral___29FQf i {
+.style__btn--neutral___27fsr i {
     background-color: #323232;
 }
-.style__btn--transparent___1WprA {
+.style__btn--transparent___37d3Q {
     background: 0;
 }
-.style__btn--brand___1llM2 {
+.style__btn--brand___1ZsvX {
     background-color: #00ADEE;
     color: white !important;
 }
-.style__btn--brand___1llM2 i {
+.style__btn--brand___1ZsvX i {
     background-color: #00ADEE;
     color: white !important;
 }
-.style__btn--success___GMI1q {
+.style__btn--success___2uKNM {
     background-color: #00a338;
     color: white !important;
 }
-.style__btn--success___GMI1q i {
+.style__btn--success___2uKNM i {
     background-color: #00a338;
     color: white !important;
 }
-.style__btn--warn___1ldV5 {
+.style__btn--warn___mYaSC {
     background-color: #ff8700;
 }
-.style__btn--warn___1ldV5 i {
+.style__btn--warn___mYaSC i {
     background-color: #ff8700;
 }
-.style__btn--error___3yBDX {
+.style__btn--error___MCPuY {
     background-color: #ff460d;
     color: white !important;
 }
-.style__btn--error___3yBDX i {
+.style__btn--error___MCPuY i {
     background-color: #ff460d;
     color: white !important;
 }
-.style__btn--brandActive___3aw_Q {
+.style__btn--brandActive___3UtEy {
     background-color: #00ADEE;
 }
-.style__btn--brandActive___3aw_Q svg {
+.style__btn--brandActive___3UtEy svg {
         color: #FFF;
     }
-.style__btn--brandHover___2vuN8:hover:enabled {
+.style__btn--brandHover___3ZVrT:hover:enabled {
     background-color: #00ADEE;
 }
-.style__btn--brandHover___2vuN8:hover:enabled i {
+.style__btn--brandHover___3ZVrT:hover:enabled i {
     background-color: #00ADEE;
 }
-.style__btn--brandHover___2vuN8.style__btn--isPressed___1gLL0 {
+.style__btn--brandHover___3ZVrT.style__btn--isPressed___3CoIu {
     background-color: #00ADEE;
 }
-.style__btn--brandHover___2vuN8.style__btn--isPressed___1gLL0 i {
+.style__btn--brandHover___3ZVrT.style__btn--isPressed___3CoIu i {
     background-color: #00ADEE;
 }
-.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 {
+.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu {
     color: #00ADEE;
 }
-.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 svg {
+.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu svg {
         color: var(--colors-PrimaryBlue);
     }
-.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 i {
+.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu i {
     color: #00ADEE;
 }
-.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 i svg {
+.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu i svg {
         color: var(--colors-PrimaryBlue);
     }
-.style__btn--cleanHover___3ZBJz:hover:enabled {
+.style__btn--cleanHover___eru_z:hover:enabled {
     color: #00ADEE;
 }
-.style__btn--cleanHover___3ZBJz:hover:enabled svg {
+.style__btn--cleanHover___eru_z:hover:enabled svg {
         color: var(--colors-PrimaryBlue);
     }
-.style__btn--cleanHover___3ZBJz:hover:enabled i {
+.style__btn--cleanHover___eru_z:hover:enabled i {
     color: #00ADEE;
 }
-.style__btn--cleanHover___3ZBJz:hover:enabled i svg {
+.style__btn--cleanHover___eru_z:hover:enabled i svg {
         color: var(--colors-PrimaryBlue);
     }
-.style__btn--darkenHover___3Wcx6.style__btn--isPressed___1gLL0,
-.style__btn--darkenHover___3Wcx6.style__btn--isPressed___1gLL0 i,
-.style__btn--darkenHover___3Wcx6:hover:enabled,
-.style__btn--darkenHover___3Wcx6:hover:enabled i {
+.style__btn--darkenHover___3ltdb.style__btn--isPressed___3CoIu,
+.style__btn--darkenHover___3ltdb.style__btn--isPressed___3CoIu i,
+.style__btn--darkenHover___3ltdb:hover:enabled,
+.style__btn--darkenHover___3ltdb:hover:enabled i {
     background-color: rgba(0, 0, 0, .1);
 }
-.style__btn--successHover___11euc.style__btn--isPressed___1gLL0 {
+.style__btn--successHover___2JpWS.style__btn--isPressed___3CoIu {
     background-color: #0bb344;
 }
-.style__btn--successHover___11euc.style__btn--isPressed___1gLL0 i {
+.style__btn--successHover___2JpWS.style__btn--isPressed___3CoIu i {
     background-color: #0bb344;
 }
-.style__btn--successHover___11euc:hover:enabled {
+.style__btn--successHover___2JpWS:hover:enabled {
     background-color: #0bb344;
 }
-.style__btn--successHover___11euc:hover:enabled i {
+.style__btn--successHover___2JpWS:hover:enabled i {
     background-color: #0bb344;
 }
-.style__btn--warnHover___3mTe9.style__btn--isPressed___1gLL0 {
+.style__btn--warnHover___3T3eD.style__btn--isPressed___3CoIu {
     background-color: #fda23d;
 }
-.style__btn--warnHover___3mTe9.style__btn--isPressed___1gLL0 i {
+.style__btn--warnHover___3T3eD.style__btn--isPressed___3CoIu i {
     background-color: #fda23d;
 }
-.style__btn--warnHover___3mTe9:hover:enabled {
+.style__btn--warnHover___3T3eD:hover:enabled {
     background-color: #fda23d;
 }
-.style__btn--warnHover___3mTe9:hover:enabled i {
+.style__btn--warnHover___3T3eD:hover:enabled i {
     background-color: #fda23d;
 }
-.style__btn--errorHover___12xr0:hover:enabled {
+.style__btn--errorHover___63ulE:hover:enabled {
     background-color: #ff6a3c;
 }
-.style__btn--errorHover___12xr0:hover:enabled i {
+.style__btn--errorHover___63ulE:hover:enabled i {
     background-color: #ff6a3c;
 }
-.style__btn--errorHover___12xr0.style__btn--isPressed___1gLL0 {
+.style__btn--errorHover___63ulE.style__btn--isPressed___3CoIu {
     background-color: #ff6a3c;
 }
-.style__btn--errorHover___12xr0.style__btn--isPressed___1gLL0 i {
+.style__btn--errorHover___63ulE.style__btn--isPressed___3CoIu i {
     background-color: #ff6a3c;
-}
-
-.style__buttonGroup___3yg9d {
-    display: block;
 }
 
 svg:not(:root).neos-svg-inline--fa {
@@ -679,6 +651,362 @@ svg:not(:root).neos-svg-inline--fa {
 
 .fad.fa-inverse {
   color: #fff; }
+
+.style__icon___3acxC {
+    display: inline-block;
+    font: normal normal normal FontAwesome;
+    font-size: 14px/1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.style__icon--paddedLeft___3FiTY {
+    margin-left: .75em;
+}
+.style__icon--paddedRight___2FV_M {
+    margin-right: .75em;
+}
+.style__icon--color-warn___27ZqM {
+    color: #ff8700;
+}
+.style__icon--color-error___3tJnv {
+    color: #ff460d;
+}
+.style__icon--color-primaryBlue___2CAOS {
+    color: #00ADEE;
+}
+.style__icon--big___Hbu57 svg {
+        height: 1.33em;
+    }
+.style__icon--small___1MyBp svg {
+        height: 1em;
+        max-height: 1em;
+        max-width: 100%;
+    }
+.style__icon--tiny___k1Fls svg {
+        height: .75em;
+    }
+.style__icon--resource___2HSnZ {
+    display: inline-grid;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.style__applicationWrapper___1OATQ {
+    height: 100vh;
+}
+
+    .style__applicationWrapper___1OATQ > div {
+        height: 100%;
+    }
+
+/* stylelint-disable selector-max-id */
+
+/* Scrollbar styles for appContainer, its siblings (needed for React portals) and also for contentcanvas' body */
+
+#appContainer ::-webkit-scrollbar, #appContainer ~ * ::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+#appContainer ::-webkit-scrollbar-track, #appContainer ~ * ::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#appContainer ::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+#appContainer ~ * ::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+#appContainer ::-webkit-scrollbar-corner {
+    background-color: #3f3f3f;
+}
+
+#appContainer ~ * ::-webkit-scrollbar-corner {
+    background-color: #3f3f3f;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: #3f3f3f;
+}
+
+.reset__reset___1Yfmz {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+    .reset__reset___1Yfmz,
+    .reset__reset___1Yfmz:before,
+    .reset__reset___1Yfmz:after {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+    /* some browsers set a font-size or margin in their user stylesheets */
+
+    .reset__reset___1Yfmz input {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___1Yfmz textarea {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___1Yfmz select {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___1Yfmz button {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___1Yfmz ul {
+        padding: 0;
+    }
+
+    /* webkit adds some weird spacing otherwise */
+
+    .reset__reset___1Yfmz li {
+        display: block;
+    }
+
+    .reset__reset___1Yfmz input::-webkit-search-cancel-button {
+        display: none;
+    }
+
+    /* webkit adds white box around search box */
+
+    .reset__reset___1Yfmz input {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+    }
+
+.style__badge___3QwR3 {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #ff8700;
+    white-space: nowrap;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.style__bar___32H1E {
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #222;
+    height: 41px;
+    border-bottom: 1px solid #3f3f3f;
+}
+.style__bar--top___2Ldd- {
+    top: 0;
+}
+.style__bar--bottom___JI1zP {
+    bottom: 0;
+}
+
+.style__btn___1MxmJ {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    min-width: 40px;
+    padding: 0 16px;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    width: auto;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #323232;
+    font-size: 14px;
+}
+
+    .style__btn___1MxmJ:focus {
+        outline: 1px solid #00ADEE;
+    }
+
+    .style__btn___1MxmJ[disabled] {
+        opacity: .5;
+        cursor: not-allowed;
+    }
+
+    .style__btn___1MxmJ[disabled]:hover {
+            color: #FFF;
+        }
+
+    .style__btn___1MxmJ[disabled].style__btn--isPressed___1gLL0 {
+            color: #FFF;
+        }
+
+    .style__btn___1MxmJ[disabled]:hover i {
+            color: #FFF;
+        }
+
+    .style__btn___1MxmJ[disabled] i {
+            color: #FFF;
+        }
+.style__btn--size-small___3MoO2 {
+    height: 32px;
+    font-size: 13px;
+    padding: 0 8px;
+}
+.style__btn--clean___3LTjV {
+    background-color: #222;
+}
+.style__btn--lighter___1wesw {
+    background-color: #3f3f3f;
+}
+.style__btn--lighter___1wesw i {
+    background-color: #3f3f3f;
+}
+.style__btn--neutral___29FQf {
+    background-color: #323232;
+}
+.style__btn--neutral___29FQf i {
+    background-color: #323232;
+}
+.style__btn--transparent___1WprA {
+    background: 0;
+}
+.style__btn--brand___1llM2 {
+    background-color: #00ADEE;
+    color: white !important;
+}
+.style__btn--brand___1llM2 i {
+    background-color: #00ADEE;
+    color: white !important;
+}
+.style__btn--success___GMI1q {
+    background-color: #00a338;
+    color: white !important;
+}
+.style__btn--success___GMI1q i {
+    background-color: #00a338;
+    color: white !important;
+}
+.style__btn--warn___1ldV5 {
+    background-color: #ff8700;
+}
+.style__btn--warn___1ldV5 i {
+    background-color: #ff8700;
+}
+.style__btn--error___3yBDX {
+    background-color: #ff460d;
+    color: white !important;
+}
+.style__btn--error___3yBDX i {
+    background-color: #ff460d;
+    color: white !important;
+}
+.style__btn--brandActive___3aw_Q {
+    background-color: #00ADEE;
+}
+.style__btn--brandActive___3aw_Q svg {
+        color: #FFF;
+    }
+.style__btn--brandHover___2vuN8:hover:enabled {
+    background-color: #00ADEE;
+}
+.style__btn--brandHover___2vuN8:hover:enabled i {
+    background-color: #00ADEE;
+}
+.style__btn--brandHover___2vuN8.style__btn--isPressed___1gLL0 {
+    background-color: #00ADEE;
+}
+.style__btn--brandHover___2vuN8.style__btn--isPressed___1gLL0 i {
+    background-color: #00ADEE;
+}
+.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 {
+    color: #00ADEE;
+}
+.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 svg {
+        color: var(--colors-PrimaryBlue);
+    }
+.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 i {
+    color: #00ADEE;
+}
+.style__btn--cleanHover___3ZBJz.style__btn--isPressed___1gLL0 i svg {
+        color: var(--colors-PrimaryBlue);
+    }
+.style__btn--cleanHover___3ZBJz:hover:enabled {
+    color: #00ADEE;
+}
+.style__btn--cleanHover___3ZBJz:hover:enabled svg {
+        color: var(--colors-PrimaryBlue);
+    }
+.style__btn--cleanHover___3ZBJz:hover:enabled i {
+    color: #00ADEE;
+}
+.style__btn--cleanHover___3ZBJz:hover:enabled i svg {
+        color: var(--colors-PrimaryBlue);
+    }
+.style__btn--darkenHover___3Wcx6.style__btn--isPressed___1gLL0,
+.style__btn--darkenHover___3Wcx6.style__btn--isPressed___1gLL0 i,
+.style__btn--darkenHover___3Wcx6:hover:enabled,
+.style__btn--darkenHover___3Wcx6:hover:enabled i {
+    background-color: rgba(0, 0, 0, .1);
+}
+.style__btn--successHover___11euc.style__btn--isPressed___1gLL0 {
+    background-color: #0bb344;
+}
+.style__btn--successHover___11euc.style__btn--isPressed___1gLL0 i {
+    background-color: #0bb344;
+}
+.style__btn--successHover___11euc:hover:enabled {
+    background-color: #0bb344;
+}
+.style__btn--successHover___11euc:hover:enabled i {
+    background-color: #0bb344;
+}
+.style__btn--warnHover___3mTe9.style__btn--isPressed___1gLL0 {
+    background-color: #fda23d;
+}
+.style__btn--warnHover___3mTe9.style__btn--isPressed___1gLL0 i {
+    background-color: #fda23d;
+}
+.style__btn--warnHover___3mTe9:hover:enabled {
+    background-color: #fda23d;
+}
+.style__btn--warnHover___3mTe9:hover:enabled i {
+    background-color: #fda23d;
+}
+.style__btn--errorHover___12xr0:hover:enabled {
+    background-color: #ff6a3c;
+}
+.style__btn--errorHover___12xr0:hover:enabled i {
+    background-color: #ff6a3c;
+}
+.style__btn--errorHover___12xr0.style__btn--isPressed___1gLL0 {
+    background-color: #ff6a3c;
+}
+.style__btn--errorHover___12xr0.style__btn--isPressed___1gLL0 i {
+    background-color: #ff6a3c;
+}
+
+.style__buttonGroup___3yg9d {
+    display: block;
+}
 
 .style__icon___3B9_7 {
     display: inline-block;
@@ -2224,65 +2552,6 @@ svg:not(:root).neos-svg-inline--fa {
     color: white;
 }
 
-.reset__reset___2e25U {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: normal;
-    color: #FFF;
-    margin: 0;
-    padding: 0;
-}
-
-    .reset__reset___2e25U,
-    .reset__reset___2e25U:before,
-    .reset__reset___2e25U:after {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-    }
-
-    /* some browsers set a font-size or margin in their user stylesheets */
-
-    .reset__reset___2e25U input {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .reset__reset___2e25U textarea {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .reset__reset___2e25U select {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .reset__reset___2e25U button {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .reset__reset___2e25U ul {
-        padding: 0;
-    }
-
-    /* webkit adds some weird spacing otherwise */
-
-    .reset__reset___2e25U li {
-        display: block;
-    }
-
-    .reset__reset___2e25U input::-webkit-search-cancel-button {
-        display: none;
-    }
-
-    /* webkit adds white box around search box */
-
-    .reset__reset___2e25U input {
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
-    }
-
 .style__label___1xSQ_ {
     display: block;
     -webkit-font-smoothing: antialiased;
@@ -2411,48 +2680,6 @@ svg:not(:root).neos-svg-inline--fa {
     cursor: not-allowed;
 }
 
-.style__icon___3acxC {
-    display: inline-block;
-    font: normal normal normal FontAwesome;
-    font-size: 14px/1;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.style__icon--paddedLeft___3FiTY {
-    margin-left: .75em;
-}
-.style__icon--paddedRight___2FV_M {
-    margin-right: .75em;
-}
-.style__icon--color-warn___27ZqM {
-    color: #ff8700;
-}
-.style__icon--color-error___3tJnv {
-    color: #ff460d;
-}
-.style__icon--color-primaryBlue___2CAOS {
-    color: #00ADEE;
-}
-.style__icon--big___Hbu57 svg {
-        height: 1.33em;
-    }
-.style__icon--small___1MyBp svg {
-        height: 1em;
-        max-height: 1em;
-        max-width: 100%;
-    }
-.style__icon--tiny___k1Fls svg {
-        height: .75em;
-    }
-.style__icon--resource___2HSnZ {
-    display: inline-grid;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
 .style__checkbox___35Udl {
     position: relative;
     display: block;
@@ -2523,184 +2750,6 @@ svg:not(:root).neos-svg-inline--fa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-}
-
-.style__btn___3rhzP {
-    position: relative;
-    display: inline-block;
-    height: 40px;
-    min-width: 40px;
-    padding: 0 16px;
-    border: 0;
-    -webkit-font-smoothing: antialiased;
-    vertical-align: middle;
-    width: auto;
-    color: #FFF;
-    cursor: pointer;
-    background-color: #323232;
-    font-size: 14px;
-}
-
-    .style__btn___3rhzP:focus {
-        outline: 1px solid #00ADEE;
-    }
-
-    .style__btn___3rhzP[disabled] {
-        opacity: .5;
-        cursor: not-allowed;
-    }
-
-    .style__btn___3rhzP[disabled]:hover {
-            color: #FFF;
-        }
-
-    .style__btn___3rhzP[disabled].style__btn--isPressed___3CoIu {
-            color: #FFF;
-        }
-
-    .style__btn___3rhzP[disabled]:hover i {
-            color: #FFF;
-        }
-
-    .style__btn___3rhzP[disabled] i {
-            color: #FFF;
-        }
-.style__btn--size-small___2NM3c {
-    height: 32px;
-    font-size: 13px;
-    padding: 0 8px;
-}
-.style__btn--clean___JST6q {
-    background-color: #222;
-}
-.style__btn--lighter___2noEC {
-    background-color: #3f3f3f;
-}
-.style__btn--lighter___2noEC i {
-    background-color: #3f3f3f;
-}
-.style__btn--neutral___27fsr {
-    background-color: #323232;
-}
-.style__btn--neutral___27fsr i {
-    background-color: #323232;
-}
-.style__btn--transparent___37d3Q {
-    background: 0;
-}
-.style__btn--brand___1ZsvX {
-    background-color: #00ADEE;
-    color: white !important;
-}
-.style__btn--brand___1ZsvX i {
-    background-color: #00ADEE;
-    color: white !important;
-}
-.style__btn--success___2uKNM {
-    background-color: #00a338;
-    color: white !important;
-}
-.style__btn--success___2uKNM i {
-    background-color: #00a338;
-    color: white !important;
-}
-.style__btn--warn___mYaSC {
-    background-color: #ff8700;
-}
-.style__btn--warn___mYaSC i {
-    background-color: #ff8700;
-}
-.style__btn--error___MCPuY {
-    background-color: #ff460d;
-    color: white !important;
-}
-.style__btn--error___MCPuY i {
-    background-color: #ff460d;
-    color: white !important;
-}
-.style__btn--brandActive___3UtEy {
-    background-color: #00ADEE;
-}
-.style__btn--brandActive___3UtEy svg {
-        color: #FFF;
-    }
-.style__btn--brandHover___3ZVrT:hover:enabled {
-    background-color: #00ADEE;
-}
-.style__btn--brandHover___3ZVrT:hover:enabled i {
-    background-color: #00ADEE;
-}
-.style__btn--brandHover___3ZVrT.style__btn--isPressed___3CoIu {
-    background-color: #00ADEE;
-}
-.style__btn--brandHover___3ZVrT.style__btn--isPressed___3CoIu i {
-    background-color: #00ADEE;
-}
-.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu {
-    color: #00ADEE;
-}
-.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu svg {
-        color: var(--colors-PrimaryBlue);
-    }
-.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu i {
-    color: #00ADEE;
-}
-.style__btn--cleanHover___eru_z.style__btn--isPressed___3CoIu i svg {
-        color: var(--colors-PrimaryBlue);
-    }
-.style__btn--cleanHover___eru_z:hover:enabled {
-    color: #00ADEE;
-}
-.style__btn--cleanHover___eru_z:hover:enabled svg {
-        color: var(--colors-PrimaryBlue);
-    }
-.style__btn--cleanHover___eru_z:hover:enabled i {
-    color: #00ADEE;
-}
-.style__btn--cleanHover___eru_z:hover:enabled i svg {
-        color: var(--colors-PrimaryBlue);
-    }
-.style__btn--darkenHover___3ltdb.style__btn--isPressed___3CoIu,
-.style__btn--darkenHover___3ltdb.style__btn--isPressed___3CoIu i,
-.style__btn--darkenHover___3ltdb:hover:enabled,
-.style__btn--darkenHover___3ltdb:hover:enabled i {
-    background-color: rgba(0, 0, 0, .1);
-}
-.style__btn--successHover___2JpWS.style__btn--isPressed___3CoIu {
-    background-color: #0bb344;
-}
-.style__btn--successHover___2JpWS.style__btn--isPressed___3CoIu i {
-    background-color: #0bb344;
-}
-.style__btn--successHover___2JpWS:hover:enabled {
-    background-color: #0bb344;
-}
-.style__btn--successHover___2JpWS:hover:enabled i {
-    background-color: #0bb344;
-}
-.style__btn--warnHover___3T3eD.style__btn--isPressed___3CoIu {
-    background-color: #fda23d;
-}
-.style__btn--warnHover___3T3eD.style__btn--isPressed___3CoIu i {
-    background-color: #fda23d;
-}
-.style__btn--warnHover___3T3eD:hover:enabled {
-    background-color: #fda23d;
-}
-.style__btn--warnHover___3T3eD:hover:enabled i {
-    background-color: #fda23d;
-}
-.style__btn--errorHover___63ulE:hover:enabled {
-    background-color: #ff6a3c;
-}
-.style__btn--errorHover___63ulE:hover:enabled i {
-    background-color: #ff6a3c;
-}
-.style__btn--errorHover___63ulE.style__btn--isPressed___3CoIu {
-    background-color: #ff6a3c;
-}
-.style__btn--errorHover___63ulE.style__btn--isPressed___3CoIu i {
-    background-color: #ff6a3c;
 }
 
 .style__calendarInputWrapper___3b3zP {
@@ -6017,11 +6066,6 @@ for further information see https://github.com/neos/neos-ui/pull/3211
         text-decoration: none;
         color: #00ADEE;
     }
-
-.style__logo___3Jtvl {
-    height: 24px;
-    width: auto;
-}
 
 .style__wrapper___1KTM4 {
     position: relative;
