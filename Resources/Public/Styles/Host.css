@@ -4066,7 +4066,7 @@ body::-webkit-scrollbar-corner {
     min-width: 160px;
     -webkit-box-shadow: 0 5px 10px rgba(0,0,0, .2);
             box-shadow: 0 5px 10px rgba(0,0,0, .2);
-    z-index: 2;
+    z-index: 7;
 }
 .style__dropDown__item___2zZpm {
     height: 40px;
@@ -4921,7 +4921,7 @@ body::-webkit-scrollbar-track {
 
 .style__flashMessageContainer___o2r5- {
     position: fixed;
-    z-index: 6;
+    z-index: 7;
     top: 0;
     left: 50%;
     width: 516px;
@@ -7081,7 +7081,7 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     right: 0;
 }
 .style__secondaryInspector--isElevated___1XAkJ {
-    z-index: 1;
+    z-index: 6;
 }
 .style__secondaryInspector___Frwci .style__close___2hLC8 {
     position: absolute;
