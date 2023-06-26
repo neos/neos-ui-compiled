@@ -50,18 +50,18 @@ react-is/cjs/react-is.production.min.js:
    * LICENSE file in the root directory of this source tree.
    */
 
-@fortawesome/fontawesome-svg-core/index.es.js:
-  /*!
-   * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
-   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-   */
-
 classnames/index.js:
   /*!
     Copyright (c) 2018 Jed Watson.
     Licensed under the MIT License (MIT), see
     http://jedwatson.github.io/classnames
   */
+
+@fortawesome/fontawesome-svg-core/index.es.js:
+  /*!
+   * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+   */
 
 content-type/index.js:
   /*!
