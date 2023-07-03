@@ -4728,6 +4728,15 @@ span.CodeMirror-selectedtext { background: none; }
 .cm-s-twilight .CodeMirror-activeline-background { background: #27282E; }
 .cm-s-twilight .CodeMirror-matchingbracket { outline:1px solid grey; color:white !important; }
 
+.ck.ck-placeholder:before, .ck .ck-placeholder:before {
+    content: attr(data-placeholder);
+
+    /* See ckeditor/ckeditor5#469. */
+    pointer-events: none;
+
+    color: #999;
+}
+
 .index__toolBar__btnGroup___P0J6R {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7655,12 +7664,6 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     padding-top: 8px;
     padding-left: 16px;
     cursor: pointer;
-}
-
-[data-neos-placeholder]:before {
-    color: #999;
-    content: attr(data-neos-placeholder);
-    cursor: text;
 }
 
 
