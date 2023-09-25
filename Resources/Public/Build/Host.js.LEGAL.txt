@@ -83,6 +83,9 @@ react-dom/cjs/react-dom-server.browser.production.min.js:
 moment/moment.js:
   //! moment.js
 
+moment/locale/de.js:
+  //! moment.js locale configuration
+
 is-buffer/index.js:
   /*!
    * Determine if an object is a Buffer
