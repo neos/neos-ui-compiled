@@ -2016,6 +2016,7 @@ body::-webkit-scrollbar-corner {
     color: white;
     -webkit-box-shadow: 0px 0px 10px rgba(125, 125, 125, .2);
             box-shadow: 0px 0px 10px rgba(125, 125, 125, .2);
+    overflow-wrap: break-word;
 }
 
 .style__tooltip--asError___3OleK .style__tooltip--inner___3DM9n {
