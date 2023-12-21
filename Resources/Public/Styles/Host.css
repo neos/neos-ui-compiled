@@ -1486,7 +1486,7 @@ body::-webkit-scrollbar-corner {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1;
+    z-index: 7;
     display: none;
     width: 100%;
     margin: 0;
@@ -1655,7 +1655,7 @@ body::-webkit-scrollbar-corner {
     min-width: 160px;
     -webkit-box-shadow: 0 5px 5px rgba(0,0,0, .2);
             box-shadow: 0 5px 5px rgba(0,0,0, .2);
-    z-index: 5;
+    z-index: 7;
     margin-top: -2px;
 }
 
@@ -2022,6 +2022,7 @@ body::-webkit-scrollbar-corner {
     color: white;
     -webkit-box-shadow: 0px 0px 10px rgba(125, 125, 125, .2);
             box-shadow: 0px 0px 10px rgba(125, 125, 125, .2);
+    overflow-wrap: break-word;
 }
 
 .style__tooltip--asError___3OleK .style__tooltip--inner___3DM9n {
