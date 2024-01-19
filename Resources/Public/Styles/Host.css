@@ -2037,6 +2037,10 @@ body::-webkit-scrollbar-corner {
     position: relative;
     line-height: 20px;
 }
+
+    .node__header___VjnDK:hover {
+        background: #35c3f825;
+    }
 .node__header__chevron___zXVME {
     position: absolute;
     top: 0;
@@ -2050,8 +2054,8 @@ body::-webkit-scrollbar-corner {
 
     cursor: pointer;
 }
-.node__header__chevron___zXVME:hover {
-        color: #00ADEE;
+.node__header__chevron___zXVME:hover > svg {
+        color: #35c3f8;
     }
 .node__header__chevron--isCollapsed___WH7x- > svg {
     -webkit-transform: translateY(3px) translateX(-2px) rotate(-90deg);
@@ -2075,6 +2079,12 @@ body::-webkit-scrollbar-corner {
     position: absolute;
     text-align: center;
 }
+.node__header___VjnDK:hover .node__header__iconWrapper___3_L5- > svg {
+        color: #35c3f8;
+    }
+.node__header__data--isActive___2VU25 .node__header__iconWrapper___3_L5- > svg {
+        color: #35c3f8;
+    }
 .node__header__data___3ySAh {
     position: relative;
     display: inline-block;
@@ -2102,6 +2112,9 @@ body::-webkit-scrollbar-corner {
 .node__header__data--isFocused___3lF2d {
     background: #323232;
 }
+.node__header__data--isFocused___3lF2d:hover {
+        background: #00ADEE10;
+    }
 .node__header__data--isFocused___3lF2d.node__header__data--isHiddenInIndex___1NEzB,
     .node__header__data--isFocused___3lF2d.node__header__data--isHidden___34ear {
         opacity: .8;
@@ -2124,8 +2137,14 @@ body::-webkit-scrollbar-corner {
 .node__header__label___kPC7f {
     margin-left: 2em;
 }
+.node__header___VjnDK:hover .node__header__label___kPC7f {
+        color: #00ADEE;
+    }
 .node__header__data--isActive___2VU25 .node__header__label___kPC7f {
         color: #00ADEE;
+    }
+.node__header__label___kPC7f:hover {
+        color: #35c3f8;
     }
 .node__contents___GgwYX {
 }
