@@ -3650,6 +3650,7 @@ span.CodeMirror-selectedtext { background: none; }
             flex-grow: 1;
     outline: 0;
     padding: 15px;
+    overflow: scroll;
 }
 
 .style__widget___11ObM {
