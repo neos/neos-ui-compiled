@@ -5616,6 +5616,9 @@ a.style__secondaryToolbar__buttonLink___272lF:hover {
     .style__nodeInfoView__content___gohJo {
         font-size: 13px;
         color: #999;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 .style__columnsWrap___1qEOJ {
