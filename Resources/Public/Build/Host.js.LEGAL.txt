@@ -57,12 +57,6 @@ classnames/index.js:
     http://jedwatson.github.io/classnames
   */
 
-@fortawesome/fontawesome-svg-core/index.es.js:
-  /*!
-   * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
-   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-   */
-
 content-type/index.js:
   /*!
    * content-type
@@ -1758,24 +1752,6 @@ buffer/index.js:
    *
    * @author   Feross Aboukhadijeh <https://feross.org>
    * @license  MIT
-   */
-
-@fortawesome/free-brands-svg-icons/index.es.js:
-  /*!
-   * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
-   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-   */
-
-@fortawesome/free-regular-svg-icons/index.es.js:
-  /*!
-   * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
-   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-   */
-
-@fortawesome/free-solid-svg-icons/index.es.js:
-  /*!
-   * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
-   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
    */
 
 @ckeditor/ckeditor5-highlight/src/highlightcommand.js:
