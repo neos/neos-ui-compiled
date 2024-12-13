@@ -109,6 +109,93 @@ monet/dist/monet.js:
    * https://monet.github.io/monet.js/
    */
 
+@ckeditor/ckeditor5-utils/src/dom/global.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-utils/src/env.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/fastdiff.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/diff.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/difftochanges.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/mix.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/spy.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/eventinfo.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/uid.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/priorities.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/inserttopriorityarray.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/ckeditorerror.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/version.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-utils/src/emittermixin.js:
+  /* istanbul ignore next -- @preserve */
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
 lodash-es/lodash.js:
   /**
    * @license
@@ -120,1626 +207,2787 @@ lodash-es/lodash.js:
    * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
    */
 
-@ckeditor/ckeditor5-utils/src/config.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/ckeditorerror.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/spy.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/eventinfo.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/uid.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/priorities.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/version.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/emittermixin.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/mix.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/comparearrays.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/node.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/text.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/textproxy.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/objecttomap.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/isiterable.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/matcher.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/element.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/containerelement.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
 @ckeditor/ckeditor5-utils/src/observablemixin.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-engine/src/view/editableelement.js:
+@ckeditor/ckeditor5-utils/src/elementreplacer.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-engine/src/view/rooteditableelement.js:
+@ckeditor/ckeditor5-utils/src/abortabledebounce.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/treewalker.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/position.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/range.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-utils/src/count.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-engine/src/view/selection.js:
+@ckeditor/ckeditor5-utils/src/comparearrays.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-engine/src/view/documentselection.js:
+@ckeditor/ckeditor5-utils/src/isiterable.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-utils/src/collection.js:
+@ckeditor/ckeditor5-utils/src/dom/createelement.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-engine/src/view/document.js:
+@ckeditor/ckeditor5-utils/src/config.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/attributeelement.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/emptyelement.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/env.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/keyboard.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/uielement.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/documentfragment.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/downcastwriter.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/istext.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/filler.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/fastdiff.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/diff.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/insertat.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/remove.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-utils/src/dom/isnode.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/renderer.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/global.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/indexof.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/getancestors.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/getcommonancestor.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/domconverter.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-utils/src/dom/iswindow.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-utils/src/dom/emittermixin.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-engine/src/view/observer/observer.js:
+@ckeditor/ckeditor5-utils/src/dom/findclosestscrollableancestor.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-engine/src/view/observer/mutationobserver.js:
+@ckeditor/ckeditor5-utils/src/dom/getancestors.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/domeventdata.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/domeventobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/keyobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/fakeselectionobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/selectionobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/focusobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/compositionobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/observer/inputobserver.js:
-  /**
-   * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md.
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/isrange.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/getborderwidths.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/rect.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/scroll.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/view.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/tomap.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/node.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/text.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/textproxy.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/nodelist.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/element.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/treewalker.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/position.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/range.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/mapper.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/modelconsumable.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/downcastdispatcher.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/selection.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/liverange.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/documentselection.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/conversionhelpers.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/downcasthelpers.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/upcasthelpers.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/controller/editingcontroller.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-core/src/plugincollection.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-core/src/commandcollection.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/translation-service.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/locale.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/viewconsumable.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/schema.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/controller/datacontroller.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/conversion/conversion.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/batch.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/operation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/documentfragment.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/utils.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/attributeoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/detachoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/moveoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/insertoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/markeroperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/renameoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/rootattributeoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/mergeoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/splitoperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/rootelement.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/writer.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/differ.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/history.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/unicode.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/document.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/markercollection.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/liveposition.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/utils/insertcontent.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/utils/deletecontent.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/utils/modifyselection.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/utils/getselectedcontent.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/utils/selection-post-fixer.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/model.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/keystrokehandler.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-core/src/editingkeystrokehandler.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-core/src/editor/editor.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-core/src/editor/utils/dataapimixin.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/dataprocessor/basichtmlwriter.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/dataprocessor/htmldataprocessor.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/componentfactory.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/focustracker.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-core/src/editor/editorui.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/toolbar/enabletoolbarkeyboardfocus.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/toolbar/normalizetoolbarconfig.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/view/placeholder.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-editor-decoupled/src/decouplededitorui.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/viewcollection.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/template.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/view.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/editorui/editoruiview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/editableui/editableuiview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/editableui/inline/inlineeditableuiview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/focuscycler.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/toolbar/toolbarseparatorview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/getresizeobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/bindings/preventdefault.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/dropdown/dropdownpanelview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/getpositionedancestor.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/dom/position.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/dropdown/dropdownview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/icon/iconview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/tooltip/tooltipview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/button/buttonview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/dropdown/button/dropdownbuttonview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/list/listview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/list/listitemview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/list/listseparatorview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/button/switchbuttonview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/bindings/clickoutsidehandler.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/dropdown/utils.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/toolbar/toolbarview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-editor-decoupled/src/decouplededitoruiview.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-utils/src/dom/getdatafromelement.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/getborderwidths.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/getrangefrommouseevent.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/istext.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/isrange.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/getpositionedancestor.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/rect.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/resizeobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-utils/src/dom/setdatainelement.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-core/src/editor/utils/securesourceelement.js:
+@ckeditor/ckeditor5-utils/src/dom/tounit.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor.js:
+@ckeditor/ckeditor5-utils/src/dom/indexof.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/insertat.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/iscomment.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/isvalidattributename.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/isvisible.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/position.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/remove.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/dom/scroll.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/keyboard.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/language.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/toarray.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/translation-service.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore else -- @preserve */
+
+@ckeditor/ckeditor5-utils/src/locale.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/collection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/first.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/focustracker.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/keystrokehandler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/objecttomap.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/tomap.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/wait.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/retry.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/splicearray.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/delay.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/parsebase64encodedobject.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/crc32.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/unicode.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-utils/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-core/src/plugin.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-core/src/command.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/multicommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/plugincollection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/context.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/contextplugin.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/placeholder.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/typecheckable.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/node.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/text.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/textproxy.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/matcher.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/stylesmap.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/element.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/containerelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/editableelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/rooteditableelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/treewalker.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/position.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/range.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/selection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/documentselection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/bubblingeventinfo.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/bubblingemittermixin.js:
+  /* istanbul ignore next -- @preserve */
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/document.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/attributeelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/emptyelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/uielement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/rawelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/documentfragment.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/downcastwriter.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/filler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/renderer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/domconverter.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/observer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/domeventdata.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/domeventobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/keyobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/fakeselectionobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/mutationobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/focusobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/selectionobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/compositionobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/datatransfer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/inputobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/arrowkeysobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/observer/tabobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/view.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-engine/src/model/typecheckable.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/node.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/nodelist.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/text.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/textproxy.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/element.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/treewalker.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/position.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/range.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/mapper.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/modelconsumable.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/downcastdispatcher.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/selection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/liverange.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/documentselection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/conversionhelpers.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/downcasthelpers.js:
+  /* istanbul ignore else: This is always true because otherwise it would not register a reducer callback. -- @preserve */
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/utils/autoparagraphing.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/upcasthelpers.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/utils/selection-post-fixer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/controller/editingcontroller.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/viewconsumable.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/schema.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/dataprocessor/basichtmlwriter.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/dataprocessor/htmldataprocessor.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/controller/datacontroller.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/conversion/conversion.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/dataprocessor/xmldataprocessor.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/operation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/moveoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/insertoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/splitoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/mergeoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/markeroperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/attributeoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/nooperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/renameoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/rootattributeoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/rootoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/operationfactory.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/transform.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/liveposition.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/batch.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/differ.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/history.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/rootelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/document.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/markercollection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/operation/detachoperation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/documentfragment.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/writer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/utils/deletecontent.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/utils/getselectedcontent.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/utils/insertcontent.js:
+  /* istanbul ignore else -- @preserve */
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore if -- @preserve */
+
+@ckeditor/ckeditor5-engine/src/model/utils/insertobject.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/utils/modifyselection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/model/model.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-engine/src/view/observer/clickobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-engine/src/view/observer/mouseobserver.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/upcastwriter.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/styles/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/styles/background.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/styles/border.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/styles/margin.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/view/styles/padding.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/dev-utils/view.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/dev-utils/model.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-engine/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-watchdog/src/watchdog.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-watchdog/src/utils/getsubnodes.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-watchdog/src/utils/areconnectedthroughproperties.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-watchdog/src/editorwatchdog.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-watchdog/src/contextwatchdog.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-watchdog/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-watchdog/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/commandcollection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/editingkeystrokehandler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/accessibility.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/editor/utils/editorusagedata.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/editor/editor.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-core/src/editor/utils/attachtoform.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/editor/utils/dataapimixin.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/editor/utils/elementapimixin.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/editor/utils/securesourceelement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/pendingactions.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-core/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+ckeditor5/src/core.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+ckeditor5/src/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/viewcollection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/template.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/view.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/bindings/clickoutsidehandler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/bindings/injectcsstransitiondisabler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/bindings/csstransitiondisablermixin.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/bindings/submithandler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/bindings/addkeyboardhandlingforgrid.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/icon/iconview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/button/buttonlabelview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/button/buttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/formheader/formheaderview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/focuscycler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/bindings/draggableviewmixin.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dialog/dialogactionsview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dialog/dialogcontentview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dialog/dialogview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dialog/dialog.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/button/listitembuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarmenulistitembuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/label/labelview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/accessibilityhelp/accessibilityhelpcontentview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/accessibilityhelp/accessibilityhelp.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/bodycollection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/button/switchbuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/button/filedialogbuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/collapsible/collapsibleview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorgrid/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorgrid/colortileview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorgrid/colorgridview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorpicker/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/labeledfield/labeledfieldview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/input/inputbase.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/input/inputview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/inputtext/inputtextview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/inputnumber/inputnumberview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/textarea/textareaview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/dropdownpanelview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/dropdownview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/button/dropdownbuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenulistitembuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenubuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/list/listitemview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/list/listseparatorview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/list/listitemgroupview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/list/listview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenulistview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenulistitemview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenubehaviors.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/panel/balloon/balloonpanelview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenunestedmenupanelview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenunestedmenuview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/menu/dropdownmenurootlistview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/toolbar/toolbarseparatorview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/toolbar/toolbarlinebreakview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/bindings/preventdefault.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/toolbar/normalizetoolbarconfig.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/toolbar/toolbarview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/button/splitbuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/dropdown/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/labeledfield/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorpicker/colorpickerview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorselector/documentcolorcollection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorselector/colorgridsfragmentview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorselector/colorpickerfragmentview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/colorselector/colorselectorview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/componentfactory.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/tooltipmanager.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/badge/badge.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/poweredby.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/evaluationbadge.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/arialiveannouncer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarmenulistitemview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/editorui.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/editoruiview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editorui/boxed/boxededitoruiview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editableui/editableuiview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/editableui/inline/inlineeditableuiview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/iframe/iframeview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/search/filtergroupanditemnames.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/notification/notification.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/model.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/panel/balloon/contextualballoon.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/panel/sticky/stickypanelview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/search/text/searchtextqueryview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/search/searchinfoview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/search/searchresultsview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/search/text/searchtextview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/autocomplete/autocompleteview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/highlightedtext/highlightedtextview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/highlightedtext/buttonlabelwithhighlightview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/highlightedtext/labelwithhighlightview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/spinner/spinnerview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/toolbar/balloon/balloontoolbar.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/toolbar/block/blockbuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/toolbar/block/blocktoolbar.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarmenubuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarmenupanelview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarmenuview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarmenulistview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarmenulistitemfiledialogbuttonview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/menubar/menubarview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-ui/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+ckeditor5/src/ui.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+ckeditor5/src/engine.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-editor-decoupled/src/decouplededitorui.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-editor-decoupled/src/decouplededitoruiview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/utils/changebuffer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/inserttextcommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/inserttextobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/input.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/deletecommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/deleteobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/delete.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/typing.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/utils/getlasttextline.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/textwatcher.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/twostepcaretmovement.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/texttransformation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/utils/findattributerange.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/utils/inlinehighlight.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-typing/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/entercommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/enterobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/enter.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/shiftentercommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/shiftenter.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-enter/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-widget/src/highlightstack.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-widget/src/utils.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/widgettypearound/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/widgettypearound/widgettypearound.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/verticalnavigation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-widget/src/widget.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
+  /* istanbul ignore next -- @preserve */
 
 decimal.js-light/decimal.js:
   /*! decimal.js-light v2.5.0 https://github.com/MikeMcl/decimal.js-light/LICENCE */
 
 @ckeditor/ckeditor5-basic-styles/src/attributecommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-link/src/findlinkrange.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-clipboard/src/datatransfer.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-clipboard/src/clipboardobserver.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-clipboard/src/utils/plaintexttohtml.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-clipboard/src/utils/normalizeclipboarddata.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-clipboard/src/utils/viewtoplaintext.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-clipboard/src/clipboardmarkersutils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-clipboard/src/clipboardpipeline.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/widgettoolbarrepository.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/widgetresize/resizerstate.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/widgetresize/sizeview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/widgetresize/resizer.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/widgetresize.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-widget/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-clipboard/src/lineview.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore file -- @preserve */
+
+@ckeditor/ckeditor5-clipboard/src/dragdroptarget.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-clipboard/src/dragdropblocktoolbar.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-clipboard/src/dragdrop.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-clipboard/src/pasteplaintext.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-clipboard/src/clipboard.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-enter/src/utils.js:
+@ckeditor/ckeditor5-clipboard/src/augmentation.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-enter/src/entercommand.js:
+@ckeditor/ckeditor5-clipboard/src/index.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-enter/src/enterobserver.js:
+ckeditor5/src/clipboard.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-enter/src/enter.js:
+ckeditor5/src/enter.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-enter/src/shiftentercommand.js:
+@ckeditor/ckeditor5-select-all/src/selectallcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-enter/src/shiftenter.js:
+@ckeditor/ckeditor5-select-all/src/selectallediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-typing/src/utils/changebuffer.js:
+@ckeditor/ckeditor5-select-all/src/selectallui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-typing/src/inputcommand.js:
+@ckeditor/ckeditor5-select-all/src/selectall.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-typing/src/utils/injectunsafekeystrokeshandling.js:
+@ckeditor/ckeditor5-select-all/src/augmentation.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-utils/src/difftochanges.js:
+@ckeditor/ckeditor5-select-all/src/index.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-typing/src/utils/utils.js:
+ckeditor5/src/select-all.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-typing/src/utils/injecttypingmutationshandling.js:
+ckeditor5/src/typing.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-typing/src/input.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-typing/src/deletecommand.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-typing/src/deleteobserver.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-typing/src/delete.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-typing/src/typing.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/nooperation.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/model/operation/transform.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-undo/src/basecommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-undo/src/undocommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-undo/src/redocommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-undo/src/undoediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-undo/src/undoui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-undo/src/undo.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-undo/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-undo/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+ckeditor5/src/undo.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-essentials/src/essentials.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-utils/src/first.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-paragraph/src/paragraphcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-paragraph/src/insertparagraphcommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-paragraph/src/paragraph.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/bold/boldediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-basic-styles/src/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/bold/boldui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/bold.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/italic/italicediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/italic/italicui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/italic.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/underline/underlineediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/underline/underlineui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/underline.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/strikethrough/strikethroughediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/strikethrough/strikethroughui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-basic-styles/src/strikethrough.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-paragraph/src/paragraphbuttonui.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-paragraph/src/augmentation.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-paragraph/src/index.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+ckeditor5/src/paragraph.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-heading/src/headingcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-heading/src/headingediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-ui/src/model.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-heading/src/utils.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-heading/src/headingui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-heading/src/heading.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-link/src/linkcommand.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-link/src/unlinkcommand.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-link/src/utils.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-link/src/utils/automaticdecorators.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-link/src/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-link/src/linkcommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-link/src/unlinkcommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-link/src/utils/manualdecorator.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-engine/src/utils/bindtwostepcarettoattribute.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-link/src/linkediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-list/src/listcommand.js:
+@ckeditor/ckeditor5-list/src/list/utils/listwalker.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-list/src/indentcommand.js:
+@ckeditor/ckeditor5-list/src/list/utils/model.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-list/src/utils.js:
+@ckeditor/ckeditor5-list/src/list/listindentcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-list/src/converters.js:
+@ckeditor/ckeditor5-list/src/list/listcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-list/src/listediting.js:
+@ckeditor/ckeditor5-list/src/list/listmergecommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-list/src/listui.js:
+@ckeditor/ckeditor5-list/src/list/listsplitcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-list/src/list/listutils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-list/src/list/utils/view.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-list/src/list/utils/postfixers.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-list/src/list/converters.js:
+  /* istanbul ignore next -- @preserve */
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-list/src/list/listediting.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-list/src/list/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-list/src/list/listui.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-list/src/list.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-alignment/src/utils.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-alignment/src/alignmentcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-alignment/src/alignmentediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-alignment/src/alignmentui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-alignment/src/alignment.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-table/src/commands/utils.js:
+ckeditor5/src/widget.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/converters/tableproperties.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/utils/common.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/converters/upcasttable.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/tablewalker.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
-   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
-   */
-
-@ckeditor/ckeditor5-table/src/utils.js:
-  /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/converters/downcast.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/inserttablecommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/insertrowcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/insertcolumncommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/splitcellcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/utils/structure.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/mergecellcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/removerowcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/removecolumncommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/setheaderrowcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/commands/setheadercolumncommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/tablecolumnresize/constants.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/tablecolumnresize/utils.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/tableutils.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore next -- @preserve */
+
+@ckeditor/ckeditor5-table/src/commands/mergecellscommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/commands/selectrowcommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/commands/selectcolumncommand.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/converters/table-layout-post-fixer.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/converters/table-cell-paragraph-post-fixer.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
-@ckeditor/ckeditor5-table/src/converters/table-cell-refresh-post-fixer.js:
+@ckeditor/ckeditor5-table/src/converters/table-headings-refresh-handler.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/converters/table-cell-refresh-handler.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/tableediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/ui/inserttableview.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/tableui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/tableselection.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/tableclipboard.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/tablekeyboard.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+  /* istanbul ignore if: paranoid check -- @preserve */
+
+@ckeditor/ckeditor5-table/src/tablemouse/mouseeventsobserver.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+   * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+   */
+
+@ckeditor/ckeditor5-table/src/tablemouse.js:
+  /**
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-table/src/table.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-remove-format/src/removeformatui.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-remove-format/src/removeformatcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-remove-format/src/removeformatediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-remove-format/src/removeformat.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
@@ -1756,12 +3004,12 @@ buffer/index.js:
 
 @ckeditor/ckeditor5-highlight/src/highlightcommand.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
 
 @ckeditor/ckeditor5-highlight/src/highlightediting.js:
   /**
-   * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+   * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
    * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
    */
