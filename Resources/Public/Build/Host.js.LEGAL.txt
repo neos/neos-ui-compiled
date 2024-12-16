@@ -40,6 +40,13 @@ react-dom/cjs/react-dom.production.min.js:
 he/he.js:
   /*! https://mths.be/he v1.2.0 by @mathias | MIT license */
 
+classnames/index.js:
+  /*!
+    Copyright (c) 2018 Jed Watson.
+    Licensed under the MIT License (MIT), see
+    http://jedwatson.github.io/classnames
+  */
+
 react-is/cjs/react-is.production.min.js:
   /** @license React v16.13.1
    * react-is.production.min.js
@@ -49,13 +56,6 @@ react-is/cjs/react-is.production.min.js:
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
    */
-
-classnames/index.js:
-  /*!
-    Copyright (c) 2018 Jed Watson.
-    Licensed under the MIT License (MIT), see
-    http://jedwatson.github.io/classnames
-  */
 
 content-type/index.js:
   /*!
